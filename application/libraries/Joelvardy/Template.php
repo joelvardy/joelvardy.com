@@ -24,6 +24,9 @@ class Template {
 		// Extract data into variables
 		extract($data, EXTR_SKIP|EXTR_REFS);
 
+		// Allow the template library to be accessed from the view
+		$template =& $this;
+
 		// Render the view HTML into a variable
 		ob_start();
 		require(VIEWS_PATH.'/'.$view);
