@@ -1,0 +1,6 @@
+{
+	"require": {
+		"joelvardy/routes": "v1.1"
+	},
+	"minimum-stability": "dev"
+}

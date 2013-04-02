@@ -1,0 +1,66 @@
+{
+    "hash": "3ead904cea42aa065d8055a0a79a89f4",
+    "packages": [
+        {
+            "name": "joelvardy/routes",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joelvardy/routes.git",
+                "reference": "v1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joelvardy/routes/zipball/v1.1",
+                "reference": "v1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Joelvardy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Vardy",
+                    "email": "info@joelvardy.com",
+                    "homepage": "http://joelvardy.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple RESTful routing",
+            "homepage": "https://github.com/joelvardy/routes",
+            "keywords": [
+                "rest",
+                "restful",
+                "route",
+                "routing"
+            ],
+            "time": "2013-03-26 11:59:53"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
