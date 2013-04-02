@@ -6,19 +6,10 @@ require('../initialisation.php');
 // Initialise routes
 $routes = new Joelvardy\Routes();
 
-// Homepage
-$routes->get('/', function () {
-
-    echo 'Homepage';
-
-});
-
-// If no other routes match
-$routes->notFound(function () {
-
-    echo 'Error 404 :(';
-
-});
+// Load application routes
+foreach (glob(ROUTES_PATH.'/*.php') as $route) {
+	require($route);
+}
 
 // Run routes
 $routes->run();
