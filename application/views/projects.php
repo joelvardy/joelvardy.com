@@ -1,11 +1,9 @@
 <h1>Projects</h1>
 
-<ul>
-	<?php
+<?php
 
-		foreach ($projects as $project) {
-			echo '<li>'.$project['title'].'</li>';
-		}
+	foreach ($projects as $project) {
+		echo $project;
+	}
 
-	?>
-</ul>
+?>
