@@ -1,8 +1,7 @@
 <?php
 
-// Homepage
 $routes->get('/', function () {
 
-	echo 'Homepage';
+	echo 'About Joel Vardy';
 
 });
