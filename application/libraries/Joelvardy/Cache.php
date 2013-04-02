@@ -47,6 +47,7 @@ class Cache {
 	/**
 	 * Return key
 	 *
+	 * @param	string [$key] The key of the cached file
 	 * @return	string
 	 */
 	protected static function key($key) {
@@ -59,6 +60,9 @@ class Cache {
 	/**
 	 * Save data to the cache
 	 *
+	 * @param	string [$key] The key of the cached file
+	 * @param	mixed [$value] The value to cache
+	 * @param	integer [$ttl] The number of seconds until the cache expires
 	 * @return	boolean
 	 */
 	public static function set($key, $value, $ttl = 0) {
@@ -74,6 +78,7 @@ class Cache {
 	/**
 	 * Get data from the cache
 	 *
+	 * @param	string [$key] The key of the cached file
 	 * @return	mixed
 	 */
 	public static function get($key) {
@@ -89,6 +94,7 @@ class Cache {
 	/**
 	 * Delete data in cache
 	 *
+	 * @param	string [$key] The key of the cached file
 	 * @return	boolean
 	 */
 	public static function delete($key) {

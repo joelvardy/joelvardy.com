@@ -20,6 +20,8 @@ class Config {
 	/**
 	 * Get/set configuration value
 	 *
+	 * @param	string [$key] The key of the configuration item
+	 * @param	mixed [$value] The value of the key
 	 * @return	mixed
 	 */
 	public static function value($key, $value = null) {
