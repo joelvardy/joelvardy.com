@@ -1,7 +1,13 @@
 <?php
 
+use Joelvardy\Template;
+
 $routes->get('/', function () {
 
-	echo 'About Joel Vardy';
+	// Initialise classes
+	$template = new Template();
+
+	// Render the page
+	$template->render('about.php');
 
 });
