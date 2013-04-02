@@ -2,5 +2,10 @@
 	"require": {
 		"joelvardy/routes": "v1.1"
 	},
+	"autoload": {
+		"psr-0": {
+			"Joelvardy": "application/libraries/"
+		}
+	},
 	"minimum-stability": "dev"
 }
