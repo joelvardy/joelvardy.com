@@ -2,6 +2,6 @@
 
 $routes->notFound(function () {
 
-	echo 'Error 404 :(';
+	require(VIEWS_PATH.'/404.php');
 
 });

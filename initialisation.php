@@ -14,6 +14,7 @@ date_default_timezone_set('Europe/London');
 define('BASE_PATH', realpath(dirname(__FILE__)));
 define('APP_PATH', BASE_PATH.'/application');
 define('ROUTES_PATH', APP_PATH.'/routes');
+define('VIEWS_PATH', APP_PATH.'/views');
 
 // Setup Composer autoloding
 require(BASE_PATH.'/vendor/autoload.php');
