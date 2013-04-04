@@ -71,6 +71,12 @@ header {
 					div.project div.inner ul.details li strong {
 						color: black;
 					}
+				/*div.project div.inner p a {
+					background: #f5b367;
+					border-radius: 2px;
+					color: #222;
+					padding: 5px 6px 2px;
+				}*/
 
 footer {
 	padding: 50px 0;
