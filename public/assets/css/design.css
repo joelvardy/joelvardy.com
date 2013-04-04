@@ -10,23 +10,25 @@ body {
 header {
 	overflow: hidden;
 	padding-top: 50px;
+	position: relative;
 }
 	header img {
-		border-radius: 4px;
+		border-radius: 55px;
 		float: left;
 		width: 110px;
 	}
 	header hgroup {
 		float: left;
-		margin: 15px 0 0 15px;
+		margin: 40px 0 0 15px;
 		text-shadow: white 0px 1px 0px;
 	}
 			header hgroup h1 a {
 				color: #222;
 			}
 	header nav {
-		float: right;
+		position: absolute;
 		overflow: hidden;
+		right: 0;
 	}
 		header nav a {
 			color: #444;
@@ -81,4 +83,20 @@ header {
 
 footer {
 	padding: 50px 0;
+}
+
+@media screen and (max-width: 800px) {
+
+	body {
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	body {
+		width: 90%;
+	}
+
 }
