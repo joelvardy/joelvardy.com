@@ -10,6 +10,10 @@ All configurations are located in the `/application/config` directory, I have de
 
 The `/application/libraries/Joelvardy` directory contains custom libraries written by myself, these are all PSR-0 compliant and use the composer autoloader.
 
+## Operations
+
+Within the `/application/operations` directory are files which are executed as CRON jobs.
+
 ## Routes
 
 All files in the `application/routes` directory are loaded into the application, these files each contain routes which are mapped using my own [RESTful routing library][routes].
@@ -23,6 +27,14 @@ The `/application/views` directory contains PHP files which are generally speaki
 The `/initialisation.php` file defines paths, autoloading, and loads the configurations.
 
 All requests (which are not valid resources) are routed to the `/public/index.php` file, this file loads all of the routes, the matching route will have a callback which is then executed.
+
+## CRON Jobs
+
+### Update Flickr Feed
+
+```
+*/10 * * * * php -f application/operations/update-flickr-feed.php
+```
 
 [Joel Vardy][joelvardy]
 
