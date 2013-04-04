@@ -7,6 +7,7 @@
 		<meta name="description" content="TODO" />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
+		<link rel="stylesheet" href="/assets/css/print.css" media="print" />
 	</head>
 	<body id="projects">
 

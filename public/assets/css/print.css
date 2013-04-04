@@ -1,0 +1,13 @@
+body {
+	width: 100%;
+}
+
+div.project {
+	border: none;
+	border-radius: none;
+	box-shadow: none;
+	margin-top: 50px;
+}
+	div.project div.inner {
+		padding: 4%;
+	}
