@@ -4,6 +4,7 @@ html {
 
 body {
 	margin: 0 auto;
+	padding-bottom: 50px;
 	width: 70%;
 }
 
@@ -77,10 +78,6 @@ header {
 					div.project div.inner ul.details li strong {
 						color: black;
 					}
-
-footer {
-	padding: 50px 0;
-}
 
 @media screen and (max-width: 800px) {
 

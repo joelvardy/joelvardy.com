@@ -39,10 +39,6 @@
 
 		?>
 
-		<footer>
-			//footer//
-		</footer>
-
 		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
