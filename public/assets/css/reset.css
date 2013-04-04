@@ -36,6 +36,10 @@ img {
 	display: block;
 }
 
+ul, ol {
+	list-style-position: inside;
+}
+
 a {
 	color: #ff8800;
 	text-decoration: none;

@@ -66,6 +66,7 @@ header {
 				margin-top: 0.8em;
 			}
 			div.project div.inner ul.details {
+				list-style-position: outside;
 				list-style-type: square;
 			}
 					div.project div.inner ul.details li strong {
