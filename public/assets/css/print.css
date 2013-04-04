@@ -2,6 +2,10 @@ body {
 	width: 100%;
 }
 
+header nav a:not(.active) {
+	display: none;
+}
+
 div.project {
 	border: none;
 	border-radius: none;
