@@ -10,7 +10,7 @@
 		</ul>
 
 		<p>I had built a few very simple projects using CodeIgniter when I decided to create my own basic authentication library, There are some projects where full blown access control lists aren't required, or where you want the authentication library to use an existing users table.</p>
-		<p>The library is quite simple, but well commented, and uses a very secure hashing algorithm. Take a look at <a href="https://github.com/joelvardy/Basic-CodeIgniter-Authentication" title="TODO">GitHub</a> for the source code.</p>
+		<p>The library is quite simple, but well commented, and uses a very secure hashing algorithm. Take a look at <a href="https://github.com/joelvardy/Basic-CodeIgniter-Authentication" title="Open source repository" data-analytics="CodeIgniter Authentication repo">GitHub</a> for the source code.</p>
 
 	</div>
 

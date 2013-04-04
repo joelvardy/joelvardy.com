@@ -1,6 +1,6 @@
 <div class="project">
 
-	<img class="header" src="/assets/img/projects/iggy-header.jpg" />
+	<img class="header" alt="IGGY" src="/assets/img/projects/iggy-header.jpg" />
 
 	<div class="inner">
 
@@ -8,7 +8,7 @@
 
 		<ul class="details">
 			<li><strong>Project Type:</strong> Contract Work</li>
-			<li><strong>Website:</strong> <a href="https://www.iggy.net/" title="TODO">iggy.net</a></li>
+			<li><strong>Website:</strong> <a href="https://www.iggy.net/" title="IGGY" data-analytics="IGGY">iggy.net</a></li>
 			<li><strong>Date:</strong> April 2012 - October 2012</li>
 		</ul>
 

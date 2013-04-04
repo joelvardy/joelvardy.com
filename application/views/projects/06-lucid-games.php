@@ -1,6 +1,6 @@
 <div class="project">
 
-	<img class="header" src="/assets/img/projects/lucid-games-header.jpg" />
+	<img class="header" alt="iOS Game" src="/assets/img/projects/lucid-games-header.jpg" />
 
 	<div class="inner">
 

@@ -1,6 +1,6 @@
 <div class="project">
 
-	<img class="header" src="/assets/img/projects/neon-six-header.jpg" />
+	<img class="header" alt="Neon Six" src="/assets/img/projects/neon-six-header.jpg" />
 
 	<div class="inner">
 
@@ -8,7 +8,7 @@
 
 		<ul class="details">
 			<li><strong>Project Type:</strong> Freelance</li>
-			<li><strong>Website:</strong> <a href="http://neonsix.com" title="TODO">neonsix.com</a></li>
+			<li><strong>Website:</strong> <a href="http://neonsix.com" title="Neon Six" data-analytics="Neon Six">neonsix.com</a></li>
 			<li><strong>Date:</strong> January 2012 - February 2012 &#38; August 2012</li>
 		</ul>
 

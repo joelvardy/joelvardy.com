@@ -1,6 +1,6 @@
 <div class="project">
 
-	<img class="header" src="/assets/img/projects/highland-webcams-header.jpg" />
+	<img class="header" alt="Highland Webcams" src="/assets/img/projects/highland-webcams-header.jpg" />
 
 	<div class="inner">
 
@@ -8,7 +8,7 @@
 
 		<ul class="details">
 			<li><strong>Project Type:</strong> Side Project</li>
-			<li><strong>Website:</strong> <a href="http://highland-webcams.com" title="TODO">highland-webcams.com</a></li>
+			<li><strong>Website:</strong> <a href="http://highland-webcams.com" title="Highland Webcams" data-analytics="Highland Webcams">highland-webcams.com</a></li>
 			<li><strong>Date:</strong> August 2011 - September 2011 &#38; March 2013</li>
 		</ul>
 
@@ -21,7 +21,7 @@
 			<li>Having to be as efficient as possible, and ensuring the archive is fast.</li>
 		</ul>
 		<p>The archive has more than <strong>1,700,000</strong> images archived, which is around 100GB stored on Amazon S3 (distributed through Cloud Front.)</p>
-		<p>This has been a side project I've been maintaining and updating for several years, over that time there have been <a href="http://highland-webcams.com/about" title="TODO">many iterations</a>.</p>
+		<p>This has been a side project I've been maintaining and updating for several years, over that time there have been <a href="http://highland-webcams.com/about" title="About Highland Webcams" data-analytics="Highland Webcams">many iterations</a>.</p>
 
 	</div>
 

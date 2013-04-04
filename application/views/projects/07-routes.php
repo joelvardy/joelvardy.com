@@ -10,7 +10,7 @@
 		</ul>
 
 		<p>I developed a simple routing library which allows you write RESTful routes and map them to an anonymous function.</p>
-		<p>I have used this on several projects and decided to <a href="https://github.com/joelvardy/routes" title="TODO">open source</a> the code and add it to <a href="https://packagist.org/packages/joelvardy/routes" title="TODO">Packagist</a>.</p>
+		<p>I have used this on several projects and decided to <a href="https://github.com/joelvardy/routes" title="RESTful routes repository" data-analytics="RESTful routes repo">open source</a> the code and add it to <a href="https://packagist.org/packages/joelvardy/routes" title="RESTful routes package" data-analytics="RESTful routes package">Packagist</a>.</p>
 
 	</div>
 
