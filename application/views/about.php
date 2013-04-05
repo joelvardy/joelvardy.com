@@ -40,7 +40,7 @@
 
 					shuffle($photos);
 					foreach ($photos as $photo) {
-						echo '<img alt="'.$photo->title.'" src="'.$photo->url->medium.'" />';
+						echo '<img alt="'.$photo->title.'" src="'.$photo->url->small.'" />';
 					}
 
 				?>

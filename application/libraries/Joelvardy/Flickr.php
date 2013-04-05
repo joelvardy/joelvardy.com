@@ -29,7 +29,7 @@ class Flickr {
 	 */
 	public function url($farmId, $serverId, $imgId, $secret, $size) {
 
-		return sprintf('http://farm%s.staticflickr.com/%s/%s_%s_%s.jpg', $farmId, $serverId, $imgId, $secret, $size);
+		return sprintf('//farm%s.staticflickr.com/%s/%s_%s_%s.jpg', $farmId, $serverId, $imgId, $secret, $size);
 
 	}
 
