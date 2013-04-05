@@ -26,4 +26,20 @@ Zepto(function($) {
 	});
 
 
+	// Style photowall
+	var photowall = $('#photowall');
+	if (photowall.length !== 0) {
+
+		// Extend to edges of page
+		var positionPhotowall = function() {
+			var bodyMargin = Math.ceil(parseFloat($('body').css('margin-left')));
+			photowall.css('margin-left', -bodyMargin+'px');
+			photowall.css('margin-right', -bodyMargin+'px');
+		}
+		positionPhotowall();
+		$(window).bind('resize', positionPhotowall);
+
+	}
+
+
 });

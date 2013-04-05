@@ -5,6 +5,7 @@ html {
 
 body {
 	margin: 0 auto;
+	overflow-x: hidden;
 	padding-bottom: 50px;
 	width: 70%;
 }
@@ -94,12 +95,8 @@ div.project {
 
 #photowall {
 	height: 400px;
-	left: 0;
 	margin-top: 50px;
 	overflow: hidden;
-	position: absolute;
-	right: 0;
-	width: 100%;
 }
 	#photowall div.inner {
 		overflow: hidden;
