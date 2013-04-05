@@ -82,6 +82,16 @@ div.project {
 				}
 
 
+#biography {
+	margin-top: 50px;
+}
+	#biography ul {
+		margin-top: 0.2em;
+	}
+	#biography p {
+		margin-top: 0.8em;
+	}
+
 #photowall {
 	height: 400px;
 	left: 0;

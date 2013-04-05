@@ -31,6 +31,21 @@
 			</nav>
 		</header>
 
+		<div id="biography">
+
+			<p>I'm a contract PHP developer working in the UK (although I'm interested in working abroad.) You can see my skills at the bottom of this page, or view <a href="/projects" title="Projects I've been involved in">my projects and work</a>.</p>
+			<p>When I'm not sat in front of Sublime Text:</p>
+			<ul>
+				<li>I might be <strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
+				<li>I could be in the countryside <strong>mountain biking</strong>, I've attended the annual Fort William World Cup since 2010.</li>
+				<li>While doing these things it's likely I'll be also indulging in my love for  <strong>photography</strong>.</li>
+			</ul>
+			<?php if ($photos) : ?>
+				<p>Some of my photography is shown below:</p>
+			<?php endif; ?>
+
+		</div>
+
 		<?php if ($photos) : ?>
 
 			<div id="photowall">
