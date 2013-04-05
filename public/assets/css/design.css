@@ -1,5 +1,6 @@
 html {
 	background: #f2efeb;
+	position: relative;
 }
 
 body {
@@ -46,44 +47,72 @@ header {
 			color: #222;
 		}
 
-	div.project {
-		background: white;
-		border: 1px rgba(0,0,0,0.1) solid;
-		border-radius: 4px;
-		box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
-		margin-top: 50px;
+
+div.project {
+	background: white;
+	border: 1px rgba(0,0,0,0.1) solid;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
+	margin-top: 50px;
+}
+	div.project img.header, div.project img.footer {
+		width: 100%;
 	}
-		div.project img.header, div.project img.footer {
-			width: 100%;
+	div.project img.header {
+		border-radius: 3px 3px 0 0;
+	}
+	div.project img.footer {
+		border-radius: 0 0 3px 3px;
+	}
+	div.project div.inner {
+		padding: 8%;
+	}
+		div.project div.inner ul {
+			margin-top: 0.2em;
 		}
-		div.project img.header {
-			border-radius: 3px 3px 0 0;
+		div.project div.inner p, div.project div.inner ul.details {
+			margin-top: 0.8em;
 		}
-		div.project img.footer {
-			border-radius: 0 0 3px 3px;
+		div.project div.inner ul.details {
+			list-style-position: outside;
+			list-style-type: square;
 		}
-		div.project div.inner {
-			padding: 8%;
+				div.project div.inner ul.details li strong {
+					color: black;
+				}
+
+
+#photowall {
+	height: 400px;
+	left: 0;
+	margin-top: 50px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+	#photowall div.inner {
+		overflow: hidden;
+		width: 140%;
+	}
+		#photowall div.inner img {
+			float: left;
+			height: 200px;
 		}
-			div.project div.inner ul {
-				margin-top: 0.2em;
-			}
-			div.project div.inner p, div.project div.inner ul.details {
-				margin-top: 0.8em;
-			}
-			div.project div.inner ul.details {
-				list-style-position: outside;
-				list-style-type: square;
-			}
-					div.project div.inner ul.details li strong {
-						color: black;
-					}
+
 
 @media screen and (max-width: 800px) {
 
 	body {
 		width: 80%;
 	}
+
+	#photowall {
+		height: 200px;
+	}
+		#photowall div.inner img {
+			height: 100px;
+		}
 
 }
 
@@ -92,5 +121,12 @@ header {
 	body {
 		width: 90%;
 	}
+
+	#photowall {
+		height: 160px;
+	}
+		#photowall div.inner img {
+			height: 80px;
+		}
 
 }

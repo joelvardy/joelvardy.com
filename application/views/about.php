@@ -33,16 +33,20 @@
 
 		<?php if ($photos) : ?>
 
-			<h3>Photos</h3>
+			<div id="photowall">
+				<div class="inner">
 
-			<?php
+				<?php
 
-				foreach ($photos as $photo) {
-					echo '	<h6>'.$photo->title.'</h6>
-							<img src="'.$photo->url->medium.'" />';
-				}
+					shuffle($photos);
+					foreach ($photos as $photo) {
+						echo '<img alt="'.$photo->title.'" src="'.$photo->url->medium.'" />';
+					}
 
-			?>
+				?>
+
+				</div>
+			</div>
 
 		<?php endif; ?>
 
