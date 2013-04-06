@@ -106,6 +106,18 @@
 
 		</div>
 
+		<div id="contact">
+
+			<h2>Contact Me</h2>
+
+			<p>I've decided not to put a contact form here, if you want to contact me, here area list of methods:</p>
+			<ul>
+				<li>For general enquiries, send me a Tweet, <a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a>.</li>
+				<li>For contract or freelance enquiries, <a href="http://uk.linkedin.com/in/joelvardy" title="My Linkedin profile" data-analytics="Linkedin profile">my Linkedin profile</a>.</li>
+			</ul>
+
+		</div>
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>

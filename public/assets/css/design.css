@@ -116,6 +116,13 @@ div.project {
 		margin: 15px 0 5px;
 	}
 
+#contact {
+	margin-top: 40px;
+}
+	#contact p, #contact ul {
+		margin-top: 0.4em;
+	}
+
 
 @media screen and (max-width: 800px) {
 
