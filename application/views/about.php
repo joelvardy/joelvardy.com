@@ -110,7 +110,7 @@
 
 			<h2>Contact Me</h2>
 
-			<p>I've decided not to put a contact form here, if you want to contact me, here area list of methods:</p>
+			<p>Please use the methods below to contact me:</p>
 			<ul>
 				<li>For general enquiries, send me a Tweet, <a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a>.</li>
 				<li>For contract or freelance enquiries, <a href="http://uk.linkedin.com/in/joelvardy" title="My Linkedin profile" data-analytics="Linkedin profile">my Linkedin profile</a>.</li>
