@@ -6,13 +6,13 @@ html {
 body {
 	margin: 0 auto;
 	overflow-x: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 3.125em;
 	width: 70%;
 }
 
 header {
 	overflow: hidden;
-	padding-top: 50px;
+	padding-top: 3.125em;
 	position: relative;
 }
 	header img {
@@ -54,7 +54,7 @@ div.project {
 	border: 1px rgba(0,0,0,0.1) solid;
 	border-radius: 4px;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
-	margin-top: 50px;
+	margin-top: 3.125em;
 }
 	div.project img.header, div.project img.footer {
 		width: 100%;
@@ -84,7 +84,7 @@ div.project {
 
 
 #biography {
-	margin-top: 50px;
+	margin-top: 3.125em;
 }
 	#biography ul {
 		margin-top: 0.2em;
@@ -95,7 +95,7 @@ div.project {
 
 #photowall {
 	height: 400px;
-	margin-top: 50px;
+	margin-top: 3.125em;
 	overflow: hidden;
 }
 	#photowall div.inner {
@@ -108,16 +108,16 @@ div.project {
 		}
 
 #skills {
-	margin-top: 50px;
+	margin-top: 3.125em;
 }
 	#skills h4 {
 		border-bottom: 1px solid rgba(0,0,0,0.075);
 		display: inline-block;
-		margin: 15px 0 5px;
+		margin: 1em 0 0.3em;
 	}
 
 #contact {
-	margin-top: 40px;
+	margin-top: 2.5em;
 }
 	#contact p, #contact ul {
 		margin-top: 0.4em;

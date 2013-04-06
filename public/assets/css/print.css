@@ -10,7 +10,7 @@ div.project {
 	border: none;
 	border-radius: none;
 	box-shadow: none;
-	margin-top: 50px;
+	margin-top: 3.125em;
 }
 	div.project div.inner {
 		padding: 4%;
