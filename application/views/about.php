@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>TODO</title>
-		<meta name="description" content="TODO" />
+		<title>Joel Vardy - Contract PHP Developer in the UK</title>
+		<meta name="description" content="I'm a contract PHP developer with more than 4 years experience in OOP PHP &#38; JS serving the UK. View projects I have been involved in." />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<link rel="stylesheet" href="/assets/css/print.css" media="print" />

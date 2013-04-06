@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>TODO</title>
-		<meta name="description" content="TODO" />
+		<title>Houston, we've had a problem - 404</title>
+		<meta name="description" content="This page could not be found." />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<link rel="stylesheet" href="/assets/css/error.css" />
@@ -31,9 +31,8 @@
 
 			<h2>HTTP/1.1 404 Not Found</h2>
 
-			<p>You know the drill, this page can't be found.. If you were looking for something really important contact me and I might be able to help :)</p>
-			<p>Regards,<br />
-			Joel</p>
+			<p>You know the drill, this page can't be found.. If you were looking for something really important, contact me and I might be able to help :)</p>
+			<p>The quote "Houston, we have a problem" was never really said during the Apollo 13 mission, the actual statement was "Houston, we've had a problem" this is because the original quote makes it seem that the problem has already passed.</p>
 
 		</div>
 
