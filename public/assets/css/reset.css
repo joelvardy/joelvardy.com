@@ -39,6 +39,9 @@ img {
 ul, ol {
 	list-style-position: inside;
 }
+	ul li ul {
+		margin-left: 1em;
+	}
 
 a {
 	color: #ff8800;

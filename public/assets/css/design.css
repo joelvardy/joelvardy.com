@@ -107,6 +107,15 @@ div.project {
 			height: 200px;
 		}
 
+#skills {
+	margin-top: 50px;
+}
+	#skills h4 {
+		border-bottom: 1px solid rgba(0,0,0,0.075);
+		display: inline-block;
+		margin: 15px 0 5px;
+	}
+
 
 @media screen and (max-width: 800px) {
 
@@ -115,10 +124,10 @@ div.project {
 	}
 
 	#photowall {
-		height: 200px;
+		height: 240px;
 	}
 		#photowall div.inner img {
-			height: 100px;
+			height: 120px;
 		}
 
 }

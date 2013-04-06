@@ -65,6 +65,47 @@
 
 		<?php endif; ?>
 
+		<div id="skills">
+
+			<h2>Skills</h2>
+
+			<h4>Server Administration</h4>
+			<ul>
+				<li>Linux server setup, specifically <strong>Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
+				<li>Knowledge of installation, configuration and usage of: <strong>Apache 2</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, <strong>APC</strong>, and <strong>Memcached</strong>.</li>
+			</ul>
+
+			<h4>Version Control</h4>
+			<ul>
+				<li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
+				<li>I have also used <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
+			</ul>
+
+			<h4>Programming</h4>
+			<ul>
+				<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
+				<li>Working knowledge of several frameworks:
+					<ul>
+						<li><strong>CodeIgniter</strong> version 2.1</li>
+						<li><strong>Laravel</strong> version 3 and 4</li>
+						<li><strong>Slim</strong> version 2</li>
+					</ul>
+				</li>
+				<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code.</li>
+				<li>Ability to write efficient code, and ability to utilise caching mechanisms.</li>
+				<li>Commercial experience writing <strong>object oriented javascript</strong>.</li>
+			</ul>
+
+			<h4>Web Technologies</h4>
+			<ul>
+				<li>I write semantic markup and have a good understanding of <strong>HTML5</strong> elements.</li>
+				<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
+				<li>Experience of developing <strong>responsive designs</strong>.</li>
+				<li>A good knowledge of <strong>jQuery</strong>.</li>
+			</ul>
+
+		</div>
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
