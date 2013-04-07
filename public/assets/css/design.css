@@ -49,77 +49,77 @@ header {
 		}
 
 
-div.project {
+#projects div.project {
 	background: white;
 	border: 1px rgba(0,0,0,0.1) solid;
 	border-radius: 4px;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
 	margin-top: 3.125em;
 }
-	div.project img.header, div.project img.footer {
+	#projects div.project img.header, #projects div.project img.footer {
 		width: 100%;
 	}
-	div.project img.header {
+	#projects div.project img.header {
 		border-radius: 3px 3px 0 0;
 	}
-	div.project img.footer {
+	#projects div.project img.footer {
 		border-radius: 0 0 3px 3px;
 	}
-	div.project div.inner {
+	#projects div.project div.inner {
 		padding: 8%;
 	}
-		div.project div.inner ul {
+		#projects div.project div.inner ul {
 			margin-top: 0.2em;
 		}
-		div.project div.inner p, div.project div.inner ul.details {
+		#projects div.project div.inner p, #projects div.project div.inner ul.details {
 			margin-top: 0.8em;
 		}
-		div.project div.inner ul.details {
+		#projects div.project div.inner ul.details {
 			list-style-position: outside;
 			list-style-type: square;
 		}
-				div.project div.inner ul.details li strong {
+				#projects div.project div.inner ul.details li strong {
 					color: black;
 				}
 
 
-#biography {
+#about #biography {
 	margin-top: 3.125em;
 }
-	#biography ul {
+	#about #biography ul {
 		margin-top: 0.2em;
 	}
-	#biography p {
+	#about #biography p {
 		margin-top: 0.8em;
 	}
 
-#photowall {
+#about #photowall {
 	height: 400px;
 	margin-top: 3.125em;
 	overflow: hidden;
 }
-	#photowall div.inner {
+	#about #photowall div.inner {
 		overflow: hidden;
 		width: 140%;
 	}
-		#photowall div.inner img {
+		#about #photowall div.inner img {
 			float: left;
 			height: 200px;
 		}
 
-#skills {
+#about #skills {
 	margin-top: 3.125em;
 }
-	#skills h4 {
+	#about #skills h4 {
 		border-bottom: 1px solid rgba(0,0,0,0.075);
 		display: inline-block;
 		margin: 1em 0 0.3em;
 	}
 
-#contact {
+#about #contact {
 	margin-top: 2.5em;
 }
-	#contact p, #contact ul {
+	#about #contact p, #about #contact ul {
 		margin-top: 0.4em;
 	}
 
@@ -130,10 +130,10 @@ div.project {
 		width: 80%;
 	}
 
-	#photowall {
+	#about #photowall {
 		height: 240px;
 	}
-		#photowall div.inner img {
+		#about #photowall div.inner img {
 			height: 120px;
 		}
 
@@ -145,10 +145,10 @@ div.project {
 		width: 90%;
 	}
 
-	#photowall {
+	#about #photowall {
 		height: 160px;
 	}
-		#photowall div.inner img {
+		#about #photowall div.inner img {
 			height: 80px;
 		}
 
