@@ -33,7 +33,7 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 ### Update Flickr Feed
 
 ```
-*/10 * * * * php -f application/operations/update-flickr-feed.php
+*/10 * * * * php -f application/operations/update-flickr-sets.php
 ```
 
 [Joel Vardy][joelvardy]
