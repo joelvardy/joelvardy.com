@@ -93,16 +93,16 @@ header {
 		margin-top: 0.8em;
 	}
 
-#about #photowall {
+#photowall {
 	height: 400px;
 	margin-top: 3.125em;
 	overflow: hidden;
 }
-	#about #photowall div.inner {
+	#photowall div.inner {
 		overflow: hidden;
 		width: 140%;
 	}
-		#about #photowall div.inner img {
+		#photowall div.inner img {
 			float: left;
 			height: 200px;
 		}
@@ -123,6 +123,16 @@ header {
 		margin-top: 0.4em;
 	}
 
+#workspace h2 {
+	margin-top: 3.125em;
+}
+#workspace h3 {
+	margin-top: 2em;
+}
+#workspace p {
+	margin-top: 0.4em;
+}
+
 
 @media screen and (max-width: 800px) {
 
@@ -130,10 +140,10 @@ header {
 		width: 80%;
 	}
 
-	#about #photowall {
+	#photowall {
 		height: 240px;
 	}
-		#about #photowall div.inner img {
+		#photowall div.inner img {
 			height: 120px;
 		}
 
@@ -145,10 +155,10 @@ header {
 		width: 90%;
 	}
 
-	#about #photowall {
+	#photowall {
 		height: 160px;
 	}
-		#about #photowall div.inner img {
+		#photowall div.inner img {
 			height: 80px;
 		}
 
