@@ -7,6 +7,7 @@
 		<meta name="description" content="An overview of my lifehacker-featured workspace." />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
+		<link rel="author" href="https://plus.google.com/102110732747129499789" />
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
