@@ -16,7 +16,7 @@ Within the `/application/operations` directory are files which are executed as C
 
 ## Routes
 
-All files in the `application/routes` directory are loaded into the application, these files each contain routes which are mapped using my own [RESTful routing library][routes].
+All files in the `/application/routes` directory are loaded into the application, these files each contain routes which are mapped using my own [RESTful routing library][routes].
 
 ## Views
 
@@ -38,5 +38,5 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 
 [Joel Vardy][joelvardy]
 
-  [joelvardy]: http://joelvardy.com/
+  [joelvardy]: https://joelvardy.com/
   [routes]: https://packagist.org/packages/joelvardy/routes
