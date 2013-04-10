@@ -15,3 +15,7 @@ header nav a:not(.active) {
 	#projects div.project div.inner {
 		padding: 4%;
 	}
+
+#photowall {
+	display: none;
+}
