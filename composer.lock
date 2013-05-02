@@ -1,5 +1,9 @@
 {
-    "hash": "6e66c6dce0ad1fb0fb2a6dfb551e8649",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "f2f1dd4bc5923e9b5211949905790e4f",
     "packages": [
         {
             "name": "joelvardy/routes",
@@ -45,6 +49,49 @@
                 "routing"
             ],
             "time": "2013-03-26 11:59:53"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "0a639c1ccd47a4fe2dffc8c2565ef95b922941ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/0a639c1ccd47a4fe2dffc8c2565ef95b922941ec",
+                "reference": "0a639c1ccd47a4fe2dffc8c2565ef95b922941ec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2013-01-08 03:33:40"
         }
     ],
     "packages-dev": [
@@ -54,9 +101,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "sunra/php-simple-html-dom-parser": 20
+    },
     "platform": [
 
     ],

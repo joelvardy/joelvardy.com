@@ -1,6 +1,7 @@
 {
 	"require": {
-		"joelvardy/routes": "v1.1"
+		"joelvardy/routes": "v1.1",
+		"sunra/php-simple-html-dom-parser": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {

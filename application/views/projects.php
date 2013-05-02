@@ -27,8 +27,9 @@
 				<h4>Contract Web Developer</h4>
 			</hgroup>
 			<nav>
-				<a href="/" title="About Joel Vardy">About Me</a>
-				<a class="active" href="/projects" title="Projects I've been involved in">My Projects</a>
+				<a href="/" title="About Joel Vardy">About</a>
+				<a class="active" href="/projects" title="Projects I've been involved in">Projects</a>
+				<a href="/writing" title="TODO">Writing</a>
 			</nav>
 		</header>
 

@@ -21,6 +21,9 @@ class Template {
 	 */
 	public function render($view, $data = array(), $return_view = false) {
 
+		// Cast data as an array
+		$data = (array) $data;
+
 		// Extract data into variables
 		extract($data, EXTR_SKIP|EXTR_REFS);
 
