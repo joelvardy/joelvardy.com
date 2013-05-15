@@ -36,9 +36,7 @@ class Template {
 		$view_html = ob_get_clean();
 
 		// Return view HTML
-		if ($return_view) {
-			return $view_html;
-		}
+		if ($return_view) return $view_html;
 
 		echo $view_html;
 

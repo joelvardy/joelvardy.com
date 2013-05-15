@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>The Writings of a PHP Developer</title>
-		<meta name="description" content="The opinions expressed here represent my own and not those of my employer." />
+		<meta name="description" content="Articles, tutorials, and opinions written by Joel Vardy about various web development topics." />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<link rel="stylesheet" href="/assets/css/print.css" media="print" />
