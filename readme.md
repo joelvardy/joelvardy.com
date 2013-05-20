@@ -28,14 +28,6 @@ The `/initialisation.php` file defines paths, autoloading, and loads the configu
 
 All requests (which are not valid resources) are routed to the `/public/index.php` file, this file loads all of the routes, the matching route will have a callback which is then executed.
 
-## CRON Jobs
-
-### Update Flickr Feed
-
-```
-*/10 * * * * php -f application/operations/update-flickr-sets.php
-```
-
 [Joel Vardy][joelvardy]
 
   [joelvardy]: https://joelvardy.com/

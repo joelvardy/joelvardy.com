@@ -93,19 +93,15 @@ header {
 		margin-top: 0.8em;
 	}
 
-#photowall {
+div.photo.full-width {
+	background-position: center center;
+	background-size: cover;
 	height: 400px;
 	margin-top: 3.125em;
-	overflow: hidden;
 }
-	#photowall div.inner {
-		overflow: hidden;
-		width: 140%;
+	div.photo.full-width img {
+		width: 100%;
 	}
-		#photowall div.inner img {
-			float: left;
-			height: 200px;
-		}
 
 #about #skills {
 	margin-top: 3.125em;
@@ -178,13 +174,6 @@ header {
 		width: 80%;
 	}
 
-	#photowall {
-		height: 240px;
-	}
-		#photowall div.inner img {
-			height: 120px;
-		}
-
 }
 
 @media screen and (max-width: 600px) {
@@ -192,12 +181,5 @@ header {
 	body {
 		width: 90%;
 	}
-
-	#photowall {
-		height: 160px;
-	}
-		#photowall div.inner img {
-			height: 80px;
-		}
 
 }

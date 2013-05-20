@@ -16,6 +16,6 @@ header nav a:not(.active) {
 		padding: 4%;
 	}
 
-#photowall {
+div.photo.full-width {
 	display: none;
 }

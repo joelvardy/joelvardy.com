@@ -26,20 +26,25 @@ Zepto(function($) {
 	});
 
 
-	// Style photowall
-	var photowall = $('#photowall');
-	if (photowall.length !== 0) {
+	// Style full width images
+	var fullWidthImages = function(event) {
+		$('div.photo.full-width').each(function() {
 
-		// Extend to edges of page
-		var positionPhotowall = function() {
+			// Convert image tags into background images
+			if (null == event) {
+				$(this).css('background-image', 'url('+$('img', this).attr('src')+')');
+				$('img', this).remove();
+			}
+
+			// Ensure photos are full width
 			var bodyMargin = Math.ceil(parseFloat($('body').css('margin-left')));
-			photowall.css('margin-left', -bodyMargin+'px');
-			photowall.css('margin-right', -bodyMargin+'px');
-		}
-		positionPhotowall();
-		$(window).bind('resize', positionPhotowall);
+			$(this).css('margin-left', -bodyMargin+'px');
+			$(this).css('margin-right', -bodyMargin+'px');
 
+		});
 	}
+	fullWidthImages();
+	$(window).bind('resize', fullWidthImages);
 
 
 });

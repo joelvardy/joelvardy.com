@@ -42,30 +42,12 @@
 				<li>I could be in the countryside <strong>mountain biking</strong>, I've attended the annual Fort William World Cup since 2010.</li>
 				<li>While doing these things it's likely I'll be also indulging in my love for  <strong>photography</strong>.</li>
 			</ul>
-			<?php if ($photos) : ?>
-				<p>Some of my photography is shown below:</p>
-			<?php endif; ?>
 
 		</div>
 
-		<?php if ($photos) : ?>
-
-			<div id="photowall">
-				<div class="inner">
-
-				<?php
-
-					shuffle($photos);
-					foreach ($photos as $photo) {
-						echo '<img alt="'.$photo->title.'" src="'.$photo->url->small.'" />';
-					}
-
-				?>
-
-				</div>
-			</div>
-
-		<?php endif; ?>
+		<div class="photo full-width">
+			<img src="/assets/img/joel-vardy-full-width.jpg" />
+		</div>
 
 		<div id="skills">
 

@@ -47,30 +47,19 @@
 		<p>Two of the supports would be used as a ladder; this meant my desk couldn't be quite as deep as the platform so it would be possible to put your feet on the rungs.</p>
 		<p>I decided to build some speakers and lighting into the platform, I used LED lighting so there was no fire hazard.</p>
 
-		<?php if ($photos) : ?>
-
-			<div id="photowall">
-				<div class="inner">
-
-				<?php
-
-					shuffle($photos);
-					foreach ($photos as $photo) {
-						echo '<img alt="'.$photo->title.'" src="'.$photo->url->small.'" />';
-					}
-
-				?>
-
-				</div>
-			</div>
-
-		<?php endif; ?>
+		<div class="photo full-width">
+			<img src="/assets/img/joel-vardy-workspace.jpg" />
+		</div>
 
 		<h3>Final Details</h3>
 
 		<p>I placed some holes for wires in the top and bottom left, centre, and top right - giving me plenty of flexibility for peripherals.</p>
 		<p>I wanted a room which was light and airy, I chose white for the walls, the woodwork is off white and the carpet is cream. There is a splash of colour so the wall opposite the desk is a bright green.</p>
 		<p>So many people want to know about the chair, it's a <strong>Kawasaki Paddock Chair</strong>.</p>
+
+		<h3>Photos</h3>
+
+		<p>The best place to view photos of my workspace is the <a href="http://www.flickr.com/photos/joel-vardy/sets/72157624035451737/" title="Workspace gallery on flickr" data-analytics="Workspace gallery">original flickr set</a> which was picked up by lifehacker.</p>
 
 		<h3>Frequently Asked Questions</h3>
 
