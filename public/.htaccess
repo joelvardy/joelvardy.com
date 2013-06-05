@@ -29,6 +29,6 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # One week
-<filesMatch ".(css|eot|svg|ttf|woff|jpg|js)$">
+<filesMatch ".(css|eot|svg|ttf|woff|ico|jpg|js)$">
 	Header set Cache-Control "max-age=604800, public, must-revalidate"
 </FilesMatch>
