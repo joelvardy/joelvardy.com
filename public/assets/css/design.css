@@ -183,3 +183,30 @@ div.photo.full-width {
 	}
 
 }
+
+
+@media print {
+
+	body {
+		width: 100%;
+	}
+
+	header nav a:not(.active) {
+		display: none;
+	}
+
+	#projects div.project {
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+		margin-top: 3.125em;
+	}
+		#projects div.project div.inner {
+			padding: 4%;
+		}
+
+	div.photo.full-width {
+		display: none;
+	}
+
+}
