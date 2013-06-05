@@ -1,50 +1,41 @@
-Zepto(function($) {
-
-
-	// Track external clicks (only run this if GA has loaded)
-	ga(function() {
-		$('body').on('click', 'a', function(event) {
-
-			var url, title;
-			title = $(this).attr('data-analytics');
-
-			if (title) {
+// Track external clicks (only run this if GA has loaded)
+ga(function() {
+	var anchors = document.getElementsByTagName('a');
+	for (var i = 0; i < anchors.length; i++) {
+		anchors[i].addEventListener('click', function(event) {
+			if (this.dataset.analytics) {
 
 				event.preventDefault();
 
-				url = $(this).attr('href');
-
-				ga('send', 'event', 'External', 'Exit Website', title, {
+				ga('send', 'event', 'External', 'Exit Website', this.dataset.analytics, {
 					'hitCallback': function() {
-						document.location.href = url;
+						document.location.href = this.href;
 					}
 				});
 
 			}
-
-		});
-	});
-
-
-	// Style full width images
-	var fullWidthImages = function(event) {
-		$('div.photo.full-width').each(function() {
-
-			// Convert image tags into background images
-			if (null == event) {
-				$(this).css('background-image', 'url('+$('img', this).attr('src')+')');
-				$('img', this).remove();
-			}
-
-			// Ensure photos are full width
-			var bodyMargin = Math.ceil(parseFloat($('body').css('margin-left')));
-			$(this).css('margin-left', -bodyMargin+'px');
-			$(this).css('margin-right', -bodyMargin+'px');
-
-		});
+		}, false);
 	}
-	fullWidthImages();
-	$(window).bind('resize', fullWidthImages);
-
-
 });
+
+
+// Style full width images
+var fullWidthImages = function(event) {
+	var imageContainer = document.querySelector('div.photo.full-width'),
+		image = imageContainer.querySelector('img');
+
+	// Convert image tags into background images
+	if (null == event) {
+		imageContainer.style.backgroundImage = 'url('+image.src+')';
+		image.remove();
+	}
+
+	// Ensure photos are full width
+	var body = document.querySelector('body'),
+		bodyMargin = Math.ceil(parseFloat(window.getComputedStyle(body).marginLeft));
+	imageContainer.style.marginLeft = -bodyMargin+'px';
+	imageContainer.style.marginRight = -bodyMargin+'px';
+
+}
+fullWidthImages();
+window.addEventListener('resize', fullWidthImages, false);

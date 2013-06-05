@@ -74,7 +74,6 @@
 		<p><strong>How much did this cost?</strong><br />
 		The total cost came to just over £900</p>
 
-		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

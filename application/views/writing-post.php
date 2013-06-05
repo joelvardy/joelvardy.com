@@ -33,7 +33,6 @@
 
 		<?php echo $post; ?>
 
-		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>
