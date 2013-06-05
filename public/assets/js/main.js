@@ -27,7 +27,7 @@ var fullWidthImages = function(event) {
 	// Convert image tags into background images
 	if (null == event) {
 		imageContainer.style.backgroundImage = 'url('+image.src+')';
-		image.remove();
+		image.parentNode.removeChild(image);
 	}
 
 	// Ensure photos are full width
