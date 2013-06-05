@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title><?php echo $meta_title; ?></title>
 		<meta name="description" content="<?php echo $meta_description; ?>" />
@@ -29,13 +28,13 @@
 			<nav>
 				<a href="/" title="About Joel Vardy">About</a>
 				<a href="/projects" title="Projects I've been involved in">Projects</a>
-				<a class="active" href="/writing" title="TODO">Writing</a>
+				<a class="active" href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
 		<?php echo $post; ?>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

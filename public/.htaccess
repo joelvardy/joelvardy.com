@@ -3,6 +3,8 @@ AddType application/octet-stream .ttf
 AddType application/x-font-woff .woff
 # AddType application/font-woff .woff
 
+AddDefaultCharset utf-8
+
 <Files .htaccess>
 	order allow,deny
 	deny from all
@@ -25,3 +27,8 @@ AddType application/x-font-woff .woff
 	RewriteRule ^ index.php [L]
 
 </IfModule>
+
+# One week
+<filesMatch ".(css|eot|svg|ttf|woff|jpg|js)$">
+	Header set Cache-Control "max-age=604800, public, must-revalidate"
+</FilesMatch>

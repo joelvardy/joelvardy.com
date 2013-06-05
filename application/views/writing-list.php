@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>The Writings of a PHP Developer</title>
 		<meta name="description" content="Articles, tutorials, and opinions written by Joel Vardy about various web development topics." />
@@ -29,7 +28,7 @@
 			<nav>
 				<a href="/" title="About Joel Vardy">About</a>
 				<a href="/projects" title="Projects I've been involved in">Projects</a>
-				<a class="active" href="/writing" title="TODO">Writing</a>
+				<a class="active" href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
@@ -41,7 +40,7 @@
 			</a>
 		<?php endforeach; ?>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Workspace of a PHP Developer</title>
 		<meta name="description" content="An overview of my lifehacker-featured workspace." />
@@ -28,7 +27,7 @@
 			<nav>
 				<a href="/" title="About Joel Vardy">About</a>
 				<a href="/projects" title="Projects I've been involved in">Projects</a>
-				<a href="/writing" title="TODO">Writing</a>
+				<a href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
@@ -75,7 +74,7 @@
 		<p><strong>How much did this cost?</strong><br />
 		The total cost came to just over £900</p>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Joel Vardy - Contract PHP Developer in the UK</title>
 		<meta name="description" content="I'm a contract PHP developer with more than 4 years experience in OOP PHP &#38; JS serving the UK. View projects I have been involved in." />
@@ -29,7 +28,7 @@
 			<nav>
 				<a class="active" href="/" title="About Joel Vardy">About</a>
 				<a href="/projects" title="Projects I've been involved in">Projects</a>
-				<a href="/writing" title="TODO">Writing</a>
+				<a href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
@@ -102,7 +101,7 @@
 
 		</div>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+		<script src="/assets/js/zepto.min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Houston, we've had a problem - 404</title>
 		<meta name="description" content="This page could not be found." />
@@ -24,7 +23,7 @@
 			<nav>
 				<a href="/" title="About Joel Vardy">About</a>
 				<a href="/projects" title="Projects I've been involved in">Projects</a>
-				<a href="/writing" title="TODO">Writing</a>
+				<a href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
