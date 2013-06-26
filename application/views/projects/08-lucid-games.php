@@ -8,7 +8,7 @@
 
 		<ul class="details">
 			<li><strong>Project Type:</strong> Contract Work</li>
-			<li><strong>Date:</strong> October 2012 - Present</li>
+			<li><strong>Date:</strong> October 2012 - June 2013</li>
 		</ul>
 
 		<p>My time at Lucid Games has been spent working on a currently unreleased iOS game.</p>
