@@ -6,6 +6,7 @@
 		<meta name="description" content="<?php echo $meta_description; ?>" />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
+		<link rel="stylesheet" href="/assets/css/prism.css" />
 		<link rel="author" href="https://plus.google.com/102110732747129499789" />
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -34,5 +35,6 @@
 		<?php echo $post; ?>
 
 		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/prism.js"></script>
 	</body>
 </html>
