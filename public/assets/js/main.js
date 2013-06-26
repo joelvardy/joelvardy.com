@@ -21,8 +21,12 @@ ga(function() {
 
 // Style full width images
 var fullWidthImages = function(event) {
-	var imageContainer = document.querySelector('div.photo.full-width'),
-		image = imageContainer.querySelector('img');
+
+	// Select full with photo and ensure one exists
+	var imageContainer = document.querySelector('div.photo.full-width');
+	if ( ! imageContainer) return false;
+
+	var image = imageContainer.querySelector('img');
 
 	// Convert image tags into background images
 	if (null == event) {
