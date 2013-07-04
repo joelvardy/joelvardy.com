@@ -5,11 +5,13 @@ ga(function() {
 		anchors[i].addEventListener('click', function(event) {
 			if (this.dataset.analytics) {
 
+				var _this = this;
+
 				event.preventDefault();
 
 				ga('send', 'event', 'External', 'Exit Website', this.dataset.analytics, {
 					'hitCallback': function() {
-						document.location.href = this.href;
+						document.location.href = _this.href;
 					}
 				});
 
