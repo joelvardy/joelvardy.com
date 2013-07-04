@@ -3,7 +3,7 @@
 	<h2>JavaScript Image Upload</h2>
 	<h4>Posted: <date>4th July 2013</date></h4>
 
-	<p>Most peoples upload speed is far slower than their download speed. In an effort to reduce the users waiting time, and the server load, I'm going to resize images in the browser, before uploading them.</p>
+	<p>Most peoples upload speed is far slower than their download speed. In an effort to reduce the users waiting time, and the server load, I'm going to resize images in the browser before uploading them. By doing this you can easily achieve a 90% bandwidth saving.</p>
 	<p>I have written a brief demo which allows you to select a number of images, and upload them on the fly. However the JavaScript also uses the HTML5 canvas API to resize the images in the browser before being uploaded.</p>
 
 	<h3>Why Do this?</h3>
