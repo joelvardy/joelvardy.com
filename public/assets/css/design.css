@@ -177,6 +177,25 @@ div.photo.full-width {
 		padding: 0.5em 1em;
 		tab-size: 4;
 	} */
+	#writing-post div.post table {
+		border-collapse: collapse;
+		margin-top: 0.8em;
+		width: 100%;
+	}
+		#writing-post div.post table thead {
+			background: #222;
+			color: white;
+			font-weight: bold;
+		}
+			#writing-post div.post table tbody tr {
+				background: rgba(0,0,0,0.025);
+			}
+			#writing-post div.post table tbody tr:nth-child(even) {
+				background: rgba(0,0,0,0.05);
+			}
+		#writing-post div.post table td {
+			padding: 1% 2%;
+		}
 	#writing-post div.post img {
 		display: block;
 		margin: 1em 0;
