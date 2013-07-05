@@ -12,7 +12,7 @@
 		</ul>
 
 		<p>My time at Lucid Games has been spent working on a currently unreleased iOS game.</p>
-		<p>Initially I was working on writing and maintaining object oriented javascript, I learnt a lot doing this, and it has lead on to me writing my own javascript applications and using node.js</p>
+		<p>Initially I was working on writing and maintaining object oriented JavaScript. I learnt a lot doing this and it has lead on to me writing my own JavaScript / node.js applications.</p>
 		<p>As time went on I took up more of a consultant role, focused on the server side code, mainly relating to stability, and API features.</p>
 
 	</div>

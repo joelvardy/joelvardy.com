@@ -75,7 +75,7 @@
 				</li>
 				<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code.</li>
 				<li>Ability to write efficient code, and ability to utilise caching mechanisms.</li>
-				<li>Commercial experience writing <strong>object oriented javascript</strong>.</li>
+				<li>Commercial experience writing <strong>object oriented JavaScript</strong>.</li>
 			</ul>
 
 			<h4>Web Technologies</h4>
@@ -95,7 +95,7 @@
 			<p>The best ways to get in touch are:</p>
 			<ul>
 				<li><a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a> - Twitter is usually the quickest method.</li>
-				<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - sometimes emails sit in my inbox for a few weeks.</li>
+				<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - sometimes email is just easier.</li>
 			</ul>
 
 		</div>
