@@ -92,10 +92,10 @@
 
 			<h2>Contact Me</h2>
 
-			<p>Please use the methods below to contact me:</p>
+			<p>The best ways to get in touch are:</p>
 			<ul>
-				<li>For general enquiries, send me a Tweet, <a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a>.</li>
-				<li>For contract or freelance enquiries, <a href="http://uk.linkedin.com/in/joelvardy" title="My Linkedin profile" data-analytics="Linkedin profile">my Linkedin profile</a>.</li>
+				<li><a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a> - Twitter is usually the quickest method.</li>
+				<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - sometimes emails sit in my inbox for a few weeks.</li>
 			</ul>
 
 		</div>
