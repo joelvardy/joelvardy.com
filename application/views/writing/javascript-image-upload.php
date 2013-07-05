@@ -18,7 +18,7 @@
 	<p>My demo uses vanilla JavaScript and will only work on modern browsers, it is available at <a href="http://demo.joelvardy.com/uploads/" title="JavaScript image upload demo" data-analytics="JavaScript image upload demo">demo.joelvardy.com/uploads</a> - upload some (large) images, and see what you think.</p>
 
 	<h3>The Benefits</h3>
-	<p>Because of the resizing there isn't a linear size saving, however the results of uploading several images are shown below:</p>
+	<p>Because of the resizing there isn't a linear size saving, however I uploaded a few different size images with the <code class="langiage-js">max_size</code> variable set to 1200px - the results are shown below:</p>
 	<table>
 		<thead>
 			<tr>
@@ -45,7 +45,7 @@
 			</tr>
 		</tbody>
 	</table>
-	<p>As you can see if someone uploads a 7.5MB image from their digital camera, there is a massive saving in upload time.</p>
+	<p>As you can see there are large savings to be made. While the quality is sometimes not optimal, you could upload the image twice the size you need, and downscale it on the server.</p>
 
 	<h3>The Source</h3>
 	<p>You can view / use the source code however you like, it is <a href="https://github.com/joelvardy/Javascript-image-upload" title="JavaScript image upload repository" data-analytics="JavaScript image upload repo">available on GitHub</a>.</p>
