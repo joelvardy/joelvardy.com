@@ -3,20 +3,63 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f2f1dd4bc5923e9b5211949905790e4f",
+    "hash": "a8ca3164b7bce86e9b8d27a604e8ae28",
     "packages": [
+        {
+            "name": "joelvardy/config",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joelvardy/config.git",
+                "reference": "dcabc3b081f755b4ce0174f70837c934843c7efe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joelvardy/config/zipball/dcabc3b081f755b4ce0174f70837c934843c7efe",
+                "reference": "dcabc3b081f755b4ce0174f70837c934843c7efe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Joelvardy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Vardy",
+                    "email": "info@joelvardy.com",
+                    "homepage": "https://joelvardy.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Application configuration library.",
+            "homepage": "https://github.com/joelvardy/config",
+            "keywords": [
+                "config",
+                "configuration"
+            ],
+            "time": "2013-09-13 11:58:48"
+        },
         {
             "name": "joelvardy/routes",
             "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/routes.git",
-                "reference": "v1.1"
+                "reference": "5e61b70451cab49abfb948b7efaa3eb60f0a7832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/routes/zipball/v1.1",
-                "reference": "v1.1",
+                "url": "https://api.github.com/repos/joelvardy/routes/zipball/5e61b70451cab49abfb948b7efaa3eb60f0a7832",
+                "reference": "5e61b70451cab49abfb948b7efaa3eb60f0a7832",
                 "shasum": ""
             },
             "require": {
@@ -102,6 +145,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "joelvardy/config": 20,
         "sunra/php-simple-html-dom-parser": 20
     },
     "platform": [

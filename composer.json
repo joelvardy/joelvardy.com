@@ -1,5 +1,6 @@
 {
 	"require": {
+		"joelvardy/config": "dev-master",
 		"joelvardy/routes": "v1.1",
 		"sunra/php-simple-html-dom-parser": "dev-master"
 	},
