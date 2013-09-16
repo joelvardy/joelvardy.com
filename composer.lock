@@ -3,20 +3,65 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a8ca3164b7bce86e9b8d27a604e8ae28",
+    "hash": "45dc5659b557871eeb953c0ffc2e1bf4",
     "packages": [
+        {
+            "name": "joelvardy/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joelvardy/cache.git",
+                "reference": "b3d17f934c902db29071f2f177c264431b845978"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joelvardy/cache/zipball/b3d17f934c902db29071f2f177c264431b845978",
+                "reference": "b3d17f934c902db29071f2f177c264431b845978",
+                "shasum": ""
+            },
+            "require": {
+                "joelvardy/config": "dev-master",
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Joelvardy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Vardy",
+                    "email": "info@joelvardy.com",
+                    "homepage": "https://joelvardy.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Database connection library.",
+            "homepage": "https://github.com/joelvardy/cache",
+            "keywords": [
+                "cache",
+                "caching",
+                "memcached"
+            ],
+            "time": "2013-09-13 22:00:00"
+        },
         {
             "name": "joelvardy/config",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/config.git",
-                "reference": "dcabc3b081f755b4ce0174f70837c934843c7efe"
+                "reference": "56b1de95174100ef38e3155cb63139234eaee75e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/config/zipball/dcabc3b081f755b4ce0174f70837c934843c7efe",
-                "reference": "dcabc3b081f755b4ce0174f70837c934843c7efe",
+                "url": "https://api.github.com/repos/joelvardy/config/zipball/56b1de95174100ef38e3155cb63139234eaee75e",
+                "reference": "56b1de95174100ef38e3155cb63139234eaee75e",
                 "shasum": ""
             },
             "require": {
@@ -46,20 +91,20 @@
                 "config",
                 "configuration"
             ],
-            "time": "2013-09-13 11:58:48"
+            "time": "2013-09-13 18:29:25"
         },
         {
             "name": "joelvardy/routes",
-            "version": "v1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/routes.git",
-                "reference": "5e61b70451cab49abfb948b7efaa3eb60f0a7832"
+                "reference": "12bfea6782a557cd8daf9e15add3f8d52bad03a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/routes/zipball/5e61b70451cab49abfb948b7efaa3eb60f0a7832",
-                "reference": "5e61b70451cab49abfb948b7efaa3eb60f0a7832",
+                "url": "https://api.github.com/repos/joelvardy/routes/zipball/12bfea6782a557cd8daf9e15add3f8d52bad03a9",
+                "reference": "12bfea6782a557cd8daf9e15add3f8d52bad03a9",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +136,7 @@
                 "route",
                 "routing"
             ],
-            "time": "2013-03-26 11:59:53"
+            "time": "2013-05-29 13:00:31"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -146,6 +191,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "joelvardy/config": 20,
+        "joelvardy/cache": 20,
+        "joelvardy/routes": 20,
         "sunra/php-simple-html-dom-parser": 20
     },
     "platform": [

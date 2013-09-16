@@ -1,7 +1,8 @@
 {
 	"require": {
 		"joelvardy/config": "dev-master",
-		"joelvardy/routes": "v1.1",
+		"joelvardy/cache": "dev-master",
+		"joelvardy/routes": "dev-master",
 		"sunra/php-simple-html-dom-parser": "dev-master"
 	},
 	"autoload": {

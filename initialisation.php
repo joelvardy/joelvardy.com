@@ -1,11 +1,7 @@
 <?php
 
-// Set error reporting
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
-// Start user session
-session_start();
+// Turn off error reporting
+error_reporting(0);
 
 // Set PHP timezone
 date_default_timezone_set('Europe/London');

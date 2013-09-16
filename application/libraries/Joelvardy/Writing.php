@@ -34,7 +34,7 @@ class Writing {
 	public function readPosts() {
 
 		// Read from cache
-		$posts = Cache::get('writing_posts');
+		$posts = Cache::fetch('writing_posts');
 		if ( ! empty($posts)) return $posts;
 
 		// Initialise classes
@@ -73,7 +73,7 @@ class Writing {
 		$posts = array_reverse($posts);
 
 		// Save in cache for 5 minutes
-		Cache::set('writing_posts', $posts, (60 * 5));
+		Cache::store('writing_posts', $posts, (60 * 5));
 
 		return $posts;
 
