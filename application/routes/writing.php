@@ -6,20 +6,15 @@ use Joelvardy\Writing;
 $routes->get('/writing', function () {
 
 	// Initialise classes
-	$template = new Template();
 	$writing = new Writing();
 
-	$data['posts'] = $writing->readPosts();
-
-	// Render the page
-	$template->render('writing-list.php', $data);
+	echo Template::build('writing-list')->data('posts', $writing->readPosts());
 
 });
 
 $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 
 	// Initialise classes
-	$template = new Template();
 	$writing = new Writing();
 
 	$postDetails = $writing->readPost($slug);
@@ -29,9 +24,8 @@ $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 
 	$data['meta_title'] = $postDetails->title;
 	$data['meta_description'] = $postDetails->intro;
-	$data['post'] = $template->render('writing/'.$postDetails->filename, array(), true);
+	$data['post'] = Template::build('writing/'.$postDetails->filename)->render();
 
-	// Render the page
-	$template->render('writing-post.php', $data);
+	echo Template::build('writing-post')->data($data);
 
 });

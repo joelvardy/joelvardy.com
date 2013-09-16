@@ -8,9 +8,7 @@ All configurations are located in the `/application/config` directory, I have de
 
 ## Libraries
 
-The `/application/libraries/Joelvardy` directory contains custom libraries written by myself, these are all PSR-0 compliant and use the composer autoloader.
-
-I also use several libraries I have written but which are managed by Composer, see the `composer.json` file.
+Most of the libraries I am using are loaded by composer because I use them in multiple projects (see the `composer.json` file) - however within the `/application/libraries/Joelvardy` directory there is a writing library, I have no need to use this elsewhere, so it is within the codebase, and uses the Composer autoloader.
 
 ## Operations
 

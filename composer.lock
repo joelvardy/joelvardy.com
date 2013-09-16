@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "45dc5659b557871eeb953c0ffc2e1bf4",
+    "hash": "d5bf53815da0ad143dd33b861499fa89",
     "packages": [
         {
             "name": "joelvardy/cache",
@@ -139,6 +139,50 @@
             "time": "2013-05-29 13:00:31"
         },
         {
+            "name": "joelvardy/template",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joelvardy/template.git",
+                "reference": "2373536cb44a441a459e2596d4ddabf4caadbb09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joelvardy/template/zipball/2373536cb44a441a459e2596d4ddabf4caadbb09",
+                "reference": "2373536cb44a441a459e2596d4ddabf4caadbb09",
+                "shasum": ""
+            },
+            "require": {
+                "joelvardy/config": "dev-master",
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Joelvardy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Vardy",
+                    "email": "info@joelvardy.com",
+                    "homepage": "https://joelvardy.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple vanilla PHP templating library.",
+            "homepage": "https://github.com/joelvardy/template",
+            "keywords": [
+                "template",
+                "templating"
+            ],
+            "time": "2013-09-16 14:10:28"
+        },
+        {
             "name": "sunra/php-simple-html-dom-parser",
             "version": "dev-master",
             "source": {
@@ -193,6 +237,7 @@
         "joelvardy/config": 20,
         "joelvardy/cache": 20,
         "joelvardy/routes": 20,
+        "joelvardy/template": 20,
         "sunra/php-simple-html-dom-parser": 20
     },
     "platform": [

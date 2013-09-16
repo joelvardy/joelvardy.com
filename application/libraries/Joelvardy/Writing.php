@@ -37,15 +37,12 @@ class Writing {
 		$posts = Cache::fetch('writing_posts');
 		if ( ! empty($posts)) return $posts;
 
-		// Initialise classes
-		$template = new Template();
-
 		$posts = array();
 
 		foreach (array_reverse(glob(VIEWS_PATH.'/writing/*.php')) as $post) {
 
-			$postFilename = pathinfo($post)['basename'];
-			$html = $template->render('writing/'.$postFilename, array(), true);
+			$postFile = pathinfo($post);
+			$html = Template::build('writing/'.$postFile['filename'])->render();
 			$dom = \Sunra\PhpSimple\HtmlDomParser::str_get_html($html);
 
 			$postTitle = $dom->find('h2', 0)->innertext;
@@ -57,7 +54,7 @@ class Writing {
 			if ($postDate < $_SERVER['REQUEST_TIME']) {
 				$posts[$postSlug] = (object) array(
 					'slug' => $postSlug,
-					'filename' => $postFilename,
+					'filename' => $postFile['filename'],
 					'title' => $postTitle,
 					'posted' => $postDate,
 					'intro' => $postIntro
