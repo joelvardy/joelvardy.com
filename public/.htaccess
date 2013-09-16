@@ -21,7 +21,6 @@ AddDefaultCharset utf-8
 	DirectorySlash Off
 
 	RewriteRule ^gallery.*$ / [R=301,L]
-	RewriteRule ^lightbox/$ https://github.com/joelvardy/Basic-jQuery-Lightbox-Plugin [R=301,L]
 
 	# Remove trailing slash
 	RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
