@@ -203,6 +203,17 @@ div.photo.full-width {
 	}
 
 
+#error-404 div.information {
+	margin-top: 3.125em;
+}
+	#error-404 div.information h2 {
+		color: #ff8800;
+	}
+	#error-404 div.information p {
+		margin-top: 1em;
+	}
+
+
 @media screen and (max-width: 800px) {
 
 	body {
