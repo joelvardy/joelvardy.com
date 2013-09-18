@@ -73,7 +73,7 @@
 						<li><strong>Slim</strong> version 2</li>
 					</ul>
 				</li>
-				<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code.</li>
+				<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code, I have also released several <a href="https://packagist.org/packages/joelvardy/" title="My Packagist Profile" data-analytics="Packagist Profile">Composer packages</a>.</li>
 				<li>Ability to write efficient code, and ability to utilise caching mechanisms.</li>
 				<li>Commercial experience writing <strong>object oriented JavaScript</strong>.</li>
 			</ul>
