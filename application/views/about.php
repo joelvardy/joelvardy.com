@@ -38,6 +38,7 @@
 			<ul>
 				<li>I might be <strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 				<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
+				<li>I've recently starting <strong>climbing</strong>, hopefully I keep up with it over Winter.</li>
 				<li>While doing these things it's likely I'll be also indulging in my love for  <strong>photography</strong>.</li>
 			</ul>
 
