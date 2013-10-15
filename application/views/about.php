@@ -52,18 +52,6 @@
 
 			<h2>Skills</h2>
 
-			<h4>Server Administration</h4>
-			<ul>
-				<li>Linux server setup, specifically <strong>Debian / Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
-				<li>Knowledge of installation and configuration of: <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, and <strong>Memcached</strong>.</li>
-			</ul>
-
-			<h4>Version Control</h4>
-			<ul>
-				<li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
-				<li>I have also used <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
-			</ul>
-
 			<h4>Programming</h4>
 			<ul>
 				<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
@@ -85,6 +73,18 @@
 				<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
 				<li>Experience of developing <strong>responsive designs</strong>.</li>
 				<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
+			</ul>
+
+			<h4>Server Administration</h4>
+			<ul>
+				<li>Linux server setup, specifically <strong>Debian / Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
+				<li>Knowledge of installation and configuration of: <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, and <strong>Memcached</strong>.</li>
+			</ul>
+
+			<h4>Version Control</h4>
+			<ul>
+				<li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
+				<li>I have also used <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
 			</ul>
 
 		</div>
