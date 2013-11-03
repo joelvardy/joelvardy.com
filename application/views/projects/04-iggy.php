@@ -1,4 +1,4 @@
-<div class="project">
+<div id="link-iggy" class="project">
 
 	<img class="header" alt="IGGY" src="/assets/img/projects/iggy-header.jpg" />
 

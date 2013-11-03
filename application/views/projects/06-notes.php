@@ -1,4 +1,4 @@
-<div class="project">
+<div id="link-notes" class="project">
 
 	<img class="header" alt="Notes App" src="/assets/img/projects/notes-header.jpg" />
 
