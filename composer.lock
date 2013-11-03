@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/cache.git",
-                "reference": "b3d17f934c902db29071f2f177c264431b845978"
+                "reference": "673635aa1f96e30acad907a94278a9e17afc8b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/cache/zipball/b3d17f934c902db29071f2f177c264431b845978",
-                "reference": "b3d17f934c902db29071f2f177c264431b845978",
+                "url": "https://api.github.com/repos/joelvardy/cache/zipball/673635aa1f96e30acad907a94278a9e17afc8b9b",
+                "reference": "673635aa1f96e30acad907a94278a9e17afc8b9b",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "caching",
                 "memcached"
             ],
-            "time": "2013-09-13 22:00:00"
+            "time": "2013-10-02 22:11:49"
         },
         {
             "name": "joelvardy/config",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/config.git",
-                "reference": "56b1de95174100ef38e3155cb63139234eaee75e"
+                "reference": "38679a3afda17ab62baf4fe829ee5f7f71922c11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/config/zipball/56b1de95174100ef38e3155cb63139234eaee75e",
-                "reference": "56b1de95174100ef38e3155cb63139234eaee75e",
+                "url": "https://api.github.com/repos/joelvardy/config/zipball/38679a3afda17ab62baf4fe829ee5f7f71922c11",
+                "reference": "38679a3afda17ab62baf4fe829ee5f7f71922c11",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
                 "config",
                 "configuration"
             ],
-            "time": "2013-09-13 18:29:25"
+            "time": "2013-10-02 22:08:31"
         },
         {
             "name": "joelvardy/routes",
@@ -99,12 +99,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/routes.git",
-                "reference": "12bfea6782a557cd8daf9e15add3f8d52bad03a9"
+                "reference": "16d0142849ad33d1779316bc978336f882e0073d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/routes/zipball/12bfea6782a557cd8daf9e15add3f8d52bad03a9",
-                "reference": "12bfea6782a557cd8daf9e15add3f8d52bad03a9",
+                "url": "https://api.github.com/repos/joelvardy/routes/zipball/16d0142849ad33d1779316bc978336f882e0073d",
+                "reference": "16d0142849ad33d1779316bc978336f882e0073d",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
                 "route",
                 "routing"
             ],
-            "time": "2013-05-29 13:00:31"
+            "time": "2013-10-03 14:26:50"
         },
         {
             "name": "joelvardy/template",
@@ -144,12 +144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelvardy/template.git",
-                "reference": "99c6ca785f37b6fc86fb63dd27f16a16747cc2f9"
+                "reference": "4a8a2b7ee24fece8a6f019e0a8d214b5f72a914a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelvardy/template/zipball/99c6ca785f37b6fc86fb63dd27f16a16747cc2f9",
-                "reference": "99c6ca785f37b6fc86fb63dd27f16a16747cc2f9",
+                "url": "https://api.github.com/repos/joelvardy/template/zipball/4a8a2b7ee24fece8a6f019e0a8d214b5f72a914a",
+                "reference": "4a8a2b7ee24fece8a6f019e0a8d214b5f72a914a",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 "template",
                 "templating"
             ],
-            "time": "2013-09-23 21:13:33"
+            "time": "2013-10-02 22:15:52"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
