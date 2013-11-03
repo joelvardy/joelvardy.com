@@ -1,4 +1,4 @@
-<div id="link-neonsix" class="project">
+<div id="neonsix" class="project">
 
 	<img class="header" alt="Neon Six" src="/assets/img/projects/neon-six-header.jpg" />
 

@@ -1,4 +1,4 @@
-<div id="link-gifit" class="project">
+<div id="gifit" class="project">
 
 	<div class="inner">
 

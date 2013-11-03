@@ -1,4 +1,4 @@
-<div id="link-highland-webcams" class="project">
+<div id="highland-webcams" class="project">
 
 	<img class="header" alt="Highland Webcams" src="/assets/img/projects/highland-webcams-header.jpg" />
 
