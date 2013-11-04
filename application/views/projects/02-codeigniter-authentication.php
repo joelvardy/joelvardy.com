@@ -1,4 +1,4 @@
-<divdiv id="ci-auth" class="project">
+<div id="ci-auth" class="project">
 
 	<div class="inner">
 
