@@ -34,3 +34,7 @@ AddDefaultCharset utf-8
 <filesMatch ".(css|eot|svg|ttf|woff|ico|jpg|js)$">
 	Header set Cache-Control "max-age=604800, public, must-revalidate"
 </FilesMatch>
+
+<IfModule mod_headers.c>
+	Header set Strict-Transport-Security "max-age=16070400;"
+</IfModule>
