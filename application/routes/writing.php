@@ -23,7 +23,7 @@ $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 	if ( ! $postDetails) return false;
 
 	$data['meta_title'] = $postDetails->title;
-	$data['meta_description'] = $postDetails->intro;
+	$data['meta_description'] = strip_tags($postDetails->intro);
 	$data['post'] = Template::build('writing/'.$postDetails->filename)->render();
 
 	echo Template::build('writing-post')->data($data);
