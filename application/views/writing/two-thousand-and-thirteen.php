@@ -6,7 +6,7 @@
 	<p>I've done so much in two thousand and thirteen; <strong>good</strong>, <strong>bad</strong>, <strong>sad</strong>, <strong>happy</strong>, <strong>important</strong>, and <strong>trivial</strong>. I'm going to keep a record of these things here, hopefully I'll look back at the list when I'm a little more decrepit.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/img/joel-vardy-full-width.jpg" />
+		<img src="/assets/img/2013/macbook-pro.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12">12<sup>th</sup> Jan</time>
 			<div class="details">
@@ -15,5 +15,7 @@
 			</div>
 		</div>
 	</div>
+
+	<p>TODO</p>
 
 </div>

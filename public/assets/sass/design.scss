@@ -216,13 +216,12 @@ div.photo.full-width {
 		width: 100%;
 	}
 	#writing-post div.post div.photo.event {
-		box-shadow: inset 0 0 75px black;
+		// box-shadow: inset 0 0 75px black;
 		margin: 1em 0;
 		position: relative;
 	}
 		#writing-post div.post div.photo.event:after {
-			background: orange;
-			background-image: linear-gradient(top, red 0%, blue 100%);
+			@include background-image(linear-gradient(transparent, black));
 			bottom: 0;
 			content: " ";
 			display: block;
@@ -230,6 +229,11 @@ div.photo.full-width {
 			position: absolute;
 			right: 0;
 			top: 300px;
+		}
+		#writing-post div.post div.photo.event div.inner {
+			background: orange;
+			margin: auto;
+			width: 70%;
 		}
 
 
