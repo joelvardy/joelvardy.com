@@ -250,7 +250,7 @@ div.photo.full-width {
 
 @media screen and (max-width: 800px) {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 80%;
 	}
 
@@ -258,7 +258,7 @@ div.photo.full-width {
 
 @media screen and (max-width: 600px) {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 90%;
 	}
 
@@ -267,7 +267,7 @@ div.photo.full-width {
 
 @media print {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 100%;
 	}
 
