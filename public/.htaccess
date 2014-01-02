@@ -30,9 +30,12 @@ AddDefaultCharset utf-8
 
 </IfModule>
 
-# One week
-<filesMatch ".(css|eot|svg|ttf|woff|ico|jpg|js)$">
-	Header set Cache-Control "max-age=604800, public, must-revalidate"
+<FilesMatch "\.(eot|svg|ttf|woff|ico|jpg)$">
+	Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<FilesMatch "\.(css|js)$">
+	Header set Cache-Control "max-age=604800, proxy-revalidate"
 </FilesMatch>
 
 <IfModule mod_headers.c>
