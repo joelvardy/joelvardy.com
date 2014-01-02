@@ -8,7 +8,7 @@
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/macbook-pro.jpg" />
 		<div class="inner">
-			<time datetime="2013-01-12">12<sup>th</sup> Jan</time>
+			<time datetime="2013-01-12"><span class="top">12<sup>th</sup></span><span class="bottom">Jan</span></time>
 			<div class="details">
 				<h5>Bought a MacBook Pro</h5>
 				<p>I was working at <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> where I was provided a Mac Mini and an iPad, I enjoyed using the Mac so much I decided to join the darkside.</p>
