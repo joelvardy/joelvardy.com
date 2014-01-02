@@ -10,10 +10,6 @@ All configurations are located in the `/application/config` directory, I have de
 
 Most of the libraries I am using are loaded by composer because I use them in multiple projects (see the `composer.json` file) - however within the `/application/libraries/Joelvardy` directory there is a writing library, I have no need to use this elsewhere, so it is within the codebase, and uses the Composer autoloader.
 
-## Operations
-
-Within the `/application/operations` directory are files which are executed as CRON jobs.
-
 ## Routes
 
 All files in the `/application/routes` directory are loaded into the application, these files each contain routes which are mapped using my own [RESTful routing library][routes].
@@ -27,6 +23,26 @@ The `/application/views` directory contains PHP files which are generally speaki
 The `/initialisation.php` file defines paths, autoloading, and loads the configurations.
 
 All requests (which are not valid resources) are routed to the `/public/index.php` file, this file loads all of the routes, the matching route will have a callback which is then executed.
+
+## Development
+
+### Local Server
+
+You can run a local server (for basic testing) using the following command:
+
+```bash
+php -S 0.0.0.0:1337 -t public
+```
+
+**Note:** you will need to locally run Composer before the above will work.
+
+### SASS
+
+I am using Compass to compile SASS into CSS, during development compass can watch for changed SASS files by running this command in the project root:
+
+```bash
+compass watch
+```
 
 [Joel Vardy][joelvardy]
 
