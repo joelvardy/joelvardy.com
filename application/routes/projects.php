@@ -1,6 +1,7 @@
 <?php
 
 use Joelvardy\Template;
+use Joelvardy\Output;
 
 $routes->get('/projects', function () {
 
@@ -10,6 +11,11 @@ $routes->get('/projects', function () {
 		$projects[] = Template::build('projects/'.pathinfo($project)['filename'])->render();
 	}
 
-	echo Template::build('projects')->data('projects', $projects);
+	echo Output::page(array(
+		'template' => 'templates/default',
+		'slug' => 'projects',
+		'title' => 'Contract, Freelance &#38; Personal Web Projects By Joel Vardy',
+		'description' => 'View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!'
+	), Template::build('projects')->data('projects', $projects));
 
 });

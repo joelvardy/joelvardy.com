@@ -1,9 +1,14 @@
 <?php
 
-use Joelvardy\Template;
+use Joelvardy\Output;
 
 $routes->get('/workspace', function () {
 
-	echo Template::build('workspace');
+	echo Output::page(array(
+		'template' => 'templates/default',
+		'slug' => 'workspace',
+		'title' => 'Workspace of a PHP Developer',
+		'description' => 'An overview of my lifehacker-featured workspace.'
+	), 'workspace');
 
 });
