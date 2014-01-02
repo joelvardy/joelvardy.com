@@ -247,7 +247,7 @@ div.photo.full-width {
 				height: 70px;
 				position: absolute;
 				right: 0;
-				top: 250px;
+				top: 225px;
 				width: 70px;
 			}
 				#writing-post div.post div.photo.event div.inner time span {
@@ -303,6 +303,10 @@ div.photo.full-width {
 
 	body, #writing-post div.post div.photo.event div.inner {
 		width: 90%;
+	}
+
+	#writing-post div.post div.photo.event div.inner div.details p {
+		display: none;
 	}
 
 }
