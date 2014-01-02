@@ -24,23 +24,25 @@ ga(function() {
 // Style full width images
 var fullWidthImages = function(event) {
 
-	// Select full with photo and ensure one exists
-	var imageContainer = document.querySelector('div.photo.full-width');
-	if ( ! imageContainer) return false;
+	var images = document.querySelectorAll('div.photo.full-width');
+	for (var i = 0; i < images.length; ++i) {
 
-	var image = imageContainer.querySelector('img');
+		var imageContainer = images[i];
+		var image = imageContainer.querySelector('img');
 
-	// Convert image tags into background images
-	if (null == event) {
-		imageContainer.style.backgroundImage = 'url('+image.src+')';
-		image.parentNode.removeChild(image);
+		// Convert image tags into background images (if this is not being called by resize event)
+		if (event == null) {
+			imageContainer.style.backgroundImage = 'url('+image.src+')';
+			image.parentNode.removeChild(image);
+		}
+
+		// Ensure photos are full width
+		var body = document.querySelector('body'),
+			bodyMargin = Math.ceil(parseFloat(window.getComputedStyle(body).marginLeft));
+		imageContainer.style.marginLeft = -bodyMargin+'px';
+		imageContainer.style.marginRight = -bodyMargin+'px';
+
 	}
-
-	// Ensure photos are full width
-	var body = document.querySelector('body'),
-		bodyMargin = Math.ceil(parseFloat(window.getComputedStyle(body).marginLeft));
-	imageContainer.style.marginLeft = -bodyMargin+'px';
-	imageContainer.style.marginRight = -bodyMargin+'px';
 
 }
 fullWidthImages();
