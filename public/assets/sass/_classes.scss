@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'SonusLight';
+	src: url('../font/sonus.eot');
+	src: url('../font/sonus.eot?#iefix') format('embedded-opentype'),
+		 url('../font/sonus.woff') format('woff'),
+		 url('../font/sonus.ttf') format('truetype'),
+		 url('../font/sonus.svg#SonusLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font_sonus {
+	font-family: 'SonusLight', Helvetica, Arial, sans-serif;
+}

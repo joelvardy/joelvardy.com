@@ -4,7 +4,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Contract, Freelance &#38; Personal Web Projects By Joel Vardy</title>
 		<meta name="description" content="View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!" />
-		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<link rel="author" href="https://plus.google.com/102110732747129499789" />
 		<script>

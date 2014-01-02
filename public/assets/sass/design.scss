@@ -1,0 +1,272 @@
+@import 'compass/reset';
+@import 'compass/css3';
+
+* {
+	@include box-sizing(border-box);
+}
+
+@import '_classes';
+@import '_elements';
+
+html {
+	background: #f2efeb;
+	color: #222;
+	@extend .font_sonus;
+	font-size: 100%;
+	line-height: 1.5em;
+	position: relative;
+}
+
+body {
+	margin: 0 auto;
+	overflow-x: hidden;
+	padding-bottom: 3.125em;
+	width: 70%;
+}
+
+header {
+	overflow: hidden;
+	padding-top: 3.125em;
+	position: relative;
+}
+	header img {
+		border-radius: 55px;
+		float: left;
+		width: 110px;
+	}
+	header hgroup {
+		float: left;
+		margin: 40px 0 0 15px;
+		text-shadow: white 0px 1px 0px;
+	}
+			header hgroup h1 a {
+				color: #222;
+			}
+	header nav {
+		position: absolute;
+		overflow: hidden;
+		right: 0;
+	}
+		header nav a {
+			color: #444;
+			float: left;
+			margin-left: 20px;
+			text-shadow: white 0px 1px 0px;
+			text-transform: uppercase;
+		}
+		header nav a:hover {
+			color: #222;
+		}
+		header nav a.active {
+			border-bottom: 2px #ff8800 solid;
+			color: #222;
+		}
+
+
+#projects div.project {
+	background: white;
+	border: 1px rgba(0,0,0,0.1) solid;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
+	margin-top: 3.125em;
+}
+	#projects div.project img.header, #projects div.project img.footer {
+		width: 100%;
+	}
+	#projects div.project img.header {
+		border-radius: 3px 3px 0 0;
+	}
+	#projects div.project img.footer {
+		border-radius: 0 0 3px 3px;
+	}
+	#projects div.project div.inner {
+		padding: 8%;
+	}
+		#projects div.project div.inner ul {
+			margin-top: 0.2em;
+		}
+		#projects div.project div.inner p, #projects div.project div.inner ul.details {
+			margin-top: 0.8em;
+		}
+		#projects div.project div.inner ul.details {
+			list-style-position: outside;
+			list-style-type: square;
+		}
+				#projects div.project div.inner ul.details li strong {
+					color: black;
+				}
+
+
+#about #biography {
+	margin-top: 3.125em;
+}
+	#about #biography ul {
+		margin-top: 0.2em;
+	}
+	#about #biography p {
+		margin-top: 0.8em;
+	}
+
+div.photo.full-width {
+	background-position: center center;
+	background-size: cover;
+	height: 400px;
+	margin-top: 3.125em;
+}
+	div.photo.full-width img {
+		width: 100%;
+	}
+
+#about #skills {
+	margin-top: 3.125em;
+}
+	#about #skills h4 {
+		border-bottom: 1px solid rgba(0,0,0,0.075);
+		display: inline-block;
+		margin: 1em 0 0.3em;
+	}
+
+#about #contact {
+	margin-top: 2.5em;
+}
+	#about #contact p, #about #contact ul {
+		margin-top: 0.4em;
+	}
+
+#workspace h2 {
+	margin-top: 3.125em;
+}
+#workspace h3 {
+	margin-top: 2em;
+}
+#workspace p {
+	margin-top: 0.4em;
+}
+
+#writing-list a.post {
+	color: #222;
+	display: block;
+	margin-top: 3.125em;
+}
+	#writing-list a.post h2 {
+		border-bottom: 1px solid rgba(0,0,0,0.075);
+		display: inline-block;
+	}
+	#writing-list a.post p {
+		margin-top: 0.4em;
+	}
+	#writing-list a.post p.posted {
+		color: #444;
+		margin-top: 0.2em;
+	}
+		#writing-list a.post p.posted strong {
+			color: #222;
+		}
+
+#writing-post div.post {
+
+}
+	#writing-post div.post h2 {
+		margin-top: 2.1em;
+	}
+	#writing-post div.post h3 {
+		margin-top: 1.5em;
+	}
+	#writing-post div.post p {
+		margin-top: 0.8em;
+	}
+		/* #writing-post div.post p code {
+			background: #272822;
+			border-radius: 2px;
+			color: white;
+			margin: 0 3px;
+			padding: 1px 5px 2px;
+		}
+	#writing-post div.post pre {
+		background: #272822;
+		border-radius: 3px;
+		color: white;
+		margin: 1em 0;
+		overflow: auto;
+		padding: 0.5em 1em;
+		tab-size: 4;
+	} */
+	#writing-post div.post table {
+		border-collapse: collapse;
+		margin-top: 0.8em;
+		width: 100%;
+	}
+		#writing-post div.post table thead {
+			background: #222;
+			color: white;
+			font-weight: bold;
+		}
+			#writing-post div.post table tbody tr {
+				background: rgba(0,0,0,0.025);
+			}
+			#writing-post div.post table tbody tr:nth-child(even) {
+				background: rgba(0,0,0,0.05);
+			}
+		#writing-post div.post table td {
+			padding: 1% 2%;
+		}
+	#writing-post div.post img {
+		display: block;
+		margin: 1em 0;
+		width: 100%;
+	}
+
+
+#error-404 div.information {
+	margin-top: 3.125em;
+}
+	#error-404 div.information h2 {
+		color: #ff8800;
+	}
+	#error-404 div.information p {
+		margin-top: 1em;
+	}
+
+
+@media screen and (max-width: 800px) {
+
+	body {
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	body {
+		width: 90%;
+	}
+
+}
+
+
+@media print {
+
+	body {
+		width: 100%;
+	}
+
+	header nav a:not(.active) {
+		display: none;
+	}
+
+	#projects div.project {
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+		margin-top: 3.125em;
+	}
+		#projects div.project div.inner {
+			padding: 4%;
+		}
+
+	div.photo.full-width {
+		display: none;
+	}
+
+}

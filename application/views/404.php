@@ -4,7 +4,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Houston, we've had a problem - 404</title>
 		<meta name="description" content="This page could not be found." />
-		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

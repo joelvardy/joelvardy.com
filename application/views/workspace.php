@@ -4,7 +4,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Workspace of a PHP Developer</title>
 		<meta name="description" content="An overview of my lifehacker-featured workspace." />
-		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/design.css" />
 		<link rel="author" href="https://plus.google.com/102110732747129499789" />
 		<script>
