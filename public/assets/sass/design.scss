@@ -215,6 +215,22 @@ div.photo.full-width {
 		margin: 1em 0;
 		width: 100%;
 	}
+	#writing-post div.post div.photo.event {
+		box-shadow: inset 0 0 75px black;
+		margin: 1em 0;
+		position: relative;
+	}
+		#writing-post div.post div.photo.event:after {
+			background: orange;
+			background-image: linear-gradient(top, red 0%, blue 100%);
+			bottom: 0;
+			content: " ";
+			display: block;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 300px;
+		}
 
 
 #error-404 div.information {
