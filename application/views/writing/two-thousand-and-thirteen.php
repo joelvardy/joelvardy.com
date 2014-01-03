@@ -137,7 +137,7 @@
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/mtb-crash.jpg" />
 		<div class="inner">
-			<time datetime="2013-09-29"><span class="top">29<sup>rd</sup></span><span class="bottom">Sep</span></time>
+			<time datetime="2013-09-29"><span class="top">29<sup>th</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
 				<h4>MTB Crash</h4>
 				<p>The annual trail maintenance had finished in Grenoside woods, the trails were great, but unfortunately the day ended with me in A and E.</p>
