@@ -139,7 +139,7 @@
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>This year I was introduced to Farmer Johns, a TODO.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/full-face.jpg" />
@@ -165,7 +165,9 @@
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>I started working at <a href="/projects#smrs" title="SMRS">SMRS</a>, an agency which provides recruitment advertising, as a web developer.</p>
+
+	<p>I bought my 2014 Fort William Mountain Bike World Cup ticket, I'm already looking forward to next years Scottish roadtrip.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/hovercrafting.jpg" />
