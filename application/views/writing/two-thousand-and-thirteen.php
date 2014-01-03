@@ -13,16 +13,16 @@
 			<time datetime="2013-01-12"><span class="top">12<sup>th</sup></span><span class="bottom">Jan</span></time>
 			<div class="details">
 				<h5>Bought a MacBook Pro</h5>
-				<p>I was working at <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> where I was provided a Mac Mini and an iPad, I enjoyed using the Mac so much I decided to join the darkside.</p>
+				<p>I was working at <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> where I was provided a Mac Mini and an iPad, I enjoyed using the Mac so much I decided to join the dark side.</p>
 			</div>
 		</div>
 	</div>
 
 	<p>I treated myself to a new GoPro, with the hope that I would finally capture some awesome skiing / biking shots.</p>
 
-	<p>I attended the second Summit Awesome hackathon in Mnachester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester Hackathon Timelapse">this timelapse</a> using my new GoPro.</p>
+	<p>I attended the second Summit Awesome hackathon in Manchester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester hackathon time-lapse">this time-lapse</a> using my new GoPro.</p>
 
-	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhaused when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong></p>
+	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhausted when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong></p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/skiing.jpg" />
@@ -50,6 +50,8 @@
 		</div>
 	</div>
 
+	<p>After refusing to use a music streaming service for so long, in April I finally gave in and started using Spotify, I haven't looked back since!</p>
+
 	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?">punting</a> on the river Cherwell, one of us didn't end up in the water.</p>
 
 	<div class="photo full-width event">
@@ -63,7 +65,7 @@
 		</div>
 	</div>
 
-	<p>I took time out from work, to cycle over to Derwent reservoir and whitness a Lancaster bomber perform a flypast.</p>
+	<p>I took time out from work, to cycle over to Derwent reservoir and witness a Lancaster bomber perform a flypast.</p>
 
 	<p>The weather was very nice from the end of May into the start of June, so I was out on my bike a lot, visiting the Derwent reservoir for a second time, Farmer Johns, and Style Cop within a week.</p>
 
@@ -72,8 +74,8 @@
 		<div class="inner">
 			<time datetime="2013-06-09"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
-				<h5>Scottish Roadtrip</h5>
-				<p>Since 2009 I've made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year we travelled up to <strong>Mabie Forrst</strong>, then headed to <strong>Fort William</strong>, and stopping off at <strong>Glentress</strong> on the way home.</p>
+				<h5>Scottish Road Trip</h5>
+				<p>Since 2009 I've made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year we travelled up to <strong>Mabie Forrest</strong>, then headed to <strong>Fort William</strong>, and stopping off at <strong>Glentress</strong> on the way home.</p>
 			</div>
 		</div>
 	</div>
@@ -86,7 +88,7 @@
 			<time datetime="2013-06-23"><span class="top">24<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
 				<h5>New Bike</h5>
-				<p>While at the Fort William Mountain Bike World Cup, I purchaced a new bike, she is called Kinky Kaylee :)</p>
+				<p>While at the Fort William Mountain Bike World Cup, I purchased a new bike, she is called Kinky Kaylee :)</p>
 			</div>
 		</div>
 	</div>
@@ -130,7 +132,7 @@
 		</div>
 	</div>
 
-	<p>I was relly enjoying mountain biking, even more so because I now had a GoPro and a great quality dSLR to document our adventures. Me and my brother were riding a local mini downhill track several times a week while the weather was nice.</p>
+	<p>I was really enjoying mountain biking, even more so because I now had a GoPro and a great quality dSLR to document our adventures. Me and my brother were riding a local mini downhill track several times a week while the weather was nice.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/mtb-crash.jpg" />
@@ -138,7 +140,7 @@
 			<time datetime="2013-09-29"><span class="top">29<sup>rd</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
 				<h5>MTB Crash</h5>
-				<p>The annual trail maintanance had finished in Grenoside woods, the trails were great, but unforunatly the day ended with me in A and E.</p>
+				<p>The annual trail maintenance had finished in Grenoside woods, the trails were great, but unfortunately the day ended with me in A and E.</p>
 			</div>
 		</div>
 	</div>
@@ -156,7 +158,7 @@
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>When I got my new bike in July I decided to start using Strava, in the six months I was using Strava, I recorded 32 rides covering over <strong>650km</strong>. My favoutite decent this year is Jacob's Ladder having ridden it three times in 2013.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/bonfire.jpg" />
@@ -171,7 +173,7 @@
 
 	<p>I started working at <a href="/projects#smrs" title="SMRS">SMRS</a>, an agency which provides recruitment advertising, as a web developer.</p>
 
-	<p>I bought my 2014 Fort William Mountain Bike World Cup ticket, I'm already looking forward to next years Scottish roadtrip.</p>
+	<p>I bought my 2014 Fort William Mountain Bike World Cup ticket, I'm already looking forward to next years Scottish road trip.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/hovercrafting.jpg" />
@@ -184,6 +186,6 @@
 		</div>
 	</div>
 
-	<p>I love getting something to build on Christmas day, this year I recieved a Lego Technic service truck, I created a timelapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck timelapse">build process</a>.</p>
+	<p>I love getting something to build on Christmas day, this year I received a Lego Technic service truck, I created a time-lapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck time-lapse">build process</a>.</p>
 
 </div>
