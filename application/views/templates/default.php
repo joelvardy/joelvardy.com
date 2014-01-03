@@ -1,3 +1,11 @@
+<!--
+
+	The source code for this website is publically available at:
+	https://github.com/joelvardy/joelvardy.com
+
+	If you want to hire me, get in touch: info@joelvardy.com
+
+-->
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
