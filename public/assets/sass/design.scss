@@ -215,6 +215,68 @@ div.photo.full-width {
 		margin: 1em 0;
 		width: 100%;
 	}
+	#writing-post div.post div.photo.event {
+		margin: 3.125em 0;
+		position: relative;
+		z-index: 97;
+	}
+		#writing-post div.post div.photo.event:after {
+			@include background-image(linear-gradient(transparent, black));
+			bottom: 0;
+			content: " ";
+			display: block;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 250px;
+			z-index: 98;
+		}
+		#writing-post div.post div.photo.event div.inner {
+			height: 100%;
+			margin: auto;
+			position: relative;
+			width: 70%;
+			z-index: 99;
+		}
+			#writing-post div.post div.photo.event div.inner time {
+				background: rgba(0,0,0,0.75);
+				border: 2px white solid;
+				@include border-radius(35px, 35px);
+				display: block;
+				height: 70px;
+				position: absolute;
+				right: 0;
+				top: 225px;
+				width: 70px;
+			}
+				#writing-post div.post div.photo.event div.inner time span {
+					color: white;
+					display: block;
+					text-align: center;
+				}
+				#writing-post div.post div.photo.event div.inner time span.top {
+					font-size: 1.5em;
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 15px;
+				}
+				#writing-post div.post div.photo.event div.inner time span.bottom {
+					left: 0;
+					position: absolute;
+					right: 0;
+					text-transform: uppercase;
+					top: 35px;
+				}
+			#writing-post div.post div.photo.event div.inner div.details {
+				color: white;
+				position: absolute;
+				top: 300px;
+			}
+				#writing-post div.post div.photo.event div.inner div.details h5 {
+					border-bottom: 1px white solid;
+					display: inline-block;
+				}
 
 
 #error-404 div.information {
@@ -230,7 +292,7 @@ div.photo.full-width {
 
 @media screen and (max-width: 800px) {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 80%;
 	}
 
@@ -238,8 +300,12 @@ div.photo.full-width {
 
 @media screen and (max-width: 600px) {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 90%;
+	}
+
+	#writing-post div.post div.photo.event div.inner div.details p {
+		display: none;
 	}
 
 }
@@ -247,7 +313,7 @@ div.photo.full-width {
 
 @media print {
 
-	body {
+	body, #writing-post div.post div.photo.event div.inner {
 		width: 100%;
 	}
 
