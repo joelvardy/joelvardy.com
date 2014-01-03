@@ -18,7 +18,9 @@
 		</div>
 	</div>
 
-	<p>I attended the second Summit Awesome hackathon in Mnachester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester Hackathon Timelapse">this timelapse</a>.</p>
+	<p>I treated myself to a new GoPro, with the hope that I would finally capture some awesome skiing / biking shots.</p>
+
+	<p>I attended the second Summit Awesome hackathon in Mnachester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester Hackathon Timelapse">this timelapse</a> using my new GoPro.</p>
 
 	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhaused when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong></p>
 
@@ -28,12 +30,14 @@
 			<time datetime="2013-02-18"><span class="top">18<sup>th</sup></span><span class="bottom">Feb</span></time>
 			<div class="details">
 				<h5>Enjoyed the Awesome Scottish Snow</h5>
-				<p>TODO</p>
+				<p>It was hard to choose the photo for this event, because I took so many great photos while I was up in Scotland for a week in February.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>I've wanted a dSLR which can record video for years, in 2012 I borrowed a good friends Canon 5D mk2, and in April I decided to buy my own.</p>
+
+	<p>I also went up to Scotland for a long weekend with my mum in March. After a day skiing at the Nevis Range we saw the wind would be too high for skiing the next day so we did an ice climbing taster session at Ice Factor at Kinlochleven.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/industry-conf.jpg" />
@@ -46,7 +50,7 @@
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?">punting</a> on the river Cherwell, one of us didn't end up in the water.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/berlin.jpg" />
@@ -61,36 +65,25 @@
 
 	<p>I took time out from work, to cycle over to Derwent reservoir and whitness a Lancaster bomber perform a flypast.</p>
 
+	<p>The weather was very nice from the end of May into the start of June, so I was out on my bike a lot, visiting the Derwent reservoir for a second time, Farmer Johns, and Style Cop within a week.</p>
+
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/scottish-roadtrip.jpg" />
 		<div class="inner">
 			<time datetime="2013-06-09"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
 				<h5>Scottish Roadtrip</h5>
-				<p>TODO</p>
+				<p>Since 2009 I've made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year we travelled up to <strong>Mabie Forrst</strong>, then headed to <strong>Fort William</strong>, and stopping off at <strong>Glentress</strong> on the way home.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>TODO</p>
-
-	<div class="photo full-width event">
-		<img src="/assets/img/2013/of-tales-untold.jpg" />
-		<div class="inner">
-			<time datetime="2013-07-13"><span class="top">13<sup>th</sup></span><span class="bottom">Jul</span></time>
-			<div class="details">
-				<h5>Of Tales Untold</h5>
-				<p>I went to a mini festival called <strong>Of Tales Untold</strong> in TODO.</p>
-			</div>
-		</div>
-	</div>
-
-	<p>TODO</p>
+	<p>I attended a Summit Awesome event in Leeds, at which I (as usual) got heavily inebriated, while <a href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/994293_10151508302973458_1397096882_n.jpg" title="Photo from Facebook">taking lots of photos</a>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/kinky-kaylee.jpg" />
 		<div class="inner">
-			<time datetime="2013-10-23"><span class="top">24<sup>th</sup></span><span class="bottom">Jun</span></time>
+			<time datetime="2013-06-23"><span class="top">24<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
 				<h5>New Bike</h5>
 				<p>While at the Fort William Mountain Bike World Cup, I purchaced a new bike, she is called Kinky Kaylee :)</p>
@@ -98,9 +91,20 @@
 		</div>
 	</div>
 
-	<p>I saw Fall Out Boy in Hamburg, I have been a fan for years, and was so happy when I heard they they were ending their hiatus late 2012, it was awesome to finally see them live!</p>
+	<p>Myself and a friend took part in a climbing introduction course at a local climbing wall, during the warm summer I started doing some bouldering out in Derbyshire with another friend.</p>
 
-	<p>While in Germany, I planned to go to Leeds Fest, the first <strong>real</strong> festival I've been to. The mud was horrific, the bands were great, lugging our stuff back across the ruined fields back to the bus was a struggle. But my highlight by far (as all of my friends know) was seeing Eminem perform live!</p>
+	<div class="photo full-width event">
+		<img src="/assets/img/2013/of-tales-untold.jpg" />
+		<div class="inner">
+			<time datetime="2013-07-13"><span class="top">13<sup>th</sup></span><span class="bottom">Jul</span></time>
+			<div class="details">
+				<h5>Of Tales Untold</h5>
+				<p>I went to a mini festival called <strong>Of Tales Untold</strong> in Nottinghamshire. Where my brother and some friends did some fire poi.</p>
+			</div>
+		</div>
+	</div>
+
+	<p>I saw Fall Out Boy in Hamburg, I have been a fan for years, and was so happy when I heard they they were ending their hiatus late 2012, it was awesome to finally see them live!</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/orkney.jpg" />
@@ -108,12 +112,12 @@
 			<time datetime="2013-08-15"><span class="top">15<sup>th</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
 				<h5>Orkney</h5>
-				<p>TODO</p>
+				<p>Me, my mum, and my sisters spent a week up in the Orkney Islands.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>While in Germany, I planned to go to Leeds Fest, the first <strong>real</strong> festival I've been to. The mud was horrific, the bands were great, lugging our stuff back across the ruined fields to the bus was a struggle. But my highlight by far (as all of my friends know) was seeing Eminem perform live!</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/prague.jpg" />
@@ -121,12 +125,12 @@
 			<time datetime="2013-08-31"><span class="top">31<sup>st</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
 				<h5>Czech Republic</h5>
-				<p>TODO</p>
+				<p>Me and my brother enjoyed shooting, and mountain biking while in the Czech Republic this summer.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>TODO</p>
+	<p>I was relly enjoying mountain biking, even more so because I now had a GoPro and a great quality dSLR to document our adventures. Me and my brother were riding a local mini downhill track several times a week while the weather was nice.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/mtb-crash.jpg" />
@@ -134,12 +138,12 @@
 			<time datetime="2013-09-29"><span class="top">29<sup>rd</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
 				<h5>MTB Crash</h5>
-				<p>TODO</p>
+				<p>The annual trail maintanance had finished in Grenoside woods, the trails were great, but unforunatly the day ended with me in A and E.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>This year I was introduced to Farmer Johns, a TODO.</p>
+	<p>This year I was introduced to Farmer Johns, a well maintained mountain bike park in Stockport. A week after my mountain bike crash I spectated a night race at Farmer Johns, it was great to get back out of the house and see some biking.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/full-face.jpg" />
@@ -147,7 +151,7 @@
 			<time datetime="2013-10-23"><span class="top">23<sup>rd</sup></span><span class="bottom">Oct</span></time>
 			<div class="details">
 				<h5>Back on my Bike</h5>
-				<p>TODO</p>
+				<p>As soon as I felt able to get back on my bike, that's what I did.</p>
 			</div>
 		</div>
 	</div>
@@ -160,7 +164,7 @@
 			<time datetime="2013-11-02"><span class="top">2<sup>nd</sup></span><span class="bottom">Nov</span></time>
 			<div class="details">
 				<h5>Bonfire</h5>
-				<p>TODO</p>
+				<p>I was slightly less help than usual, but it was great to join in building the family bonfire.</p>
 			</div>
 		</div>
 	</div>
@@ -175,11 +179,11 @@
 			<time datetime="2013-12-14"><span class="top">14<sup>th</sup></span><span class="bottom">Dec</span></time>
 			<div class="details">
 				<h5>Piloting a Hovercraft</h5>
-				<p>TODO</p>
+				<p>I went down to Shropshire to celebrate my friends birthday with an awesome activity day.</p>
 			</div>
 		</div>
 	</div>
 
-	<p>I love getting something to build on Christmas day, this year I recieved a Lego Technic service truck, I created a timelapse of the <a href="TODO" title="TODO">build process</a>.</p>
+	<p>I love getting something to build on Christmas day, this year I recieved a Lego Technic service truck, I created a timelapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck timelapse">build process</a>.</p>
 
 </div>
