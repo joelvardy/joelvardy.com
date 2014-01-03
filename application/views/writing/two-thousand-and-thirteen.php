@@ -20,7 +20,7 @@
 
 	<p>I treated myself to a new GoPro, with the hope that I would finally capture some awesome skiing / biking shots.</p>
 
-	<p>I attended the second Summit Awesome hackathon in Manchester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester hackathon time-lapse">this time-lapse</a> using my new GoPro.</p>
+	<p>I attended the second Summit Awesome hackathon in Manchester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester hackathon time-lapse" data-analytics="Manchester hackathon timelapse on Vimeo">this time-lapse</a> using my new GoPro.</p>
 
 	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhausted when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong>.</p>
 
