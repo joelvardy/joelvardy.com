@@ -22,7 +22,7 @@
 
 	<p>I attended the second Summit Awesome hackathon in Manchester, and while still high on energy drink put together <a href="https://vimeo.com/joelvardy/sa-hack-man-2013" title="Manchester hackathon time-lapse">this time-lapse</a> using my new GoPro.</p>
 
-	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhausted when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong></p>
+	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhausted when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/skiing.jpg" />
@@ -52,7 +52,7 @@
 
 	<p>After refusing to use a music streaming service for so long, in April I finally gave in and started using Spotify, I haven't looked back since!</p>
 
-	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?">punting</a> on the river Cherwell, one of us didn't end up in the water.</p>
+	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?">punting</a> on the river Cherwell, one of us didn't end up in the water. We also watched Derren Brown's svengali show, however I felt this was pretty disappointing.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/berlin.jpg" />
@@ -60,7 +60,7 @@
 			<time datetime="2013-05-10"><span class="top">10<sup>th</sup></span><span class="bottom">May</span></time>
 			<div class="details">
 				<h5>Berlin</h5>
-				<p>I visited Berlin twice in 2013, the first time was in May, the second, in August</p>
+				<p>I visited Berlin twice in 2013, the first time was in May, the second, in August.</p>
 			</div>
 		</div>
 	</div>
@@ -75,7 +75,7 @@
 			<time datetime="2013-06-09"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
 				<h5>Scottish Road Trip</h5>
-				<p>Since 2009 I've made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year we travelled up to <strong>Mabie Forrest</strong>, then headed to <strong>Fort William</strong>, and stopping off at <strong>Glentress</strong> on the way home.</p>
+				<p>We made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year the trip included <strong>Mabie Forrest</strong>, and <strong>Glentress</strong>.</p>
 			</div>
 		</div>
 	</div>
@@ -127,7 +127,7 @@
 			<time datetime="2013-08-31"><span class="top">31<sup>st</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
 				<h5>Czech Republic</h5>
-				<p>Me and my brother enjoyed shooting, and mountain biking while in the Czech Republic this summer.</p>
+				<p>Me and my brother enjoyed shooting in Prague, and mountain biking in &Scaron;pindler&#367;v Ml&yacute;n.</p>
 			</div>
 		</div>
 	</div>
@@ -158,7 +158,7 @@
 		</div>
 	</div>
 
-	<p>When I got my new bike in July I decided to start using Strava, in the six months I was using Strava, I recorded 32 rides covering over <strong>650km</strong>. My favoutite decent this year is Jacob's Ladder having ridden it three times in 2013.</p>
+	<p>When I got my new bike in July I decided to start using Strava, in the six months I was using Strava, I recorded 32 rides covering over <strong>650km</strong>. My favourite decent this year is Jacob's Ladder having ridden it three times in 2013.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/img/2013/bonfire.jpg" />
@@ -187,5 +187,7 @@
 	</div>
 
 	<p>I love getting something to build on Christmas day, this year I received a Lego Technic service truck, I created a time-lapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck time-lapse">build process</a>.</p>
+
+	<p>On a programming front, 2013 saw me start using Composer for package management in PHP, and node.js for running server side JavaScript. I'm hoping to increasingly use node.js in 2014.</p>
 
 </div>
