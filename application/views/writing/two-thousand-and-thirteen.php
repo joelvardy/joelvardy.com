@@ -12,7 +12,7 @@
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">12<sup>th</sup></span><span class="bottom">Jan</span></time>
 			<div class="details">
-				<h5>Bought a MacBook Pro</h5>
+				<h4>Bought a MacBook Pro</h4>
 				<p>I was working at <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> where I was provided a Mac Mini and an iPad, I enjoyed using the Mac so much I decided to join the dark side.</p>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 		<div class="inner">
 			<time datetime="2013-02-18"><span class="top">18<sup>th</sup></span><span class="bottom">Feb</span></time>
 			<div class="details">
-				<h5>Enjoyed the Awesome Scottish Snow</h5>
+				<h4>Enjoyed the Awesome Scottish Snow</h4>
 				<p>It was hard to choose the photo for this event, because I took so many great photos while I was up in Scotland for a week in February.</p>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 		<div class="inner">
 			<time datetime="2013-04-24"><span class="top">24<sup>th</sup></span><span class="bottom">Apr</span></time>
 			<div class="details">
-				<h5>Attended First Conference</h5>
+				<h4>Attended First Conference</h4>
 				<p>I was very happy to attend Industry Conf in Newcastle.</p>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
 		<div class="inner">
 			<time datetime="2013-05-10"><span class="top">10<sup>th</sup></span><span class="bottom">May</span></time>
 			<div class="details">
-				<h5>Berlin</h5>
+				<h4>Berlin</h4>
 				<p>I visited Berlin twice in 2013, the first time was in May, the second, in August.</p>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 		<div class="inner">
 			<time datetime="2013-06-09"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
-				<h5>Scottish Road Trip</h5>
+				<h4>Scottish Road Trip</h4>
 				<p>We made the annual pilgrimage to the Fort William Mountain Bike World Cup, this year the trip included <strong>Mabie Forrest</strong>, and <strong>Glentress</strong>.</p>
 			</div>
 		</div>
@@ -87,7 +87,7 @@
 		<div class="inner">
 			<time datetime="2013-06-23"><span class="top">24<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
-				<h5>New Bike</h5>
+				<h4>New Bike</h4>
 				<p>While at the Fort William Mountain Bike World Cup, I purchased a new bike, she is called Kinky Kaylee :)</p>
 			</div>
 		</div>
@@ -100,7 +100,7 @@
 		<div class="inner">
 			<time datetime="2013-07-13"><span class="top">13<sup>th</sup></span><span class="bottom">Jul</span></time>
 			<div class="details">
-				<h5>Of Tales Untold</h5>
+				<h4>Of Tales Untold</h4>
 				<p>I went to a mini festival called <strong>Of Tales Untold</strong> in Nottinghamshire. Where my brother and some friends did some fire poi.</p>
 			</div>
 		</div>
@@ -113,7 +113,7 @@
 		<div class="inner">
 			<time datetime="2013-08-15"><span class="top">15<sup>th</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
-				<h5>Orkney</h5>
+				<h4>Orkney</h4>
 				<p>Me, my mum, and my sisters spent a week up in the Orkney Islands.</p>
 			</div>
 		</div>
@@ -126,7 +126,7 @@
 		<div class="inner">
 			<time datetime="2013-08-31"><span class="top">31<sup>st</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
-				<h5>Czech Republic</h5>
+				<h4>Czech Republic</h4>
 				<p>Me and my brother enjoyed shooting in Prague, and mountain biking in &Scaron;pindler&#367;v Ml&yacute;n.</p>
 			</div>
 		</div>
@@ -139,7 +139,7 @@
 		<div class="inner">
 			<time datetime="2013-09-29"><span class="top">29<sup>rd</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
-				<h5>MTB Crash</h5>
+				<h4>MTB Crash</h4>
 				<p>The annual trail maintenance had finished in Grenoside woods, the trails were great, but unfortunately the day ended with me in A and E.</p>
 			</div>
 		</div>
@@ -152,7 +152,7 @@
 		<div class="inner">
 			<time datetime="2013-10-23"><span class="top">23<sup>rd</sup></span><span class="bottom">Oct</span></time>
 			<div class="details">
-				<h5>Back on my Bike</h5>
+				<h4>Back on my Bike</h4>
 				<p>As soon as I felt able to get back on my bike, that's what I did.</p>
 			</div>
 		</div>
@@ -165,7 +165,7 @@
 		<div class="inner">
 			<time datetime="2013-11-02"><span class="top">2<sup>nd</sup></span><span class="bottom">Nov</span></time>
 			<div class="details">
-				<h5>Bonfire</h5>
+				<h4>Bonfire</h4>
 				<p>I was slightly less help than usual, but it was great to join in building the family bonfire.</p>
 			</div>
 		</div>
@@ -180,7 +180,7 @@
 		<div class="inner">
 			<time datetime="2013-12-14"><span class="top">14<sup>th</sup></span><span class="bottom">Dec</span></time>
 			<div class="details">
-				<h5>Piloting a Hovercraft</h5>
+				<h4>Piloting a Hovercraft</h4>
 				<p>I went down to Shropshire to celebrate my friends birthday with an awesome activity day.</p>
 			</div>
 		</div>
