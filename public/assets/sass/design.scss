@@ -117,6 +117,22 @@ div.photo.full-width {
 		width: 100%;
 	}
 
+div.video {
+	height: 0;
+	position: relative;
+	margin-top: 3.125em;
+}
+div.video.aspect-10-9 {
+	padding-bottom: 56.25%;
+}
+	div.video iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
 #about #skills {
 	margin-top: 3.125em;
 }
