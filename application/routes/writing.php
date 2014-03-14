@@ -32,10 +32,10 @@ $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 		'template' => 'templates/default',
 		'slug' => 'writing-post',
 		'stylesheets' => array(
-			'/assets/css/vendor/prism.css'
+			'/assets/css/prism.css'
 		),
 		'scripts' => array(
-			'/assets/js/vendor/prism.js'
+			'/assets/js/vendor/prism.min.js'
 		),
 		'title' => $postDetails->title,
 		'description' => strip_tags($postDetails->intro)

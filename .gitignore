@@ -6,5 +6,7 @@ Desktop.ini
 # Composer
 /vendor
 
-# Compass
+# CodeKit
+config.codekit
+.codekit-cache
 .sass-cache
