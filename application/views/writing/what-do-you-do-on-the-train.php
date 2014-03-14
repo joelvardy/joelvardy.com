@@ -9,7 +9,7 @@
 		<li>Watch something on my iPad after a long day/week.</li>
 		<li>However I usually try to learn/play around with something new.</li>
 	</ul>
-	<p>I'm writing this post while on the train to Manchester, this is the 7th time I've been on this train this week.</p>
+	<p>I'm writing this post while on the train to Manchester, this is the 7th time I've been on the train this week.</p>
 
 	<h3>What Can I Work On?</h3>
 	<p>I think the train is a perfect time to play with a bite-sized demo, sure you can work on your side project, but your mind is not fully focused on the task in hand while you have people making noises around you, conductors checking tickets ect..</p>
