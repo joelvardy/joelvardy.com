@@ -5,7 +5,7 @@
 	<ul>
 		<li>I might be <strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 		<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
-		<li>I've recently starting <strong>climbing</strong>, hopefully I keep up with it over Winter.</li>
+		<li>I had also started <strong>climbing</strong> before I had a mountain bike accident which put me out of action.</li>
 		<li>While doing these things it's likely I'll be also indulging in my love for  <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>.</li>
 	</ul>
 
@@ -24,7 +24,7 @@
 		<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
 		<li>Working knowledge of several frameworks:
 			<ul>
-				<li><strong>CodeIgniter</strong> version 2.1</li>
+				<li><strong>CodeIgniter</strong> version 2.x</li>
 				<li><strong>Laravel</strong> version 3 and 4</li>
 				<li><strong>Slim</strong> version 2</li>
 			</ul>
