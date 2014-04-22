@@ -12,7 +12,7 @@
 			<li><strong>Date:</strong> December 2013 - Present</li>
 		</ul>
 
-		<p>While at SMRS I was involved in a large number of web projects, these ranged from simple websites, to content managed solutions, and custom integrations.</p>
+		<p>While at SMRS I was involved in the planning, development, and maintanace of a large number of web projects, these ranged from simple, static websites, to content managed solutions, and custom integrations.</p>
 
 	</div>
 
