@@ -11,7 +11,7 @@
 		<li>Send targets who have not achieved the goal an email after X minutes have passed.</li>
 	</ul>
 
-	<h3>Why Do this?</h3>
+	<h3>Why Do This?</h3>
 	<p>Users are researching products on your website, maybe adding it to their cart, but then might decide to search for a better price somewhere, want to go into a physical store, or simply get annoyed with your checkout process.</p>
 	<p>By capturing this users email address you can send them an email to remind them about items they have looked at, and maybe incentivise completing the checkout process.</p>
 
@@ -33,7 +33,7 @@ $('form.sign-up input[name=email]').on('change', function(event) {
 
 		$.post('./add-target.php', { email: event.target.value }, function(response){
 			// We don't really care what the response is.
-		})
+		});
 
 	}
 
