@@ -77,7 +77,7 @@ if ( ! mail($target->email, $subject, $message, $headers)) {
 		<li>Triggering analytics events when the target is identified.</li>
 		<li>After initially identifying the target, you could track each page they visit, identifying what they are interested in, and on what page they left.</li>
 	</ul>
-	<p>There are people far more qualified than me to talk about how to effectively re-engage users, take a look at <a href="http://moz.com/ugc/the-power-of-email-remarketing">the power of email remarketing</a> by Moz.</p>
+	<p>There are people far more qualified than me to talk about how to effectively re-engage users, take a look at <a href="http://moz.com/ugc/the-power-of-email-remarketing" title="The power of remargeting on Moz" data-analytics="The power of remargeting on Moz">the power of email remarketing</a> by Moz.</p>
 
 	<h3>Full Example</h3>
 	<p>You can view / use the example code however you like, it is <a href="https://github.com/joelvardy/re-engagement-emails" title="Re-engagement emails repository" data-analytics="Re-engagement emails repo">available on GitHub</a>.</p>
