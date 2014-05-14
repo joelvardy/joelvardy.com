@@ -76,6 +76,7 @@ if ( ! mail($target->email, $subject, $message, $headers)) {
 		<li>Storing the products which were in the cart (or were viewed by the user) so you can generate a more personal re-engagement email.</li>
 		<li>Triggering analytics events when the target is identified.</li>
 		<li>After initially identifying the target, you could track each page they visit, identifying what they are interested in, and on what page they left.</li>
+		<li>As above if you track each page they visit you can narrow down the time frame before you send them the re-engagement email. 5 minutes after their last page view for example - this may allow you to gain their sale before they buy an item from another online store.</li>
 	</ul>
 	<p>There are people far more qualified than me to talk about how to effectively re-engage users, take a look at <a href="http://moz.com/ugc/the-power-of-email-remarketing" title="The power of remargeting on Moz" data-analytics="The power of remargeting on Moz">the power of email remarketing</a> by Moz.</p>
 
