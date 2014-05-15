@@ -11,6 +11,7 @@
 	<p>Once you've installed the SSH Proxy utility, go to preferences and ensure the:
 	<ul>
 		<li><strong>Listening port</strong> is set to 7070</li>
+		<li><strong>Turn on proxy when started</strong> checkbox is ticked.</li>
 		<li><strong>Launch when logged in</strong> checkbox is ticked.</li>
 	</ul>
 	<div class="photo">
