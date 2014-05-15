@@ -107,6 +107,14 @@ header {
 		margin-top: 0.8em;
 	}
 
+div.photo {
+	margin: 1em 0;
+
+	img {
+		margin: auto;
+		max-width: 100%;
+	}
+}
 div.photo.full-width {
 	background-position: center center;
 	background-size: cover;
@@ -116,6 +124,11 @@ div.photo.full-width {
 	div.photo.full-width img {
 		width: 100%;
 	}
+
+video {
+	margin: 1em auto;
+	max-width: 100%;
+}
 
 div.video {
 	height: 0;
@@ -191,22 +204,6 @@ div.video.aspect-10-9 {
 	#writing-post div.post p {
 		margin-top: 0.8em;
 	}
-		/* #writing-post div.post p code {
-			background: #272822;
-			border-radius: 2px;
-			color: white;
-			margin: 0 3px;
-			padding: 1px 5px 2px;
-		}
-	#writing-post div.post pre {
-		background: #272822;
-		border-radius: 3px;
-		color: white;
-		margin: 1em 0;
-		overflow: auto;
-		padding: 0.5em 1em;
-		tab-size: 4;
-	} */
 	#writing-post div.post table {
 		border-collapse: collapse;
 		margin-top: 0.8em;
@@ -226,7 +223,7 @@ div.video.aspect-10-9 {
 		#writing-post div.post table td {
 			padding: 1% 2%;
 		}
-	#writing-post div.post img {
+	#writing-post div.post > img {
 		display: block;
 		margin: 1em 0;
 		width: 100%;
