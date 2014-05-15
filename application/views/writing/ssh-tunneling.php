@@ -35,4 +35,7 @@
 	</video>
 	<p><strong>Please note:</strong> this is my first ever screencast.</p>
 
+	<h3>/etc/hosts</h3>
+	<p>When your traffic is being tunneled through a SSH tunnel your hosts file will not be used to resolve hostnames. If you are doing local development you will want to add exceptions to the network proxies preferences, see <a href="http://apple.stackexchange.com/a/95198" title="Read more at StackExchange">this answer on StackExchange</a>. If you have a better solution to this, please get in touch.</p>
+
 </div>
