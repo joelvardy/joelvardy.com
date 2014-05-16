@@ -17,7 +17,7 @@
 	<div class="photo">
 		<img src="/assets/writing/ssh-tunneling/ssh-proxy-preferences-general.jpg" width="500" />
 	</div>
-	<p>Then add a server under the <strong>Servers</strong> tab, simply setting the details to login to the server over SSH. You can then close the preferences window.</p>
+	<p>Then add a server under the <strong>Servers</strong> tab, simply setting the details to login to the server over SSH. You can then close the preferences window. Select <strong>Turn proxy on</strong> from the utility menu in the status bar.</p>
 	<div class="photo">
 		<img src="/assets/writing/ssh-tunneling/ssh-proxy-turn-on.jpg" width="300" />
 	</div>
