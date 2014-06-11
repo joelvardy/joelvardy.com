@@ -26,16 +26,6 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 
 ## Development
 
-### Local Server
-
-You can run a local server (for basic testing) using the following command:
-
-```bash
-php -S 0.0.0.0:1337 -t public
-```
-
-**Note:** you will need to locally run Composer before the above will work.
-
 ### SASS
 
 I am using Compass to compile SASS into CSS, during development compass can watch for changed SASS files by running this command in the project root:
