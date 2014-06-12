@@ -16,4 +16,7 @@
 }</code></pre>
 	<p><strong>Note:</strong> Nginx will give direct server name matches a higher priority than wildcard or regex matches.</p>
 
+	<h3>Usage</h3>
+	<p>Now simply point your www.domain.tld DNS records to your server domains, and the redirections will be run.</p>
+
 </div>
