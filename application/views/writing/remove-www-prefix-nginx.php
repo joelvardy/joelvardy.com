@@ -11,7 +11,7 @@
 <pre><code class="language-markup">server {
 	listen 80;
 	listen 443 ssl;
-	server_name ~^(www\.)?(?<domain>.+)$;
+	server_name ~^(www\.)?(?&lt;domain&gt;.+)$;
 	return 301 $scheme://$domain$request_uri;
 }</code></pre>
 	<p><strong>Note:</strong> Nginx will give direct server name matches a higher priority than wildcard or regex matches.</p>
