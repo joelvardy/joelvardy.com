@@ -23,7 +23,7 @@
 	<p>I really love timelapses, I set one up last year, and it was really well accepted, so I did one again this year.</p>
 	<p>When I was trying to make the edit more interesting, I realised I should have taken some clips of people typing away ect.. But hey, I'm still learning and trying new things.</p>
 
-	<div class="video aspect-10-9">
+	<div class="video aspect-16-9">
 		<iframe src="//player.vimeo.com/video/85689899?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 
