@@ -10,8 +10,8 @@
 	</ul>
 
 	<blockquote>
-		<p>First is duplicate content - any time content is replicated across the web, the original may be overlooked in favour of the other copies. Google can have a hard time deciding who is the original author so if your staging site gets indexed, it increases the chances that Google will not rank the copy on the production website.</p>
-		<p>If you're building a new website with new content then Google will see it on the staging first, then when the new site goes live, it's effectively a second class version.</p>
+		<p>First is duplicate content - any time content is replicated somewhere else on the web, the original may be overlooked in favour of the other copies. Google can have a hard time deciding who is the original author so if your staging site gets indexed, it increases the chances that Google will not favour the copy on the production website.</p>
+		<p>If you're building a new website with new content then Google can see it on the staging first, then when the new site goes live, the new site may not be recognised as the "original".</p>
 		<p>Finally, if Google decides to rank the staging content then you may lose out on natural links and social shares, which otherwise may have driven traffic to your production website.</p>
 		<cite>&#8212; <a href="https://twitter.com/eda49" title="Ed Baxter on Twitter">Ed Baxter</a></cite>
 	</blockquote>
