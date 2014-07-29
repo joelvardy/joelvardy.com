@@ -42,6 +42,11 @@
 		<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
 	</ul>
 
+	<h4>App Development</h4>
+	<ul>
+		<li>Development of Cordova (and PhoneGap) mobile applications.</li>
+	</ul>
+
 	<h4>Server Administration</h4>
 	<ul>
 		<li>Linux server setup, specifically <strong>Debian / Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
