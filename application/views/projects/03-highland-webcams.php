@@ -20,7 +20,7 @@
 			<li>Unreliable webcam feeds, resulting in either images not being updated, or being corrupted.</li>
 			<li>Having to be as efficient as possible, and ensuring the archive is fast.</li>
 		</ul>
-		<p>The archive has more than <strong>1,700,000</strong> images archived, which is around 100GB stored on Amazon S3 (distributed through Cloud Front.)</p>
+		<p>The archive has more than <strong>2,750,000</strong> images archived, which is around 100GB stored on Amazon S3 (distributed through Cloud Front.)</p>
 		<p>This has been a side project I've been maintaining and updating for several years, over that time there have been <a href="http://highland-webcams.com/about" title="About Highland Webcams" data-analytics="Highland Webcams">many iterations</a>.</p>
 
 	</div>
