@@ -28,11 +28,7 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 
 ### SASS
 
-I am using Compass to compile SASS into CSS, during development compass can watch for changed SASS files by running this command in the project root:
-
-```bash
-compass watch
-```
+I am using Codekit to compile SASS into CSS.
 
 [Joel Vardy][joelvardy]
 

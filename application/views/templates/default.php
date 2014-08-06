@@ -43,7 +43,7 @@
 
 		<?php echo $page_html; ?>
 
-		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/main.min.js"></script>
 		<?php foreach($template->scripts as $script) : ?>
 			<script src="<?php echo $script; ?>"></script>
 		<?php endforeach; ?>
