@@ -45,14 +45,14 @@ resize.photo(fileOrBlob, 800, 'dataURL', function (thumbnail) {
 		</thead>
 		<tbody>
 			<tr>
-				<td>1.39 MB</td>
-				<td>91.11 kB</td>
-				<td>94%</td>
+				<td>1.68 MB</td>
+				<td>122.58 kB</td>
+				<td>93%</td>
 			</tr>
 			<tr>
-				<td>542.26 kB</td>
-				<td>161.94 kB</td>
-				<td>70%</td>
+				<td>932.14 kB</td>
+				<td>58.81 kB</td>
+				<td>94%</td>
 			</tr>
 			<tr>
 				<td>4.77 MB</td>
