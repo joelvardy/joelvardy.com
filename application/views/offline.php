@@ -1,4 +1,6 @@
 CACHE MANIFEST
+
+CACHE:
 /
 /projects
 /workspace
@@ -23,3 +25,6 @@ CACHE MANIFEST
 		echo $image."\n";
 	}
 ?>
+
+NETWORK:
+https://www.google-analytics.com/analytics.js
