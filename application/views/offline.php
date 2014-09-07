@@ -15,7 +15,9 @@ CACHE MANIFEST
 	}
 ?>
 /assets/css/design.css
+/assets/css/prism.css
 /assets/js/main.min.js
+/assets/js/vendor/prism.min.js
 <?php
 	foreach ($images as $image) {
 		echo $image."\n";
