@@ -12,10 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title><?php echo $template->title; ?></title>
 		<meta name="description" content="<?php echo $template->description; ?>" />
-		<link rel="stylesheet" href="/assets/css/design.css" />
-		<?php foreach($template->stylesheets as $stylesheet) : ?>
-			<link rel="stylesheet" href="<?php echo $stylesheet; ?>" />
-		<?php endforeach; ?>
+		<link rel="stylesheet" href="/assets/minified/design.css" />
 		<link rel="author" href="https://plus.google.com/102110732747129499789" />
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,9 +40,6 @@
 
 		<?php echo $page_html; ?>
 
-		<script src="/assets/js/main.min.js"></script>
-		<?php foreach($template->scripts as $script) : ?>
-			<script src="<?php echo $script; ?>"></script>
-		<?php endforeach; ?>
+		<script src="/assets/minified/main.min.js"></script>
 	</body>
 </html>

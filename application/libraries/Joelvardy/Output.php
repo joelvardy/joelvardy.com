@@ -21,8 +21,6 @@ class Output {
 		$template = (object) array(
 			'path' => Config::value('template')->views_directory.'/'.$template_data['template'].'.php',
 			'slug' => $template_data['slug'],
-			'stylesheets' => (isset($template_data['stylesheets']) ? $template_data['stylesheets'] : array()),
-			'scripts' => (isset($template_data['scripts']) ? $template_data['scripts'] : array()),
 			'title' => $template_data['title'],
 			'description' => $template_data['description']
 		);

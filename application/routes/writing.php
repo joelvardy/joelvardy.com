@@ -31,12 +31,6 @@ $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 	echo Output::page(array(
 		'template' => 'templates/default',
 		'slug' => 'writing-post',
-		'stylesheets' => array(
-			'/assets/css/prism.css'
-		),
-		'scripts' => array(
-			'/assets/js/vendor/prism.min.js'
-		),
 		'title' => $postDetails->title,
 		'description' => strip_tags($postDetails->intro)
 	), Template::build('writing-post')->data('post', Template::build('writing/'.$postDetails->filename)->render()));
