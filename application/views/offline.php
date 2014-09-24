@@ -18,10 +18,8 @@ CACHE:
 		echo $font."\n";
 	}
 ?>
-/assets/css/design.css
-/assets/css/prism.css
-/assets/js/main.min.js
-/assets/js/vendor/prism.min.js
+/assets/minified/design.css
+/assets/minified/main.js
 <?php
 	foreach ($images as $image) {
 		echo $image."\n";

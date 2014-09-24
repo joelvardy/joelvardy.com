@@ -40,6 +40,6 @@
 
 		<?php echo $page_html; ?>
 
-		<script src="/assets/minified/main.min.js"></script>
+		<script src="/assets/minified/main.js"></script>
 	</body>
 </html>
