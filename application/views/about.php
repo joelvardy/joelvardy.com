@@ -1,11 +1,11 @@
 <div id="biography">
 
-	<p>I'm a contract web developer (both front and back end code) working in the UK, my skills are listed at the bottom of this page. If you would like you can view <a href="/projects" title="Projects I've been involved in">my projects and work</a>.</p>
-	<p>When I'm not sat in front of Sublime Text:</p>
+	<p>I'm a contract software engineer working in the UK, my skills are listed at the bottom of this page. If you would like you can view <a href="/projects" title="Projects I've been involved in">my projects and work</a>.</p>
+	<p>When I'm not sat at my desk you might find me:</p>
 	<ul>
-		<li>I might be <strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
+		<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 		<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
-		<li>I had also started <strong>climbing</strong> before I had a mountain bike accident which put me out of action.</li>
+		<li><strong>climbing</strong> before I had a mountain bike accident which put me out of action.</li>
 		<li>While doing these things it's likely I'll be also indulging in my love for  <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>.</li>
 	</ul>
 

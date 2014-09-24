@@ -29,7 +29,7 @@
 			<a href="/" title="About Joel Vardy"><img alt="My beautiful face" src="/assets/img/joel-vardy-square.jpg" /></a>
 			<hgroup>
 				<h1><a href="/" title="About Joel Vardy">Joel Vardy</a></h1>
-				<h4>Contract Web Developer</h4>
+				<h4>Contract Software Engineer</h4>
 			</hgroup>
 			<nav>
 				<a <?php echo ($template->slug == 'about' ? 'class="active"' : ''); ?> href="/" title="About Joel Vardy">About</a>

@@ -12,7 +12,7 @@ $routes->get('/writing', function () {
 	echo Output::page(array(
 		'template' => 'templates/default',
 		'slug' => 'writing-list',
-		'title' => 'The Writings of a PHP Developer',
+		'title' => 'The Writings of a Software Engineer',
 		'description' => 'Articles, tutorials, and opinions written by Joel Vardy about various web development topics.'
 	), Template::build('writing-list')->data('posts', $writing->readPosts()));
 
