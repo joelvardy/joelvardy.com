@@ -1,7 +1,5 @@
 CACHE MANIFEST
 
-# Update 1
-
 # Git commit: <?php echo `git rev-parse --verify HEAD 2> /dev/null`; ?>
 
 CACHE:
