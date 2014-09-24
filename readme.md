@@ -26,9 +26,29 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 
 ## Development
 
-### SASS
+### Composer
 
-I am using Codekit to compile SASS into CSS.
+Install PHP dependencies with composer:
+
+```
+composer install
+```
+
+### NPM
+
+Install JavaScriot dependencies with npm:
+
+```
+npm install
+```
+
+### SASS and JavaScript
+
+You can minify JavaScript and compile SASS by running gulp:
+
+```
+gulp watch
+```
 
 [Joel Vardy][joelvardy]
 
