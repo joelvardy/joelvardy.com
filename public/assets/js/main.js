@@ -52,6 +52,27 @@ window.addEventListener('load', function(event) {
 	window.addEventListener('resize', fullWidthImages, false);
 
 
+	// Style galleries
+	var galleries = function(event) {
+
+		var galleries = document.querySelectorAll('div.gallery');
+		for (var i = 0; i < galleries.length; ++i) {
+
+			var galleryContainer = galleries[i];
+
+			var photos = galleryContainer.querySelectorAll('div.photo');
+			for (var i = 0; i < photos.length; ++i) {
+				var image = photos[i].querySelector('img');
+				photos[i].style.backgroundImage = 'url('+image.src+')';
+				image.parentNode.removeChild(image);
+			}
+
+		}
+
+	}
+	galleries();
+
+
 	// Reload content after application cache update
 	window.applicationCache.addEventListener('updateready', function(e) {
 		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {

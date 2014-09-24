@@ -1,42 +1,87 @@
 <h2>Workspace</h2>
 
-<p>I think most people like to have a desk which they've made their own. In December 2009 I created my workspace as part of my bedroom, shortly after, my workspace was featured on <a href="http://lifehacker.com/5551260/the-luxury-loft-desk" title="The Luxury Loft Desk" data-analytics="Lifehacker workspace">lifehacker</a>.</p>
+<p>I'm not sure how to profile people who take pride over their desk, I used to think most people working on the web cared, having seen loads of <em>top X office space</em> posts on web development blogs. However, having worked with developers and designers, the ones who care about keeping their workspace clear of clutter are in the minority.</p>
 
-<h3>Ideas</h3>
+<p>In December 2009 I remodeled my bedroom, it has a double bed, raised 1.8m from the floor, with a full size desk below, my workspace was featured on <a href="http://lifehacker.com/5551260/the-luxury-loft-desk" title="The Luxury Loft Desk" data-analytics="Lifehacker workspace">lifehacker</a>, and I have been making small adjustments ever since.</p>
+
+<hgroup class="section">
+	<span class="line"></span>
+	<h3>2009 / 2010</h3>
+</hgroup>
 
 <p>I wanted a big desk, so I could have my computer setup, and still have enough space to spread out papers and notes. I also wanted a double bed, yeah a lot to ask in a room with only 8 square metres of floor space.</p>
 <p>The only realistic option was to build vertically, I didn't want to just buy a loft bed, I wanted a desk which was made for the space, something which didn't have gaps between it and the wall, something which wouldn't rattle, the only solution was to make a custom desk and bed.</p>
 
-<h3>Development</h3>
+<h4>Development</h4>
 
 <p>The platform for my bed is 2 x 1.4 metres, the same width and just longer than a double mattress. I would support the platform with three pieces of 4 x 4. And it would be secured into the wall on the left and back and the wardrobe on the right.</p>
 <p>Two of the supports would be used as a ladder; this meant my desk couldn't be quite as deep as the platform so it would be possible to put your feet on the rungs.</p>
 <p>I decided to build some speakers and lighting into the platform, I used LED lighting so there was no fire hazard.</p>
 
 <div class="photo full-width">
-	<img src="/assets/img/joel-vardy-workspace.jpg" />
+	<img src="/assets/img/workspace/2010-joel-vardy.jpg" />
 </div>
 
-<h3>Final Details</h3>
+<h4>Final Details</h4>
 
 <p>I placed some holes for wires in the top and bottom left, centre, and top right - giving me plenty of flexibility for peripherals.</p>
 <p>I wanted a room which was light and airy, I chose white for the walls, the woodwork is off white and the carpet is cream. There is a splash of colour so the wall opposite the desk is a bright green.</p>
 <p>So many people want to know about the chair, it's a <strong>Kawasaki Paddock Chair</strong>.</p>
 
-<h3>Photos</h3>
+<hgroup class="section">
+	<span class="line"></span>
+	<h3>2013</h3>
+</hgroup>
 
-<p>The best place to view photos of my workspace is the <a href="http://www.flickr.com/photos/joel-vardy/sets/72157624035451737/" title="Workspace gallery on flickr" data-analytics="Workspace gallery">original flickr set</a> which was picked up by lifehacker.</p>
+<p>At <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> the whole company used Macs and we were developing a game for the iPad. I threw away all of my thoughts about Apple, and decided I could justify the money, I bought a MacBook Pro while I was working there, and once my contract had finished I bought an iPad.</p>
 
-<h3>Frequently Asked Questions</h3>
+<div class="photo full-width">
+	<img src="/assets/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
+</div>
+
+<p>I also constructed my own NAS box, I used a low power CPU, and four 2TB HDDs running FreeNAS, giving me a 5.2TB of usable space which I use for storing; photos, videos, and backups.</p>
+
+<hgroup class="section">
+	<span class="line"></span>
+	<h3>2014</h3>
+</hgroup>
+
+<p>Just after Christmas I built a <a href="https://vimeo.com/82836108" title="Lego Service Truck">lego technic model</a> which has sat on my desk since. I would be lying if I said I don't still occasionally drive it around my desk.</p>
+
+<p><strong>I got rid of the awesome chair</strong> after using it for almost four years. The old Kawasaki Paddock Chair wasn't terribly ergonomic and in summer it wasn't very ventilated ;)<br />
+I finally replaced it with a Topstar Open Art mesh office chair in bright green.</p>
+
+<div class="photo full-width">
+	<img src="/assets/img/workspace/2014-bedroom.jpg" />
+</div>
+
+<div class="gallery">
+
+	<div class="photo two-thirds">
+		<img src="/assets/img/workspace/2014-desk.jpg" />
+	</div>
+
+	<div class="photo one-thirds margin-left">
+		<img src="/assets/img/workspace/2014-boxes.jpg" />
+	</div>
+
+</div>
+
+<p>I find I can work much more productively with a clean workspace, you can also see from the photo above that I'm also pretty organised. I love really useful boxes because you can throw them around, and they stack really nicely.</p>
+
+<hgroup class="section">
+	<span class="line"></span>
+	<h3>Questions</h3>
+</hgroup>
 
 <p><strong>Why haven't you mounted the monitors on the wall?</strong><br />
-Sadly the monitors [LG W2261VP 22"] do not have a VESA MIS bracket so I can only use the supplied bases.</p>
+Sadly the monitors which I used to use did not have a VESA MIS bracket so I could only use the supplied bases.</p>
 
 <p><strong>You must hit your head on the ceiling?</strong><br />
 No, it's never really been a problem.</p>
 
-<p><strong>What's with all the relentless cans?</strong><br />
-I love the designs on the cans and they add a bit of colour to my desk... And when I get bored I can rearrange them =)</p>
+<p><strong>What's with all the Relentless cans?</strong><br />
+I used to have a stack of Relentless cans because the designs, and vibrant colours looked quite interesting.</p>
 
 <p><strong>How much did this cost?</strong><br />
-The total cost came to just over &pound;900</p>
+The total cost of the original build came to just over &pound;900</p>

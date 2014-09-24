@@ -45,6 +45,11 @@ header {
 			color: #222;
 		}
 
+		h4 {
+			font-size: 1em;
+			margin: 0 !important;
+		}
+
 	}
 
 	nav {
@@ -94,6 +99,51 @@ div.photo.full-width {
 
 	img {
 		width: 100%;
+	}
+
+}
+
+div.gallery {
+
+	height: 300px;
+	margin-top: 3.125em;
+	overflow: hidden;
+
+	@media screen and (max-width: 800px) {
+		height: auto;
+	}
+
+	div.photo {
+
+		background-position: center center;
+		background-size: cover;
+		float: left;
+		height: 100%;
+		margin: 0;
+
+		&.one-thirds {
+			width: 33%;
+		}
+
+		&.two-thirds {
+			width: 66%;
+		}
+
+		&.margin-left {
+			margin-left: 1%;
+		}
+
+		&.margin-right {
+			margin-right: 1%;
+		}
+
+		@media screen and (max-width: 800px) {
+			float: none;
+			height: 200px;
+			margin: 1em 0 0 !important;
+			width: auto !important;
+		}
+
 	}
 
 }
@@ -180,7 +230,7 @@ div.video {
 	}
 
 	p {
-		margin-top: 0.8em;
+		margin-top: 1em;
 	}
 
 }
@@ -219,12 +269,42 @@ div.video {
 		margin-top: 3.125em;
 	}
 
-	h3 {
-		margin-top: 2em;
+	h4 {
+		margin-top: 1.5em;
+	}
+
+	hgroup.section {
+
+		height: 1.5em;
+		margin: 2em 0;
+		position: relative;
+
+		span {
+			background: rgb(100, 100, 100);
+			display: block;
+			height: 1px;
+			position: relative;
+			top: 50%;
+			width: 100%;
+		}
+
+		h3 {
+			display: inline-block;
+			background: #f2efeb;
+			left: 37.5%;
+			position: relative;
+			text-align: center;
+			width: 25%;
+		}
+
 	}
 
 	p {
-		margin-top: 0.4em;
+		margin-top: 1em;
+	}
+
+	div.photo.full-width, div.gallery {
+		margin: 2em 0;
 	}
 
 }
@@ -245,7 +325,7 @@ div.video {
 
 		p {
 
-			margin-top: 0.4em;
+			margin-top: 1em;
 
 			&.posted {
 
@@ -277,7 +357,7 @@ div.video {
 		}
 
 		p {
-			margin-top: 0.8em;
+			margin-top: 1em;
 		}
 
 		ul, ol {
