@@ -16,7 +16,10 @@ Icon
 # Composer
 /vendor
 
-# CodeKit
-config.codekit
-.codekit-cache
+
+# Node
+/node_modules
+
+
+# SASS
 .sass-cache
