@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Sonus-Light';
+	src: url('../font/sonus-light.eot');
+	src: url('../font/sonus-light.eot?#iefix') format('embedded-opentype'),
+	     url('../font/sonus-light.woff') format('woff'),
+	     url('../font/sonus-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sonus-Regular';
+	src: url('../font/sonus-regular.eot');
+	src: url('../font/sonus-regular.eot?#iefix') format('embedded-opentype'),
+	     url('../font/sonus-regular.woff') format('woff'),
+	     url('../font/sonus-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+strong {
+	font-family: 'Sonus-Regular', Helvetica, Arial, sans-serif;
+}
+em {
+	font-style: italic;
+}
+
+a {
+	color: #ff8800;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Sonus-Regular', Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.25em;
+}
+h4 {
+	font-size: 1.1em;
+}
+h5 {
+	font-size: 0.8em;
+}

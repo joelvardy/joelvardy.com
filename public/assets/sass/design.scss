@@ -6,15 +6,13 @@
 
 @import '_prism';
 
-@import '_classes';
+@import '_type';
 @import '_elements';
 
 html {
 	background: #f2efeb;
 	color: #222;
-	@extend .font_sonus;
-	font-size: 100%;
-	line-height: 1.5em;
+	font: 100%/1.5em 'Sonus-Light', Helvetica, Arial, sans-serif;
 	position: relative;
 }
 
