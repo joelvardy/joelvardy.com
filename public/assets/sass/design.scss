@@ -17,10 +17,20 @@ html {
 }
 
 body {
+
 	margin: 0 auto;
 	overflow-x: hidden;
 	padding-bottom: 3.125em;
 	width: 70%;
+
+	@media screen and (max-width: 800px) {
+		width: 80%;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 90%;
+	}
+
 }
 
 header {
@@ -451,6 +461,14 @@ div.video {
 				width: 70%;
 				z-index: 99;
 
+				@media screen and (max-width: 800px) {
+					width: 80%;
+				}
+
+				@media screen and (max-width: 600px) {
+					width: 90%;
+				}
+
 				time {
 
 					background: rgba(0,0,0,0.75);
@@ -501,7 +519,13 @@ div.video {
 					}
 
 					p {
+
 						text-shadow: 1px 1px rgba(0,0,0,0.25);
+
+						@media screen and (max-width: 600px) {
+							display: none;
+						}
+
 					}
 
 				}
@@ -529,27 +553,6 @@ div.video {
 			margin-top: 1em;
 		}
 
-	}
-
-}
-
-
-@media screen and (max-width: 800px) {
-
-	body, #writing-post div.post div.photo.event div.inner {
-		width: 80%;
-	}
-
-}
-
-@media screen and (max-width: 600px) {
-
-	body, #writing-post div.post div.photo.event div.inner {
-		width: 90%;
-	}
-
-	#writing-post div.post div.photo.event div.inner div.details p {
-		display: none;
 	}
 
 }
