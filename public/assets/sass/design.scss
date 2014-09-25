@@ -58,6 +58,10 @@ header.primary {
 		padding-top: 35px;
 		text-shadow: white 0px 1px 0px;
 
+		@media screen and (max-width: 600px) {
+			padding-top: 45px;
+		}
+
 		h1 a {
 			color: #222;
 		}
@@ -91,6 +95,12 @@ header.primary {
 			&.active {
 				border-bottom: 2px #ff8800 solid;
 				color: #222;
+			}
+
+			@media screen and (max-width: 600px) {
+				&:first-child {
+					display: none;
+				}
 			}
 
 		}
