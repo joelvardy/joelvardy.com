@@ -55,6 +55,8 @@ I finally replaced it with a Topstar Open Art mesh office chair in bright green.
 	<img src="/assets/img/workspace/2014-bedroom.jpg" />
 </div>
 
+<p>In 2009 I really wanted a beanbag for the room, in 2011 my mum bought me a giant orange one which you will find me working on from time to time, sometimes in the garden on a nice day.</p>
+
 <div class="gallery">
 
 	<div class="photo two-thirds">

@@ -25,8 +25,10 @@
 	</head>
 	<body id="<?php echo $template->slug; ?>">
 
-		<header>
-			<a href="/" title="About Joel Vardy"><img alt="My beautiful face" src="/assets/img/joel-vardy-square.jpg" /></a>
+		<header class="primary">
+			<a class="photo" href="/" title="About Joel Vardy">
+				<img alt="My beautiful face" src="/assets/img/joel-vardy-square.jpg" />
+			</a>
 			<hgroup>
 				<h1><a href="/" title="About Joel Vardy">Joel Vardy</a></h1>
 				<h4>Contract Software Engineer</h4>
@@ -38,7 +40,9 @@
 			</nav>
 		</header>
 
-		<?php echo $page_html; ?>
+		<section id="content">
+			<?php echo $page_html; ?>
+		</section>
 
 		<script src="/assets/minified/main.js"></script>
 	</body>

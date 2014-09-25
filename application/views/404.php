@@ -1,8 +1,4 @@
-<div class="information">
+<h2>Not Found</h2>
 
-	<h2>Not Found</h2>
-
-	<p>You know the drill, this page can't be found.. If you were looking for something really important, contact me and I might be able to help :)</p>
-	<p>The quote "Houston, we have a problem" was never really said during the Apollo 13 mission, the actual statement was "Houston, we've had a problem" however because the original quote makes it seem that the problem has already passed it was changed in the film.</p>
-
-</div>
+<p>You know the drill, this page can't be found.. If you were looking for something really important, contact me and I might be able to help :)</p>
+<p>The quote "Houston, we have a problem" was never really said during the Apollo 13 mission, the actual statement was "Houston, we've had a problem" however because the original quote makes it seem that the problem has already passed it was changed in the film.</p>

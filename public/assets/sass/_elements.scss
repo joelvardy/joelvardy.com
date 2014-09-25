@@ -4,9 +4,17 @@ img {
 }
 
 ul, ol {
-	list-style-position: inside;
-	list-style-type: disc;
-}
-	ul li ul {
+
+	list-style-position: outside;
+	list-style-type: square;
+
+	li {
+		margin-top: 0.1em;
+	}
+
+	ul, ol {
+		margin-top: 0.1em !important;
 		margin-left: 1em;
 	}
+
+}
