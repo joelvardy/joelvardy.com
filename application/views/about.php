@@ -1,12 +1,12 @@
 <div id="biography">
 
-	<p>I'm a contract software engineer working in the UK, my skills are listed at the bottom of this page. If you would like you can view <a href="/projects" title="Projects I've been involved in">my projects and work</a>.</p>
-	<p>When I'm not sat at my desk you might find me:</p>
+	<p>I'm a contract software engineer working in the UK, I'm working mainly on building websites (front end, and back end programming) however I've also built mobile apps, and APIs. My skills are listed at the bottom of this page, and you can also have a look at some of the <a href="/projects" title="Projects I've been involved in">projects and work</a> I have been involved with.</p>
+	<p>I have a <a href="/workspace" title="Clean, organised workspace">very nice workspace</a> which I will often be working at, but if you don't find me there I could be:</p>
 	<ul>
 		<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 		<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
-		<li><strong>climbing</strong> before I had a mountain bike accident which put me out of action.</li>
-		<li>While doing these things it's likely I'll be also indulging in my love for  <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>.</li>
+		<li><strong>Climbing</strong>, I started shortly before I had a mountain bike accident which put me out of action.</li>
+		<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, I'm really trying to focus on taking nice landscape photos at the moment.</li>
 	</ul>
 
 </div>
@@ -27,6 +27,7 @@
 				<li><strong>CodeIgniter</strong> version 2.x</li>
 				<li><strong>Laravel</strong> version 3 and 4</li>
 				<li><strong>Slim</strong> version 2</li>
+				<li><strong>Flight</strong> an extensible micro-framework for PHP</li>
 			</ul>
 		</li>
 		<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code, I have also released several <a href="https://packagist.org/packages/joelvardy/" title="My Packagist Profile" data-analytics="Packagist Profile">Composer packages</a>.</li>
@@ -49,8 +50,9 @@
 
 	<h4>Server Administration</h4>
 	<ul>
-		<li>Linux server setup, specifically <strong>Debian / Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
-		<li>Knowledge of installation and configuration of: <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, and <strong>Memcached</strong>.</li>
+		<li>Linux server setup, specifically <strong>Debian</strong> / <strong>Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
+		<li>Knowledge of installation and configuration of; <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, <strong>Memcached</strong>, and <strong>NodeJS</strong>.</li>
+		<li>Some knowledge of; <strong>Varnish</strong>, <strong>MongoDB</strong></li>
 	</ul>
 
 	<h4>Version Control</h4>

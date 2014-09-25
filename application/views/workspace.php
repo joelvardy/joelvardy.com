@@ -2,7 +2,7 @@
 
 <p>I'm not sure how to profile people who take pride over their desk, I used to think most people working on the web cared, having seen loads of <em>top X office space</em> posts on web development blogs. However, having worked with developers and designers, the ones who care about keeping their workspace clear of clutter are in the minority.</p>
 
-<p>In December 2009 I remodeled my bedroom, it has a double bed, raised 1.8m from the floor, with a full size desk below, my workspace was featured on <a href="http://lifehacker.com/5551260/the-luxury-loft-desk" title="The Luxury Loft Desk" data-analytics="Lifehacker workspace">lifehacker</a>, and I have been making small adjustments ever since.</p>
+<p>In December 2009 I remodeled my bedroom, it has a double bed raised 1.8m from the floor, with a full size desk below, my workspace was featured on <a href="http://lifehacker.com/5551260/the-luxury-loft-desk" title="The Luxury Loft Desk" data-analytics="Lifehacker workspace">lifehacker</a>, and I have been making small adjustments ever since.</p>
 
 <hgroup class="section">
 	<span class="line"></span>
@@ -10,11 +10,11 @@
 </hgroup>
 
 <p>I wanted a big desk, so I could have my computer setup, and still have enough space to spread out papers and notes. I also wanted a double bed, yeah a lot to ask in a room with only 8 square metres of floor space.</p>
-<p>The only realistic option was to build vertically, I didn't want to just buy a loft bed, I wanted a desk which was made for the space, something which didn't have gaps between it and the wall, something which wouldn't rattle, the only solution was to make a custom desk and bed.</p>
+<p>The only realistic option was to build vertically, I didn't want to just buy a loft bed, I wanted a desk which was made for the space, something which didn't have gaps between it and the wall, something which wouldn't rattle, the only solution was to go custom.</p>
 
 <h4>Development</h4>
 
-<p>The platform for my bed is 2 x 1.4 metres, the same width and just longer than a double mattress. I would support the platform with three pieces of 4 x 4. And it would be secured into the wall on the left and back and the wardrobe on the right.</p>
+<p>The platform for my bed is 2 x 1.4 metres, the same width and slightly longer than a double mattress. I would support the platform with three pieces of 4 x 4. And it would be secured into the wall on the left and back and the wardrobe on the right.</p>
 <p>Two of the supports would be used as a ladder; this meant my desk couldn't be quite as deep as the platform so it would be possible to put your feet on the rungs.</p>
 <p>I decided to build some speakers and lighting into the platform, I used LED lighting so there was no fire hazard.</p>
 
@@ -24,8 +24,8 @@
 
 <h4>Final Details</h4>
 
-<p>I placed some holes for wires in the top and bottom left, centre, and top right - giving me plenty of flexibility for peripherals.</p>
-<p>I wanted a room which was light and airy, I chose white for the walls, the woodwork is off white and the carpet is cream. There is a splash of colour so the wall opposite the desk is a bright green.</p>
+<p>I placed some holes for wires around the edge of the desk - giving me plenty of flexibility for peripherals.</p>
+<p>I wanted a room which was light and airy, I chose white for the walls, the woodwork is off white and the carpet is cream. There is a splash of colour on the wall opposite the desk, a bright green.</p>
 <p>So many people want to know about the chair, it's a <strong>Kawasaki Paddock Chair</strong>.</p>
 
 <hgroup class="section">
@@ -33,29 +33,30 @@
 	<h3>2013</h3>
 </hgroup>
 
-<p>At <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> the whole company used Macs and we were developing a game for the iPad. I threw away all of my thoughts about Apple, and decided I could justify the money, I bought a MacBook Pro while I was working there, and once my contract had finished I bought an iPad.</p>
+<p>At <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> the whole company used Macs and we were developing a game for the iPad. After a few months all of my hate towards Apple had gone, I decided I could justify the money and bought myself a MacBook Pro, and once my contract had finished I bought an iPad too.</p>
 
 <div class="photo full-width">
 	<img src="/assets/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
 </div>
 
-<p>I also constructed my own NAS box, I used a low power CPU, and four 2TB HDDs running FreeNAS, giving me a 5.2TB of usable space which I use for storing; photos, videos, and backups.</p>
+<p>I also constructed my own NAS box, using a low power CPU, and four 2TB HDDs running FreeNAS, giving me a 5.2TB of usable space which I use for storing; photos, videos, and backups.</p>
+
+<p>Unfortunately my old amp gave up the ghost, and as I moved away from a desktop onto a laptop, I have stopped using the built in speakers opting to use a powerful bluetooth speaker most of the time.</p>
 
 <hgroup class="section">
 	<span class="line"></span>
 	<h3>2014</h3>
 </hgroup>
 
-<p>Just after Christmas I built a <a href="https://vimeo.com/82836108" title="Lego Service Truck">lego technic model</a> which has sat on my desk since. I would be lying if I said I don't still occasionally drive it around my desk.</p>
+<p>Just after Christmas I built a <a href="https://vimeo.com/82836108" title="Lego Service Truck">Lego Technic model</a> which has sat on my desk since. I would be lying if I said I don't still occasionally drive it around my desk.</p>
 
-<p><strong>I got rid of the awesome chair</strong> after using it for almost four years. The old Kawasaki Paddock Chair wasn't terribly ergonomic and in summer it wasn't very ventilated ;)<br />
-I finally replaced it with a Topstar Open Art mesh office chair in bright green.</p>
+<p><strong>I got rid of the awesome chair</strong> after using it for almost four years. The old Kawasaki Paddock Chair wasn't terribly ergonomic and in summer it wasn't very ventilated. It's been replaced with a Topstar Open Art mesh office chair, again in bright green.</p>
 
 <div class="photo full-width">
 	<img src="/assets/img/workspace/2014-bedroom.jpg" />
 </div>
 
-<p>In 2009 I really wanted a beanbag for the room, in 2011 my mum bought me a giant orange one which you will find me working on from time to time, sometimes in the garden on a nice day.</p>
+<p>When I'd first finished the room I really wanted a beanbag, in 2011 my mum bought me a giant orange one which you will find me working on from time to time, sometimes in the garden on a nice day.</p>
 
 <div class="gallery">
 
@@ -69,7 +70,7 @@ I finally replaced it with a Topstar Open Art mesh office chair in bright green.
 
 </div>
 
-<p>I find I can work much more productively with a clean workspace, you can also see from the photo above that I'm also pretty organised. I love really useful boxes because you can throw them around, and they stack really nicely.</p>
+<p>I find I can work much more productively with a clean workspace, you can also see from the photo above that I'm also pretty organised. I love Really Useful Boxes because you can throw them around, and they stack really nicely.</p>
 
 <hgroup class="section">
 	<span class="line"></span>
