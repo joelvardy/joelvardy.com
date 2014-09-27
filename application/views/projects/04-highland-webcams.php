@@ -1,6 +1,6 @@
 <div id="highland-webcams" class="project">
 
-	<img class="header" alt="Highland Webcams" src="/assets/img/projects/highland-webcams-header.jpg" />
+	<img class="header" alt="Highland Webcams" src="/assets/img/projects/highland-webcams.jpg" />
 
 	<div class="inner">
 
@@ -15,12 +15,12 @@
 		<p>There are several live webcam feeds from which a still is taken and archived, this archive can then be accessed by users through the website.</p>
 		<p>Some of the challenges I faced with this project are:</p>
 		<ul>
-			<li>Archiving according to a unique schedule for each feed, some update every minute, 24 hours a day.</li>
+			<li>Archiving according to a unique schedule for each feed, some update every minute, 24 hours a day, some only for a few hours each day.</li>
 			<li>Handling slow downloads.</li>
 			<li>Unreliable webcam feeds, resulting in either images not being updated, or being corrupted.</li>
 			<li>Having to be as efficient as possible, and ensuring the archive is fast.</li>
 		</ul>
-		<p>The archive has more than <strong>2,750,000</strong> images archived, which is around 100GB stored on Amazon S3 (distributed through Cloud Front.)</p>
+		<p>The archive has more than <strong>2,850,000</strong> images archived, which is around 100GB stored on Amazon S3 (distributed through Cloud Front.)</p>
 		<p>This has been a side project I've been maintaining and updating for several years, over that time there have been <a href="http://highland-webcams.com/about" title="About Highland Webcams" data-analytics="Highland Webcams">many iterations</a>.</p>
 
 	</div>
