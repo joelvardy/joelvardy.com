@@ -1,4 +1,4 @@
-<div id="fish-in-a-bottle" class="project">
+<div id="fish-in-a-bottle" class="project contract">
 
 	<img class="header" alt="Fish in a Bottle" src="/assets/img/projects/fish-in-a-bottle.jpg" />
 

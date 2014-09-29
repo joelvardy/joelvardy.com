@@ -1,4 +1,4 @@
-<div id="smrs" class="project">
+<div id="smrs" class="project contract">
 
 	<img class="header" alt="SMRS" src="/assets/img/projects/smrs.jpg" />
 

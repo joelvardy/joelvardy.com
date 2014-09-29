@@ -1,4 +1,4 @@
-<div id="lucid-games" class="project">
+<div id="lucid-games" class="project contract">
 
 	<img class="header" alt="Lucid Games" src="/assets/img/projects/lucid-games.jpg" />
 

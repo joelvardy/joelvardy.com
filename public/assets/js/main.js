@@ -24,6 +24,62 @@ window.addEventListener('load', function(event) {
 	});
 
 
+	// Filter projects by type
+	var filterProjects = function() {
+
+		var filterAnchor = document.querySelector('body#projects a.filter'),
+			hidePersonal = (window.location.hash !== '#contract'),
+			anchor = {
+				hide: {
+					href: '/projects#contract',
+					title: 'Hide all side and personal projects',
+					text: 'show only contract work'
+				},
+				show: {
+					href: '/projects',
+					title: 'Show all projects',
+					text: 'show all projects'
+				}
+			};
+
+		var updateFilter = function() {
+
+			window.history.replaceState(null, null, (hidePersonal ? anchor.show.href : anchor.hide.href));
+
+			hidePersonal = ! hidePersonal;
+
+			var link = (hidePersonal ? anchor.show : anchor.hide);
+			filterAnchor.setAttribute('href', link.href);
+			filterAnchor.setAttribute('title', link.title);
+			filterAnchor.innerHTML = link.text;
+
+			var projects = document.querySelectorAll('body#projects div.project');
+			for (var i = 0; i < projects.length; ++i) {
+
+				var project = projects[i];
+
+				if (hidePersonal) {
+					if (project.classList.contains('contract')) continue;
+					project.style.display = 'none';
+				} else {
+					project.style.display = 'block';
+				}
+
+			}
+
+		}
+
+		filterAnchor.addEventListener('click', function(event) {
+			event.preventDefault();
+			updateFilter();
+		});
+
+		updateFilter();
+
+	}
+	filterProjects();
+
+
 	// Style full width images
 	var fullWidthImages = function(event) {
 
