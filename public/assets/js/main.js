@@ -27,6 +27,8 @@ window.addEventListener('load', function(event) {
 	// Filter projects by type
 	var filterProjects = function() {
 
+		if ( ! document.querySelector('body#projects')) return;
+
 		var filterAnchor = document.querySelector('body#projects a.filter'),
 			hidePersonal = (window.location.hash !== '#contract'),
 			anchor = {
