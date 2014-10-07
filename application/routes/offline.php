@@ -9,14 +9,15 @@ $routes->get('/manifest', function () {
 
 	header('Content-Type: text/cache-manifest');
 
-	function files($directory) {
+	function files($directory, $type = false) {
 		$list = array();
 		foreach (glob(BASE_PATH.'/public/assets'.$directory.'/*') as $path) {
 			if (is_dir($path)) {
-				$list = array_merge($list, files($directory.'/'.pathinfo($path)['basename']));
+				$list = array_merge($list, files($directory.'/'.pathinfo($path, PATHINFO_BASENAME), $type));
 				continue;
 			}
-			$list[] = '/assets'.$directory.'/'.pathinfo($path)['basename'];
+			if ($type && pathinfo($path, PATHINFO_EXTENSION) != $type) continue;
+			$list[] = '/assets'.$directory.'/'.pathinfo($path, PATHINFO_BASENAME);
 		}
 		return $list;
 	}
@@ -26,8 +27,7 @@ $routes->get('/manifest', function () {
 
 	// Read all assets
 	$fonts = files('/font');
-	$images = files('/img');
-	$images = array_merge($images, files('/writing'));
+	$images = array_merge(files('/img', 'jpg'), files('/writing', 'jpg'));
 
 	require(VIEWS_PATH.'/offline.php');
 
