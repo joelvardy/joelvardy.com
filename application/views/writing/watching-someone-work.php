@@ -8,7 +8,7 @@
 
 	<h3>The Project</h3>
 	<p>I wanted to build a mobile (Android) app which would allow you to roll a die (or two dice) but all of the apps I tried looked like crap, required an internet connection, or had ads.</p>
-	<p>Now even if the dice are missing, you can play Monopoly in the middle of nowhere. <s>Download it from the Google Play now.</s></p>
+	<p>Now even if the dice are missing, you can play Monopoly in the middle of nowhere. <s>Download it from Google Play now.</s></p>
 
 	<div class="video aspect-16-9">
 		<iframe src="//player.vimeo.com/video/101806233?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
