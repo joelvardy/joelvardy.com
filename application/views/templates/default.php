@@ -23,7 +23,7 @@
 
 		<header class="primary">
 			<a class="photo" href="/" title="About Joel Vardy">
-				<img alt="My beautiful face" src="/assets/img/joel-vardy-square.jpg" />
+				<img alt="Joel Vardy while working" src="/assets/img/joel-vardy-square.jpg" />
 			</a>
 			<hgroup>
 				<h1><a href="/" title="About Joel Vardy">Joel Vardy</a></h1>

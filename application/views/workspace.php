@@ -19,7 +19,7 @@
 <p>I decided to build some speakers and lighting into the platform, I used LED lighting so there was no fire hazard.</p>
 
 <div class="photo full-width">
-	<img src="/assets/img/workspace/2010-joel-vardy.jpg" />
+	<img alt="Joel Vardy working at desk in 2009" src="/assets/img/workspace/2010-joel-vardy.jpg" />
 </div>
 
 <h4>Final Details</h4>
