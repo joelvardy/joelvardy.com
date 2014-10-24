@@ -4,6 +4,12 @@ use Joelvardy\Writing;
 
 $routes->get('/manifest', function () {
 
+	// Only allow manifest on joelvardy.com domain
+	if ($_SERVER['SERVER_NAME'] !== 'joelvardy.com') {
+		http_response_code(404);
+		die();
+	}
+
 	// Initialise classes
 	$writing = new Writing();
 
