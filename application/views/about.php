@@ -11,7 +11,7 @@
 
 </div>
 
-<div class="photo full-width">
+<div class="photo full-width right">
 	<img alt="Joel Vardy on Falljokull Glacier in Iceland" src="/assets/img/joel-vardy-full-width.jpg" />
 </div>
 
