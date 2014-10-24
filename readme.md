@@ -35,11 +35,13 @@ gulp watch
 
 ### Vagrant
 
-To run the development server ensure Vagrant is installed, and run:
+To run the development server ensure Vagrant is installed run:
 
 ```
 vagrant up
 ```
+
+Then add `192.168.56.101 joelvardy.dev` to your `/etc/hosts` file and you will be able to view the development website at [joelvardy.dev][dev].
 
 ## Application
 
@@ -65,3 +67,4 @@ All requests (which are not valid resources) are routed to the `/public/index.ph
 
   [joelvardy]: https://joelvardy.com/
   [routes]: https://packagist.org/packages/joelvardy/routes
+  [dev]: http://joelvardy.dev/
