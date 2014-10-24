@@ -47,6 +47,11 @@ npm install
 You can minify JavaScript and compile SASS by running gulp:
 
 ```
+sudo gem install sass
+npm install -g gulp
+```
+
+```
 gulp watch
 ```
 

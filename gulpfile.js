@@ -1,8 +1,8 @@
 // Load plugins
 var gulp = require('gulp'),
+	del = require('del'),
 	concat = require('gulp-concat'),
 	notify = require('gulp-notify'),
-	rimraf = require('gulp-rimraf'),
 	sass = require('gulp-ruby-sass'),
 	uglify = require('gulp-uglifyjs');
 
@@ -11,7 +11,6 @@ var gulp = require('gulp'),
 gulp.task('styles', function () {
 	return gulp.src('public/assets/sass/design.scss')
 	.pipe(sass({
-		sourcemap: true,
 		style: 'compressed'
 	}))
 	.on('error', notify.onError(function (error) {
@@ -43,10 +42,7 @@ gulp.task('scripts', function () {
 
 // Clean
 gulp.task('clean', function() {
-	return gulp.src(['public/assets/minified'], {
-		read: false
-	})
-	.pipe(rimraf());
+	del(['public/assets/minified']);
 });
 
 
