@@ -13,6 +13,7 @@
 		<title><?php echo $template->title; ?></title>
 		<meta name="description" content="<?php echo $template->description; ?>" />
 		<link rel="stylesheet" href="/assets/minified/design.css" />
+		<link rel="publisher" href="https://plus.google.com/+JoelVardyDeveloper" />
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-27602018-2', 'joelvardy.com');
@@ -21,13 +22,13 @@
 	</head>
 	<body id="<?php echo $template->slug; ?>">
 
-		<header class="primary">
+		<header class="primary" itemscope itemtype="http://schema.org/Person">
 			<a class="photo" href="/" title="About Joel Vardy">
-				<img alt="Joel Vardy while working" src="/assets/img/joel-vardy-square.jpg" />
+				<img itemprop="image" alt="Joel Vardy while working" src="/assets/img/joel-vardy-square.jpg" />
 			</a>
 			<hgroup>
-				<h1><a href="/" title="About Joel Vardy">Joel Vardy</a></h1>
-				<h4>Contract Software Engineer</h4>
+				<h1><a itemprop="name" href="/" title="About Joel Vardy">Joel Vardy</a></h1>
+				<h4 itemprop="jobTitle">Contract Software Engineer</h4>
 			</hgroup>
 			<nav>
 				<a <?php echo ($template->slug == 'about' ? 'class="active"' : ''); ?> href="/" title="About Joel Vardy">About</a>
