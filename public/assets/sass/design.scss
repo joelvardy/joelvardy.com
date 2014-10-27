@@ -227,6 +227,7 @@ section#content {
 			background-size: cover;
 			height: 400px;
 			margin: 3em 0;
+			overflow: hidden;
 
 			&.left {
 				background-position: center left;
