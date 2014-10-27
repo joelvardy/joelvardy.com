@@ -34,6 +34,8 @@
 		<iframe src="//player.vimeo.com/video/110090922?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 
-	<p>Be sure to check out the <a href="/workspace" title="Joel Vardy's Workspace">workspace page</a> for some more historic and technical details.</p>
+	<p>If you're interested in what the workspace looked like historically, check out the <a href="/workspace" title="Joel Vardy's Workspace">workspace page</a>.</p>
+
+	<p><strong>Now I've got a workspace I think is pretty awesome, please <a href="/#contact" title="Contact Joel Vardy">get in touch</a> and hire me.</strong></p>
 
 </div>
