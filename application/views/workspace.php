@@ -48,15 +48,13 @@
 	<h3>2014</h3>
 </hgroup>
 
-<p>Just after Christmas I built a <a href="https://vimeo.com/82836108" title="Lego Service Truck">Lego Technic model</a> which has sat on my desk since. I would be lying if I said I don't still occasionally drive it around my desk.</p>
-
 <p><strong>I got rid of the awesome chair</strong> after using it for almost four years. The old Kawasaki Paddock Chair wasn't terribly ergonomic and in summer it wasn't very ventilated. It's been replaced with a Topstar Open Art mesh office chair, again in bright green.</p>
 
 <div class="photo full-width">
 	<img src="/assets/img/workspace/2014-bedroom.jpg" />
 </div>
 
-<p>When I'd first finished the room I really wanted a beanbag, in 2011 my mum bought me a giant orange one which you will find me working on from time to time, sometimes in the garden on a nice day.</p>
+<p>When I'd first finished the room I really wanted a beanbag, in 2011 my mum bought me a giant orange one which you will find me working on from time to time.</p>
 
 <div class="gallery">
 
@@ -72,6 +70,16 @@
 
 <p>I find I can work much more productively with a clean workspace, you can also see from the photo above that I'm also pretty organised. I love Really Useful Boxes because you can throw them around, and they stack really nicely.</p>
 
+<p>After having the summer off, and working at my desk for a few weeks, I came to the conclusion that I didn't have enough leg room. And having returned from Iceland with more than 70GB of photos, I was becoming frustrated with the transfer speed of my NAS.</p>
+
+<p>So on October the 16th after watching the Apple keynote, I bought the new 5K retina iMac, and a 10TB LaCie direct attached storage drive (configured in RAID 5, as my NAS had been.) This meant it was time to update my desk, removing the cut out for added legroom, and covering the desk in vinyl.</p>
+
+<div class="photo full-width">
+	<img src="/assets/img/workspace/2014-imac.jpg" />
+</div>
+
+<p>You can take a look at the timelapse I took, <a href="https://vimeo.com/110090922" title="Timelapse taken over several hours">Making of The Carbon Workspace</a>, showing the build.</p>
+
 <hgroup class="section">
 	<span class="line"></span>
 	<h3>Questions</h3>
@@ -84,7 +92,7 @@ Sadly the monitors which I used to use did not have a VESA MIS bracket so I coul
 No, it's never really been a problem.</p>
 
 <p><strong>What's with all the Relentless cans?</strong><br />
-I used to have a stack of Relentless cans because the designs, and vibrant colours looked quite interesting.</p>
+Previously I stacked Relentless cans on my desk because the designs, and vibrant colours looked quite interesting - however I now try to keep my desk at clutter free as possible.</p>
 
 <p><strong>How much did this cost?</strong><br />
 The total cost of the original build came to just over &pound;900</p>
