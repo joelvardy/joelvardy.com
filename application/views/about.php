@@ -1,12 +1,12 @@
 <div id="biography">
 
-	<p>I'm a contract software engineer working in the UK, I'm working mainly on building websites (front end, and back end programming) however I've also built mobile apps, and APIs. My skills are listed at the bottom of this page, and you can also have a look at some of the <a href="/projects" title="Projects I've been involved in">projects and work</a> I have been involved with.</p>
-	<p>I have a <a href="/workspace" title="Clean, organised workspace">very nice workspace</a> which I will often be working at, but if you don't find me there I could be:</p>
+	<p>I'm a contract software engineer in the UK, I'm working mainly on building websites (front end, and back end programming) however I've also built mobile apps, and I love building a nice RESTful API. My skills are listed at the bottom of this page, but you can also have a look at some of the <a href="/projects" title="Projects I've been involved in">projects and work</a> I have been involved with.</p>
+	<p>When I'm not working I enjoy getting outside!</p>
 	<ul>
 		<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 		<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
-		<li><strong>Climbing</strong>, I started shortly before I had a mountain bike accident which put me out of action.</li>
 		<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, I'm really trying to focus on taking nice landscape photos at the moment.</li>
+		<li>Recently doing more photography has meant I'm doing a lot of <strong>walking</strong> in the Peak District.</li>
 	</ul>
 
 </div>

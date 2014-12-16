@@ -24,7 +24,7 @@
 
 		<header class="primary" itemscope itemtype="http://schema.org/Person">
 			<a class="photo" href="/" title="About Joel Vardy">
-				<img itemprop="image" alt="Joel Vardy while working" src="/assets/img/joel-vardy-square.jpg" />
+				<img itemprop="image" alt="Joel Vardy while working" src="/assets/img/joel-vardy-christmas.jpg" />
 			</a>
 			<hgroup>
 				<h1><a itemprop="name" href="/" title="About Joel Vardy">Joel Vardy</a></h1>
