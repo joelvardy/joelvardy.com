@@ -467,6 +467,7 @@ section#content {
 				margin: auto;
 				position: relative;
 				width: 70%;
+				max-width: 1000px;
 				z-index: 99;
 
 				@media screen and (max-width: 800px) {
