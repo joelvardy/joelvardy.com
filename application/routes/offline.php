@@ -10,7 +10,6 @@ $routes->get('/manifest', function () {
 		die();
 	}
 
-	// Initialise classes
 	$writing = new Writing();
 
 	header('Content-Type: text/cache-manifest');

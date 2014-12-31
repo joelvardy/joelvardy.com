@@ -6,7 +6,6 @@ use Joelvardy\Writing;
 
 $routes->get('/writing', function () {
 
-	// Initialise classes
 	$writing = new Writing();
 
 	echo Output::page(array(
@@ -20,7 +19,6 @@ $routes->get('/writing', function () {
 
 $routes->get('/writing/([a-z0-9-]+)', function ($slug) {
 
-	// Initialise classes
 	$writing = new Writing();
 
 	$postDetails = $writing->readPost($slug);
