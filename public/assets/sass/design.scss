@@ -22,6 +22,7 @@ body {
 	overflow-x: hidden;
 	padding-bottom: 3em;
 	width: 70%;
+	max-width: 1000px;
 
 	@media screen and (max-width: 800px) {
 		width: 80%;
