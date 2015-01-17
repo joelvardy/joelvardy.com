@@ -49,6 +49,20 @@
 
 	<p>I got the slider out and quickly my desk was covered in components, I bought a 12V to USB adaptor which I would use to power the Arduino, I also bought an Arduino Yun which has a second processor running linux, this means you can run a simple web interface and pass commands to the Arduino using a REST API.</p>
 
+<pre><code class="language-javascript">RUN_COUNT++;
+
+// Trigger shutter
+delay(SHUTTER_SHUDDER_DELAY);
+digitalWrite(SHUTTER_PIN, HIGH);
+delay(SHUTTER_DELAY);
+digitalWrite(SHUTTER_PIN, LOW);
+delay(DELAY);
+
+// Move slider
+sliderMotor->step(STEPS_PER_RUN, FORWARD, DOUBLE);</code></pre>
+
+	<p>Above is an excerpt from <a href="https://github.com/joelvardy/slider" title="Slider source code on Github">the source code</a>.</p>
+
 	<p>Most tutorials will show you how to configure the Yun so it connects to a local WiFi network, this is not what I wanted as there would be no WiFi out where I wanted to use the slider, and tethering to my phone was just a headache. However you can use the Arduino as an access point (which is it's default state) my workflow now looked like this:</p>
 
 	<ol>
