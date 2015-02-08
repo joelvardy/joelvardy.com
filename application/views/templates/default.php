@@ -11,6 +11,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title><?php echo $template->title; ?></title>
+		<script src="https://testing.joelvardy.com/_a"></script>
 		<meta name="description" content="<?php echo $template->description; ?>" />
 		<link rel="stylesheet" href="/assets/minified/design.css" />
 		<link rel="publisher" href="https://plus.google.com/+JoelVardyDeveloper" />
