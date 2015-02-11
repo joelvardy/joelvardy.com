@@ -1,0 +1,28 @@
+section[page=about] {
+
+	ul, ol {
+		list-style-position: inside;
+	}
+
+	#biography {
+		margin-top: 3em;
+	}
+
+	#skills {
+
+		h4 {
+			border-bottom: 1px solid rgba(0,0,0,0.075);
+			display: inline-block;
+		}
+
+	}
+
+	#contact {
+
+		p {
+			margin-top: 0.5em;
+		}
+
+	}
+
+}
