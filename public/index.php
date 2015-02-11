@@ -1,12 +1,10 @@
 <?php
 
-require('../initialisation.php');
+$app = require(__DIR__.'/../application.php');
 
-$routes = new Joelvardy\Routes();
-
-// Load application routes
+// Load routes
 foreach (glob(ROUTES_PATH.'/*.php') as $route) {
 	require($route);
 }
 
-$routes->run();
+$app->run();

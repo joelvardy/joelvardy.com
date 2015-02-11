@@ -1,14 +1,13 @@
 <?php
 
-use Joelvardy\Output;
+use Joelvardy\View;
 
-$routes->notFound(function () {
+$app->notFound(function () use ($app) {
 
-	echo Output::page(array(
-		'template' => 'templates/default',
+	echo View::template('default.php', [
 		'slug' => 'error-404',
 		'title' => 'Houston, we\'ve had a problem - 404',
 		'description' => 'This page could not be found.'
-	), '404');
+	], '404.php');
 
 });

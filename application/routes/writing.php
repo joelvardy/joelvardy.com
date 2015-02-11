@@ -1,36 +1,28 @@
 <?php
 
-use Joelvardy\Template;
-use Joelvardy\Output;
+use Joelvardy\View;
 use Joelvardy\Writing;
 
-$routes->get('/writing', function () {
+$app->get('/writing', function () use ($app) {
 
-	$writing = new Writing();
-
-	echo Output::page(array(
-		'template' => 'templates/default',
+	echo View::template('default.php', [
 		'slug' => 'writing-list',
 		'title' => 'The Writings of a Software Engineer',
-		'description' => 'Articles, tutorials, and opinions written by Joel Vardy about various web development topics.'
-	), Template::build('writing-list')->data('posts', $writing->readPosts()));
+		'description' => 'Articles, tutorials, and opinions written by Joel Vardy about various web development topics.',
+		'posts' => Writing::posts()
+	], 'writing-list.php');
 
 });
 
-$routes->get('/writing/([a-z0-9-]+)', function ($slug) {
+$app->get('/writing/:postSlug', function ($slug) use ($app) {
 
-	$writing = new Writing();
+	$post = Writing::read($slug);
+	if ( ! $post) $app->notFound();
 
-	$postDetails = $writing->readPost($slug);
-
-	// Ensure the post exists
-	if ( ! $postDetails) return false;
-
-	echo Output::page(array(
-		'template' => 'templates/default',
+	echo View::template('default.php', [
 		'slug' => 'writing-post',
-		'title' => $postDetails->title,
-		'description' => strip_tags($postDetails->intro)
-	), Template::build('writing-post')->data('post', Template::build('writing/'.$postDetails->filename)->render()));
+		'title' => $post->title,
+		'description' => strip_tags($post->intro)
+	], 'writing/'.$post->filename);
 
 });

@@ -16,7 +16,7 @@ class Writing {
 	 *
 	 * @return	string
 	 */
-	public function generateSlug($title) {
+	protected static function generate_slug($title) {
 
 		$title = strtolower($title);
 		$title = preg_replace('/[^a-z0-9-]/', '-', $title);
@@ -27,37 +27,33 @@ class Writing {
 
 
 	/**
-	 * Read list of posts
+	 * Return list of posts
 	 *
 	 * @return	array
 	 */
-	public function readPosts() {
+	public static function posts() {
 
-		// Read from cache
-		$posts = Cache::fetch('writing_posts');
-		if ( ! empty($posts)) return $posts;
-
-		$posts = array();
+		$posts = [];
 
 		foreach (array_reverse(glob(VIEWS_PATH.'/writing/*.php')) as $post) {
 
-			$postFile = pathinfo($post);
-			$html = Template::build('writing/'.$postFile['filename'])->render();
+			$post_filename = pathinfo($post)['basename'];
+			$html = View::render('writing/'.$post_filename);
 			$dom = \Sunra\PhpSimple\HtmlDomParser::str_get_html($html);
 
-			$postTitle = $dom->find('h2', 0)->innertext;
-			$postSlug = $this->generateSlug($postTitle);
-			$postDate = strtotime($dom->find('date', 0)->innertext);
-			$postIntro = $dom->find('p', 0)->innertext;
+			$post_title = $dom->find('h2', 0)->innertext;
+			$post_slug = self::generate_slug($post_title);
+			$post_date = strtotime($dom->find('date', 0)->innertext);
+			$post_intro = $dom->find('p', 0)->innertext;
 
 			// Ensure the posted date has passed
-			if ($postDate < $_SERVER['REQUEST_TIME']) {
-				$posts[$postSlug] = (object) array(
-					'slug' => $postSlug,
-					'filename' => $postFile['filename'],
-					'title' => $postTitle,
-					'posted' => $postDate,
-					'intro' => $postIntro
+			if ($post_date < $_SERVER['REQUEST_TIME']) {
+				$posts[$post_slug] = (object) array(
+					'slug' => $post_slug,
+					'filename' => $post_filename,
+					'title' => $post_title,
+					'posted' => $post_date,
+					'intro' => $post_intro
 				);
 			}
 
@@ -69,23 +65,20 @@ class Writing {
 		});
 		$posts = array_reverse($posts);
 
-		// Save in cache for 5 minutes
-		Cache::store('writing_posts', $posts, (60 * 5));
-
 		return $posts;
 
 	}
 
 
 	/**
-	 * Read a post
+	 * Return a post
 	 *
 	 * @return	object|boolean
 	 */
-	public function readPost($postSlug) {
+	public static function read($slug) {
 
-		$posts = $this->readPosts();
-		return (isset($posts[$postSlug]) ? $posts[$postSlug] : false);
+		$posts = self::posts();
+		return (isset($posts[$slug]) ? $posts[$slug] : false);
 
 	}
 

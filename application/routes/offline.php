@@ -2,15 +2,12 @@
 
 use Joelvardy\Writing;
 
-$routes->get('/manifest', function () {
+$app->get('/manifest', function () use ($app) {
 
 	// Only allow manifest on joelvardy.com domain
 	if ($_SERVER['SERVER_NAME'] !== 'joelvardy.com') {
-		http_response_code(404);
-		die();
+		$app->notFound();
 	}
-
-	$writing = new Writing();
 
 	header('Content-Type: text/cache-manifest');
 
@@ -28,7 +25,7 @@ $routes->get('/manifest', function () {
 	}
 
 	// Read all posts
-	$writingPosts = $writing->readPosts();
+	$writing_posts = Writing::posts();
 
 	// Read all assets
 	$fonts = files('/font');

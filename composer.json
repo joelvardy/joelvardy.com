@@ -1,14 +1,11 @@
 {
 	"require": {
-		"joelvardy/config": "dev-master",
-		"joelvardy/cache": "dev-master",
-		"joelvardy/routes": "dev-master",
-		"joelvardy/template": "dev-master",
+		"slim/slim": "dev-master",
 		"sunra/php-simple-html-dom-parser": "dev-master"
 	},
 	"autoload": {
-		"psr-0": {
-			"Joelvardy": "application/libraries/"
+		"psr-4": {
+			"Joelvardy\\": "application/libraries/Joelvardy/"
 		}
 	},
 	"minimum-stability": "dev"

@@ -8,8 +8,8 @@ CACHE:
 /workspace
 /writing
 <?php
-	foreach ($writingPosts as $writingPost) {
-		echo "/writing/{$writingPost->slug}\n";
+	foreach ($writing_posts as $post) {
+		echo "/writing/{$post->slug}\n";
 	}
 ?>
 /favicon.ico

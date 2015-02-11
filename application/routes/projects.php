@@ -1,21 +1,20 @@
 <?php
 
-use Joelvardy\Template;
-use Joelvardy\Output;
+use Joelvardy\View;
 
-$routes->get('/projects', function () {
+$app->get('/projects', function () use ($app) {
 
 	// Render each project view
 	$projects = array();
 	foreach (array_reverse(glob(VIEWS_PATH.'/projects/*.php')) as $project) {
-		$projects[] = Template::build('projects/'.pathinfo($project)['filename'])->render();
+		$projects[] = View::render('projects/'.pathinfo($project)['basename']);
 	}
 
-	echo Output::page(array(
-		'template' => 'templates/default',
+	echo View::template('default.php', [
 		'slug' => 'projects',
 		'title' => 'Contract, Freelance &#38; Personal Projects By Joel Vardy',
-		'description' => 'View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!'
-	), Template::build('projects')->data('projects', $projects));
+		'description' => 'View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!',
+		'projects' => $projects
+	], 'projects.php');
 
 });

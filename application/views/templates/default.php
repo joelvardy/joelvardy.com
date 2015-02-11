@@ -10,9 +10,9 @@
 <html lang="en-GB" manifest="/manifest">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title><?php echo $template->title; ?></title>
+		<title><?php echo $title; ?></title>
 		<script src="https://testing.joelvardy.com/_a"></script>
-		<meta name="description" content="<?php echo $template->description; ?>" />
+		<meta name="description" content="<?php echo $description; ?>" />
 		<link rel="stylesheet" href="/assets/minified/design.css" />
 		<link rel="publisher" href="https://plus.google.com/+JoelVardyDeveloper" />
 		<script>
@@ -21,7 +21,7 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-	<body id="<?php echo $template->slug; ?>">
+	<body id="<?php echo $slug; ?>">
 
 		<header class="primary" itemscope itemtype="http://schema.org/Person">
 			<a class="photo" href="/" title="About Joel Vardy">
@@ -32,14 +32,14 @@
 				<h4 itemprop="jobTitle">Contract Software Engineer</h4>
 			</hgroup>
 			<nav>
-				<a <?php echo ($template->slug == 'about' ? 'class="active"' : ''); ?> href="/" title="About Joel Vardy">About</a>
-				<a <?php echo ($template->slug == 'projects' ? 'class="active"' : ''); ?> href="/projects" title="Projects I've been involved in">Projects</a>
-				<a <?php echo (strpos($template->slug, 'writing') === 0 ? 'class="active"' : ''); ?> href="/writing" title="Joel's Ramblings">Writing</a>
+				<a <?php echo ($slug == 'about' ? 'class="active"' : ''); ?> href="/" title="About Joel Vardy">About</a>
+				<a <?php echo ($slug == 'projects' ? 'class="active"' : ''); ?> href="/projects" title="Projects I've been involved in">Projects</a>
+				<a <?php echo (strpos($slug, 'writing') === 0 ? 'class="active"' : ''); ?> href="/writing" title="Joel's Ramblings">Writing</a>
 			</nav>
 		</header>
 
 		<section id="content">
-			<?php echo $page_html; ?>
+			<?php echo $page_view; ?>
 		</section>
 
 		<script src="/assets/minified/main.js"></script>
