@@ -4,10 +4,11 @@
 	<h4>Posted: <date>26th June 2013</date></h4>
 
 	<p>A Composer package which allows you to easily map routes to a block of code. This is an ideal base for small websites and RESTful APIs.</p>
-	<p>I'm going to show you how to use the library to write some simple RESTful endpoints, however if you would like to see how you can use this library to create a website then take a look at the <a href="https://github.com/joelvardy/joelvardy.com" title="joelvardy.com repository" data-analytics="joelvardy.com repo">source code</a> for this very website.</p>
+
+	<p><strong>Update:</strong> this is not a perfect library, you may want to consider using the <a href="http://www.slimframework.com/" title="a micro framework for PHP" data-analytics="Slim framework">Slim micro framework</a>, which is usually what I now find myself using.</p>
 
 	<h3>Requiring the Package</h3>
-	<p>I'm not going to explain how to use composer, if you are not sure then <a href="http://getcomposer.org/doc/00-intro.md" title="Getting started with Composer">read the manual</a>.</p>
+	<p>I'm not going to explain how to use composer, if you are not sure then <a href="http://getcomposer.org/doc/00-intro.md" title="Getting started with Composer" data-analytics="Composer manual">read the manual</a>.</p>
 	<p>Open your <code class="language-markup">composer.json</code> file and require the routes package.</p>
 <pre><code class="language-markup">"require": {
 	"joelvardy/routes": "v1.1"

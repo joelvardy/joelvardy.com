@@ -27,9 +27,9 @@ window.addEventListener('load', function(event) {
 	// Filter projects by type
 	var filterProjects = function() {
 
-		if ( ! document.querySelector('body#projects')) return;
+		if ( ! document.querySelector('section[page=projects]')) return;
 
-		var filterAnchor = document.querySelector('body#projects a.filter'),
+		var filterAnchor = document.querySelector('section[page=projects] a.filter'),
 			hidePersonal = (window.location.hash !== '#contract'),
 			anchor = {
 				hide: {
@@ -55,7 +55,7 @@ window.addEventListener('load', function(event) {
 			filterAnchor.setAttribute('title', link.title);
 			filterAnchor.innerHTML = link.text;
 
-			var projects = document.querySelectorAll('body#projects div.project');
+			var projects = document.querySelectorAll('section[page=projects] div.project');
 			for (var i = 0; i < projects.length; ++i) {
 
 				var project = projects[i];

@@ -1,11 +1,15 @@
-<h2>Projects</h2>
+<section page="<?php echo $slug; ?>">
 
-<p>Would you like to <a class="filter" href="" title=""></a>?</p>
+	<h2>Projects</h2>
 
-<?php
+	<p>Would you like to <a class="filter" href="" title=""></a>?</p>
 
-	foreach ($projects as $project) {
-		echo $project;
-	}
+	<?php
 
-?>
+		foreach ($projects as $project) {
+			echo $project;
+		}
+
+	?>
+
+</section>

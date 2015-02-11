@@ -21,7 +21,7 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-	<body id="<?php echo $slug; ?>">
+	<body template="default">
 
 		<header class="primary" itemscope itemtype="http://schema.org/Person">
 			<a class="photo" href="/" title="About Joel Vardy">
@@ -38,9 +38,7 @@
 			</nav>
 		</header>
 
-		<section id="content">
-			<?php echo $page_view; ?>
-		</section>
+		<?php echo $page_view; ?>
 
 		<script src="/assets/minified/main.js"></script>
 	</body>

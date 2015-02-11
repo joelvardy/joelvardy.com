@@ -22,7 +22,8 @@ $app->get('/writing/:postSlug', function ($slug) use ($app) {
 	echo View::template('default.php', [
 		'slug' => 'writing-post',
 		'title' => $post->title,
-		'description' => strip_tags($post->intro)
-	], 'writing/'.$post->filename);
+		'description' => strip_tags($post->intro),
+		'post' => View::render('writing/'.$post->filename)
+	], 'writing-post.php');
 
 });
