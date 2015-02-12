@@ -80,7 +80,7 @@
 		<img src="/assets/img/workspace/2014-imac.jpg" />
 	</div>
 
-	<p>You can take a look at the timelapse I took, <a href="https://vimeo.com/110090922" title="Timelapse taken over several hours">Making of The Carbon Workspace</a>, showing the build.</p>
+	<p>You can take a look at the timelapse I took, <a href="https://vimeo.com/110090922" title="Timelapse taken over several hours" data-analytics="Carbon Workspace on Vimeo">Making of The Carbon Workspace</a>, showing the build.</p>
 
 	<hgroup class="section">
 		<span class="line"></span>

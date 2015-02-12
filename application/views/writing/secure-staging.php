@@ -13,7 +13,7 @@
 		<p>First is duplicate content - any time content is replicated somewhere else on the web, the original may be overlooked in favour of the other copies. Google can have a hard time deciding who is the original author so if your staging site gets indexed, it increases the chances that Google will not favour the copy on the production website.</p>
 		<p>If you're building a new website with new content then Google can see it on the staging first, then when the new site goes live, the new site may not be recognised as the "original".</p>
 		<p>Finally, if Google decides to rank the staging content then you may lose out on natural links and social shares, which otherwise may have driven traffic to your production website.</p>
-		<cite>&#8212; <a href="https://twitter.com/eda49" title="Ed Baxter on Twitter">Ed Baxter</a></cite>
+		<cite>&#8212; <a href="https://twitter.com/eda49" title="Ed Baxter on Twitter" data-analytics="Ed Baxter on Twitter">Ed Baxter</a></cite>
 	</blockquote>
 
 	<h3>The Solution</h3>
@@ -27,7 +27,7 @@
 		<li>Create a <code class="language-markup">.htpasswd</code> file to store the username and passwords.</li>
 		<li>Add a rule which tells the web server to only grant access to people who have the correct username / password.</li>
 	</ol>
-	<p>There are several tools online which will generate an entry to place in a <code class="language-markup">.htpasswd</code> file. For example, if I use <a href="http://www.htaccesstools.com/htpasswd-generator/">this tool</a> it will return something which looks like:</p>
+	<p>There are several tools online which will generate an entry to place in a <code class="language-markup">.htpasswd</code> file. For example, if I use <a href="http://www.htaccesstools.com/htpasswd-generator/" data-analytics=".htaccess generator">this tool</a> it will return something which looks like:</p>
 	<pre><code class="language-markup">joelvardy:$apr1$iPG0JX.1$XfhtsOcdLImrYxF6xr9z./</code></pre>
 	<p>Create a <code class="language-markup">.htpasswd</code> file on your system, it shouldn't be in a public directory, and it should be readable by your web server, for our example I will assume you have created it at <code class="language-markup">/var/www/.htpasswd</code> then add each of your users on a new line inside the file.</p>
 
@@ -45,7 +45,7 @@ Require valid-user</code></pre>
 &lt;/Directory&gt;</code></pre>
 
 	<h3>Nginx</h3>
-	<p>If you're using Nginx I expect you know how to do this / how to Google for a more succinct answer (such as the <a href="http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html">official documentation</a>) but here it is for completeness:</p>
+	<p>If you're using Nginx I expect you know how to do this / how to Google for a more succinct answer (such as the <a href="http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html" data-analytics="Nginx documentation">official documentation</a>) but here it is for completeness:</p>
 	<pre><code class="language-markup">location / {
 	auth_basic "Protected Area";
 	auth_basic_user_file /var/www/.htpasswd;
@@ -55,7 +55,7 @@ Require valid-user</code></pre>
 	<p>As is true with any login form on the web, unless you are using HTTPS the username and password will be sent in plain text. For securing a staging area however, I don't think this is a major issue.</p>
 
 	<h3>Robots Exclusion Standard</h3>
-	<p>If you are unable to protect the staging area as explained above, you should ensure you use the <a href="http://en.wikipedia.org/wiki/Robots_exclusion_standard" title="Robots exclusion standard on Wikipedia">robots exclusion standard</a> to inform search engines that they should not index the website.</p>
+	<p>If you are unable to protect the staging area as explained above, you should ensure you use the <a href="http://en.wikipedia.org/wiki/Robots_exclusion_standard" title="Robots exclusion standard on Wikipedia" data-analytics="robots.txt on Wikipedia">robots exclusion standard</a> to inform search engines that they should not index the website.</p>
 	<p>The easiest way of doing this is placing a robots.txt file in the root of the domain, with the required rules.</p>
 
 </div>

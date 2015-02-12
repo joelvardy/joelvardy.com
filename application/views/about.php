@@ -78,7 +78,7 @@
 				<li>Getting muddy <strong>mountain biking</strong>, I'm just on the doorstep of the Peak District.</li>
 				<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, so I'll often have a camera in my bag.</li>
 			</ul>
-			<p>As well as writing <a href="/writing" title="(mainly) technical writing">more technical posts</a> here, I decided to start writing about my travels on a recent <a href="https://joelgonewild.com/category/iceland" title="Visiting Iceland in 2014">trip to Iceland</a>.</p>
+			<p>As well as writing <a href="/writing" title="(mainly) technical writing">more technical posts</a> here, I decided to start writing about my travels on a recent <a href="https://joelgonewild.com/category/iceland" title="Visiting Iceland in 2014" data-analytics="Joel Gone Wild">trip to Iceland</a>.</p>
 
 		</div>
 
@@ -95,7 +95,7 @@
 				<li><a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a> - Twitter is usually the quickest method.</li>
 				<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - for when you can't fit it into 140 characters.</li>
 			</ul>
-			<p>Want to send me something securely? Here is <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x19C3C64D81E91203" title="Public PGP key">my public PGP key</a>.</p>
+			<p>Want to send me something securely? Here is <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x19C3C64D81E91203" title="Public PGP key" data-analytics="Public PGP key">my public PGP key</a>.</p>
 
 		</div>
 

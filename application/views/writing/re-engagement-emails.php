@@ -84,6 +84,6 @@ if ( ! mail($target->email, $subject, $message, $headers)) {
 	<p>You can view / use the example code however you like, it is <a href="https://github.com/joelvardy/re-engagement-emails" title="Re-engagement emails repository" data-analytics="Re-engagement emails repo">available on GitHub</a>.</p>
 
 	<h3>Thanks</h3>
-	<p>Thanks to <a href="https://twitter.com/eda49" title="Ed Baxter on Twitter">Ed Baxter</a> for the initial idea, insight, and proof reading, I did actually write some of this I promise ;)</p>
+	<p>Thanks to <a href="https://twitter.com/eda49" title="Ed Baxter on Twitter" data-analytics="Ed Baxter on Twitter">Ed Baxter</a> for the initial idea, insight, and proof reading, I did actually write some of this I promise ;)</p>
 
 </div>

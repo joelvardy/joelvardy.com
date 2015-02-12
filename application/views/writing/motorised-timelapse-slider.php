@@ -5,7 +5,7 @@
 
 	<p>I can't remember when I first decided I wanted to shoot a timelapse on a slider, probably, I suppose when I first saw a timescape video several years ago. In March last year I bought a Konova K2 800mm slider from Amazon. Now I need to motorise it!</p>
 
-	<p>Initially I found an article from <a href="http://askdesign.it/weblog/slider" title="DIY slider motor">Angus Kennedy</a> who had managed to motorise a slider using some DC motors and high strength fishing line. After buying all the components he listed, and having a play around I quickly decided that the fishing line approach wasn't going to be precise enough for what I wanted, it stretched slightly when being pulled and the resulting timelapse wasn't as smooth as I wanted.</p>
+	<p>Initially I found an article from <a href="http://askdesign.it/weblog/slider" title="DIY slider motor" data-analytics="Angus Kennedy's DIY Slider">Angus Kennedy</a> who had managed to motorise a slider using some DC motors and high strength fishing line. After buying all the components he listed, and having a play around I quickly decided that the fishing line approach wasn't going to be precise enough for what I wanted, it stretched slightly when being pulled and the resulting timelapse wasn't as smooth as I wanted.</p>
 
 	<p>I knew the best solution would be a belt drive, this was how most professional sliders worked, my concern was how I would mount a belt onto the slider. The only mounting points were a single 1/4-20 UNC thread at each end.</p>
 
@@ -40,7 +40,7 @@
 	</div>
 
 	<p>I programmed the Arduino Uno I had and got the slider moving I also wired up a trigger lead for my camera so I could trigger the shutter by putting a pin of the Arduino high (using an opto-isolator between the two.)</p>
-	<p>Before long I was in the garden <a href="https://vimeo.com/101085148" title="Initial slider test">taking a timelapse of some ants</a>.</p>
+	<p>Before long I was in the garden <a href="https://vimeo.com/101085148" title="Initial slider test" data-analytics="Initial slider test on Vimeo">taking a timelapse of some ants</a>.</p>
 	<p>However I was frustrated because in order to change any settings with the slider you had to connect to Arduino to my laptop, change the values and push the compiled code back to the Arduino. This was a pain and I didn't have the motivation to come up with a solution, so the slider remained in a box until a few weeks ago.</p>
 
 	<div class="photo full-width">
@@ -61,7 +61,7 @@ delay(DELAY);
 // Move slider
 sliderMotor->step(STEPS_PER_RUN, FORWARD, DOUBLE);</code></pre>
 
-	<p>Above is an excerpt from <a href="https://github.com/joelvardy/slider" title="Slider source code on Github">the source code</a>.</p>
+	<p>Above is an excerpt from <a href="https://github.com/joelvardy/slider" title="Slider source code on Github" data-analytics="Slider source code repo">the source code</a>.</p>
 
 	<p>Most tutorials will show you how to configure the Yun so it connects to a local WiFi network, this is not what I wanted as there would be no WiFi out where I wanted to use the slider, and tethering to my phone was just a headache. However you can use the Arduino as an access point (which is it's default state) my workflow now looked like this:</p>
 
@@ -72,7 +72,7 @@ sliderMotor->step(STEPS_PER_RUN, FORWARD, DOUBLE);</code></pre>
 		<li>Press start</li>
 	</ol>
 
-	<p>That was now all I needed to do to configure the slider in the field, I could also stop the slider, and reset it's position, have a look at <a href="https://vimeo.com/117003643" title="Configure the slider over the web">how to configure the slider</a>.</p>
+	<p>That was now all I needed to do to configure the slider in the field, I could also stop the slider, and reset it's position, have a look at <a href="https://vimeo.com/117003643" title="Configure the slider over the web" data-analytics="Slider configuration on Vimeo">how to configure the slider</a>.</p>
 
 	<p>Today the weather was nice enough to have a proper play with the slider, I went with my mum to Curbar Edge, a 20 minute drive from where I live, below is the result, I hope you like it.</p>
 

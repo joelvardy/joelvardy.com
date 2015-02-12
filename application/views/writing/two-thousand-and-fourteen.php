@@ -48,7 +48,7 @@
 		</div>
 	</div>
 
-	<p>I got up in the middle of the night and with my dad we went to take some photos of the sunrise up on Curbar Edge, I <a href="https://photos.joelvardy.com/79db81d451b1841f65a9665332ba34db" title="Curbar Edge Cows">captured this amazing photo</a>.</p>
+	<p>I got up in the middle of the night and with my dad we went to take some photos of the sunrise up on Curbar Edge, I <a href="https://photos.joelvardy.com/79db81d451b1841f65a9665332ba34db" title="Curbar Edge Cows" data-analytics="Joels Photos">captured this amazing photo</a>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-fourteen/barcelona.jpg" />
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 
-	<p>The month of May also brought the <strong>Steel City DH</strong> race at Grenoside woods. My first time back at the woods since my crash there last year. I captured a <a href="https://photos.joelvardy.com/4c2add6930c8551c617230875f5b5940" title="Steve Peat">fantastic photo of Steve Peat</a>.</p>
+	<p>The month of May also brought the <strong>Steel City DH</strong> race at Grenoside woods. My first time back at the woods since my crash there last year. I captured a <a href="https://photos.joelvardy.com/4c2add6930c8551c617230875f5b5940" title="Steve Peat" data-analytics="Joels Photos">fantastic photo of Steve Peat</a>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-fourteen/fort-william.jpg" />
@@ -69,7 +69,7 @@
 			<time datetime="2013-01-12"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
 				<h4>Fort William</h4>
-				<p>Unfortunately the initial attempt to travel upto Scotland in Jennys Camper ended in <a href="https://twitter.com/joelvardy/status/474729667690516480" title="Broken down">failure</a>, but we did eventually make it.</p>
+				<p>Unfortunately the initial attempt to travel upto Scotland in Jennys Camper ended in <a href="https://twitter.com/joelvardy/status/474729667690516480" title="Broken down" data-analytics="Twitter">failure</a>, but we did eventually make it.</p>
 			</div>
 		</div>
 	</div>
@@ -88,7 +88,7 @@
 	</div>
 
 	<p>Mid <strong>August</strong> I packed up my bike and lugged it to the oversized baggage desk at Luton airport. Arriving in the alps we were confronted with torrential rain for hours.. It didn't really inspire me to get out into the mud. But the next day we gave it a shot.</p>
-	<p>There was mud, but I've ridden in worse, I had a great time riding with some awesome people, have a look at <a href="https://trail.sx/f12d70" title="Alps biking tracks">where I rode my bike</a>.</p>
+	<p>There was mud, but I've ridden in worse, I had a great time riding with some awesome people, have a look at <a href="https://trail.sx/f12d70" title="Alps biking tracks" data-analytics="Trails">where I rode my bike</a>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-fourteen/spa.jpg" />
@@ -109,14 +109,14 @@
 			<time datetime="2013-01-12"><span class="top">20<sup>th</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
 				<h4>Iceland</h4>
-				<p>Ten days in Iceland walking on a glacier, relaxing in thermal pools, and white water rafting <a href="https://joelgonewild.com/category/iceland" title="Joel Gone Wild - Iceland">read about this and more</a>.</p>
+				<p>Ten days in Iceland walking on a glacier, relaxing in thermal pools, and white water rafting <a href="https://joelgonewild.com/category/iceland" title="Joel Gone Wild - Iceland" data-analytics="Joel Gone Wild">read about this and more</a>.</p>
 			</div>
 		</div>
 	</div>
 
 	<p>I have been anticipating an Apple iMac which has a retina screen, so I ordered the new 5K iMac as soon as it was release, I quickly set on <a href="/writing/carbon-workspace" title="Carbon Workspace">updating my workspace</a> for the new hardware.</p>
 
-	<p>On bonfire night myself and two friends saw a great firework display at Waltham Windmill, the following weekend we had an enjoyable family bonfire, which as usual was pretty big, <a href="https://www.youtube.com/watch?v=bsbGcxAxhdI" title="2014 Bonfire Timelpase">take a look at the timelapse</a>.</p>
+	<p>On bonfire night myself and two friends saw a great firework display at Waltham Windmill, the following weekend we had an enjoyable family bonfire, which as usual was pretty big, <a href="https://www.youtube.com/watch?v=bsbGcxAxhdI" title="2014 Bonfire Timelpase" data-analytics="Bonfire Timelapse on YouTube">take a look at the timelapse</a>.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-fourteen/london.jpg" />

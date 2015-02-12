@@ -30,7 +30,7 @@ if ($user_level == 1 || $user_level == 2 || $user_level == 0) {
 	<ul>
 		<li><strong>permission</strong> - this table holds each possible permission, in the example above this would be <code>moderate-comments</code>.</li>
 		<li><strong>group</strong> - each user is assigned to a group, the groups are listed in this table, for example <strong>admin</strong>.</li>
-		<li><strong>group_permission</strong> - This is the <a href="http://en.wikipedia.org/wiki/Junction_table">link table</a> between the group and the permissions which apply to that group.</li>
+		<li><strong>group_permission</strong> - This is the <a href="http://en.wikipedia.org/wiki/Junction_table" data-analytics="link table on Wikipedia">link table</a> between the group and the permissions which apply to that group.</li>
 	</ul>
 
 	<h3>Database Connection</h3>

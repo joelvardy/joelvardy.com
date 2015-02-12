@@ -52,7 +52,7 @@
 
 	<p>After refusing to use a music streaming service for so long, in April I finally gave in and started using Spotify, I haven't looked back since!</p>
 
-	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?">punting</a> on the river Cherwell, one of us didn't end up in the water. We also watched Derren Brown's svengali show, however I felt this was pretty disappointing.</p>
+	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?" data-analytics="Punting on Wikipedia">punting</a> on the river Cherwell, one of us didn't end up in the water. We also watched Derren Brown's svengali show, however I felt this was pretty disappointing.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-thirteen/berlin.jpg" />
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 
-	<p>I attended a Summit Awesome event in Leeds, at which I (as usual) got heavily inebriated, while <a href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/994293_10151508302973458_1397096882_n.jpg" title="Photo from Facebook">taking lots of photos</a>.</p>
+	<p>I attended a Summit Awesome event in Leeds, at which I (as usual) got heavily inebriated, while taking lots of photos.</p>
 
 	<div class="photo full-width event">
 		<img src="/assets/writing/two-thousand-and-thirteen/kinky-kaylee.jpg" />
@@ -186,7 +186,7 @@
 		</div>
 	</div>
 
-	<p>I love getting something to build on Christmas day, this year I received a Lego Technic service truck, I created a time-lapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck time-lapse">build process</a>.</p>
+	<p>I love getting something to build on Christmas day, this year I received a Lego Technic service truck, I created a time-lapse of the <a href="https://vimeo.com/joelvardy/lego-service-truck" title="Lego service truck time-lapse" data-analytics="Lego timelapse on Vimeo">build process</a>.</p>
 
 	<p>On a programming front, 2013 saw me start using Composer for package management in PHP, and node.js for running server side JavaScript. I'm hoping to increasingly use node.js in 2014.</p>
 
