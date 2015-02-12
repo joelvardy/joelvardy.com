@@ -29,7 +29,7 @@ $app->get('/manifest', function () use ($app) {
 
 	// Read all assets
 	$fonts = files('/font');
-	$images = array_merge(files('/img', 'jpg'), files('/writing', 'jpg'));
+	$images = array_merge(files('/img', 'jpg'), files('/img', 'svg'), files('/writing', 'jpg'));
 
 	require(VIEWS_PATH.'/offline.php');
 
