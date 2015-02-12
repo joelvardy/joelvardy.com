@@ -1,79 +1,103 @@
 <section page="<?php echo $slug; ?>">
 
-	<div id="biography">
+	<header class="full-page" itemscope itemtype="http://schema.org/Person">
 
-		<p>I'm a contract software engineer in the UK, I'm working mainly on building websites (front end, and back end programming) however I've also built mobile apps, and I love building a nice RESTful API. My skills are listed at the bottom of this page, but you can also have a look at some of the <a href="/projects" title="Projects I've been involved in">projects and work</a> I have been involved with.</p>
-		<p>When I'm not working I enjoy getting outside!</p>
-		<ul>
-			<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
-			<li>Getting muddy <strong>mountain biking</strong>, local rides in the Peak District or riding further afield.</li>
-			<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, I'm really trying to focus on taking nice landscape photos at the moment.</li>
-			<li>Recently doing more photography has meant I'm doing a lot of <strong>walking</strong> in the Peak District.</li>
-		</ul>
+		<nav>
+			<a href="/projects" title="Projects I've been involved in">Projects</a>
+			<a href="/writing" title="Joel's Ramblings">Writing</a>
+		</nav>
 
-	</div>
+		<h1 itemprop="name">Joel Vardy</h1>
 
-	<div class="photo full-width right">
-		<img alt="Joel Vardy on Falljokull Glacier in Iceland" src="/assets/img/joel-vardy-full-width.jpg" />
-	</div>
+		<p>I'm a <strong itemprop="jobTitle">Web Developer</strong> looking for freelance / contract work in the UK.</p>
+
+		<a class="down" href="#skills"></a>
+
+	</header>
 
 	<div id="skills">
 
-		<h2>Skills</h2>
+		<div class="inner">
 
-		<h4>Programming</h4>
-		<ul>
-			<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
-			<li>Working knowledge of several frameworks:
-				<ul>
-					<li><strong>CodeIgniter</strong> version 2.x</li>
-					<li><strong>Laravel</strong> version 3 and 4</li>
-					<li><strong>Slim</strong> version 2</li>
-					<li><strong>Flight</strong> an extensible micro-framework for PHP</li>
-				</ul>
-			</li>
-			<li>Solid usage of <strong>Composer</strong> and writing PSR compliant code, I have also released several <a href="https://packagist.org/packages/joelvardy/" title="My Packagist Profile" data-analytics="Packagist Profile">Composer packages</a>.</li>
-			<li>Ability to write efficient code, and ability to utilise caching mechanisms.</li>
-			<li>Commercial experience writing <strong>object oriented JavaScript</strong>.</li>
-		</ul>
+			<h2>Skills</h2>
 
-		<h4>Web Technologies</h4>
-		<ul>
-			<li>I write semantic markup and have a good understanding of <strong>HTML5</strong> elements.</li>
-			<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
-			<li>Experience of developing <strong>responsive designs</strong>.</li>
-			<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
-		</ul>
+			<p>My skills are listed below, if you'd like some context please take a look at some of the <a href="/projects" title="Projects I've been involved in">projects and work</a> I have been involved with.</p>
 
-		<h4>App Development</h4>
-		<ul>
-			<li>Development of Cordova (and PhoneGap) mobile applications.</li>
-		</ul>
+			<h4>Programming</h4>
+			<ul>
+				<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
+				<li>Working knowledge of several frameworks:
+					<ul>
+						<li><strong>CodeIgniter</strong> version 2</li>
+						<li><strong>Laravel</strong> version 3 &amp; 4</li>
+						<li><strong>Slim</strong> version 2</li>
+						<li><strong>Flight</strong> an extensible micro-framework for PHP</li>
+					</ul>
+				</li>
+				<li>Happy to bring in external libraries and write PSR compliant code for easy autoloading, with <strong>Composer</strong>.</li>
+				<li>Enjoy writing efficient code, and utilising caching mechanisms where possible.</li>
+				<li>Commercial experience writing object oriented <strong>JavaScript</strong>.</li>
+			</ul>
 
-		<h4>Server Administration</h4>
-		<ul>
-			<li>Linux server setup, specifically <strong>Debian</strong> / <strong>Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
-			<li>Knowledge of installation and configuration of; <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, <strong>Memcached</strong>, and <strong>NodeJS</strong>.</li>
-			<li>Some knowledge of; <strong>Varnish</strong>, <strong>MongoDB</strong></li>
-		</ul>
+			<h4>Web Technologies</h4>
+			<ul>
+				<li>I write semantic markup and have a good understanding of <strong>HTML5</strong> elements.</li>
+				<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
+				<li>Experience of developing <strong>responsive designs</strong>.</li>
+				<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
+				<li>Experience using <strong>AngularJS</strong>.</li>
+				<li>Development of <strong>Cordova</strong> (and PhoneGap) mobile applications.</li>
+			</ul>
 
-		<h4>Version Control</h4>
-		<ul>
-			<li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
-			<li>I have also used <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
-		</ul>
+			<h4>Server Administration</h4>
+			<ul>
+				<li>Linux server setup, specifically <strong>Debian</strong> / <strong>Ubuntu</strong>, also usage of <strong>CentOS 5</strong>.</li>
+				<li>Knowledge of installation and configuration of; <strong>PHP</strong>, <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, <strong>Memcached</strong>, and <strong>NodeJS</strong>.</li>
+				<li>Some knowledge of; <strong>Varnish</strong>, and <strong>MongoDB</strong>. Comfortable testing new software.</li>
+			</ul>
+
+			<h4>Version Control</h4>
+			<ul>
+				<li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
+				<li>I also have commercial use of <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div id="biography">
+
+		<div class="inner">
+
+			<h2>Joel Vardy</h2>
+
+			<p>I enjoy building websites; front end, back end, mobile apps, and APIs. So much so that I continue doing it in my free time. However it's also important for me to get some fresh air outside.</p>
+			<ul>
+				<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
+				<li>Getting muddy <strong>mountain biking</strong>, I'm just on the doorstep of the Peak District.</li>
+				<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, so I'll often have a camera in my bag.</li>
+			</ul>
+			<p>As well as writing <a href="/writing" title="(mainly) technical writing">more technical posts</a> here, I decided to start writing about my travels on a recent <a href="https://joelgonewild.com/category/iceland" title="Visiting Iceland in 2014">trip to Iceland</a>.</p>
+
+		</div>
 
 	</div>
 
 	<div id="contact">
 
-		<h2>Contact Me</h2>
+		<div class="inner">
 
-		<p>The best ways to get in touch are:</p>
-		<ul>
-			<li><a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a> - Twitter is usually the quickest method.</li>
-			<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - for when you can't fit it into 140 characters.</li>
-		</ul>
+			<h2>Contact Me</h2>
+
+			<p>The quickest way to get in touch with me initially is either email or Twitter.</p>
+			<ul>
+				<li><a href="https://twitter.com/joelvardy" title="My Twitter profile" data-analytics="Twitter profile">@joelvardy</a> - Twitter is usually the quickest method.</li>
+				<li><a href="mailto:info@joelvardy.com" title="Send me an email">info@joelvardy.com</a> - for when you can't fit it into 140 characters.</li>
+			</ul>
+			<p>Want to send me something securely? Here is <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x19C3C64D81E91203" title="Public PGP key">my public PGP key</a>.</p>
+
+		</div>
 
 	</div>
 

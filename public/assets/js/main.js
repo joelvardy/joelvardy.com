@@ -1,11 +1,20 @@
-window.addEventListener('load', function(event) {
+if (typeof String.prototype.startsWith !== 'function') {
+
+	// see below for better implementation!
+	String.prototype.startsWith = function (string) {
+		return this.indexOf(string) === 0;
+	};
+
+}
+
+window.addEventListener('load', function (event) {
 
 
 	// Track external clicks (only run this if GA has loaded)
-	ga(function() {
+	ga(function () {
 		var anchors = document.getElementsByTagName('a');
 		for (var i = 0; i < anchors.length; i++) {
-			anchors[i].addEventListener('click', function(event) {
+			anchors[i].addEventListener('click', function (event) {
 				if (this.dataset.analytics) {
 
 					var _this = this;
@@ -13,7 +22,7 @@ window.addEventListener('load', function(event) {
 					event.preventDefault();
 
 					ga('send', 'event', 'External', 'Exit Website', this.dataset.analytics, {
-						'hitCallback': function() {
+						'hitCallback': function () {
 							document.location.href = _this.href;
 						}
 					});
@@ -25,7 +34,7 @@ window.addEventListener('load', function(event) {
 
 
 	// Filter projects by type
-	var filterProjects = function() {
+	var filterProjects = function () {
 
 		if ( ! document.querySelector('section[page=projects]')) return;
 
@@ -44,7 +53,7 @@ window.addEventListener('load', function(event) {
 				}
 			};
 
-		var updateFilter = function() {
+		var updateFilter = function () {
 
 			window.history.replaceState(null, null, (hidePersonal ? anchor.show.href : anchor.hide.href));
 
@@ -71,7 +80,7 @@ window.addEventListener('load', function(event) {
 
 		}
 
-		filterAnchor.addEventListener('click', function(event) {
+		filterAnchor.addEventListener('click', function (event) {
 			event.preventDefault();
 			updateFilter();
 		});
@@ -83,7 +92,7 @@ window.addEventListener('load', function(event) {
 
 
 	// Style full width images
-	var fullWidthImages = function(event) {
+	var fullWidthImages = function (event) {
 
 		var images = document.querySelectorAll('div.photo.full-width');
 		for (var i = 0; i < images.length; ++i) {
@@ -111,7 +120,7 @@ window.addEventListener('load', function(event) {
 
 
 	// Style galleries
-	var galleries = function(event) {
+	var galleries = function () {
 
 		var galleries = document.querySelectorAll('div.gallery');
 		for (var i = 0; i < galleries.length; ++i) {
@@ -131,12 +140,33 @@ window.addEventListener('load', function(event) {
 	galleries();
 
 
+	// Scrolling
+	var anchorScrolling = function (duration) {
+
+		var anchors = document.getElementsByTagName('a');
+		for (var i = 0; i < anchors.length; i++) {
+			if ( ! anchors[i].getAttribute('href').startsWith('#')) continue;
+			anchors[i].addEventListener('click', function (event) {
+
+				event.preventDefault();
+
+				var targetPosition = document.getElementById(event.target.getAttribute('href').substring(1)).offsetTop;
+
+				var scroller = new window.Scroller()
+				.easing(window.Scroller.easing.easeInOutQuad);
+				scroller.to(0, targetPosition, duration);
+
+			}, false);
+		}
+
+	}
+	anchorScrolling(250);
+
+
 	// Reload content after application cache update
-	window.applicationCache.addEventListener('updateready', function(e) {
+	window.applicationCache.addEventListener('updateready', function (event) {
 		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-			if (confirm('A new version of this content is available. Load it?')) {
-				window.location.reload();
-			}
+			window.location.reload();
 		}
 	}, false);
 

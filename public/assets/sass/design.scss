@@ -7,6 +7,7 @@
 @import '_prism';
 
 @import '_type';
+@import '_animations';
 @import '_elements';
 
 html {
@@ -14,6 +15,21 @@ html {
 	color: #222;
 	font: 105%/1.6em 'Sonus-Light', Helvetica, Arial, sans-serif;
 	position: relative;
+}
+
+.reading-width {
+
+	width: 70%;
+	max-width: 1000px;
+
+	@media screen and (max-width: 800px) {
+		width: 80%;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 90%;
+	}
+
 }
 
 @import 'templates/_default';

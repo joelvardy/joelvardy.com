@@ -21,22 +21,7 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-	<body template="default">
-
-		<header class="primary" itemscope itemtype="http://schema.org/Person">
-			<a class="photo" href="/" title="About Joel Vardy">
-				<img itemprop="image" alt="Joel Vardy while working" src="/assets/img/joel-vardy.jpg" />
-			</a>
-			<hgroup>
-				<h1><a itemprop="name" href="/" title="About Joel Vardy">Joel Vardy</a></h1>
-				<h4 itemprop="jobTitle">Contract Software Engineer</h4>
-			</hgroup>
-			<nav>
-				<a <?php echo ($slug == 'about' ? 'class="active"' : ''); ?> href="/" title="About Joel Vardy">About</a>
-				<a <?php echo ($slug == 'projects' ? 'class="active"' : ''); ?> href="/projects" title="Projects I've been involved in">Projects</a>
-				<a <?php echo (strpos($slug, 'writing') === 0 ? 'class="active"' : ''); ?> href="/writing" title="Joel's Ramblings">Writing</a>
-			</nav>
-		</header>
+	<body template="about">
 
 		<?php echo $page_view; ?>
 
