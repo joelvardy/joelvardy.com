@@ -3,7 +3,7 @@
  * Source: https://github.com/daneden/animate.css
  */
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
 	0% {
 		transform: scale3d(1, 1, 1);
 	}
@@ -16,7 +16,7 @@
 }
 
 .pulse {
-	-webkit-animation-name: pulse;
-	-webkit-animation-duration: 750ms;
-	-webkit-animation-iteration-count: infinite;
+	animation-name: pulse;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
 }

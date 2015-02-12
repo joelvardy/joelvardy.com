@@ -5,6 +5,7 @@
         "del": "*",
         "gulp": "*",
         "gulp-ruby-sass": "*",
+        "gulp-autoprefixer": "*",
         "gulp-minify-css": "*",
         "gulp-concat": "*",
         "gulp-uglify": "*"

@@ -2,6 +2,7 @@
 var del = require('del'),
 	gulp = require('gulp'),
 	sass = require('gulp-ruby-sass'),
+	autoprefixer = require('gulp-autoprefixer'),
 	minifyCSS = require('gulp-minify-css'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify');
@@ -11,6 +12,7 @@ var del = require('del'),
 gulp.task('styles', function () {
 
 	return sass('./public/assets/sass/design.scss')
+	.pipe(autoprefixer())
 	.pipe(minifyCSS())
 	.on('error', function (error) {
 		console.error('Error!', error);
