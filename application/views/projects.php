@@ -2,7 +2,7 @@
 
 	<h2>Projects</h2>
 
-	<p>Would you like to <a class="filter" href="" title=""></a>?</p>
+	<p>Below are some of the projects I have been involved in, would you like to <a class="filter" href="" title=""></a>?</p>
 
 	<?php
 
