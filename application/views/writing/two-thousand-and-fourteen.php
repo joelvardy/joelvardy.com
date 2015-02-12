@@ -6,7 +6,7 @@
 	<p>It's been a very exciting year, I've visited <strong>six countries</strong> and biked across the border into a seventh. I've enjoyed many happy memories with friends and family :)</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/amsterdam.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/amsterdam.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">10<sup>th</sup></span><span class="bottom">Jan</span></time>
 			<div class="details">
@@ -19,7 +19,7 @@
 	<p>Towards the end of January I took a day trip down to London with my friend Ed, the weather was pretty grim, but we went on a twilight tour of the Tower of London which was great!</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/scotland.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/scotland.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">26<sup>th</sup></span><span class="bottom">Feb</span></time>
 			<div class="details">
@@ -38,7 +38,7 @@
 	<p>After having a few too many drinks in the recently opened Brew Dog in Sheffield my friends had to carry me home, marking yet another drunken tale to be told on nights out.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/bike-park-wales.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/bike-park-wales.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">19<sup>th</sup></span><span class="bottom">Apr</span></time>
 			<div class="details">
@@ -51,7 +51,7 @@
 	<p>I got up in the middle of the night and with my dad we went to take some photos of the sunrise up on Curbar Edge, I <a href="https://photos.joelvardy.com/79db81d451b1841f65a9665332ba34db" title="Curbar Edge Cows" data-analytics="Joels Photos">captured this amazing photo</a>.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/barcelona.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/barcelona.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">10<sup>th</sup></span><span class="bottom">May</span></time>
 			<div class="details">
@@ -64,7 +64,7 @@
 	<p>The month of May also brought the <strong>Steel City DH</strong> race at Grenoside woods. My first time back at the woods since my crash there last year. I captured a <a href="https://photos.joelvardy.com/4c2add6930c8551c617230875f5b5940" title="Steve Peat" data-analytics="Joels Photos">fantastic photo of Steve Peat</a>.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/fort-william.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/fort-william.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
@@ -77,7 +77,7 @@
 	<p>With wonderful bright, warm days I found myself spending a lot of time outside, either on my bike with friends, or taking photos.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/welsh-biking.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/welsh-biking.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">12<sup>th</sup></span><span class="bottom">Jul</span></time>
 			<div class="details">
@@ -91,7 +91,7 @@
 	<p>There was mud, but I've ridden in worse, I had a great time riding with some awesome people, have a look at <a href="https://trail.sx/f12d70" title="Alps biking tracks" data-analytics="Trails">where I rode my bike</a>.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/spa.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/spa.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">19<sup>th</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
@@ -104,7 +104,7 @@
 	<p>Me and Joe who I was with during the pan Germanic - Belgian trip both agree that the food we ate each evening in Germany was some of the best I've ever had.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/iceland.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/iceland.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">20<sup>th</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
@@ -119,7 +119,7 @@
 	<p>On bonfire night myself and two friends saw a great firework display at Waltham Windmill, the following weekend we had an enjoyable family bonfire, which as usual was pretty big, <a href="https://www.youtube.com/watch?v=bsbGcxAxhdI" title="2014 Bonfire Timelpase" data-analytics="Bonfire Timelapse on YouTube">take a look at the timelapse</a>.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/london.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/london.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">23<sup>rd</sup></span><span class="bottom">Nov</span></time>
 			<div class="details">
@@ -132,7 +132,7 @@
 	<p>I also saw A Day to Remember in Leeds with my good friend Andrew. And was visited by four <s>evil</s> great Scottish spirits which resulted in a great night drinking.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-fourteen/snow.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-fourteen/snow.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">28<sup>th</sup></span><span class="bottom">Dec</span></time>
 			<div class="details">

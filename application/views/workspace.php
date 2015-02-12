@@ -38,7 +38,7 @@
 	<p>At <a href="/projects#2k-drive" title="2K Drive">Lucid Games</a> the whole company used Macs and we were developing a game for the iPad. After a few months all of my hate towards Apple had gone, I decided I could justify the money and bought myself a MacBook Pro, and once my contract had finished I bought an iPad too.</p>
 
 	<div class="photo full-width">
-		<img src="/assets/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
 	</div>
 
 	<p>I also constructed my own NAS box, using a low power CPU, and four 2TB HDDs running FreeNAS, giving me a 5.2TB of usable space which I use for storing; photos, videos, and backups.</p>

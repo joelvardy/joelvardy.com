@@ -20,7 +20,7 @@
 	<p><em>I am going to assume your 'staging area' is a a subdomain of your production website - however it is possible to apply the methods discussed below to a subdirectory.</em></p>
 	<p>In my opinion the easiest way to protect yourself from the risks highlighted above is to force the use of HTTP Basic Auth for all requests to the staging subdomain. When you try to open the staging site you will be asked to enter a username and password as shown below:</p>
 	<div class="photo">
-		<img src="/assets/writing/secure-staging/http-basic-auth.jpg" width="450" />
+		<img src="/assets/img/writing/secure-staging/http-basic-auth.jpg" width="450" />
 	</div>
 	<p>There are two parts to adding HTTP Basic Auth on your staging domain:</p>
 	<ol>

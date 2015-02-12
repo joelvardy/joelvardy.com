@@ -7,7 +7,7 @@
 	<p>There have been two Summit Awesome hackathons previous to this one, after both I think everyone has been in agreement that doing an all nighter is a pretty stupid idea. But did I book into a local hotel room, of course not. Did I bring my amazing <a href="https://twitter.com/joelvardy/status/381031947029340160" data-analytics="MusucBag tweet">MusucBag</a>, no I didn't.</p>
 
 	<div class="photo full-width">
-		<img src="/assets/writing/summit-awesome-hackathon-february-2014/hero.jpg" />
+		<img src="/assets/img/writing/summit-awesome-hackathon-february-2014/hero.jpg" />
 	</div>
 
 	<h3>The Projects</h3>

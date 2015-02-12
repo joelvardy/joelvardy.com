@@ -13,7 +13,7 @@
 	</ul>
 
 	<div class="photo full-width">
-		<img src="/assets/writing/carbon-workspace/desk.jpg" />
+		<img src="/assets/img/writing/carbon-workspace/desk.jpg" />
 	</div>
 
 	<p>When fitting the vinyl covering, which is carbon fibre effect, I was worried this was going to look extremely <em>tacky</em>, however when it's being used I think it looks nice, it breaks up what was a sterile white area.</p>

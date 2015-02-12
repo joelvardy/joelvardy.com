@@ -10,7 +10,7 @@
 	<p>I knew the best solution would be a belt drive, this was how most professional sliders worked, my concern was how I would mount a belt onto the slider. The only mounting points were a single 1/4-20 UNC thread at each end.</p>
 
 	<div class="photo">
-		<img src="/assets/writing/motorised-timelapse-slider/back-of-the-envelope.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/back-of-the-envelope.jpg" />
 	</div>
 
 	<p>Above you can see the actual "back of the envelope" designs my brother drew for the fixings I would need to attach the belt to the slider dolly, and to hold a free spinning pulley at one end of the slider.</p>
@@ -18,25 +18,25 @@
 	<p>While I was waiting for my brother to cut the pieces from 2mm thick steel, I put together a solution to mount the motor, I decided to use a stepper motor for increased precision (using an Adafruit motor shield V2 so I could still easily control it from the Arduino.)</p>
 
 	<div class="photo">
-		<img src="/assets/writing/motorised-timelapse-slider/mounting-components.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/mounting-components.jpg" />
 	</div>
 
 	<p>Once I had the parts, I began mounting a free spinning pulley to the opposite end of the slider, preventing the assembly loosening proved quite a challenge but I eventually solved this by mounting the plate onto the bolt, and epoxying that assembly together, I could then remove the plate for transport.</p>
 
 	<div class="photo">
-		<img src="/assets/writing/motorised-timelapse-slider/free-spinning-pulley.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/free-spinning-pulley.jpg" />
 	</div>
 
 	<p>The dolly has a single threaded hole, and two proud lugs, the first steel plate had cutouts for the lugs ensuring it wouldn't move, this was bolted onto the dolly. The second plate would then be bolted to the first, with the belt sandwiched between the two.</p>
 
 	<div class="photo">
-		<img src="/assets/writing/motorised-timelapse-slider/dolly-belt-mounting.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/dolly-belt-mounting.jpg" />
 	</div>
 
 	<p>I ran the belt around the motor (shown below) and the free spinning pulley, and secured both ends between the steel plates, all that was left to do was program the Arduino I would be using to drive the stepper motor.</p>
 
 	<div class="photo">
-		<img src="/assets/writing/motorised-timelapse-slider/motor-mounting.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/motor-mounting.jpg" />
 	</div>
 
 	<p>I programmed the Arduino Uno I had and got the slider moving I also wired up a trigger lead for my camera so I could trigger the shutter by putting a pin of the Arduino high (using an opto-isolator between the two.)</p>
@@ -44,7 +44,7 @@
 	<p>However I was frustrated because in order to change any settings with the slider you had to connect to Arduino to my laptop, change the values and push the compiled code back to the Arduino. This was a pain and I didn't have the motivation to come up with a solution, so the slider remained in a box until a few weeks ago.</p>
 
 	<div class="photo full-width">
-		<img src="/assets/writing/motorised-timelapse-slider/yun-development-desk.jpg" />
+		<img src="/assets/img/writing/motorised-timelapse-slider/yun-development-desk.jpg" />
 	</div>
 
 	<p>I got the slider out and quickly my desk was covered in components, I bought a 12V to USB adaptor which I would use to power the Arduino, I also bought an Arduino Yun which has a second processor running linux, this means you can run a simple web interface and pass commands to the Arduino using a REST API.</p>

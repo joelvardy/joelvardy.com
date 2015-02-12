@@ -15,24 +15,23 @@
 		<li><strong>Launch when logged in</strong> checkbox is ticked.</li>
 	</ul>
 	<div class="photo">
-		<img src="/assets/writing/ssh-tunneling/ssh-proxy-preferences-general.jpg" width="500" />
+		<img src="/assets/img/writing/ssh-tunneling/ssh-proxy-preferences-general.jpg" width="500" />
 	</div>
 	<p>Then add a server under the <strong>Servers</strong> tab, simply setting the details to login to the server over SSH. You can then close the preferences window. Select <strong>Turn proxy on</strong> from the utility menu in the status bar.</p>
 	<div class="photo">
-		<img src="/assets/writing/ssh-tunneling/ssh-proxy-turn-on.jpg" width="300" />
+		<img src="/assets/img/writing/ssh-tunneling/ssh-proxy-turn-on.jpg" width="300" />
 	</div>
 
 	<h3>System Level Proxy</h3>
 	<p>The next step is to make the operating system (OSX) use the SOCKS proxy for all network connections, do do this navigate to: <strong>System Preferences</strong> > <strong>Network</strong> > <strong>Advanced</strong> > <strong>Proxies</strong> > <strong>SOCKS Proxy</strong>. Then set the host to 127.0.0.1 and the port to 7070, as shown below:</p>
 	<div class="photo">
-		<img src="/assets/writing/ssh-tunneling/osx-socks.jpg" width="500" />
+		<img src="/assets/img/writing/ssh-tunneling/osx-socks.jpg" width="500" />
 	</div>
 
 	<h3>Workflow</h3>
 	<p>The SSH Proxy app has an option called <strong>Direct internet connection (no proxy)</strong> this is very useful because it means so long as the utility is running you can use no proxy, or route all network traffic through a proxy, without having to do anything but two clicks.</p>
 	<video controls>
-		<source src="/assets/writing/ssh-tunneling/usage.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
-		<source src="/assets/writing/ssh-tunneling/usage.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+		<source src="/assets/img/writing/ssh-tunneling/usage.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
 	</video>
 	<p><strong>Please note:</strong> this is my first ever screencast.</p>
 

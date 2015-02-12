@@ -8,7 +8,7 @@
 	<p>I started the year off, as I usually do, with my birthday, a very chilled out evening with some friends.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/macbook-pro.jpg" />
 		<div class="inner">
 			<time datetime="2013-01-12"><span class="top">12<sup>th</sup></span><span class="bottom">Jan</span></time>
 			<div class="details">
@@ -25,7 +25,7 @@
 	<p>Straight after the 24 hour hackathon in Manchester I traveled directly to Aviemore in the Scottish Highlands, I was exhausted when I arrived, but the beautiful weather made up for it. <strong>I even got out on my snowboard!</strong>.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/skiing.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/skiing.jpg" />
 		<div class="inner">
 			<time datetime="2013-02-18"><span class="top">18<sup>th</sup></span><span class="bottom">Feb</span></time>
 			<div class="details">
@@ -40,7 +40,7 @@
 	<p>I also went up to Scotland for a long weekend with my mum in March. After a day skiing at the Nevis Range we saw the wind would be too high for skiing the next day so we did an ice climbing taster session at Ice Factor at Kinlochleven.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/industry-conf.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/industry-conf.jpg" />
 		<div class="inner">
 			<time datetime="2013-04-24"><span class="top">24<sup>th</sup></span><span class="bottom">Apr</span></time>
 			<div class="details">
@@ -55,7 +55,7 @@
 	<p>I visited Oxford for a day with a few friends, it was a beautiful sunny day. However I'm still quite surprised that with four guys <a href="http://en.wikipedia.org/wiki/Punt_(boat)" title="What is punting?" data-analytics="Punting on Wikipedia">punting</a> on the river Cherwell, one of us didn't end up in the water. We also watched Derren Brown's svengali show, however I felt this was pretty disappointing.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/berlin.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/berlin.jpg" />
 		<div class="inner">
 			<time datetime="2013-05-10"><span class="top">10<sup>th</sup></span><span class="bottom">May</span></time>
 			<div class="details">
@@ -70,7 +70,7 @@
 	<p>The weather was very nice from the end of May into the start of June, so I was out on my bike a lot, visiting the Derwent reservoir for a second time, Farmer Johns, and Style Cop within a week.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/scottish-roadtrip.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/scottish-roadtrip.jpg" />
 		<div class="inner">
 			<time datetime="2013-06-09"><span class="top">9<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
@@ -83,7 +83,7 @@
 	<p>I attended a Summit Awesome event in Leeds, at which I (as usual) got heavily inebriated, while taking lots of photos.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/kinky-kaylee.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/kinky-kaylee.jpg" />
 		<div class="inner">
 			<time datetime="2013-06-23"><span class="top">24<sup>th</sup></span><span class="bottom">Jun</span></time>
 			<div class="details">
@@ -96,7 +96,7 @@
 	<p>Myself and a friend took part in a climbing introduction course at a local climbing wall, during the warm summer I started doing some bouldering out in Derbyshire with another friend.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/of-tales-untold.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/of-tales-untold.jpg" />
 		<div class="inner">
 			<time datetime="2013-07-13"><span class="top">13<sup>th</sup></span><span class="bottom">Jul</span></time>
 			<div class="details">
@@ -109,7 +109,7 @@
 	<p>I saw Fall Out Boy in Hamburg, I have been a fan for years, and was so happy when I heard they they were ending their hiatus late 2012, it was awesome to finally see them live!</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/orkney.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/orkney.jpg" />
 		<div class="inner">
 			<time datetime="2013-08-15"><span class="top">15<sup>th</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
@@ -122,7 +122,7 @@
 	<p>While in Germany, I planned to go to Leeds Fest, the first <strong>real</strong> festival I've been to. The mud was horrific, the bands were great, lugging our stuff back across the ruined fields to the bus was a struggle. But my highlight by far (as all of my friends know) was seeing Eminem perform live!</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/prague.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/prague.jpg" />
 		<div class="inner">
 			<time datetime="2013-08-31"><span class="top">31<sup>st</sup></span><span class="bottom">Aug</span></time>
 			<div class="details">
@@ -135,7 +135,7 @@
 	<p>I was really enjoying mountain biking, even more so because I now had a GoPro and a great quality dSLR to document our adventures. Me and my brother were riding a local mini downhill track several times a week while the weather was nice.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/mtb-crash.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/mtb-crash.jpg" />
 		<div class="inner">
 			<time datetime="2013-09-29"><span class="top">29<sup>th</sup></span><span class="bottom">Sep</span></time>
 			<div class="details">
@@ -148,7 +148,7 @@
 	<p>This year I was introduced to Farmer Johns, a well maintained mountain bike park in Stockport. A week after my mountain bike crash I spectated a night race at Farmer Johns, it was great to get back out of the house and see some biking.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/full-face.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/full-face.jpg" />
 		<div class="inner">
 			<time datetime="2013-10-23"><span class="top">23<sup>rd</sup></span><span class="bottom">Oct</span></time>
 			<div class="details">
@@ -161,7 +161,7 @@
 	<p>When I got my new bike in July I decided to start using Strava, in the six months I was using Strava, I recorded 32 rides covering over <strong>650km</strong>. My favourite decent this year is Jacob's Ladder having ridden it three times in 2013.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/bonfire.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/bonfire.jpg" />
 		<div class="inner">
 			<time datetime="2013-11-02"><span class="top">2<sup>nd</sup></span><span class="bottom">Nov</span></time>
 			<div class="details">
@@ -176,7 +176,7 @@
 	<p>I bought my 2014 Fort William Mountain Bike World Cup ticket, I'm already looking forward to next years Scottish road trip.</p>
 
 	<div class="photo full-width event">
-		<img src="/assets/writing/two-thousand-and-thirteen/hovercrafting.jpg" />
+		<img src="/assets/img/writing/two-thousand-and-thirteen/hovercrafting.jpg" />
 		<div class="inner">
 			<time datetime="2013-12-14"><span class="top">14<sup>th</sup></span><span class="bottom">Dec</span></time>
 			<div class="details">
