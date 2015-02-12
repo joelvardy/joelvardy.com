@@ -3,6 +3,7 @@
 	<header class="full-page" itemscope itemtype="http://schema.org/Person">
 
 		<nav>
+			<a class="active" href="/" title="About Joel Vardy">About</a>
 			<a href="/projects" title="Projects I've been involved in">Projects</a>
 			<a href="/writing" title="Joel's Ramblings">Writing</a>
 		</nav>
@@ -15,8 +16,7 @@
 
 	</header>
 
-	<div id="skills">
-
+	<section id="skills">
 		<div class="inner">
 
 			<h2>Skills</h2>
@@ -63,11 +63,9 @@
 			</ul>
 
 		</div>
+	</section>
 
-	</div>
-
-	<div id="biography">
-
+	<section id="biography">
 		<div class="inner">
 
 			<h2>Joel Vardy</h2>
@@ -81,11 +79,9 @@
 			<p>As well as writing <a href="/writing" title="(mainly) technical writing">more technical posts</a> here, I decided to start writing about my travels on a recent <a href="https://joelgonewild.com/category/iceland" title="Visiting Iceland in 2014" data-analytics="Joel Gone Wild">trip to Iceland</a>.</p>
 
 		</div>
+	</section>
 
-	</div>
-
-	<div id="contact">
-
+	<section id="contact">
 		<div class="inner">
 
 			<h2>Contact Me</h2>
@@ -98,7 +94,6 @@
 			<p>Want to send me something securely? Here is <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x19C3C64D81E91203" title="Public PGP key" data-analytics="Public PGP key">my public PGP key</a>.</p>
 
 		</div>
-
-	</div>
+	</section>
 
 </section>

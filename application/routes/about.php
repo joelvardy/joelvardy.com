@@ -4,10 +4,10 @@ use Joelvardy\View;
 
 $app->get('/', function () use ($app) {
 
-	echo View::template('about.php', [
+	echo View::template('default.php', [
 		'slug' => 'about',
-		'title' => 'Joel Vardy - Contract Software Engineer in the UK',
-		'description' => 'I\'m a contract Software Engineer with more than 4 years experience in OOP PHP &#38; JS serving the UK. View projects I have been involved in.'
+		'title' => 'Joel Vardy - Web Developer Available For Work in the UK',
+		'description' => 'I\'m a contract / freelance Web Developer with years of experience in OOP PHP &amp; JavaScript working the UK. View projects I have been involved in.'
 	], 'about.php');
 
 });

@@ -1,30 +1,39 @@
-section[page=projects] div.project {
+section[page=projects] {
 
-	background: white;
-	border: 1px rgba(0,0,0,0.1) solid;
-	border-radius: 4px;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
-	margin-top: 3em;
-	overflow: hidden;
-
-	img.header, img.footer {
-		width: 100%;
+	header.half-page {
+		background-image: url('../img/projects/loch.jpg');
+		background-position: left center;
 	}
 
-	div.inner {
+	div.project {
 
-		padding: 8%;
+		background: white;
+		border: 1px rgba(0,0,0,0.1) solid;
+		border-radius: 4px;
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);
+		margin-top: 3em;
+		overflow: hidden;
 
-		h2 {
-			margin-top: 0;
+		img.header, img.footer {
+			width: 100%;
 		}
 
-		ul.details {
+		div.inner {
 
-			margin-top: 1em;
+			padding: 8%;
 
-			li strong {
-				color: black;
+			h2 {
+				margin-top: 0;
+			}
+
+			ul.details {
+
+				margin-top: 1em;
+
+				li strong {
+					color: black;
+				}
+
 			}
 
 		}

@@ -33,15 +33,12 @@ html {
 }
 
 @import 'templates/_default';
-@import 'templates/_about';
-
 
 @import 'pages/_about';
 @import 'pages/_workspace';
 @import 'pages/_projects';
 @import 'pages/_writing-list';
 @import 'pages/_writing-post';
-
 
 @media print {
 

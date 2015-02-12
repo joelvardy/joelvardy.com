@@ -1,15 +1,34 @@
 <section page="<?php echo $slug; ?>">
 
-	<h2>Projects</h2>
+	<header class="half-page" itemscope itemtype="http://schema.org/Person">
 
-	<p>Below are some of the projects I have been involved in, would you like to <a class="filter" href="" title=""></a>?</p>
+		<nav>
+			<a href="/" title="About Joel Vardy">About</a>
+			<a class="active" href="/projects" title="Projects I've been involved in">Projects</a>
+			<a href="/writing" title="Joel's Ramblings">Writing</a>
+		</nav>
 
-	<?php
+		<hgroup>
+			<h1><a itemprop="name" href="/" title="About Joel Vardy">Joel Vardy</a></h1>
+			<h4>Need a <span itemprop="jobTitle">Web Developer</span>? <a href="/#contact" title="Contact Joel Vardy">Get in touch</a>!</h4>
+		</hgroup>
 
-		foreach ($projects as $project) {
-			echo $project;
-		}
+	</header>
 
-	?>
+	<section id="content">
+
+		<h2>Projects</h2>
+
+		<p>Below are some of the projects I have been involved in, would you like to <a class="filter" href="" title=""></a>?</p>
+
+		<?php
+
+			foreach ($projects as $project) {
+				echo $project;
+			}
+
+		?>
+
+	</section>
 
 </section>

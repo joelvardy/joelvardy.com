@@ -2,28 +2,8 @@ section[page=about] {
 
 	header.full-page {
 
-		background: rgb(225, 225, 225) url('../img/about/joel-vardy-lonely-iceland.jpg') left center;
-		background-size: cover;
-		min-height: 100vh;
-		position: relative;
-
-		nav {
-
-			overflow: hidden;
-
-			a {
-				background: rgba(white, 0.5);
-				border-bottom-left-radius: 3px;
-				border-bottom-right-radius: 3px;
-				color: #222;
-				float: left;
-				margin-left: 20px;
-				padding: 5px 10px;
-				text-shadow: white 0px 1px 0px;
-				text-transform: uppercase;
-			}
-
-		}
+		background-image: url('../img/about/joel-vardy-lonely-iceland.jpg');
+		background-position: left center;
 
 		h1, p {
 
@@ -67,7 +47,7 @@ section[page=about] {
 
 		a.down {
 			@extend .pulse;
-			background: url('../img/down.svg') center center no-repeat;
+			background: url('../img/icons/down.svg') center center no-repeat;
 			background-size: 60px;
 			display: block;
 			height: 50px;
@@ -91,7 +71,7 @@ section[page=about] {
 		padding-bottom: 3em;
 	}
 
-	div#skills {
+	section#skills {
 
 		overflow: hidden;
 
@@ -102,9 +82,9 @@ section[page=about] {
 
 	}
 
-	div#biography {
+	section#biography {
 
-		background: url('../img/about/sky.jpg') left center;
+		background: url('../img/about/sky.jpg') center center;
 		background-size: cover;
 		color: white;
 		overflow: hidden;
@@ -121,7 +101,7 @@ section[page=about] {
 
 	}
 
-	div#contact {
+	section#contact {
 
 		overflow: hidden;
 
