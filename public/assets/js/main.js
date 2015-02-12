@@ -107,8 +107,8 @@ window.addEventListener('load', function (event) {
 			}
 
 			// Ensure photos are full width
-			var body = document.querySelector('body'),
-				bodyMargin = Math.ceil((document.documentElement.clientWidth - parseFloat(window.getComputedStyle(document.body).width)) / 2);
+			var container = imageContainer.parentNode,
+				bodyMargin = Math.ceil((document.documentElement.clientWidth - parseFloat(window.getComputedStyle(container).width)) / 2);
 			imageContainer.style.marginLeft = -bodyMargin+'px';
 			imageContainer.style.marginRight = -bodyMargin+'px';
 
