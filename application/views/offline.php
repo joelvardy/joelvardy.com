@@ -19,7 +19,7 @@ CACHE:
 	}
 ?>
 /assets/minified/design.css
-/assets/minified/main.js
+/assets/minified/app.js
 <?php
 	foreach ($images as $image) {
 		echo $image."\n";
