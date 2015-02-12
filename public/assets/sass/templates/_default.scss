@@ -2,9 +2,8 @@ body[template=default] {
 
 	header {
 
-		background: rgb(225, 225, 225) url('../img/joel-vardy-peak-district.jpg') right center;
+		background: rgb(225, 225, 225) url('../img/joel-vardy-peak-district.jpg') left center;
 		background-size: cover;
-		position: relative;
 
 		&.full-page {
 			min-height: 100vh;
@@ -17,16 +16,9 @@ body[template=default] {
 			hgroup {
 
 				color: #222;
-				left: 75px;
-				position: absolute;
-				top: 100px;
+				margin-top: 40px;
+				text-align: center;
 				text-shadow: white 0px 1px 0px;
-
-				@media screen and (max-width: 500px) {
-					left: 5%;
-					text-align: center;
-					width: 90%;
-				}
 
 				a {
 					color: #222;
