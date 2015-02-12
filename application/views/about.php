@@ -72,7 +72,7 @@
 
 			<p>I enjoy building websites; front end, back end, mobile apps, and APIs. So much so that I continue doing it in my free time. However it's also important for me to get some fresh air outside.</p>
 			<ul>
-				<li><strong>skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
+				<li><strong>Skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 				<li>Getting muddy <strong>mountain biking</strong>, I'm just on the doorstep of the Peak District.</li>
 				<li>I've got a passion for <a href="http://photos.joelvardy.com" title="My Photography" data-analytics="Photography Website">photography</a>, so I'll often have a camera in my bag.</li>
 			</ul>
