@@ -9,7 +9,7 @@ $app->get('/manifest', function () use ($app) {
 		$app->notFound();
 	}
 
-	header('Content-Type: text/cache-manifest');
+	$app->response()->header('Content-Type', 'text/cache-manifest');
 
 	function files($directory, $type = false) {
 		$list = array();
