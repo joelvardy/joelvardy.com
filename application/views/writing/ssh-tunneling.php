@@ -30,10 +30,6 @@
 
 	<h3>Workflow</h3>
 	<p>The SSH Proxy app has an option called <strong>Direct internet connection (no proxy)</strong> this is very useful because it means so long as the utility is running you can use no proxy, or route all network traffic through a proxy, without having to do anything but two clicks.</p>
-	<video controls>
-		<source src="/assets/img/writing/ssh-tunneling/usage.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
-	</video>
-	<p><strong>Please note:</strong> this is my first ever screencast.</p>
 
 	<h3>/etc/hosts</h3>
 	<p>When your traffic is being tunneled through a SSH tunnel your hosts file will not be used to resolve hostnames. If you are doing local development you will want to add exceptions to the network proxies preferences, see <a href="http://apple.stackexchange.com/a/95198" title="Read more at StackExchange" data-analytics="SSH tunneling  with local hosts on StackExchange">this answer on StackExchange</a>. If you have a better solution to this, please get in touch.</p>
