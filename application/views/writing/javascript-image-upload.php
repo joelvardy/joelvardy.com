@@ -6,7 +6,7 @@
 	<p>I put a lot of effort into reducing website load time, the longest a user has to wait is usually when they try to upload a file. In the case of uploading an image, it is highly likely the user is uploading a photo straight from their digital camera.</p>
 	<p>In an effort to reduce the users waiting time, and the server load, I'm going to resize images in the browser before uploading them. By doing this you can easily achieve a 90% bandwidth saving.</p>
 	<p>I have written a brief demo which allows you to select a number of images, these will then be resized in the browser, and uploaded on the fly. By doing this you can easily achieve a 90% bandwidth saving.</p>
-	
+
 	<h3>Why Do this?</h3>
 	<p>Take this example:</p>
 	<ul>
@@ -31,7 +31,7 @@ resize.photo(fileOrBlob, 800, 'dataURL', function (thumbnail) {
 });</code></pre>
 
 	<h3>The Demo</h3>
-	<p>My demo uses vanilla JavaScript and will only work on modern browsers, it is available at <a href="http://demo.joelvardy.com/uploads/" title="JavaScript image upload demo" data-analytics="JavaScript image upload demo">demo.joelvardy.com/uploads</a> - upload some (large) images, and see what you think.</p>
+	<p>My demo uses vanilla JavaScript and will only work on modern browsers, it is available at <a href="https://demo.joelvardy.com/uploads/" title="JavaScript image upload demo" data-analytics="JavaScript image upload demo">demo.joelvardy.com/uploads</a> - upload some (large) images, and see what you think.</p>
 
 	<h3>The Benefits</h3>
 	<p>Because of the resizing there isn't a linear size saving, however I uploaded a few different size images with the <code class="language-javascript">max_size</code> variable set to 1200px - the results are shown below:</p>

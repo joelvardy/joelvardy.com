@@ -31,6 +31,6 @@
 	<p>On your next train journey, open up your laptop and try something new. If you're in an interview and the person opposite mentions a technology, the answer <quote>I've not used it commercially, but I played with it on the train once</quote> should make them realise you're someone who is keen to learn and interested.</p>
 	<p>This doesn't just relate to web development, I'm sure you could try something new in Excel too.</p>
 
-	<p>This week I've been playing around with <a href="http://demo.joelvardy.com/brightness-crop" title="JavaScript image manipulation demo" data-analytics="JavaScript image manipulation demo">simple image manipulation in JavaScript</a>.</p>
+	<p>This week I've been playing around with <a href="https://demo.joelvardy.com/brightness-crop/" title="JavaScript image manipulation demo" data-analytics="JavaScript image manipulation demo">simple image manipulation in JavaScript</a>.</p>
 
 </div>
