@@ -164,11 +164,14 @@ window.addEventListener('load', function (event) {
 
 
 	// Reload content after application cache update
+	/**
+	 * Don't reload page, changes will be visible on the subsequent page load
 	window.applicationCache.addEventListener('updateready', function (event) {
 		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
 			window.location.reload();
 		}
 	}, false);
+	*/
 
 
 });
