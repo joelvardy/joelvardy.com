@@ -43,6 +43,12 @@ You can minify JavaScript and compile SASS by running gulp:
 gulp watch
 ```
 
+You can also check JavaScript using:
+
+```
+gulp lint
+```
+
 ## Application
 
 ### Libraries

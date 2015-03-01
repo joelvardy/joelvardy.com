@@ -8,6 +8,8 @@
         "gulp-autoprefixer": "*",
         "gulp-minify-css": "*",
         "gulp-concat": "*",
+        "gulp-jshint": "*",
+        "jshint-stylish": "*",
         "gulp-uglify": "*"
     }
 }

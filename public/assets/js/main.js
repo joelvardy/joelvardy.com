@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
 			var image = imageContainer.querySelector('img');
 
 			// Convert image tags into background images (if this is not being called by resize event)
-			if (event == null) {
+			if (event === null) {
 				imageContainer.style.backgroundImage = 'url('+image.src+')';
 				image.parentNode.removeChild(image);
 			}
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
 		}
 
-	}
+	};
 	fullWidthImages();
 	window.addEventListener('resize', fullWidthImages, false);
 
@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
 		}
 
-	}
+	};
 	galleries();
 
 
@@ -99,7 +99,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
 			}, false);
 		}
 
-	}
+	};
 	anchorScrolling(250);
 
 

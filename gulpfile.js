@@ -5,6 +5,8 @@ var del = require('del'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minifyCSS = require('gulp-minify-css'),
 	concat = require('gulp-concat'),
+	jshint = require('gulp-jshint'),
+	jshintStylish = require('jshint-stylish'),
 	uglify = require('gulp-uglify');
 
 
@@ -18,6 +20,16 @@ gulp.task('styles', function () {
 		console.error('Error!', error);
 	})
 	.pipe(gulp.dest('./public/assets/minified'));
+
+});
+
+
+// Lint JavaScript
+gulp.task('lint', function () {
+
+	return gulp.src('public/assets/js/main.js')
+	.pipe(jshint())
+	.pipe(jshint.reporter('jshint-stylish'));
 
 });
 
