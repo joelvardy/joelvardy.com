@@ -19,7 +19,7 @@
 
 		<h2>Projects</h2>
 
-		<p>Below are some of the projects I have been involved in, would you like to <a class="filter" href="" title=""></a>?</p>
+		<p>Below are some of the projects I have been involved in, if you would like a full CV please <a href="/#contact" title="Contact Joel Vardy">get in touch</a>.</p>
 
 		<?php
 
