@@ -4,16 +4,6 @@ This is the code which powers my personal website.
 
 ## Development
 
-### Vagrant
-
-To run the development server ensure Vagrant is installed run:
-
-```
-vagrant up
-```
-
-Then add `192.168.56.101 joelvardy.dev` to your `/etc/hosts` file and you will be able to view the development website at [joelvardy.dev][dev].
-
 ### Packages
 
 Install PHP dependencies with composer:
