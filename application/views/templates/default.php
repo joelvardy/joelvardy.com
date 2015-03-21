@@ -19,6 +19,23 @@
 			ga('create', 'UA-27602018-2', 'joelvardy.com');
 			ga('send', 'pageview');
 		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Person",
+				"name": "Joel Vardy",
+				"email": "info@joelvardy.com",
+				"image": "/assets/img/joel-vardy.jpg",
+				"jobTitle": "Web Developer",
+				"url": "https://joelvardy.com",
+				"description": "A contract web developer.",
+				"gender": "male",
+				"address": {
+					"@type": "PostalAddress",
+					"addressCountry": "GB"
+				}
+			}
+		</script>
 	</head>
 	<body template="default">
 

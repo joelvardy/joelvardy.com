@@ -1,6 +1,6 @@
 <section page="<?php echo $slug; ?>">
 
-	<header class="full-page" itemscope itemtype="http://schema.org/Person">
+	<header class="full-page">
 
 		<nav>
 			<a class="active" href="/" title="About Joel Vardy">About</a>
@@ -8,9 +8,9 @@
 			<a href="/writing" title="Joel's Ramblings">Writing</a>
 		</nav>
 
-		<h1 itemprop="name">Joel Vardy</h1>
+		<h1>Joel Vardy</h1>
 
-		<p>I'm a <strong itemprop="jobTitle">Web Developer</strong> looking for freelance / contract work in the UK.</p>
+		<p>I'm a <strong>Web Developer</strong> looking for freelance / contract work in the UK.</p>
 
 		<a class="down" href="#skills"></a>
 
