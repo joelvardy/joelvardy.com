@@ -2,6 +2,8 @@
 
 This is the code which powers my personal website.
 
+With a recent refactor of the website I moved from using my own custom routing, templating, to using the [Slim Framework][slim]. 
+
 ## Development
 
 ### Packages
@@ -55,7 +57,7 @@ The `/application/views` directory contains the HTML with makes up the website, 
 
 All requests (which are not valid resources) are routed to the `/public/index.php` file, this file loads all of the routes, the matching route will have a callback which is then executed.
 
-[Joel Vardy][joelvardy]
+Developed by [Joel Vardy][joelvardy].
 
   [joelvardy]: https://joelvardy.com/
-  [dev]: http://joelvardy.dev/
+  [slim]: http://www.slimframework.com
