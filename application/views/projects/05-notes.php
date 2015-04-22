@@ -13,7 +13,7 @@
 		</ul>
 
 		<p>I relocated to Liverpool to work at Lucid Games and I had spare time in the evenings, I wanted to reinforce my objective oriented JavaScript knowledge and try Laravel 4. So I wrote a simple note taking app, I made this a little more unique by adding client side encryption to the notes, meaning they the encryption key is only stored on the clients browser, and it is not possible to read the contents of the notes on the server.</p>
-		<p>In 2015 I made a series of changes including; adding PHPUnit tests for the API endpoints, and moving from custom JavaScript to using AngularJS.</p>
+		<p>In 2015 I made a series of changes including; adding PHPUnit tests for the API endpoints, and moving from custom JavaScript to using <strong>AngularJS</strong>.</p>
 		<p>You can view the source, and look at the API documentation on <a href="https://github.com/joelvardy/notes.mx" title="Notes App repository" data-analytics="Notes App repo">GitHub</a>.</p>
 
 	</div>

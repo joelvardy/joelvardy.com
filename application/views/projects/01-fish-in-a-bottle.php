@@ -13,7 +13,7 @@
 		</ul>
 
 		<p>I relocated to Leamington Spa to work for Fish in a Bottle where I was involved in developing a social network called IGGY, a website which is aimed at gifted 13 to 19 year olds, the website gives them a place to discuss and debate with intellectual peers, gain guidance from university student mentors, and participate in projects and competitions.</p>
-		<p>Myself and two other developers saw the project through from planning to conclusion.</p>
+		<p>Myself and two other developers saw the project through from planning to conclusion, using <strong>PyroCMS</strong> (built with CodeIgniter) and <strong>LESS</strong> for CSS preprocessing.</p>
 
 	</div>
 
