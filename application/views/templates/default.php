@@ -1,6 +1,6 @@
 <!--
 
-	The source code for this website is publically available at:
+	The source code for this website is publicly available at:
 	https://github.com/joelvardy/joelvardy.com
 
 	If you want to hire me, get in touch: info@joelvardy.com
