@@ -30,6 +30,7 @@
 					<ul>
 						<li><strong>CodeIgniter</strong> version 2</li>
 						<li><strong>Laravel</strong> version 3 &amp; 4</li>
+						<li><strong>Lumen by Laravel</strong></li>
 						<li><strong>Slim</strong> version 2</li>
 						<li><strong>Flight</strong> an extensible micro-framework for PHP</li>
 					</ul>
@@ -45,6 +46,7 @@
 				<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
 				<li>Experience of developing <strong>responsive designs</strong>.</li>
 				<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
+                <li>Comfortable trying new Javascript libraries.</li>
 				<li>Experience using <strong>AngularJS</strong>.</li>
 				<li>Development of <strong>Cordova</strong> (and PhoneGap) mobile applications.</li>
 			</ul>
