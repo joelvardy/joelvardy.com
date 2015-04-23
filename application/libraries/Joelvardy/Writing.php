@@ -33,39 +33,43 @@ class Writing {
 	 */
 	public static function posts() {
 
-		$posts = [];
+        return Cache::remember('posts', function() {
 
-		foreach (array_reverse(glob(VIEWS_PATH.'/writing/*.php')) as $post) {
+            $posts = [];
 
-			$post_filename = pathinfo($post)['basename'];
-			$html = View::render('writing/'.$post_filename);
-			$dom = \Sunra\PhpSimple\HtmlDomParser::str_get_html($html);
+            foreach (array_reverse(glob(VIEWS_PATH.'/writing/*.php')) as $post) {
 
-			$post_title = $dom->find('h2', 0)->innertext;
-			$post_slug = self::generate_slug($post_title);
-			$post_date = strtotime($dom->find('date', 0)->innertext);
-			$post_intro = $dom->find('p', 0)->innertext;
+                $post_filename = pathinfo($post)['basename'];
+                $html = View::render('writing/'.$post_filename);
+                $dom = \Sunra\PhpSimple\HtmlDomParser::str_get_html($html);
 
-			// Ensure the posted date has passed
-			if ($post_date < $_SERVER['REQUEST_TIME']) {
-				$posts[$post_slug] = (object) array(
-					'slug' => $post_slug,
-					'filename' => $post_filename,
-					'title' => $post_title,
-					'posted' => $post_date,
-					'intro' => $post_intro
-				);
-			}
+                $post_title = $dom->find('h2', 0)->innertext;
+                $post_slug = self::generate_slug($post_title);
+                $post_date = strtotime($dom->find('date', 0)->innertext);
+                $post_intro = $dom->find('p', 0)->innertext;
 
-		}
+                // Ensure the posted date has passed
+                if ($post_date < $_SERVER['REQUEST_TIME']) {
+                    $posts[$post_slug] = (object) array(
+                        'slug' => $post_slug,
+                        'filename' => $post_filename,
+                        'title' => $post_title,
+                        'posted' => $post_date,
+                        'intro' => $post_intro
+                    );
+                }
 
-		// Sort values by posted date
-		uasort($posts, function($a, $b) {
-			return $a->posted - $b->posted;
-		});
-		$posts = array_reverse($posts);
+            }
 
-		return $posts;
+            // Sort values by posted date
+            uasort($posts, function($a, $b) {
+                return $a->posted - $b->posted;
+            });
+            $posts = array_reverse($posts);
+
+            return $posts;
+
+        });
 
 	}
 
