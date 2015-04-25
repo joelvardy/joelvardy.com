@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>RESTful Routes</h2>
-	<h4>Posted: <date>26th June 2013</date></h4>
+	<h4 class="date">Posted: <date>26th June 2013</date></h4>
 
 	<p>A Composer package which allows you to easily map routes to a block of code. This is an ideal base for small websites and RESTful APIs.</p>
 

@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Re-engagement Emails</h2>
-	<h4>Posted: <date>14th May 2014</date></h4>
+	<h4 class="date">Posted: <date>14th May 2014</date></h4>
 
 	<p>Today I'm going to show you some code which will re-engage users by sending them an email if a goal is not met. For example give them a 5% discount email if they do not complete the checkout process after an hour.</p>
 	<p>There are three actions which we need to make, these are:</p>

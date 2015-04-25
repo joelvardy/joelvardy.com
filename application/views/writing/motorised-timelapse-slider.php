@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Motorised Timelapse Slider</h2>
-	<h4>Posted: <date>16th January 2015</date></h4>
+	<h4 class="date">Posted: <date>16th January 2015</date></h4>
 
 	<p>I can't remember when I first decided I wanted to shoot a timelapse on a slider, probably, I suppose when I first saw a timescape video several years ago. In March last year I bought a Konova K2 800mm slider from Amazon. Now I need to motorise it!</p>
 

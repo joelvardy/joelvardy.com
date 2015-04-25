@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>What Do You Do On The Train?</h2>
-	<h4>Posted: <date>14th March 2014</date></h4>
+	<h4 class="date">Posted: <date>14th March 2014</date></h4>
 
 	<p>Contracting outside of my home city, and not being a driver, means I'm frequently on trains, there are three things I do on trains.</p>
 	<ul>

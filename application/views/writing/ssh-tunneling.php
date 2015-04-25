@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>SSH Tunneling</h2>
-	<h4>Posted: <date>15th May 2014</date></h4>
+	<h4 class="date">Posted: <date>15th May 2014</date></h4>
 
 	<p>Tunneling your network traffic through an SSH connection can be useful if you want to encrypt all outbound traffic, get around a corporate firewall, or make connections from a white listed static IP address.</p>
 	<p>The way I had previously done this was to run a command in the terminal to open up a SOCKS proxy, then change the Google Chrome network settings to route all requests through the tunnel. However I am going to show you how I have SSH tunnels set up on my Mac.</p>

@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Carbon Workspace</h2>
-	<h4>Posted: <date>27th October 2014</date></h4>
+	<h4 class="date">Posted: <date>27th October 2014</date></h4>
 
 	<p>My workspace has been updated several times since it was featured on Lifehacker, after my summer trip to Iceland I put some A2 prints up on the walls, they look great, but the surface of my desk was looking worn, it was time for an update.</p>
 

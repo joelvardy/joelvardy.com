@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Permission Based Authentication Library</h2>
-	<h4>Posted: <date>27th September 2013</date></h4>
+	<h4 class="date">Posted: <date>27th September 2013</date></h4>
 
 	<p>I can't count the number of authentication libraries I have written since I started building websites, often I would simply iterate on the previous library each time I wrote one.</p>
 

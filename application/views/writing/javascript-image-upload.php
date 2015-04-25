@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>JavaScript Image Upload</h2>
-	<h4>Posted: <date>4th July 2013</date></h4>
+	<h4 class="date">Posted: <date>4th July 2013</date></h4>
 
 	<p>I put a lot of effort into reducing website load time, the longest a user has to wait is usually when they try to upload a file. In the case of uploading an image, it is highly likely the user is uploading a photo straight from their digital camera.</p>
 	<p>In an effort to reduce the users waiting time, and the server load, I'm going to resize images in the browser before uploading them. By doing this you can easily achieve a 90% bandwidth saving.</p>

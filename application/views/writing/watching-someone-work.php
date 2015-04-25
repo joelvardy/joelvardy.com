@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Watching Someone Work</h2>
-	<h4>Posted: <date>26th July 2014</date></h4>
+	<h4 class="date">Posted: <date>26th July 2014</date></h4>
 
 	<p>Today I knew no one would be home, I wasn't waiting for any deliveries, and I wanted to put together a simple mobile app. So I decided I would take a timelapse of me working.</p>
 	<p>I've always liked workspaces, I enjoy looking at other peoples workspace, the tools they use, and digging into their work flow. If you're just as curious feel free to have a look at <a href="/workspace" title="Joel Vardy's Workspace">my workspace</a>.</p>

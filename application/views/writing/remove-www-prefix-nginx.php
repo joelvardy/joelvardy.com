@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Remove WWW Prefix (nginx)</h2>
-	<h4>Posted: <date>12th June 2014</date></h4>
+	<h4 class="date">Posted: <date>12th June 2014</date></h4>
 
 	<p>Some people like domains to have a www. prefix, I don't I find it an unnecessary relic of the <em>old web</em>. It's also bad practice to be serving the same content over both www.domain.tld and domain.tld</p>
 	<p>I'm going to show you how to write one rule which will redirect all www. prefixed domains to the plain domain. I am using nginx as my web server, I don't think this is as easy with Apache (however this is probably possible with a default vhost and some rewrites.)</p>

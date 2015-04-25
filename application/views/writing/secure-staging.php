@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Secure Staging</h2>
-	<h4>Posted: <date>27th July 2014</date></h4>
+	<h4 class="date">Posted: <date>27th July 2014</date></h4>
 
 	<p>When developing websites you often have to setup one or multiple staging areas, these are often used for showing a client the progress, testing the website works on a production environment, and gaining final sign off from the client. It's important that these staging areas are secured.</p>
 	<ul>

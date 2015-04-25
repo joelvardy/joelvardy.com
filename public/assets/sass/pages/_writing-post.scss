@@ -6,7 +6,7 @@ section[page=writing-post] {
 
 	div.post {
 
-		h4 {
+		h4.date {
 			font-family: 'Sonus-Light', Helvetica, Arial, sans-serif;
 			font-size: 1.05em;
 			margin-top: 0;
@@ -22,6 +22,10 @@ section[page=writing-post] {
 			margin: 3em 0;
 			position: relative;
 			z-index: 97;
+
+            img {
+                position: absolute;
+            }
 
 			&:after {
 				background-image: linear-gradient(transparent 0, rgba(0,0,0,0.75) 100%);
@@ -94,7 +98,7 @@ section[page=writing-post] {
 
 					color: white;
 					position: absolute;
-					top: 300px;
+					top: 275px;
 
 					h4 {
 						border-bottom: 1px white solid;

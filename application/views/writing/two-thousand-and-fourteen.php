@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Two Thousand and Fourteen</h2>
-	<h4>Posted: <date>31st December 2014</date></h4>
+	<h4 class="date">Posted: <date>31st December 2014</date></h4>
 
 	<p>It's been a very exciting year, I've visited <strong>six countries</strong> and biked across the border into a seventh. I've enjoyed many happy memories with friends and family :)</p>
 

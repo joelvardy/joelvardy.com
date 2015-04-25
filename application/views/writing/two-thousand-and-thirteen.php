@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Two Thousand and Thirteen</h2>
-	<h4>Posted: <date>1st January 2014</date></h4>
+	<h4 class="date">Posted: <date>1st January 2014</date></h4>
 
 	<p>I've done so much in two thousand and thirteen; <strong>good</strong>, <strong>bad</strong>, <strong>sad</strong>, <strong>happy</strong>, <strong>important</strong>, and <strong>trivial</strong>. I'm going to keep a record of these things here, hopefully I'll look back at the list when I'm a little more decrepit.</p>
 

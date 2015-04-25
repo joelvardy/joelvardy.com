@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Storing Files on Amazon S3</h2>
-	<h4>Posted: <date>23rd July 2013</date></h4>
+	<h4 class="date">Posted: <date>23rd July 2013</date></h4>
 
 	<p>There are several reasons why you might not want to store files directly on the web server; <strong>scalability</strong> - where you have several web servers, <strong>disk IO</strong> - HDDs are a servers biggest performance bottle neck, or <strong>disk space</strong> - cloud storage is much more scalable.</p>
 	<p>I'm going to show you how to store files on <a href="http://aws.amazon.com/s3/" title="Amazon Simple Storage Service" data-analytics="Amazon S3">Amazon S3</a>, you will needs an Amazon Web Services account, and user credentials (access key ID and a secret access key) with access to your S3 buckets, for help on how to do this look at the <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_SettingUpUser.html" title="Adding an IAM User to Your AWS Account" data-analytics="Amazon AWS">Amazon AWS docs</a>.</p>

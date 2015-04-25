@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Account Security</h2>
-	<h4>Posted: <date>2nd May 2013</date></h4>
+	<h4 class="date">Posted: <date>2nd May 2013</date></h4>
 
 	<p>This subject has been covered so many times, but it amazes me how some of the basic steps to secure your users accounts and therefore your application are not taken.</p>
 	<p>I'm even more amazed that large companies which <a href="http://www.bbc.co.uk/news/technology-19316825" title="BBC artcile talking about the insecurities of plain text password storage" data-analytics="BBC story about Tesco web security">know plain text password storage is bad</a>, will still store passwords in plain text.</p>

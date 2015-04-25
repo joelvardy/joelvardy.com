@@ -1,7 +1,7 @@
 <div class="post">
 
 	<h2>Summit Awesome Hackathon February 2014</h2>
-	<h4>Posted: <date>3rd February 2014</date></h4>
+	<h4 class="date">Posted: <date>3rd February 2014</date></h4>
 
 	<p>Almost a year on from the last Summit Awesome hackathon, we are back in Manchester, at the TechHub, for another two day hackathon with some great, like-minded people.</p>
 	<p>There have been two Summit Awesome hackathons previous to this one, after both I think everyone has been in agreement that doing an all nighter is a pretty stupid idea. But did I book into a local hotel room, of course not. Did I bring my amazing <a href="https://twitter.com/joelvardy/status/381031947029340160" data-analytics="MusucBag tweet">MusucBag</a>, no I didn't.</p>
