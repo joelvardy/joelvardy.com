@@ -11,13 +11,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slimphp/Slim.git",
-                "reference": "f2868820476a80323a468b1ba054c82d9419b7bd"
+                "url": "https://github.com/codeguy/Slim.git",
+                "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/f2868820476a80323a468b1ba054c82d9419b7bd",
-                "reference": "f2868820476a80323a468b1ba054c82d9419b7bd",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/04958a10ed95bc7bc97568e573877d4f9b62db48",
+                "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2015-03-15 20:09:06"
+            "time": "2014-12-09 19:59:29"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
