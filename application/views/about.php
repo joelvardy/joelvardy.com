@@ -28,9 +28,9 @@
 				<li>Several years usage and good understanding of object oriented <strong>PHP5</strong>.</li>
 				<li>Working knowledge of several frameworks:
 					<ul>
-						<li><strong>CodeIgniter</strong> version 2</li>
-						<li><strong>Laravel</strong> version 3 &amp; 4</li>
+						<li><strong>Laravel</strong> versions 3, 4, &amp; 5</li>
 						<li><strong>Lumen by Laravel</strong></li>
+						<li><strong>CodeIgniter</strong> version 2</li>
 						<li><strong>Slim</strong> version 2</li>
 						<li><strong>Flight</strong> an extensible micro-framework for PHP</li>
 					</ul>
@@ -72,7 +72,7 @@
 
 			<h2>Joel Vardy</h2>
 
-			<p>I enjoy building websites; front end, back end, mobile apps, and APIs. So much so that I continue doing it in my free time. However it's also important for me to get some fresh air outside.</p>
+			<p>I enjoy building websites; front end, back end, mobile apps, and APIs. So much so that I continue doing it in my free time. But sometimes I do leave the house / office / coffee shop, and when I do I get up to:</p>
 			<ul>
 				<li><strong>Skiing</strong> or <strong>snowboarding</strong>, both I've been doing for years.</li>
 				<li>Getting muddy <strong>mountain biking</strong>, I'm just on the doorstep of the Peak District.</li>
