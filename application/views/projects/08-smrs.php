@@ -9,7 +9,7 @@
 		<ul class="details">
 			<li><strong>Project Type:</strong> Contract Work</li>
 			<li><strong>Website:</strong> <a href="http://smrs.co.uk/" title="SMRS" data-analytics="SMRS">smrs.co.uk</a></li>
-			<li><strong>Date:</strong> December 2013 - Current</li>
+			<li><strong>Date:</strong> December 2013 - August 2015</li>
 		</ul>
 
 		<p>SMRS is an advertising recruitment agency, for me this meant building websites which informed the user about a company they may be interested in applying for.</p>
