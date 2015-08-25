@@ -46,8 +46,7 @@
 				<li>I believe in progressive enhancement, using <strong>CSS3</strong> where possible.</li>
 				<li>Experience of developing <strong>responsive designs</strong>.</li>
 				<li>A good knowledge of <strong>jQuery</strong> - although I know when and how to use vanilla JavaScript.</li>
-                <li>Comfortable trying new Javascript libraries.</li>
-				<li>Experience using <strong>AngularJS</strong>.</li>
+				<li>Experience using <strong>AngularJS</strong>, <strong>ES6</strong> modules / classes, <strong>Ractive</strong>.</li>
 				<li>Development of <strong>Cordova</strong> (and PhoneGap) mobile applications.</li>
 			</ul>
 
