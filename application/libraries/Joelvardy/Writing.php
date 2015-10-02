@@ -46,7 +46,7 @@ class Writing {
                 $post_title = $dom->find('h2', 0)->innertext;
                 $post_slug = self::generate_slug($post_title);
                 $post_date = strtotime($dom->find('date', 0)->innertext);
-                $post_intro = $dom->find('p', 0)->innertext;
+                $post_intro = strip_tags($dom->find('p', 0)->innertext);
 
                 // Ensure the posted date has passed
                 if ($post_date < $_SERVER['REQUEST_TIME']) {
