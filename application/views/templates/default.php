@@ -7,7 +7,7 @@
 
 -->
 <!DOCTYPE html>
-<html lang="en-GB" manifest="/manifest">
+<html lang="en-GB">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php echo $title; ?></title>
