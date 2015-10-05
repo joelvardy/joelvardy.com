@@ -43,7 +43,7 @@
 		</script>
         <meta property="og:title" content="<?php echo $title; ?>">
         <meta property="og:type" content="article">
-        <meta property="og:image" content="/assets/img/joel-vardy.jpg">
+        <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
         <meta property="og:description" content="<?php echo $description; ?>">
         <meta property="og:site_name" content="Joel Vardy">
 	</head>
