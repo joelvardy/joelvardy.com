@@ -41,11 +41,14 @@
 				]
 			}
 		</script>
-        <meta property="og:title" content="<?php echo $title; ?>">
-        <meta property="og:type" content="article">
-        <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
-        <meta property="og:description" content="<?php echo $description; ?>">
-        <meta property="og:site_name" content="Joel Vardy">
+		<?php if (isset($openGraph)) : ?>
+			<meta property="og:url" content="https://joelvardy.com<?php echo $openGraph->url; ?>">
+			<meta property="og:title" content="<?php echo $title; ?>">
+			<meta property="og:type" content="<?php echo $openGraph->type; ?>">
+			<meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
+			<meta property="og:description" content="<?php echo $description; ?>">
+			<meta property="og:site_name" content="Joel Vardy">
+		<?php endif; ?>
 	</head>
 	<body template="default">
 

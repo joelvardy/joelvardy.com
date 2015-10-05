@@ -14,6 +14,10 @@ $app->get('/projects', function () use ($app) {
 		'slug' => 'projects',
 		'title' => 'Contract, Freelance &#38; Personal Projects By Joel Vardy',
 		'description' => 'View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!',
+		'openGraph' => (object) [
+			'url' => '/projects',
+			'type' => 'website',
+		],
 		'projects' => $projects
 	], 'projects.php');
 
