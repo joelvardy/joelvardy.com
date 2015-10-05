@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en-GB" manifest="/manifest">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php echo $title; ?></title>
 		<meta name="description" content="<?php echo $description; ?>" />
 		<link async rel="stylesheet" href="/assets/minified/design.css" />
