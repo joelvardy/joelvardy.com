@@ -1,19 +1,19 @@
 @font-face {
 	font-family: 'Sonus-Light';
-	src: url('../font/sonus-light.eot');
-	src: url('../font/sonus-light.eot?#iefix') format('embedded-opentype'),
-	     url('../font/sonus-light.woff') format('woff'),
-	     url('../font/sonus-light.ttf') format('truetype');
+	src: url('/assets/font/sonus-light.eot');
+	src: url('/assets/font/sonus-light.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/font/sonus-light.woff') format('woff'),
+	     url('/assets/font/sonus-light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Sonus-Regular';
-	src: url('../font/sonus-regular.eot');
-	src: url('../font/sonus-regular.eot?#iefix') format('embedded-opentype'),
-	     url('../font/sonus-regular.woff') format('woff'),
-	     url('../font/sonus-regular.ttf') format('truetype');
+	src: url('/assets/font/sonus-regular.eot');
+	src: url('/assets/font/sonus-regular.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/font/sonus-regular.woff') format('woff'),
+	     url('/assets/font/sonus-regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
