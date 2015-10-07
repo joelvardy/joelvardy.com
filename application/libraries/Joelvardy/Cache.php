@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Cache library
+ *
+ * A wrapper for returning a Memcached instance
+ */
+
 namespace Joelvardy;
 
 class Cache
@@ -8,7 +14,7 @@ class Cache
     protected $memcached = false;
 
     /**
-     * Return Memcached object
+     * Return Memcached instance
      */
     protected function memcached($host = '127.0.0.1', $port = 11211)
     {
