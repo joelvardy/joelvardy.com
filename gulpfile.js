@@ -13,7 +13,7 @@ var del = require('del'),
 // Styles
 gulp.task('styles', function () {
 
-	return sass('./public/assets/sass/design.scss')
+	return sass('./public/assets/scss/design.scss')
 	.pipe(autoprefixer())
 	.pipe(minifyCSS())
 	.on('error', function (error) {
@@ -61,6 +61,6 @@ gulp.task('default', ['clean'], function () {
 
 // Watch
 gulp.task('watch', function () {
-	gulp.watch('./public/assets/sass/**/*.scss', ['styles']);
+	gulp.watch('./public/assets/scss/**/*.scss', ['styles']);
 	gulp.watch('./public/assets/js/**/*.js', ['scripts']);
 });

@@ -20,7 +20,7 @@ Install JavaScript dependencies with npm:
 npm install
 ```
 
-### SASS and JavaScript
+### SCSS and JavaScript
 
 Ensure packages are installed:
 
@@ -29,7 +29,7 @@ sudo gem install sass
 npm install -g gulp
 ```
 
-You can minify JavaScript and compile SASS by running gulp:
+You can minify JavaScript and compile SCSS by running gulp:
 
 ```
 gulp watch

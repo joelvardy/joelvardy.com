@@ -1,0 +1,70 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import '_prism';
+
+@import '_type';
+@import '_animations';
+@import '_elements';
+
+html {
+    background: #f2efeb;
+    color: #222;
+    font: 105%/1.6em 'Sonus-Light', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.reading-width {
+
+    width: 70%;
+    max-width: 1000px;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
+
+}
+
+@import 'templates/_default';
+
+@import 'pages/_about';
+@import 'pages/_workspace';
+@import 'pages/_projects';
+@import 'pages/_writing-list';
+@import 'pages/_writing-post';
+
+@media print {
+
+    body, section[page=writing-post] div.post div.photo.event div.inner {
+        width: 100%;
+    }
+
+    header nav a:not(.active) {
+        display: none;
+    }
+
+    section[page=projects] div.project {
+
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 3em;
+
+        div.inner {
+            padding: 4%;
+        }
+
+    }
+
+    div.photo.full-width {
+        display: none;
+    }
+
+}

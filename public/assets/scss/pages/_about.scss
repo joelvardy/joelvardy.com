@@ -1,0 +1,108 @@
+section[page=about] {
+
+    header.full-page {
+
+        background-image: url('/assets/img/about/joel-vardy-lonely-iceland.jpg');
+        background-position: left center;
+
+        h1, p {
+
+            position: absolute;
+            right: 75px;
+            text-align: right;
+            max-width: 400px;
+
+            @media screen and (max-width: 550px) {
+                right: 5%;
+                max-width: none;
+                text-align: center;
+                width: 90%;
+            }
+
+        }
+
+        h1 {
+
+            font-size: 3em;
+            top: 75px;
+
+            @media screen and (max-width: 550px) {
+                top: 65px;
+            }
+
+        }
+
+        p {
+
+            font-size: 1.8em;
+            line-height: 1.5em;
+            top: 125px;
+
+            @media screen and (max-width: 550px) {
+                font-size: 1.6em;
+                top: 80px;
+            }
+
+        }
+
+        a.down {
+            @extend .pulse;
+            background: url('/assets/img/icons/down.svg') center center no-repeat;
+            background-size: 60px;
+            display: block;
+            height: 50px;
+            left: 50%;
+            margin: -25px 0 0 -50px;
+            position: absolute;
+            -webkit-tap-highlight-color: rgba(white, 0);
+            top: 50%;
+            width: 100px;
+        }
+
+    }
+
+    ul, ol {
+        list-style-position: inside;
+    }
+
+    div.inner {
+        @extend .reading-width;
+        margin: 0 auto;
+        padding-bottom: 3em;
+    }
+
+    section#skills {
+
+        overflow: hidden;
+
+        h4 {
+            border-bottom: 1px solid rgba(black, 0.075);
+            display: inline-block;
+        }
+
+    }
+
+    section#biography {
+
+        background: url('/assets/img/about/sky.jpg') center center;
+        background-size: cover;
+        color: white;
+        overflow: hidden;
+
+        h2 {
+            text-shadow: 0 0 15px black;
+        }
+
+        p, ul {
+            font-size: 1.15em;
+            line-height: 1.65em;
+            text-shadow: 1px 1px 5px black;
+        }
+
+    }
+
+    section#contact {
+        overflow: hidden;
+    }
+
+}

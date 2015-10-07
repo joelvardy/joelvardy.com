@@ -8,5 +8,5 @@
 # Node
 /node_modules
 
-# SASS
+# SCSS
 .sass-cache
