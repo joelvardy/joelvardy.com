@@ -2,45 +2,42 @@
 
 namespace Joelvardy;
 
-class Cache {
+class Cache
+{
 
+    protected $memcached = false;
 
     /**
-     * Remember result and return if saved
-     *
-     * @return	mixed
+     * Return Memcached object
      */
-    protected static $memcached = false;
-    protected static function memcached($host = '127.0.0.1', $port = 11211) {
+    protected function memcached($host = '127.0.0.1', $port = 11211)
+    {
 
-        if ( ! static::$memcached) {
-            static::$memcached = new \Memcached();
-            static::$memcached->addServer($host, $port);
+        if (!$this->memcached) {
+            $this->memcached = new \Memcached();
+            $this->memcached->addServer($host, $port);
         }
 
-        return static::$memcached;
+        return $this->memcached;
 
     }
 
-
     /**
-     * Remember result and return if saved
-     *
-     * @return	mixed
+     * Return value key, or run callback and save result
      */
-    public static function remember($key, callable $callback, $ttl = 0) {
+    public function remember($key, callable $callback, $ttl = 0)
+    {
 
-        $memcached = static::memcached();
-
-        if ($memcached->get($key)) return $memcached->get($key);
+        if ($this->memcached()->get($key)) {
+            return $this->memcached()->get($key);
+        }
 
         $result = $callback();
 
-        $memcached->add($key, $result, $ttl);
+        $this->memcached()->add($key, $result, $ttl);
 
         return $result;
 
     }
-
 
 }

@@ -33,7 +33,9 @@ class Writing {
 	 */
 	public static function posts() {
 
-        return Cache::remember('posts', function() {
+        $cache = new Cache();
+
+        return $cache->remember('posts', function() {
 
             $posts = [];
 
