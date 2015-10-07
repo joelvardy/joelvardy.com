@@ -4,12 +4,9 @@
     "dependencies": {
         "del": "*",
         "gulp": "*",
-        "gulp-ruby-sass": "*",
+        "gulp-sass": "*",
         "gulp-autoprefixer": "*",
-        "gulp-minify-css": "*",
         "gulp-concat": "*",
-        "gulp-jshint": "*",
-        "jshint-stylish": "*",
         "gulp-uglify": "*"
     }
 }
