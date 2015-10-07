@@ -5,6 +5,8 @@ use Joelvardy\Writing;
 
 $app->get('/writing', function () use ($app) {
 
+	$writing = new Writing();
+
 	echo View::template('default.php', [
 		'slug' => 'writing-list',
 		'title' => 'The Writings of a Web Developer',
@@ -13,14 +15,16 @@ $app->get('/writing', function () use ($app) {
 			'url' => '/writing',
 			'type' => 'website',
 		],
-		'posts' => Writing::posts()
+		'posts' => $writing->posts()
 	], 'writing-list.php');
 
 });
 
 $app->get('/writing/:postSlug', function ($slug) use ($app) {
 
-	$post = Writing::read($slug);
+	$writing = new Writing();
+
+	$post = $writing->read($slug);
 	if ( ! $post) $app->notFound();
 
 	echo View::template('default.php', [
