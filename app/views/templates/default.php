@@ -13,11 +13,16 @@
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $description; ?>">
         <meta name="theme-color" content="#cc6d00">
-        <!-- Using inline CSS just to max out the Google PageSpeed Insights -->
-        <!--<link rel="stylesheet" href="/assets/minified/design.css">-->
-        <style>
-            <?php echo file_get_contents(BASE_PATH.'/public/assets/minified/design.css'); ?>
-        </style>
+        <?php if (isset($openGraph)) : ?>
+            <meta property="og:url" content="https://joelvardy.com<?php echo $openGraph->url; ?>">
+            <meta property="og:title" content="<?php echo $title; ?>">
+            <meta property="og:type" content="<?php echo $openGraph->type; ?>">
+            <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
+            <meta property="og:description" content="<?php echo $description; ?>">
+            <meta property="og:site_name" content="Joel Vardy">
+        <?php endif; ?>
+        <link rel="stylesheet" href="/assets/minified/design.css">
+        <script async src="/assets/minified/app.js"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -54,19 +59,10 @@
                 ]
             }
         </script>
-        <?php if (isset($openGraph)) : ?>
-            <meta property="og:url" content="https://joelvardy.com<?php echo $openGraph->url; ?>">
-            <meta property="og:title" content="<?php echo $title; ?>">
-            <meta property="og:type" content="<?php echo $openGraph->type; ?>">
-            <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
-            <meta property="og:description" content="<?php echo $description; ?>">
-            <meta property="og:site_name" content="Joel Vardy">
-        <?php endif; ?>
     </head>
     <body class="template-default">
 
         <?php echo $pageView; ?>
 
-        <script src="/assets/minified/app.js"></script>
     </body>
 </html>
