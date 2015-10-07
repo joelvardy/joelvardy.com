@@ -28,11 +28,11 @@ class View
     /**
      * Render a view within a template
      *
-     * Add <?php echo $page_view; ?> in the template file where the view will be rendered
+     * Add <?php echo $pageView; ?> in the template file where the view will be rendered
      */
     public static function template($template, $data, $view)
     {
-        $data['page_view'] = self::render($view, $data);
+        $data['pageView'] = self::render($view, $data);
         return self::render('templates/' . $template, $data);
     }
 

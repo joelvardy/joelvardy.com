@@ -56,7 +56,7 @@
 	</head>
 	<body template="default">
 
-		<?php echo $page_view; ?>
+		<?php echo $pageView; ?>
 
 		<script src="/assets/minified/app.js"></script>
 	</body>
