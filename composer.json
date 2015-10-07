@@ -1,12 +1,12 @@
 {
-	"require": {
-		"slim/slim": "dev-master",
-		"sunra/php-simple-html-dom-parser": "dev-master"
-	},
-	"autoload": {
-		"psr-4": {
-			"Joelvardy\\": "application/libraries/Joelvardy/"
-		}
-	},
-	"minimum-stability": "dev"
+    "require": {
+        "slim/slim": "dev-master",
+        "sunra/php-simple-html-dom-parser": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Joelvardy\\": "app/libraries/Joelvardy/"
+        }
+    },
+    "minimum-stability": "dev"
 }
