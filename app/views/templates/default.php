@@ -22,7 +22,7 @@
             <meta property="og:site_name" content="Joel Vardy">
         <?php endif; ?>
         <link rel="stylesheet" href="/assets/minified/design.css">
-        <script async src="/assets/minified/app.js"></script>
+        <script src="/assets/minified/app.js"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;

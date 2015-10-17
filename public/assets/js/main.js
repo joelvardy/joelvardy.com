@@ -7,8 +7,7 @@ if (typeof String.prototype.startsWith !== 'function') {
     };
 }
 
-
-var pageLoaded = function () {
+window.addEventListener('DOMContentLoaded', function () {
 
     // Track external clicks (only run this if GA has loaded)
     ga(function () {
@@ -96,11 +95,4 @@ var pageLoaded = function () {
 
     })(250);
 
-};
-
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    pageLoaded();
-} else {
-    window.addEventListener('DOMContentLoaded', pageLoaded);
-}
-
+});
