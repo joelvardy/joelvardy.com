@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
                 var targetPosition = document.getElementById(event.target.getAttribute('href').substring(1)).offsetTop;
 
-                var scroller = new window.Scroller()
+                var scroller = new window.Scroller(document.body)
                     .easing(window.Scroller.easing.easeInOutQuad);
                 scroller.to(0, targetPosition, duration);
 
