@@ -13,6 +13,9 @@
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $description; ?>">
         <meta name="theme-color" content="#cc6d00">
+        <meta name="msapplication-navbutton-color" content="#cc6d00">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <?php if (isset($openGraph)) : ?>
             <meta property="og:url" content="https://joelvardy.com<?php echo $openGraph->url; ?>">
             <meta property="og:title" content="<?php echo $title; ?>">
