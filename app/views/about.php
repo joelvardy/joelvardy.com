@@ -60,7 +60,7 @@
             <h4>Version Control</h4>
             <ul>
                 <li>On my personal projects I use <strong>Git</strong>, my open source work can be found on my <a href="https://github.com/joelvardy" title="My GitHub Profile" data-analytics="GitHub Profile">GitHub profile</a>.</li>
-                <li>I also have commercial use of <strong>Subversion</strong> and <strong>Perforce</strong>.</li>
+                <li>I also have commercial use of <strong>Subversion</strong>, <strong>Perforce</strong>, and <strong>Mercurial</strong>.</li>
             </ul>
 
         </div>
