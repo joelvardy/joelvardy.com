@@ -2,22 +2,14 @@
 
 This is the code which powers my personal website.
 
-With a recent refactor of the website I moved from using my own custom routing, templating, to using the [Slim Framework][slim]. 
+With a recent refactor of the website I moved from using my own custom routing, templating, to using the [Slim Framework][slim].
 
 ## Development
 
-### Packages
-
-Install PHP dependencies with composer:
-
 ```
 composer install
-```
-
-Install JavaScript dependencies with npm:
-
-```
 npm install
+vagrant up
 ```
 
 ### SCSS and JavaScript
