@@ -1,6 +1,6 @@
-# Vagrant
+# VM
 /.vagrant
-/puphpet/files/dot/ssh
+/Homestead.yaml
 
 # Composer
 /vendor
