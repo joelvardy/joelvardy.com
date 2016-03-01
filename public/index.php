@@ -1,6 +1,6 @@
 <?php
 
-$app = require(__DIR__ . '/../app.php');
+$app = require(dirname(__DIR__) . '/app.php');
 
 // Load routes
 foreach (glob(ROUTES_PATH . '/*.php') as $route) {

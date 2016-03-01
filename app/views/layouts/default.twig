@@ -10,22 +10,22 @@
 <html lang="en-GB">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php echo $title; ?></title>
-        <meta name="description" content="<?php echo $description; ?>">
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ description }}">
         <meta name="theme-color" content="#cc6d00">
         <meta name="msapplication-navbutton-color" content="#cc6d00">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <?php if (isset($openGraph)) : ?>
-            <meta property="og:url" content="https://joelvardy.com<?php echo $openGraph->url; ?>">
-            <meta property="og:title" content="<?php echo $title; ?>">
-            <meta property="og:type" content="<?php echo $openGraph->type; ?>">
+        {% if openGraph is defined %}
+            <meta property="og:url" content="https://joelvardy.com{{ openGraph.url }}">
+            <meta property="og:title" content="{{ title }}">
+            <meta property="og:type" content="{{ openGraph.type }}">
             <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
-            <meta property="og:description" content="<?php echo $description; ?>">
+            <meta property="og:description" content="{{ description }}">
             <meta property="og:site_name" content="Joel Vardy">
-        <?php endif; ?>
-        <link rel="stylesheet" href="/assets/minified/design.css">
-        <script src="/assets/minified/app.js"></script>
+        {% endif %}
+        <link rel="stylesheet" href="/assets/build/{{ resources.css }}">
+        <script src="/assets/build/{{ resources.js }}"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -65,7 +65,7 @@
     </head>
     <body class="template-default">
 
-        <?php echo $pageView; ?>
+        {{ block('body') }}
 
     </body>
 </html>

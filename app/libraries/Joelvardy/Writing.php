@@ -1,30 +1,18 @@
 <?php
 
-/**
- * Writing library
- *
- * Several methods for returning posts
- */
-
 namespace Joelvardy;
 
 class Writing
 {
 
-    /**
-     * Generate a slug from title
-     */
     protected function generateSlug($title)
     {
         $title = strtolower($title);
-        $title = preg_replace('/[^a-z0-9-]/', '-', $title);
-        $title = preg_replace('/-+/', '-', $title);
-        return trim($title, '-');
+        $title = preg_replace('/[^a-z0-9-]/', '-', $title); // Replace non alphanumeric characters with hyphen
+        $title = preg_replace('/-+/', '-', $title); // Remove multiple hyphens which are together
+        return trim($title, '-'); // Remove hyphens from the beginning and end of the slug
     }
 
-    /**
-     * Return array of posts
-     */
     public function posts()
     {
 
@@ -34,10 +22,9 @@ class Writing
 
             $posts = [];
 
-            foreach (glob(VIEWS_PATH . '/writing/*.php') as $post) {
+            foreach (glob(VIEWS_PATH . '/writing/*.twig') as $post) {
 
-                $postFilename = pathinfo($post)['basename'];
-                $postHtml = View::render('writing/' . $postFilename);
+                $postHtml = file_get_contents($post);
                 $postDom = \Sunra\PhpSimple\HtmlDomParser::str_get_html($postHtml);
 
                 $postTitle = $postDom->find('h2', 0)->innertext;
@@ -45,15 +32,17 @@ class Writing
                 $postDate = strtotime($postDom->find('date', 0)->innertext);
 
                 // Ensure the posted date has passed
-                if ($postDate < $_SERVER['REQUEST_TIME']) {
-                    $posts[$postSlug] = (object)array(
-                        'slug' => $postSlug,
-                        'filename' => $postFilename,
-                        'title' => $postTitle,
-                        'posted' => $postDate,
-                        'intro' => strip_tags($postDom->find('p', 0)->innertext)
-                    );
+                if ($postDate > time()) {
+                    continue;
                 }
+
+                $posts[$postSlug] = (object)[
+                    'filename' => 'writing/' . pathinfo($post)['basename'],
+                    'slug' => $postSlug,
+                    'title' => $postTitle,
+                    'posted' => $postDate,
+                    'intro' => strip_tags($postDom->find('p', 0)->innertext)
+                ];
 
             }
 
@@ -68,9 +57,6 @@ class Writing
 
     }
 
-    /**
-     * Return a post
-     */
     public function read($slug)
     {
         $posts = self::posts();

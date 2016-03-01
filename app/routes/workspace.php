@@ -1,10 +1,8 @@
 <?php
 
-use Joelvardy\View;
+$app->get('/workspace', function ($request, $response, $args) {
 
-$app->get('/workspace', function () use ($app) {
-
-    echo View::template('default.php', [
+    return $this->view->render($response, 'workspace.twig', [
         'slug' => 'workspace',
         'title' => 'Workspace of a Web Developer',
         'description' => 'Some details and evolution of my lifehacker-featured workspace.',
@@ -12,6 +10,6 @@ $app->get('/workspace', function () use ($app) {
             'url' => '/workspace',
             'type' => 'article',
         ]
-    ], 'workspace.php');
+    ]);
 
-});
+})->setName('workspace');

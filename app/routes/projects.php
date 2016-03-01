@@ -1,24 +1,21 @@
 <?php
 
-use Joelvardy\View;
+$app->get('/projects', function ($request, $response, $args) {
 
-$app->get('/projects', function () use ($app) {
-
-    // Render each project view
-    $projects = array();
-    foreach (array_reverse(glob(VIEWS_PATH . '/projects/*.php')) as $project) {
-        $projects[] = View::render('projects/' . pathinfo($project)['basename']);
+    $projects = [];
+    foreach (array_reverse(glob(VIEWS_PATH . '/projects/*.twig')) as $project) {
+        $projects[] = 'projects/' . pathinfo($project)['basename'];
     }
 
-    echo View::template('default.php', [
+    return $this->view->render($response, 'projects.twig', [
         'slug' => 'projects',
-        'title' => 'Contract, Freelance &#38; Personal Projects By Joel Vardy',
+        'title' => 'Contract, Freelance & Personal Projects By Joel Vardy',
         'description' => 'View my recent development projects including PHP websites, JavaScript driven applications, libraries and more!',
         'openGraph' => (object)[
             'url' => '/projects',
             'type' => 'website',
         ],
         'projects' => $projects
-    ], 'projects.php');
+    ]);
 
-});
+})->setName('projects');

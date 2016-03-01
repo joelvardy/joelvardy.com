@@ -1,10 +1,8 @@
 <?php
 
-use Joelvardy\View;
+$app->get('/', function ($request, $response, $args) {
 
-$app->get('/', function () use ($app) {
-
-    echo View::template('default.php', [
+    return $this->view->render($response, 'about.twig', [
         'slug' => 'about',
         'title' => 'Joel Vardy - Web Developer Available For Work in the UK',
         'description' => 'I\'m a contract / freelance Web Developer with years of experience in OOP PHP &amp; JavaScript working the UK. View projects I have been involved in.',
@@ -12,6 +10,6 @@ $app->get('/', function () use ($app) {
             'url' => '/',
             'type' => 'website',
         ]
-    ], 'about.php');
+    ]);
 
-});
+})->setName('about');

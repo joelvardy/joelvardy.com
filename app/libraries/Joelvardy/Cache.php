@@ -1,46 +1,28 @@
 <?php
 
-/**
- * Cache library
- *
- * A wrapper for returning a Memcached instance
- */
-
 namespace Joelvardy;
 
 class Cache
 {
 
-    protected $memcached = false;
+    protected $memcached;
 
-    /**
-     * Return Memcached instance
-     */
-    protected function memcached($host = '127.0.0.1', $port = 11211)
+    public function __construct(string $host = null, integer $port = null)
     {
-
-        if (!$this->memcached) {
-            $this->memcached = new \Memcached();
-            $this->memcached->addServer($host, $port);
-        }
-
-        return $this->memcached;
-
+        $this->memcached = new \Memcached();
+        $this->memcached->addServer(($host ?: '127.0.0.1'), ($port ?: 11211));
     }
 
-    /**
-     * Return value key, or run callback and save result
-     */
-    public function remember($key, callable $callback, $ttl = 0)
+    public function remember(string $key, callable $callback, integer $ttl = null)
     {
 
-        if ($this->memcached()->get($key)) {
-            return $this->memcached()->get($key);
+        if ($this->memcached->get($key)) {
+            return $this->memcached->get($key);
         }
 
         $result = $callback();
 
-        $this->memcached()->add($key, $result, $ttl);
+        $this->memcached->add($key, $result, ($ttl ?: 0));
 
         return $result;
 

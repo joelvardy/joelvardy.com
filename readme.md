@@ -2,40 +2,37 @@
 
 This is the code which powers my personal website.
 
-With a recent refactor of the website I moved from using my own custom routing, templating, to using the [Slim Framework][slim].
+General changes:
+
+ * Was a custom built (albeit basic) framework with a few libraries
+ * Rebuilt using [Slim Framework][slim] version 2
+ * Updated to [Slim Framework][slim] version 3
 
 ## Development
 
 ```
 composer install
 npm install
+php vendor/bin/homestead make
+vim Homestead.yaml
 vagrant up
 ```
 
 ### SCSS and JavaScript
 
-You can minify JavaScript and compile SCSS by running gulp:
+I am using the Laravel Elixir NPM package to manage SCSS, JS compilation and generate a versioned build file.
 
 ```
-gulp # Compile once
-gulp watch # Compile and watch for changes
+gulp
+gulp --production
 ```
 
-## Application
+## Production
 
-### Libraries
-
-Most of the libraries I am using are loaded by Composer (see the `/composer.json` file) - however within the `/app/libraries/Joelvardy` directory there are a few application specific libraries.
-
-### Routes
-
-All files in the `/app/routes` directory are loaded into the application.
-
-### Views
-
-The `/app/views` directory contains the HTML with makes up the website, under this folder are project / writing partials.
-
-All requests (which are not valid resources) are routed to the `/public/index.php` file, this file loads all of the routes, the matching route will have a callback which is then executed.
+```
+composer install
+# Ensure ./cache is writable
+```
 
 Developed by [Joel Vardy][joelvardy].
 

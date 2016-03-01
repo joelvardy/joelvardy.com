@@ -1,13 +1,8 @@
 <?php
 
-use Joelvardy\View;
-use Joelvardy\Writing;
+$app->get('/writing', function ($request, $response, $args) {
 
-$app->get('/writing', function () use ($app) {
-
-    $writing = new Writing();
-
-    echo View::template('default.php', [
+    return $this->view->render($response, 'writing-list.twig', [
         'slug' => 'writing-list',
         'title' => 'The Writings of a Web Developer',
         'description' => 'Articles, tutorials, and opinions written by Joel Vardy about various web development topics.',
@@ -15,21 +10,19 @@ $app->get('/writing', function () use ($app) {
             'url' => '/writing',
             'type' => 'website',
         ],
-        'posts' => $writing->posts()
-    ], 'writing-list.php');
+        'posts' => $this->writing->posts()
+    ]);
 
-});
+})->setName('writing.list');
 
-$app->get('/writing/:postSlug', function ($slug) use ($app) {
+$app->get('/writing/{postSlug}', function ($request, $response, $args) {
 
-    $writing = new Writing();
-
-    $post = $writing->read($slug);
+    $post = $this->writing->read($args['postSlug']);
     if (!$post) {
-        $app->notFound();
+        return $response->withStatus(404);
     }
 
-    echo View::template('default.php', [
+    return $this->view->render($response, 'writing-post.twig', [
         'slug' => 'writing-post',
         'title' => $post->title,
         'description' => strip_tags($post->intro),
@@ -37,7 +30,7 @@ $app->get('/writing/:postSlug', function ($slug) use ($app) {
             'url' => '/writing/' . $post->slug,
             'type' => 'article',
         ],
-        'post' => View::render('writing/' . $post->filename)
-    ], 'writing-post.php');
+        'post' => $post
+    ]);
 
-});
+})->setName('writing.post');

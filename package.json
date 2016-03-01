@@ -1,12 +1,16 @@
 {
     "name": "joelvardy",
     "private": true,
+    "devDependencies": {
+        "browserify-shim": "^3.8.12",
+        "gulp": "^3.8.8"
+    },
     "dependencies": {
-        "del": "*",
-        "gulp": "*",
-        "gulp-sass": "*",
-        "gulp-autoprefixer": "*",
-        "gulp-concat": "*",
-        "gulp-uglify": "*"
+        "laravel-elixir": "^3.0.0"
+    },
+    "browser": {
+        "startsWith": "./assets/js/vendor/starts-with.js",
+        "prism": "./assets/js/vendor/prism.js",
+        "scroller": "./assets/js/vendor/scroller.js"
     }
 }
