@@ -5,7 +5,7 @@ namespace Joelvardy;
 class Writing
 {
 
-    protected function generateSlug($title)
+    protected function generateSlug(string $title)
     {
         $title = strtolower($title);
         $title = preg_replace('/[^a-z0-9-]/', '-', $title); // Replace non alphanumeric characters with hyphen
@@ -57,7 +57,7 @@ class Writing
 
     }
 
-    public function read($slug)
+    public function read(string $slug)
     {
         $posts = self::posts();
         return (isset($posts[$slug]) ? $posts[$slug] : false);
