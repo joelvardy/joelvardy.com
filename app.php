@@ -4,7 +4,7 @@ require(__DIR__ . '/init.php');
 
 $container = new \Slim\Container([
     'settings' => [
-        'displayErrorDetails' => true,
+        'displayErrorDetails' => false,
     ],
 ]);
 
