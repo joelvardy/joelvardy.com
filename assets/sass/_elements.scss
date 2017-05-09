@@ -1,0 +1,174 @@
+img {
+    border: 0;
+    display: block;
+}
+
+ul, ol {
+
+    list-style-position: outside;
+
+    li {
+        margin-top: 0.1em;
+    }
+
+    ul, ol {
+        margin-top: 0.1em !important;
+        margin-left: 1em;
+    }
+
+}
+
+ul {
+    list-style-type: square;
+}
+
+s {
+    text-decoration: strikethrough;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 1.5em;
+}
+
+h4 {
+    margin-top: 1em;
+}
+
+h5 {
+    margin-top: 0.5em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+ul, ol {
+    margin-top: 0.5em;
+}
+
+blockquote {
+
+    background: rgba(0, 0, 0, 0.025);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    padding: 1em 1.5em;
+
+    cite {
+        display: block;
+        font-weight: bold;
+        margin-top: 1em;
+    }
+
+    :first-child {
+        margin-top: 0;
+    }
+
+}
+
+table {
+
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
+
+    thead {
+        background: #222;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    tbody tr {
+
+        background: rgba(0, 0, 0, 0.025);
+
+        &:nth-child(even) {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+    }
+
+    th, td {
+        padding: 1% 2%;
+    }
+
+}
+
+.reading-content {
+
+    width: 70%;
+    margin: auto;
+    max-width: 1000px;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
+
+}
+
+hgroup.section {
+
+    height: 1.5em;
+    margin: 2em 0;
+    position: relative;
+
+    span {
+        background: rgb(100, 100, 100);
+        display: block;
+        height: 1px;
+        position: relative;
+        top: 50%;
+        width: 100%;
+    }
+
+    h3 {
+
+        display: inline-block;
+        background: #f2efeb;
+        left: 37.5%;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        width: 25%;
+
+        @media screen and (max-width: 850px) {
+            left: 25%;
+            width: 50%;
+        }
+
+    }
+
+}
+
+img {
+    margin: auto;
+    max-width: 100%;
+}
+
+div.video {
+
+    height: 0;
+    position: relative;
+    margin: 3em 0;
+
+    &.aspect-16-9 {
+        padding-bottom: 56.25%;
+    }
+
+    iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+}

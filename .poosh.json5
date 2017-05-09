@@ -1,0 +1,37 @@
+{
+    plugins: [
+        "s3"
+    ],
+    baseDir: "./public",
+    remote: {
+        "default": {
+            type: "s3",
+            region: "eu-west-1",
+            bucket: "joelvardy.com",
+            accessKeyId: "",
+            secretAccessKey: ""
+        }
+    },
+    each: [
+        {
+            headers: {
+                "cache-control": {
+                    cacheable: "public"
+                }
+            }
+        },
+        {
+            match: "**/*.{jpg,png,gif,ico,eot,ttf,woff,html,css,js,svg}",
+            gzip: false,
+            headers: {
+                "cache-control": {
+                    maxAge: "1 year"
+                }
+            }
+        },
+        {
+            match: "**/*.html",
+            priority: -1
+        }
+    ]
+}

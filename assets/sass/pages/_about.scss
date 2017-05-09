@@ -1,0 +1,144 @@
+body[data-section=about] {
+
+    padding-bottom: 0;
+
+    header.full-page {
+
+        background-image: url('/images/lonely-iceland.jpg');
+        background-position: left center;
+
+        h1, p {
+
+            position: absolute;
+            right: 75px;
+            text-align: right;
+            max-width: 500px;
+
+            @media screen and (max-width: 550px) {
+                right: 5%;
+                max-width: none;
+                text-align: center;
+                width: 90%;
+            }
+
+        }
+
+        h1 {
+
+            font-size: 2.75em;
+            top: 75px;
+
+            @media screen and (max-width: 550px) {
+                top: 85px;
+            }
+
+        }
+
+        p {
+
+            font-size: 1.7em;
+            line-height: 1.5em;
+            top: 125px;
+
+            @media screen and (max-width: 550px) {
+                font-size: 1.6em;
+                top: 110px;
+            }
+
+        }
+
+        a.down {
+            @extend .pulse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            left: 50%;
+            margin: -25px 0 0 -50px;
+            position: absolute;
+            -webkit-tap-highlight-color: rgba(white, 0);
+            top: 50%;
+            width: 100px;
+            svg {
+                width: 60px;
+            }
+        }
+
+    }
+
+    section#hello, section#photos, section#contact {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+    }
+
+    section#hello, section#contact {
+        min-height: 50vh;
+        .reading-content {
+
+            align-items: center;
+            display: flex;
+
+            * {
+                margin: 0;
+            }
+
+            p {
+                margin-top: 1em;
+            }
+
+            ul {
+                margin: 1em 0 0 1em;
+            }
+
+            :first-child {
+                margin-top: 0;
+            }
+
+            svg {
+                flex: 1;
+
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+
+            &.icon-left svg {
+                margin-right: 2em;
+            }
+
+            &.icon-right svg {
+                margin-left: 2em;
+            }
+
+            .text {
+                flex: 2;
+            }
+
+        }
+    }
+
+    section#photos {
+        background-image: radial-gradient(#95a5a6, #7f8c8d);
+        max-width: none;
+        width: 100%;
+        .photo {
+            &:nth-child(2), &:nth-child(3) {
+                margin-left: 2em;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .photo:nth-child(2) {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            padding: 0;
+            .photo:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+
+}

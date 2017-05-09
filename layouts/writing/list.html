@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body data-section="writing-list">
+
+        <header class="half-page">
+
+            <nav>
+                <a href="/" title="About Joel Vardy">About</a>
+                <a class="active" href="/writing" title="Joel Vardy's technical writing">Writing</a>
+            </nav>
+
+            <h1>Joel Vardy</h1>
+
+        </header>
+
+        {{ range where .Data.Pages "Section" "writing" }}
+            <a class="post reading-content" href="{{ .Permalink }}" title="{{ .Title }}">
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Summary }}</p>
+                <p class="posted">Posted: <strong>{{ .Date.Format "2 January 2006" }}</strong></p>
+            </a>
+        {{ end }}
+
+    </body>
+</html>

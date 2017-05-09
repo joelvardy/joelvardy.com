@@ -1,16 +1,18 @@
 {
-    "name": "joelvardy",
-    "private": true,
-    "devDependencies": {
-        "browserify-shim": "^3.8.12",
-        "gulp": "^3.8.8"
-    },
-    "dependencies": {
-        "laravel-elixir": "^3.0.0"
-    },
-    "browser": {
-        "startsWith": "./assets/js/vendor/starts-with.js",
-        "prism": "./assets/js/vendor/prism.js",
-        "scroller": "./assets/js/vendor/scroller.js"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && mv static/mix-manifest.json data/manifest.json",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && mv static/mix-manifest.json data/manifest.json",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js && mv static/mix-manifest.json data/manifest.json",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && mv static/mix-manifest.json data/manifest.json"
+  },
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "cross-env": "^3.2.3",
+    "laravel-mix": "0.*",
+    "lodash": "^4.17.4"
+  }
 }

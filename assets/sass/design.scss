@@ -1,0 +1,86 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'vendor/prism';
+@import 'type';
+@import 'animations';
+@import 'elements';
+
+html {
+    background: #f2efeb;
+    color: #222;
+    font: 125%/175% 'Sonus-Light', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+body {
+
+    padding-bottom: 2em;
+
+    header {
+
+        background: rgb(225, 225, 225) url('/images/peak-district.jpg') left center;
+        background-size: cover;
+        position: relative;
+
+        &.full-page {
+            min-height: 100vh;
+        }
+
+        &.half-page {
+
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 50vh;
+            justify-content: center;
+
+            h1 {
+                color: #222;
+                line-height: 1em;
+                margin: auto;
+                text-align: center;
+                text-shadow: white 0px 1px 0px;
+                width: 90%;
+            }
+
+        }
+
+        nav {
+
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+
+            a {
+
+                background: rgba(white, 0.5);
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                color: #222;
+                float: left;
+                margin-left: 20px;
+                padding: 8px 20px;
+                text-shadow: white 0px 1px 0px;
+                text-transform: uppercase;
+
+                &.active {
+                    border-bottom: 2px #e67e22 solid;
+                    color: #222;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@import 'pages/error';
+@import 'pages/about';
+@import 'pages/writing-list';
+@import 'pages/writing-post';

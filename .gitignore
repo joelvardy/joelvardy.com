@@ -1,15 +1,6 @@
-# VM
-/.vagrant
-/Homestead.yaml
-
-# Composer
-/vendor
-
-# Node
+.poosh.cache
 /node_modules
-
-# SCSS
-.sass-cache
-
-# Application cache
-/cache/*
+/data/manifest.json
+/static/css
+/static/javascript
+/public

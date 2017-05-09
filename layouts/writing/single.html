@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body data-section="writing-post">
+
+        <header class="half-page">
+
+            <nav>
+                <a href="/" title="About Joel Vardy">About</a>
+                <a class="active" href="/writing" title="Joel Vardy's technical writing">Writing</a>
+            </nav>
+
+            <h1>Joel Vardy</h1>
+
+        </header>
+
+        <div class="post reading-content">
+            <h2>{{ .Title }}</h2>
+            <h4 class="date">Posted: <date>{{ .Date.Format "2 January 2006" }}</date></h4>
+
+            {{ .Content }}
+        </div>
+
+    </body>
+</html>

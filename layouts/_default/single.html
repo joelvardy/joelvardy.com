@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        <header class="half-page">
+
+            <nav>
+                <a href="/" title="About Joel Vardy">About</a>
+                <a href="/writing" title="Joel Vardy's technical writing">Writing</a>
+            </nav>
+
+            <h1>Joel Vardy</h1>
+
+        </header>
+
+        <div class="reading-content">
+            <h2>{{ .Title }}</h2>
+
+            {{ .Content }}
+        </div>
+
+    </body>
+</html>

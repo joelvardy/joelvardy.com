@@ -1,40 +1,22 @@
-# [joelvardy.com][joelvardy]
+# joelvardy.com
 
-This is the code which powers my personal website.
+## Installing
 
-General changes:
-
- * Was a custom built (albeit basic) framework with a few libraries
- * Rebuilt using [Slim Framework][slim] version 2
- * Updated to [Slim Framework][slim] version 3
-
-## Development
-
-```
-composer install
-npm install
-php vendor/bin/homestead make
-vim Homestead.yaml
-vagrant up
+```bash
+yarn install
+yarn global add poosh-cli poosh-plugin-s3
 ```
 
-### SCSS and JavaScript
-
-I am using the Laravel Elixir NPM package to manage SCSS, JS compilation and generate a versioned build file.
+## Building
 
 ```
-gulp
-gulp --production
+rm -r public static/css static/javascript
+npm run production
+hugo
 ```
 
-## Production
+## Deploying
 
 ```
-composer install
-# Ensure ./cache is writable
+poosh sync
 ```
-
-Developed by [Joel Vardy][joelvardy].
-
-  [joelvardy]: https://joelvardy.com/
-  [slim]: http://www.slimframework.com
