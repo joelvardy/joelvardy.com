@@ -39,7 +39,7 @@ So many people want to know about the chair, it's a **Kawasaki Paddock Chair**.
     <h3>2013</h3>
 </hgroup>
 
-At <a href="{{ path_for('projects') }}#2k-drive" title="2K Drive">Lucid Games</a> the whole company used Macs and we were developing a game for the iPad. After a few months all of my hate towards Apple had gone, I decided I could justify the money and bought myself a MacBook Pro, and once my contract had finished I bought an iPad too.
+At Lucid Games the whole company used Macs and we were developing a game for the iPad. After a few months all of my hate towards Apple had gone, I decided I could justify the money and bought myself a MacBook Pro, and once my contract had finished I bought an iPad too.
 
 <img src="/images/writing/two-thousand-and-thirteen/macbook-pro.jpg">
 
@@ -90,6 +90,15 @@ I'd wanted to try living in London so I moved down there, and worked in a co-wor
 After taking a full time job I moved back up to Sheffield (rented) working remote, and decided it was a good time to buy myself a motorised sitting / standing desk.
 
 <img src="/images/workspace/2017-desk.jpg">
+
+<hgroup class="section">
+    <span class="line"></span>
+    <h3>2018</h3>
+</hgroup>
+
+I decided to <a href="https://joelgonewild.com/living-in-barcelona/">move to Barcelona, Spain</a> at the start of 2018. And so I got a new coworking space so that I could mix and meet new people, and not stay at home too much.
+
+<img src="/images/workspace/2018-aticco.jpg">
 
 <hgroup class="section">
     <span class="line"></span>
