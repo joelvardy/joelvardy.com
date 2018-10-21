@@ -47,23 +47,6 @@ body[data-section=about] {
 
         }
 
-        a.down {
-            @extend .pulse;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 50px;
-            left: 50%;
-            margin: -25px 0 0 -50px;
-            position: absolute;
-            -webkit-tap-highlight-color: rgba(white, 0);
-            top: 50%;
-            width: 100px;
-            svg {
-                width: 60px;
-            }
-        }
-
     }
 
     section#hello, section#photos, section#contact {

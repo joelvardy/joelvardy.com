@@ -49,33 +49,6 @@ body {
 
         }
 
-        nav {
-
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-
-            a {
-
-                background: rgba(white, 0.5);
-                border-bottom-left-radius: 3px;
-                border-bottom-right-radius: 3px;
-                color: #222;
-                float: left;
-                margin-left: 20px;
-                padding: 8px 20px;
-                text-shadow: white 0px 1px 0px;
-                text-transform: uppercase;
-
-                &.active {
-                    border-bottom: 2px #e67e22 solid;
-                    color: #222;
-                }
-
-            }
-
-        }
-
     }
 
 }
