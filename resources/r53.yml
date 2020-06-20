@@ -1,0 +1,24 @@
+Resources:
+  WebsiteRoute53Cname:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: joelvardy.com.
+      Name: joelvardy.com
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudfrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+  WebsiteWwwRoute53Cname:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: joelvardy.com.
+      Name: www.joelvardy.com
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudfrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+
+Outputs:
+  WebsiteRoute53Domain:
+    Description: Website Route 53 domain
+    Value: !Ref WebsiteRoute53Cname

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Writing - Joel Vardy</title>
+        <meta name="description" content="Content written by Joel Vardy">
+        <meta name="theme-color" content="#cc6d00">
+        <meta name="msapplication-navbutton-color" content="#cc6d00">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta property="og:url" content="https://joelvardy.com/writing/">
+        <meta property="og:title" content="Writing - Joel Vardy">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
+        <meta property="og:site_name" content="Joel Vardy">
+        <link rel="canonical" href="https://joelvardy.com/writing/">
+        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Joel Vardy",
+                "email": "info@joelvardy.com",
+                "image": "/assets/img/joel-vardy.jpg",
+                "jobTitle": "Lead Engineer",
+                "url": "https://joelvardy.com",
+                "description": "Joel Vardy - Lead Engineer at Twenty3",
+                "gender": "male",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "GB"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/joelvardy",
+                    "https://twitter.com/joelvardy",
+                    "https://github.com/joelvardy"
+                ]
+            }
+        </script>
+    </head>
+    <body class="writing">
+        <header>
+            <h1>Joel Vardy</h1>
+        </header>
+        <section class="content">
+            <a class="post" href="/writing/when-do-your-domains-ssl-certificates-expire/" title="When Do Your Domains SSL Certificates Expire">
+                <h2>When Do Your Domains SSL Certificates Expire</h2>
+                <p>Keeping track of when domains (and often forgotten about SSL certificates) expire can be a tiresome task. This post shows how I built a simple command line tool which checks the expiration date of of domains and SSL certificates. Domain Expiry I am using the Novutec WhoisParserlibrary to get the domain expiration date parsed from the WHOIS data. I wrapped this in a library of my own to ensure it is formatted and cached as I want.</p>
+                <p class="posted">Posted: <strong>5 October 2015</strong></p>
+            </a>
+            <a class="post" href="/writing/scraping-job-listings/" title="Scraping Job Listings">
+                <h2>Scraping Job Listings</h2>
+                <p>How I scraped the list of jobs on the the Manchester Digital vacancies pageso I could filter and sort them as I wanted. I&rsquo;m currently looking for a contract / freelance web development role in Manchester, I was looking at the vacancies listed on manchesterdigital.com but most of the jobs were permanent, and there was no way to filter / sort the list. So naturally, I decided to write some code which would allow me to do that.</p>
+                <p class="posted">Posted: <strong>2 October 2015</strong></p>
+            </a>
+            <a class="post" href="/writing/delete-specific-memcached-keys/" title="Delete Specific Memcached Keys">
+                <h2>Delete Specific Memcached Keys</h2>
+                <p>Using in memory storage to cache data is very common, however the ability to delete keys is not easily possible from the command line. I would always end up restarting the memcached service, but this would of course delete all keys, which is not always desirable. I built a simple command line application which can be installed globally on a system using Composer, this post will outline how to use the tool.</p>
+                <p class="posted">Posted: <strong>24 April 2015</strong></p>
+            </a>
+            <a class="post" href="/writing/motorised-timelapse-slider/" title="Motorised Timelapse Slider">
+                <h2>Motorised Timelapse Slider</h2>
+                <p>I can&rsquo;t remember when I first decided I wanted to shoot a timelapse on a slider, probably, I suppose when I first saw a timescape video several years ago. In March last year I bought a Konova K2 800mm slider from Amazon. Now I need to motorise it! Initially I found an article from Angus Kennedywho had managed to motorise a slider using some DC motors and high strength fishing line.</p>
+                <p class="posted">Posted: <strong>16 January 2015</strong></p>
+            </a>
+            <a class="post" href="/writing/carbon-workspace/" title="Carbon Workspace">
+                <h2>Carbon Workspace</h2>
+                <p>My workspace has been updated several times since it was featured on Lifehacker, after my summer trip to Iceland I put some A2 prints up on the walls, they look great, but the surface of my desk was looking worn, it was time for an update. Filling in the cut out, giving me more leg room. Adding a vinyl covering to the surface of the desk. Switching custom built NAS for a LaCie 10TB drive.</p>
+                <p class="posted">Posted: <strong>27 October 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/secure-staging/" title="Secure Staging">
+                <h2>Secure Staging</h2>
+                <p>When developing websites you often have to setup one or multiple staging areas, these are often used for showing a client the progress, testing the website works on a production environment, and gaining final sign off from the client. It&rsquo;s important that these staging areas are secured. Websites on a staging area are often unfinished, and may have security vulnerabilities which are yet to be patched. You do not want search engines to index a staging website, this will introduce several issues, as highlighted in the quote below.</p>
+                <p class="posted">Posted: <strong>27 July 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/watching-someone-work/" title="Watching Someone Work">
+                <h2>Watching Someone Work</h2>
+                <p>Today I knew no one would be home, I wasn&rsquo;t waiting for any deliveries, and I wanted to put together a simple mobile app. So I decided I would take a timelapse of me working. I&rsquo;ve always liked workspaces, I enjoy looking at other peoples workspace, the tools they use, and digging into their work flow. If you&rsquo;re just as curious feel free to have a look at my workspace.</p>
+                <p class="posted">Posted: <strong>26 July 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/remove-www-prefix-nginx/" title="Remove WWW Prefix Nginx">
+                <h2>Remove WWW Prefix Nginx</h2>
+                <p>Some people like domains to have a www. prefix, I don&rsquo;t I find it an unnecessary relic of the old web. It&rsquo;s also bad practice to be serving the same content over both www.domain.tld and domain.tld I&rsquo;m going to show you how to write one rule which will redirect all www. prefixed domains to the plain domain. I am using nginx as my web server, I don&rsquo;t think this is as easy with Apache (however this is probably possible with a default vhost and some rewrites.</p>
+                <p class="posted">Posted: <strong>4 June 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/ssh-tunneling/" title="SSH Tunneling">
+                <h2>SSH Tunneling</h2>
+                <p>Tunneling your network traffic through an SSH connection can be useful if you want to encrypt all outbound traffic, get around a corporate firewall, or make connections from a white listed static IP address. The way I had previously done this was to run a command in the terminal to open up a SOCKS proxy, then change the Google Chrome network settings to route all requests through the tunnel. However I am going to show you how I have SSH tunnels set up on my Mac.</p>
+                <p class="posted">Posted: <strong>15 May 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/re-engagement-emails/" title="Re-engagement Emails">
+                <h2>Re-engagement Emails</h2>
+                <p>Today I&rsquo;m going to show you some code which will re-engage users by sending them an email if a goal is not met. For example give them a 5% discount email if they do not complete the checkout process after an hour. </p>
+                <p class="posted">Posted: <strong>14 May 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/what-do-you-do-on-the-train/" title="What Do You Do On The Train">
+                <h2>What Do You Do On The Train</h2>
+                <p>Contracting outside of my home city, and not being a driver, means I&rsquo;m frequently on trains, there are three things I do on trains. Stand up and get annoyed because I don&rsquo;t have a seat. Watch something on my iPad after a long day/week. However I usually try to learn/play around with something new.  I&rsquo;m writing this post while on the train to Manchester, this is the 7th time I&rsquo;ve been on the train this week.</p>
+                <p class="posted">Posted: <strong>14 March 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/summit-awesome-hackathon-february-2014/" title="Summit Awesome Hackathon February 2014">
+                <h2>Summit Awesome Hackathon February 2014</h2>
+                <p>Almost a year on from the last Summit Awesome hackathon, we are back in Manchester, at the TechHub, for another two day hackathon with some great, like-minded people. There have been two Summit Awesome hackathons previous to this one, after both I think everyone has been in agreement that doing an all nighter is a pretty stupid idea. But did I book into a local hotel room, of course not. Did I bring my amazing MusucBag, no I didn&rsquo;t.</p>
+                <p class="posted">Posted: <strong>3 February 2014</strong></p>
+            </a>
+            <a class="post" href="/writing/permission-based-authentication-library/" title="Permission Based Authentication Library">
+                <h2>Permission Based Authentication Library</h2>
+                <p>I can&rsquo;t count the number of authentication libraries I have written since I started building websites, often I would simply iterate on the previous library each time I wrote one. Last year, while I was working on several CodeIgniter projects I wrote (and released) an authentication library. This served it&rsquo;s purpose however it did not have any permissions, and of course, was limited to being used within CodeIgniter projects. I needed an authentication library in a current project, so decided to write a new authentication librarywhich I&rsquo;ve released as a Composer package.</p>
+                <p class="posted">Posted: <strong>27 September 2013</strong></p>
+            </a>
+            <a class="post" href="/writing/storing-files-on-amazon-s3/" title="Storing Files on Amazon S3">
+                <h2>Storing Files on Amazon S3</h2>
+                <p>There are several reasons why you might not want to store files directly on the web server; scalability - where you have several web servers, disk IO - HDDs are a servers biggest performance bottle neck, or disk space - cloud storage is much more scalable. I&rsquo;m going to show you how to store files on Amazon S3, you will needs an Amazon Web Services account, and user credentials (access key ID and a secret access key) with access to your S3 buckets, for help on how to do this look at the Amazon AWS docs.</p>
+                <p class="posted">Posted: <strong>23 July 2013</strong></p>
+            </a>
+            <a class="post" href="/writing/javascript-image-upload/" title="JavaScript Image Upload">
+                <h2>JavaScript Image Upload</h2>
+                <p>I put a lot of effort into reducing website load time, the longest a user has to wait is usually when they try to upload a file. In the case of uploading an image, it is highly likely the user is uploading a photo straight from their digital camera. In an effort to reduce the users waiting time, and the server load, I&rsquo;m going to resize images in the browser before uploading them.</p>
+                <p class="posted">Posted: <strong>4 July 2013</strong></p>
+            </a>
+            <a class="post" href="/writing/restful-routes/" title="RESTful Routes">
+                <h2>RESTful Routes</h2>
+                <p>A Composer package which allows you to easily map routes to a block of code. This is an ideal base for small websites and RESTful APIs. Requiring the Package I&rsquo;m not going to explain how to use composer, if you are not sure then read the manual.</p>
+                <p class="posted">Posted: <strong>26 June 2013</strong></p>
+            </a>
+            <a class="post" href="/writing/account-security/" title="Account Security">
+                <h2>Account Security</h2>
+                <p>This subject has been covered so many times, but it amazes me how some of the basic steps to secure your users accounts and therefore your application are not taken. I&rsquo;m even more amazed that large companies which know plain text password storage is bad, will still store passwords in plain text. BBC Careers I was applying for a job at the BBC, I needed to login but had forgotten my password, alarm bells were first set off when what I expected to be a &ldquo;reset my password&rdquo; link actually read Please email my password to me - not to worry I&rsquo;m sure they were actually going to send me a reset link.</p>
+                <p class="posted">Posted: <strong>2 May 2013</strong></p>
+            </a>
+        </section>
+    </body>
+</html>

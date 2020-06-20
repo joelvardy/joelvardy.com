@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Account Security - Joel Vardy</title>
+        <meta name="description" content="Account Security written by Joel Vardy">
+        <meta name="theme-color" content="#cc6d00">
+        <meta name="msapplication-navbutton-color" content="#cc6d00">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta property="og:url" content="https://joelvardy.com/writing/account-security/">
+        <meta property="og:title" content="Account Security - Joel Vardy">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
+        <meta property="og:site_name" content="Joel Vardy">
+        <link rel="canonical" href="https://joelvardy.com/writing/account-security/">
+        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Joel Vardy",
+                "email": "info@joelvardy.com",
+                "image": "/assets/img/joel-vardy.jpg",
+                "jobTitle": "Lead Engineer",
+                "url": "https://joelvardy.com",
+                "description": "Joel Vardy - Lead Engineer at Twenty3",
+                "gender": "male",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "GB"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/joelvardy",
+                    "https://twitter.com/joelvardy",
+                    "https://github.com/joelvardy"
+                ]
+            }
+        </script>
+    </head>
+    <body class="writing">
+        <header>
+            <h1>Joel Vardy</h1>
+        </header>
+        <section class="content">
+            <h1>Account Security</h1>
+            <h4 class="date">Posted: <date>2 May 2013</date></h4>
+            <p>This subject has been covered so many times, but it amazes me how some of the basic steps to secure your users accounts and therefore your application are not taken.</p>
+            <p>I'm even more amazed that large companies which <a href="http://www.bbc.co.uk/news/technology-19316825" title="BBC article talking about the insecurities of plain text password storage">know plain text password storage is bad</a>, will still store passwords in plain text.</p>
+            <h3 id="bbccareers">BBC Careers</h3>
+            <p>I was applying for a job at the BBC, I needed to login but had forgotten my password, alarm bells were first set off when what I expected to be a "reset my password" link actually read <strong>Please email my password to me</strong> - not to worry I'm sure they were actually going to send me a reset link.</p>
+            <p>After entering my email address and looking in my inbox, I see:</p>
+            <blockquote>
+                <p>Your password is 06Hkx5a9O4.</p>
+            </blockquote>
+            <p>I'm sure you don't need to be told why this is bad, but a few reasons are listed below:</p>
+            <ul>
+                <li>Anyone with access to where these passwords are stored can read your password.</li>
+                <li>Anyone with access to your email address can read your password.</li>
+                <li>The line above has a full stop at the end, assuming you have used a secure password, how do you know whether that is part of the password.</li>
+            </ul>
+            <h3 id="takehome">Take Home</h3>
+            <p>My first reaction was shock, maybe it shouldn't be, I've seen this happen a few times. Envato lost all of the love I had for it when it was <a href="http://notes.envato.com/general/tuts-premium-security/" title="Envato used a plugin which stores passwords in cleartext">announced they stored passwords in plain text</a>, for their Tuts+ premium blogs.</p>
+            <p>I confess I have used the same password on multiple sites, which makes me an easy target in the event of a hacker getting my password in plain text. I am tempted to invest in some password manager, and ensure I use a different password for every website.</p>
+            <h3 id="anotherissue">Another Issue</h3>
+            <p>Just this morning I <a href="https://twitter.com/joelvardy/status/329874463036407810" title="Joel complaning on Twitter">tweeted my annoyance</a> about websites who do not use HTTPS when sending passwords or other sensitive data to a page. In short, if the password is not sent over SSL then someone can "sniff packets" and read your password before it even reaches the servers of the website.</p>
+        </section>
+    </body>
+</html>

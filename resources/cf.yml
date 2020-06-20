@@ -1,0 +1,42 @@
+Resources:
+  CloudfrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: ${self:custom.service}
+        Origins:
+        - DomainName: !Join [ "", [ !Ref WebsiteS3Bucket, ".s3-website-", "${self:provider.region}", ".amazonaws.com" ] ]
+          Id: S3WebsiteOrigin
+          CustomOriginConfig:
+            HTTPPort: 80
+            OriginProtocolPolicy: http-only
+        Enabled: true
+        HttpVersion: http2
+        Aliases:
+        - joelvardy.com
+        - www.joelvardy.com
+        DefaultCacheBehavior:
+          TargetOriginId: S3WebsiteOrigin
+          AllowedMethods:
+          - GET
+          - HEAD
+          - OPTIONS
+          Compress: true
+          DefaultTTL: 3600
+          MaxTTL: 3600
+          MinTTL: 3600
+          ForwardedValues:
+            Cookies:
+              Forward: none
+            QueryString: false
+          ViewerProtocolPolicy: redirect-to-https
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:527669730630:certificate/82811e77-0e42-4e0e-a933-34666abd0f09
+          SslSupportMethod: sni-only
+
+Outputs:
+  CloudfrontDistributionId:
+    Value: !Ref CloudfrontDistribution
+  CloudfrontWebsite:
+    Value: !GetAtt CloudfrontDistribution.DomainName

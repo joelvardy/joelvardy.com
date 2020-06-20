@@ -1,0 +1,292 @@
+/* RESET */
+
+html {
+	box-sizing: border-box;
+	font-size: 125%;
+	line-height: 175%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+
+/* DESIGN */
+
+html {
+	background: #f2efeb;
+	color: #222;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+a {
+	/* "my colour" was always #e67e22 but that's quite bright so for accessibility I've made it darker */
+	color: #995417;
+	text-decoration: none;
+}
+
+/* ELEMENTS */
+
+ul,
+ol {
+	list-style-position: outside;
+}
+ul li,
+ol li {
+	margin-top: 0.1em;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+	margin-top: 0.1em !important;
+	margin-left: 1em;
+}
+ul {
+	list-style-type: square;
+}
+s {
+	text-decoration: strikethrough;
+}
+h2 {
+	margin-top: 2em;
+}
+h3 {
+	margin-top: 1.5em;
+}
+h4 {
+	margin-top: 1em;
+}
+h5 {
+	margin-top: 0.5em;
+}
+p {
+	margin-top: 1em;
+}
+ul,
+ol {
+	margin-top: 0.5em;
+}
+
+img {
+	border: 0;
+	display: block;
+	height: auto;
+	margin: auto;
+	max-width: 100%;
+}
+
+blockquote {
+	background: rgba(0, 0, 0, 0.025);
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
+	margin-top: 1em;
+	padding: 1em 1.5em;
+}
+blockquote cite {
+	display: block;
+	font-weight: bold;
+	margin-top: 1em;
+}
+blockquote:first-child {
+	margin-top: 0;
+}
+blockquote:last-child {
+	margin-bottom: 0;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 1em;
+	width: 100%;
+}
+table thead {
+	background: #222;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+table tbody tr {
+	background: rgba(0, 0, 0, 0.025);
+}
+table tbody tr:nth-child(even) {
+	background: rgba(0, 0, 0, 0.05);
+}
+table th,
+table td {
+	padding: 1% 2%;
+}
+
+.content {
+	width: 70%;
+	margin: auto;
+	max-width: 1000px;
+}
+.content h1 {
+	margin: 2em 0 0;
+}
+@media screen and (max-width: 800px) {
+	.content {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content {
+		width: 90%;
+	}
+}
+
+div.video {
+	height: 0;
+	position: relative;
+	margin: 3em 0;
+}
+div.video.aspect-16-9 {
+	padding-bottom: 56.25%;
+}
+div.video iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+hgroup.section {
+	height: 1.5em;
+	margin: 2em 0;
+	position: relative;
+}
+hgroup.section span {
+	background: #646464;
+	display: block;
+	height: 1px;
+	position: relative;
+	top: 50%;
+	width: 100%;
+}
+hgroup.section h3 {
+	display: inline-block;
+	background: #f2efeb;
+	left: 37.5%;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	width: 25%;
+}
+@media screen and (max-width: 850px) {
+	hgroup.section h3 {
+		left: 25%;
+		width: 50%;
+	}
+}
+
+body:not(.about) header {
+	background: #e1e1e1 url("/assets/img/peak-district.jpg") left center;
+	background-size: cover;
+	position: relative;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+	justify-content: center;
+}
+body:not(.about) header h1 {
+	color: #222;
+	line-height: 1em;
+	font-size: 2.5em;
+	margin: auto;
+	text-align: center;
+	text-shadow: white 0px 1px 0px;
+	width: 90%;
+}
+
+/* ABOUT */
+
+body.about header {
+	background: url('/assets/img/lonely-iceland.jpg') left center;
+	min-height: 100vh;
+}
+body.about header hgroup {
+	position: absolute;
+	right: 75px;
+	text-align: right;
+	max-width: 500px;
+	top: 75px;
+}
+@media screen and (max-width: 600px) {
+	body.about header hgroup {
+		padding: 1em;
+		position: relative;
+		right: auto;
+		text-align: center;
+	}
+}
+body.about header hgroup h1,
+body.about header hgroup h3 {
+	font-weight: normal;
+}
+body.about header hgroup h1 {
+	font-size: 3em;
+	margin: 0;
+}
+@media screen and (max-width: 600px) {
+	body.about header hgroup h1 {
+		font-size: 2em;
+	}
+}
+body.about header hgroup h3 {
+	font-size: 1.65em;
+	line-height: 1.5em;
+}
+@media screen and (max-width: 600px) {
+	body.about header hgroup h3 {
+		font-size: 1.25em;
+	}
+}
+body.about header hgroup h3 a {
+	color: #222;
+}
+body.about section.about {
+	padding: 5% 0;
+	font-size: 1.15em;
+	line-height: 2em;
+}
+
+/* WRITING */
+
+body.writing a.post {
+	color: #222;
+	display: block;
+	margin-top: 3em;
+}
+body.writing a.post h2 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+	display: inline-block;
+	margin: 0;
+}
+body.writing a.post p.posted {
+	color: #444;
+	margin-top: 0.5em;
+}
+body.writing a.post p.posted strong {
+	color: #222;
+}
+body.writing section.content {
+	margin: auto;
+	width: 70%;
+}
+body.writing section.content h4.date {
+	margin-top: 0;
+	font-weight: normal;
+}
+body.writing pre code {
+	display: block;
+	background: #282828;
+	border-radius: 3px;
+	color: #F8F8F2;
+	padding: 1em 2em;
+}

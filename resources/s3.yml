@@ -1,0 +1,25 @@
+Resources:
+  WebsiteS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:custom.service}-website
+      WebsiteConfiguration:
+        ErrorDocument: index.html
+        IndexDocument: index.html
+  WebsiteS3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebsiteS3Bucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Principal: "*"
+          Action: s3:GetObject
+          Effect: Allow
+          Resource: !Join [ "", [ !GetAtt WebsiteS3Bucket.Arn, "/*" ] ]
+
+Outputs:
+  WebsiteS3BucketName:
+    Value: !Ref WebsiteS3Bucket
+  WebsiteS3BucketUrl:
+    Value: !GetAtt WebsiteS3Bucket.WebsiteURL

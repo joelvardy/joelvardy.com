@@ -1,7 +1,0 @@
-baseURL = "https://joelvardy.com/"
-languageCode = "en-gb"
-title = "Joel Vardy - Senior Software Engineer"
-googleAnalytics = "UA-27602018-2"
-disableHugoGeneratorInject = true
-DisableRSS = true
-DisableSitemap = true

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Permission Based Authentication Library - Joel Vardy</title>
+        <meta name="description" content="Permission Based Authentication Library written by Joel Vardy">
+        <meta name="theme-color" content="#cc6d00">
+        <meta name="msapplication-navbutton-color" content="#cc6d00">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta property="og:url" content="https://joelvardy.com/writing/permission-based-authentication-library/">
+        <meta property="og:title" content="Permission Based Authentication Library - Joel Vardy">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://joelvardy.com/assets/img/joel-vardy.jpg">
+        <meta property="og:site_name" content="Joel Vardy">
+        <link rel="canonical" href="https://joelvardy.com/writing/permission-based-authentication-library/">
+        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Joel Vardy",
+                "email": "info@joelvardy.com",
+                "image": "/assets/img/joel-vardy.jpg",
+                "jobTitle": "Lead Engineer",
+                "url": "https://joelvardy.com",
+                "description": "Joel Vardy - Lead Engineer at Twenty3",
+                "gender": "male",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "GB"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/joelvardy",
+                    "https://twitter.com/joelvardy",
+                    "https://github.com/joelvardy"
+                ]
+            }
+        </script>
+    </head>
+    <body class="writing">
+        <header>
+            <h1>Joel Vardy</h1>
+        </header>
+        <section class="content">
+            <h1>Permission Based Authentication Library</h1>
+            <h4 class="date">Posted: <date>27 September 2013</date></h4>
+            <p>I can't count the number of authentication libraries I have written since I started building websites, often I would simply iterate on the previous library each time I wrote one.</p>
+            <p>Last year, while I was working on several CodeIgniter projects I wrote (and released) an authentication library. This served it's purpose however it did not have any permissions, and of course, was limited to being used within CodeIgniter projects. I needed an authentication library in a current project, so decided to write a new <a href="https://github.com/joelvardy/authentication" title="Open source repository">authentication library</a> which I've released as a Composer package. In this post I'm going to explain how the permission control works.</p>
+            <h3 id="previously">Previously</h3>
+            <p>Most of my previous authentication libraries had rudimentary access controls, for example:</p>
+            <pre><code class="php language-php">if ($user-&gt;is_admin() || $user-&gt;is_mod() || $user-&gt;is_super_admin()) {
+    // This user can moderate comments
+}
+
+if ($user_level == 1 || $user_level == 2 || $user_level == 0) {
+    // This user can moderate comments
+}</code></pre>
+            <p>Both of these examples will soon result in code which is hard to maintain. It is also easy to accidentally grant permission to the wrong type of user.</p>
+            <h3 id="muchbetter">Much Better</h3>
+            <p>Before I started writing the library I wrote the code below:</p>
+            <pre><code class="php language-php">if ($auth-&gt;permission('moderate-comments')) {
+    // This user can moderate comments
+}</code></pre>
+            <p>As you can see this code is quiet succinct, the rule doesn't need changing if a new type of user is added, and it is self-descriptive.</p>
+            <h3 id="thetables">The Tables</h3>
+            <p>Like most developers, as soon as I had written the three lines above, I was already thinking about the database schema. There are three tables, which are described below:</p>
+            <ul>
+                <li><strong>permission</strong> - this table holds each possible permission, in the example above this would be <code>moderate-comments</code>.</li>
+                <li><strong>group</strong> - each user is assigned to a group, the groups are listed in this table, for example <strong>admin</strong>.</li>
+                <li><strong>group_permission</strong> - This is the <a href="http://en.wikipedia.org/wiki/Junction_table" title="link table on Wikipedia">link table</a> between the group and the permissions which apply to that group.</li>
+            </ul>
+            <h3 id="databaseconnection">Database Connection</h3>
+            <p>I have wanted to write a Composer authentication package ever since I <strong>saw the light</strong> (realised how amazing Composer was) - the problem, not everyone connects to their database in the same way. I thought long and hard about how to accommodate everyone.</p>
+            <p>In the end I decided to just make it work for me, and get a version out there, because I can always refactor the library so it uses the Doctrine DBAL at a later point.</p>
+            <h3 id="links">Links</h3>
+            <p>You can view the authentication library <a href="https://github.com/joelvardy/authentication" title=" title=&quot;Open source repository&quot; data-analytics=&quot;Authentication Library repo&quot;>source code</a>, or view the library on [Packagist](https://packagist.org/packages/joelvardy/authentication &quot;Authentication package">Packagist.org</a>.</p>
+            <p>In case you are interested here is a link to the <a href="https://github.com/joelvardy/Basic-CodeIgniter-Authentication" title="Open source repository">CodeIgniter authentication library</a> I wrote.</p>
+        </section>
+    </body>
+</html>
