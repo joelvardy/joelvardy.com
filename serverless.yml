@@ -6,7 +6,8 @@ custom:
 
 provider:
   name: aws
-  region: eu-west-1
+  stage: main
+  region: eu-west-2
 
 resources:
   - ${file(resources/s3.yml)}

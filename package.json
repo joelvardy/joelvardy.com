@@ -1,0 +1,13 @@
+{
+  "name": "joelvardy.com",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Joel Vardy",
+  "scripts": {
+    "deploy": "./node_modules/serverless/bin/serverless.js deploy --verbose"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "serverless": "^2.52.1"
+  }
+}

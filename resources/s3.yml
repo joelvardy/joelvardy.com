@@ -1,10 +1,18 @@
 Resources:
+  RedirectS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:custom.service}-redirect
+      WebsiteConfiguration:
+        RedirectAllRequestsTo:
+          HostName: www.joelvardy.com
+          Protocol: https
   WebsiteS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: ${self:custom.service}-website
       WebsiteConfiguration:
-        ErrorDocument: index.html
+        ErrorDocument: error.html
         IndexDocument: index.html
   WebsiteS3BucketPolicy:
     Type: AWS::S3::BucketPolicy
@@ -21,5 +29,3 @@ Resources:
 Outputs:
   WebsiteS3BucketName:
     Value: !Ref WebsiteS3Bucket
-  WebsiteS3BucketUrl:
-    Value: !GetAtt WebsiteS3Bucket.WebsiteURL
