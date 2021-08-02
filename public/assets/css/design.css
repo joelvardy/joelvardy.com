@@ -21,10 +21,10 @@ html {
 	color: #222;
 }
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 a {
-	/* "my colour" was always #e67e22 but that's quite bright so for accessibility I've made it darker */
+	/* 'my colour' was always #e67e22 but that's quite bright so for accessibility I've made it darker */
 	color: #995417;
 	text-decoration: none;
 }
@@ -186,7 +186,7 @@ hgroup.section h3 {
 }
 
 body:not(.about) header {
-	background: #e1e1e1 url("/assets/img/peak-district.jpg") left center;
+	background: #e1e1e1 url('/assets/img/peak-district.jpg') left center;
 	background-size: cover;
 	position: relative;
 	align-content: center;
@@ -208,7 +208,8 @@ body:not(.about) header h1 {
 /* ABOUT */
 
 body.about header {
-	background: url('/assets/img/lonely-iceland.jpg') left center;
+	background: url('/assets/img/iceland-coast.jpg') left center;
+	background-size: cover;
 	min-height: 100vh;
 }
 body.about header hgroup {
@@ -227,7 +228,7 @@ body.about header hgroup {
 	}
 }
 body.about header hgroup h1,
-body.about header hgroup h3 {
+body.about header hgroup h2 {
 	font-weight: normal;
 }
 body.about header hgroup h1 {
@@ -239,22 +240,20 @@ body.about header hgroup h1 {
 		font-size: 2em;
 	}
 }
-body.about header hgroup h3 {
+body.about header hgroup h2 {
 	font-size: 1.65em;
 	line-height: 1.5em;
+	margin-top: 1.5em;
 }
 @media screen and (max-width: 600px) {
-	body.about header hgroup h3 {
+	body.about header hgroup h2 {
 		font-size: 1.25em;
 	}
 }
-body.about header hgroup h3 a {
-	color: #222;
-}
 body.about section.about {
 	padding: 5% 0;
-	font-size: 1.15em;
-	line-height: 2em;
+	font-size: 1.35em;
+	line-height: 1.5em;
 }
 
 /* WRITING */
