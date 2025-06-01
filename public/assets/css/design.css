@@ -1,292 +1,463 @@
 /* RESET */
 
 html {
-	box-sizing: border-box;
-	font-size: 125%;
-	line-height: 175%;
+    box-sizing: border-box;
+    font-size: 125%;
+    line-height: 175%;
 }
+
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
+
 body {
-	margin: 0;
+    margin: 0;
 }
 
 /* DESIGN */
 
 html {
-	background: #f2efeb;
-	color: #222;
+    background: #f2efeb;
+    color: #222;
 }
+
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
 a {
-	/* 'my colour' was always #e67e22 but that's quite bright so for accessibility I've made it darker */
-	color: #995417;
-	text-decoration: none;
+    /* 'my colour' was always #e67e22 but that's quite bright so for accessibility I've made it darker */
+    color: #995417;
+    text-decoration: none;
 }
 
 /* ELEMENTS */
 
 ul,
 ol {
-	list-style-position: outside;
+    list-style-position: outside;
 }
+
 ul li,
 ol li {
-	margin-top: 0.1em;
+    margin-top: 0.1em;
 }
+
 ul ul,
 ul ol,
 ol ul,
 ol ol {
-	margin-top: 0.1em !important;
-	margin-left: 1em;
-}
-ul {
-	list-style-type: square;
-}
-s {
-	text-decoration: strikethrough;
-}
-h2 {
-	margin-top: 2em;
-}
-h3 {
-	margin-top: 1.5em;
-}
-h4 {
-	margin-top: 1em;
-}
-h5 {
-	margin-top: 0.5em;
-}
-p {
-	margin-top: 1em;
-}
-ul,
-ol {
-	margin-top: 0.5em;
+    margin-top: 0.1em !important;
+    margin-left: 1em;
 }
 
-img {
-	border: 0;
-	display: block;
-	height: auto;
-	margin: auto;
-	max-width: 100%;
+ul {
+    list-style-type: square;
+}
+
+s {
+    text-decoration: strikethrough;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 1.5em;
+}
+
+h4 {
+    margin-top: 1em;
+}
+
+h5 {
+    margin-top: 0.5em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+ul,
+ol {
+    margin-top: 0.5em;
+}
+
+img,
+video {
+    border: 0;
+    display: block;
+    height: auto;
+    margin: 1em auto auto;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    img.percent-50-desktop {
+        max-width: 50%;
+    }
+
+    img.percent-75-desktop {
+        max-width: 75%;
+    }
 }
 
 blockquote {
-	background: rgba(0, 0, 0, 0.025);
-	border-left: 2px solid rgba(0, 0, 0, 0.1);
-	margin-top: 1em;
-	padding: 1em 1.5em;
+    background: rgba(0, 0, 0, 0.025);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    padding: 1em 1.5em;
 }
+
 blockquote cite {
-	display: block;
-	font-weight: bold;
-	margin-top: 1em;
+    display: block;
+    font-weight: bold;
+    margin-top: 1em;
 }
+
 blockquote:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
+
 blockquote:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 table {
-	border-collapse: collapse;
-	margin-top: 1em;
-	width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
 }
+
 table thead {
-	background: #222;
-	color: white;
-	font-weight: bold;
-	text-align: left;
+    background: #222;
+    color: white;
+    font-weight: bold;
+    text-align: left;
 }
+
 table tbody tr {
-	background: rgba(0, 0, 0, 0.025);
+    background: rgba(0, 0, 0, 0.025);
 }
+
 table tbody tr:nth-child(even) {
-	background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
+
 table th,
 table td {
-	padding: 1% 2%;
+    padding: 1% 2%;
 }
 
 .content {
-	width: 70%;
-	margin: auto;
-	max-width: 1000px;
-	padding-bottom: 2em;
+    width: 70%;
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 2em;
 }
+
 .content h1 {
-	margin: 2em 0 0;
+    margin: 2em 0 0;
 }
+
 @media screen and (max-width: 800px) {
-	.content {
-		width: 80%;
-	}
+    .content {
+        width: 80%;
+    }
 }
+
 @media screen and (max-width: 600px) {
-	.content {
-		width: 90%;
-	}
+    .content {
+        width: 90%;
+    }
 }
 
 div.video {
-	height: 0;
-	position: relative;
-	margin: 3em 0;
+    height: 0;
+    position: relative;
+    margin: 3em 0;
 }
+
 div.video.aspect-16-9 {
-	padding-bottom: 56.25%;
+    padding-bottom: 56.25%;
 }
+
 div.video iframe {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+details {
+    background: #e5e2dd;
+    padding: 0.5em;
+}
+
+details summary {
+    background: #f2efeb;
+    cursor: pointer;
+    margin: -0.5em;
+}
+
+details>pre:first-of-type {
+    margin: 1em 0 0;
 }
 
 hgroup.section {
-	height: 1.5em;
-	margin: 2em 0;
-	position: relative;
+    height: 1.5em;
+    margin: 2em 0;
+    position: relative;
 }
+
 hgroup.section span {
-	background: #646464;
-	display: block;
-	height: 1px;
-	position: relative;
-	top: 50%;
-	width: 100%;
+    background: #646464;
+    display: block;
+    height: 1px;
+    position: relative;
+    top: 50%;
+    width: 100%;
 }
+
 hgroup.section h3 {
-	display: inline-block;
-	background: #f2efeb;
-	left: 37.5%;
-	margin: 0;
-	position: relative;
-	text-align: center;
-	width: 25%;
+    display: inline-block;
+    background: #f2efeb;
+    left: 37.5%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 25%;
 }
+
 @media screen and (max-width: 850px) {
-	hgroup.section h3 {
-		left: 25%;
-		width: 50%;
-	}
+    hgroup.section h3 {
+        left: 25%;
+        width: 50%;
+    }
 }
 
 body:not(.about) header {
-	background: #e1e1e1 url('/assets/img/peak-district.jpg') left center;
-	background-size: cover;
-	position: relative;
-	align-content: center;
-	display: flex;
-	flex-direction: column;
-	min-height: 50vh;
-	justify-content: center;
+    background: #e1e1e1 url("/assets/img/peak-district.jpg") left center;
+    background-size: cover;
+    position: relative;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
 }
+
 body:not(.about) header h1 {
-	color: #222;
-	line-height: 1em;
-	font-size: 2.5em;
-	margin: auto;
-	text-align: center;
-	text-shadow: white 0px 1px 0px;
-	width: 90%;
+    color: #222;
+    line-height: 1em;
+    font-size: 2.5em;
+    margin: auto;
+    text-align: center;
+    text-shadow: white 0px 1px 0px;
+    width: 90%;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-container .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #222;
+}
+
+.carousel-container .carousel-slide {
+    display: none;
+    text-align: center;
+}
+
+.carousel-container .carousel-slide.active {
+    display: block;
+    animation: fadein 0.5s;
+}
+
+.carousel-container .carousel-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+    margin: 0;
+}
+
+.carousel-container .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.25em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.carousel-container .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(40, 40, 40, 0.7);
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.2s;
+}
+
+.carousel-container .carousel-btn:hover {
+    background: #cc6d00;
+}
+
+.carousel-container .carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-container .carousel-btn.next {
+    right: 10px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* ABOUT */
 
 body.about header {
-	background: url('/assets/img/iceland-coast.jpg') left center;
-	background-size: cover;
-	min-height: 100vh;
+    background: url("/assets/img/iceland-coast.jpg") left center;
+    background-size: cover;
+    min-height: 100vh;
 }
+
 body.about header hgroup {
-	position: absolute;
-	right: 75px;
-	text-align: right;
-	max-width: 500px;
-	top: 75px;
+    position: absolute;
+    right: 75px;
+    text-align: right;
+    max-width: 500px;
+    top: 75px;
 }
+
 @media screen and (max-width: 600px) {
-	body.about header hgroup {
-		padding: 1em;
-		position: relative;
-		right: auto;
-		text-align: center;
-	}
+    body.about header hgroup {
+        padding: 1em;
+        position: relative;
+        right: auto;
+        text-align: center;
+    }
 }
+
 body.about header hgroup h1,
 body.about header hgroup h2 {
-	font-weight: normal;
+    font-weight: normal;
 }
+
 body.about header hgroup h1 {
-	font-size: 3em;
-	margin: 0;
+    font-size: 3em;
+    margin: 0;
 }
+
 @media screen and (max-width: 600px) {
-	body.about header hgroup h1 {
-		font-size: 2em;
-	}
+    body.about header hgroup h1 {
+        font-size: 2em;
+    }
 }
+
 body.about header hgroup h2 {
-	font-size: 1.65em;
-	line-height: 1.5em;
-	margin-top: 1.5em;
+    font-size: 1.65em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
 }
+
 @media screen and (max-width: 600px) {
-	body.about header hgroup h2 {
-		font-size: 1.25em;
-	}
+    body.about header hgroup h2 {
+        font-size: 1.25em;
+    }
 }
+
 body.about section.about {
-	padding: 5% 0;
-	font-size: 1.35em;
-	line-height: 1.5em;
+    padding: 5% 0;
+    font-size: 1.35em;
+    line-height: 1.5em;
 }
 
 /* WRITING */
 
 body.writing a.post {
-	color: #222;
-	display: block;
-	margin-top: 3em;
+    color: #222;
+    display: block;
+    margin-top: 3em;
 }
+
 body.writing a.post h2 {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-	display: inline-block;
-	margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    margin: 0;
 }
+
 body.writing a.post p.posted {
-	color: #444;
-	margin-top: 0.5em;
+    color: #444;
+    margin-top: 0.5em;
 }
+
 body.writing a.post p.posted strong {
-	color: #222;
+    color: #222;
 }
+
 body.writing section.content {
-	margin: auto;
-	width: 70%;
+    margin: auto;
+    width: 70%;
 }
+
 body.writing section.content h4.date {
-	margin-top: 0;
-	font-weight: normal;
+    margin-top: 0;
+    font-weight: normal;
 }
+
 body.writing pre code {
-	display: block;
-	background: #282828;
-	border-radius: 3px;
-	color: #F8F8F2;
-	padding: 1em 2em;
+    display: block;
+    background: #282828;
+    border-radius: 3px;
+    color: #f8f8f2;
+    padding: 1em 2em;
+}
+
+.toc {
+    background: #e5e2dd;
+    border-radius: 8px;
+    padding: 1em 2em;
+    margin: 2em 0;
+}
+
+.toc h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.toc ul {
+    margin-bottom: 0;
+}
+
+.toc a {
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
 }

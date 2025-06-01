@@ -7,3 +7,9 @@ Having not updated this for project for over two years I decided to remove any b
 ```
 php -S 0.0.0.0:8080 -t public
 ```
+
+## TODO
+
+ * Remove application/ld+json
+ * Prettier on everything
+ * Improve image quality

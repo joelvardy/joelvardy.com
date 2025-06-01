@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Home Assistant Setup - Joel Vardy</title>
+  <meta name="description" content="My Home Assistant setup, including devices, automations, and integrations." />
+  <meta name="theme-color" content="#cc6d00" />
+  <meta name="msapplication-navbutton-color" content="#cc6d00" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta property="og:url" content="https://www.joelvardy.com/home-assistant/" />
+  <meta property="og:title" content="My Home Assistant Setup - Joel Vardy" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg" />
+  <meta property="og:site_name" content="Joel Vardy" />
+  <link rel="canonical" href="https://www.joelvardy.com/home-assistant/" />
+  <link rel="stylesheet" href="/assets/css/design.css" async />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css"
+    async />
+</head>
+
+<body class="home-assistant">
+  <header>
+    <h1>Joel Vardy</h1>
+  </header>
+  <section class="content">
+    <h1>My Home Assistant Setup</h1>
+    <p>
+      I'd always had aspirations for a smart home, ever since renting a flat I had a few Philips Hue bulbs. But it was
+      when
+      moving to our home with my wife
+      in Edinburgh that I put some effort into it. Initially it was only Philips Hue smart lighting. We love the
+      ambiance and control, and we've even
+      got those neat plates that cover the old physical switches (<a href="https://www.amazon.co.uk/dp/B08BCLSL73"
+        target="_blank">here's an
+        example</a>), making the Hue dimmer switches the primary control. I changed every light in the house within a
+      few months.
+    </p>
+    <p>
+      Other than some automations for outside lights, and being able to make the lights pretty colours it wasn't really
+      "smart" and this is what we
+      had for 5 years
+    </p>
+    <p>
+      It was only a few months ago I really started to tinker with Home Assistant, I'd toyed with Homey Pro having
+      believed that Home Assistant would
+      require too much tinkering, but the high initial outlay of Homey caused me to try a Docker container with Home
+      Assistant - and what a rabbit
+      hole it's been.
+    </p>
+    <p>
+      I found inspiration and guidance with my automation config by reading others examples, so I've tried to include
+      examples of mine. So, grab a cup
+      of tea, and I'll dive into some of my favourite automations!
+    </p>
+
+    <div class="toc">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#kids-tv-control">Kids TV control</a></li>
+        <li><a href="#heating">Heating</a></li>
+        <li><a href="#laundry">Laundry</a></li>
+        <li><a href="#garage">Garage</a></li>
+        <li><a href="#office">Office</a></li>
+        <li><a href="#lighting">Lighting</a></li>
+        <li><a href="#the-kids-bedtime-routine">Kids Bedtime Routine</a></li>
+        <li><a href="#in-home-display">In Home Display</a></li>
+        <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#things-that-arent-smart-yet">Things that aren't smart</a></li>
+        <li><a href="#other-projects">Other Projects</a></li>
+      </ul>
+    </div>
+
+    <h2 id="kids-tv-control">Kids TV control</h2>
+    <p>
+      This is a real hit with our kids! I've recessed an NFC reader into the wall below our TV. They have a collection
+      of laminated cards each with an
+      NFC tag within - when they tap one a short video plays on the TV (generally something from Cocomelon or another
+      nursery rhyme). Home Assistant
+      keeps a count of how many times each card has been played. There are also controls in our Home Assistant dashboard
+      for my wife and me to disable
+      the feature, override what's playing, or toggle whether they need to wait for one video to finish before starting
+      another. It's a fun,
+      interactive way for them to choose their content.
+    </p>
+    <video controls playsinline>
+      <source src="/assets/vid/home-assistant/nfc-tv.mp4" type="video/mp4" />
+      <source src="/assets/vid/home-assistant/nfc-tv.webm" type="video/webm" />
+    </video>
+    <h3>Technically</h3>
+    <p>
+      This was achieved using an ESP32 with a
+      <a href="https://www.aliexpress.com/item/32794353925.html" target="_blank">PN532 NFC module</a>. I have these
+      within a drywall backbox which was
+      no longer being used, I already had a CAT6 cable to this outlet, so I got a POE splitter so I could power the
+      ESP32 easily.
+    </p>
+    <details>
+      <summary>ESPHome config on the ESP32</summary>
+      <pre><code class="language-yaml">wifi:
+  fast_connect: true
+  networks:
+    - ssid: {MY_SSID}
+      password: {MY_PASSWORD}
+      hidden: true
+
+esp32:
+  board: esp32dev
+
+esphome:
+  name: tagreader
+  name_add_mac_suffix: true
+
+logger:
+
+api:
+
+i2c:
+  scan: False
+  frequency: 400kHz
+
+pn532_i2c:
+  update_interval: 0.5s
+  on_tag:
+    then:
+      - homeassistant.tag_scanned: !lambda 'return x;'
+      - text_sensor.template.publish:
+          id: last_tag
+          state: !lambda 'return x;'
+
+text_sensor:
+  - platform: version
+    hide_timestamp: true
+    name: Tag Reader ESPHome Version
+    entity_category: diagnostic
+  - platform: wifi_info
+    ip_address:
+      name: Tag Reader IP Address
+      icon: mdi:wifi
+      entity_category: diagnostic
+    ssid:
+      name: Tag Reader Connected SSID
+      icon: mdi:wifi-strength-2
+      entity_category: diagnostic
+  - platform: template
+    name: Tag Reader Last NFC Tag
+    id: last_tag
+    icon: mdi:nfc</code></pre>
+    </details>
+    <p>
+      The Home Assistant automation essentially checks the NFC tag is registered to a file, that the file is able to be
+      played, and then triggers a
+      script to actually play the file on the TV.
+    </p>
+    <details>
+      <summary>Config for the automation</summary>
+      <pre><code class="language-yaml">mode: single
+alias: Play movie from tag
+triggers:
+  - event_type: tag_scanned
+    trigger: event
+    alias: NFC tag is scanned
+conditions:
+  - alias: Ignore if triggered recently
+    condition: template
+    value_template: >-
+      {{ state_attr('automation.living_room_nfc_tag_scanned', 'last_triggered')
+      is not none and (now().timestamp() -
+      state_attr('automation.living_room_nfc_tag_scanned',
+      'last_triggered').timestamp()) > 15 }}
+actions:
+  - variables:
+      NFC_MAPPING:
+        04-FC-A3-35-BF-2A-81:
+          filename: baby-shark.mp4
+        04-F8-A3-35-BF-2A-81:
+          filename: the-wheels-on-the-bus-uk.mp4
+        04-D6-D1-35-BF-2A-81:
+          filename: baa-baa-black-sheep.mp4
+        04-D7-AE-35-BF-2A-81:
+          filename: heads-shoulders-knees-and-toes.mp4
+        04-C4-C4-35-BF-2A-81:
+          filename: sleeping-bunnies.mp4
+  - alias: Check for valid NFC tag
+    if:
+      - condition: template
+        value_template: "{{ trigger.event.data.tag_id in NFC_MAPPING }}"
+    else:
+      - stop: Not valid NFC tag
+        error: false
+  - alias: Check whether the feature is enabled
+    if:
+      - condition: template
+        value_template: "{{ states('input_boolean.living_room_nfc_reader_toggle') != 'on' }}"
+    then:
+      - stop: Feature is disabled
+        error: false
+  - alias: Check whether the children are being made to wait
+    if:
+      - condition: template
+        value_template: >-
+          {{ states('input_boolean.living_room_nfc_reader_wait') == 'on' and
+          states('media_player.living_room_tv') == 'playing' and
+          state_attr('media_player.living_room_tv', 'media_content_id') is not
+          none and ('http://192.168.1.50:8081' in
+          state_attr('media_player.living_room_tv', 'media_content_id')) }}
+    then:
+      - stop: Children are being made to wait
+        error: false
+  - alias: Check whether the same card is already playing
+    if:
+      - condition: template
+        value_template: >-
+          {{ states('media_player.living_room_tv') == 'playing' and
+          state_attr('media_player.living_room_tv', 'media_title') ==
+          NFC_MAPPING[trigger.event.data.tag_id].name }}
+    then:
+      - stop: Same card is already playing
+        error: false
+  - alias: Play file
+    action: script.play_file
+    data:
+      filename: "{{ NFC_MAPPING[trigger.event.data.tag_id].filename }}"</code></pre>
+    </details>
+    <p>
+      The reason there is a specific script to play the file is because there are a few steps, and I do this from the
+      automation but also from buttons
+      on a dashboard which allow me to override what's playing.
+    </p>
+    <details>
+      <summary>Config for the play_file script</summary>
+      <pre><code class="language-yaml">mode: single
+alias: Play file
+fields:
+  filename:
+    name: Filename
+    required: true
+    description: The filename to play
+    example: baby-shark.mp4
+    selector:
+      select:
+        options:
+          - baby-shark.mp4
+          - the-wheels-on-the-bus-uk.mp4
+          - baa-baa-black-sheep.mp4
+          - heads-shoulders-knees-and-toes.mp4
+          - sleeping-bunnies.mp4
+sequence:
+  - variables:
+      ENDPOINT: "http://192.168.1.50:8081"
+      MAPPING:
+        baby-shark.mp4:
+          name: Baby Shark
+          counter: play_baby_shark
+        the-wheels-on-the-bus-uk.mp4:
+          name: Wheels on the Bus (UK)
+          counter: play_wheels_on_the_bus_uk
+        baa-baa-black-sheep.mp4:
+          name: Baa Baa Black Sheep
+          counter: play_baa_baa_black_sheep
+        heads-shoulders-knees-and-toes.mp4:
+          name: Heads Shoulders Knees and Toes
+          counter: play_heads_shoulders_knees_and_toes
+        sleeping-bunnies.mp4:
+          name: Sleeping Bunnies
+          counter: play_sleeping_bunnies
+  - action: script.turn_on
+    target:
+      entity_id: script.prepare_tv_to_play
+  - action: media_player.play_media
+    target:
+      device_id: 252228ef0ecb6f8dcc4e04ef4b04c33c
+    data:
+      media_content_type: video
+      media_content_id: "{{ ENDPOINT }}/{{ filename }}"
+      extra:
+        metadata:
+          title: "{{ MAPPING[filename].name }}"
+    alias: Start playing video
+  - alias: Count watch
+    action: counter.increment
+    target:
+      entity_id: counter.{{ MAPPING[filename].counter }}</code></pre>
+    </details>
+
+    <h2 id="heating">Heating</h2>
+    <p>
+      We've got a Drayton Wiser system controlling our main heating zones (upstairs, downstairs, and hot water). Home
+      Assistant integrates with this,
+      but we've also added a few Sonoff TRVs in specific rooms for even more granular control. This will likely change
+      when we come into the cooler
+      months, for now the heating doesn't really get used (but having heating we could turn on remotely has been a
+      desire for a while)
+    </p>
+
+    <h2 id="laundry">Laundry</h2>
+    <p>
+      I've got an Athom smart plug v2 with power monitoring on both the washing machine and the dryer. Home Assistant
+      knows when the washer has
+      finished - it then sends reminds us to move the load to the dryer until it detects the dryer is running. Nice to
+      also get cost breakdowns.
+    </p>
+    <img class="percent-50-desktop" src="/assets/img/home-assistant/laundry-automation.jpg" />
+    <h3>Technically</h3>
+    <p>
+      I'm using a brilliant blueprint,
+      <a href="https://community.home-assistant.io/t/appliance-notifications-actions-washing-machine-clothes-dryer-dish-washer-etc/650166?u=joelvardy"
+        target="_blank">Appliance Notifications & Actions</a>
+      which does all the heavy lifting
+    </p>
+    <p>
+      The secret sauce here is that I have created a custom boolean
+      <code>dryer_is_running</code> and a template binary sensor <code>washing_machine_has_been_emptied</code> which has
+      the template:
+      <code>{{ states('input_boolean.dryer_is_running') == 'on' }}</code>
+      effectively just converting the boolean to a binary value so the blueprint can use it. In the washer automation it
+      will only send reminders to
+      empty the washer if
+      <code>washing_machine_has_been_emptied</code> is false.
+    </p>
+    <details>
+      <summary>Config for the washer automation</summary>
+      <pre><code class="language-yaml">alias: Washer is running
+use_blueprint:
+  path: Blackshome/appliance-notifications.yaml
+  input:
+    power_sensor: sensor.athom_washer_plug_power
+    start_title: Washer
+    end_message_title: Washer
+    end_notify_device:
+      - {MY_PHONE}
+      - {WIFES_PHONE}
+    end_message: Yippee the washer has finished!
+    include_power_tracking: enable_power_tracking_and_cost
+    power_consumption_sensor: sensor.athom_washer_plug_energy
+    end_message_cost: Approx Cost £
+    include_duration_tracking: enable_duration_tracking
+    include_end_notify: enable_end_notify_options
+    cost_per_kwh: sensor.octopus_energy_electricity_xxxxxxxxxx_yyyyyyyyyyyyy_current_rate
+    start_power_consumption: input_number.washer_start_number_helper
+    end_power_consumption: input_number.washer_end_number_helper
+    end_reminder_notification: enable_reminder_notification
+    end_reminder_notification_entity: binary_sensor.washing_machine_has_been_emptied
+    end_reminder_notification_message: Remember to put the washing in the dryer
+    end_reminder_notification_max_count: 5</code></pre>
+    </details>
+    <p>
+      The dryer config sets the
+      <code>input_boolean.dryer_is_running</code> using custom actions in the blueprint.
+    </p>
+    <details>
+      <summary>Config for the dryer automation</summary>
+      <pre><code class="language-yaml">alias: Dryer is running
+use_blueprint:
+  path: Blackshome/appliance-notifications.yaml
+  input:
+    power_sensor: sensor.athom_dryer_plug_power
+    start_title: Dryer
+    end_message_title: Dryer
+    end_notify_device:
+      - {MY_PHONE}
+      - {WIFES_PHONE}
+    end_message: The dryer has finished
+    include_power_tracking: enable_power_tracking_and_cost
+    power_consumption_sensor: sensor.athom_dryer_plug_energy
+    end_message_cost: Approx Cost £
+    include_duration_tracking: enable_duration_tracking
+    include_end_notify: enable_end_notify_options
+    cost_per_kwh: sensor.octopus_energy_electricity_xxxxxxxxxx_yyyyyyyyyyyyy_current_rate
+    start_power_consumption: input_number.dryer_start_number_helper
+    end_power_consumption: input_number.dryer_end_number_helper
+    include_custom_actions:
+      - enable_start_custom_actions
+      - enable_end_custom_actions
+    start_custom_actions:
+      - action: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.dryer_is_running
+    end_custom_actions:
+      - action: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.dryer_is_running</code></pre>
+    </details>
+
+    <h2 id="garage">Garage</h2>
+    <p>One of the home improvements the past few months was to get a new garage door, naturally I wanted to make sure
+      this was smart</p>
+    <ul>
+      <li>As soon as the garage door opens, the lights turn on</li>
+      <li>
+        A temperature and humidity monitor in the garage and a smart plug on the dehumidifier - so it's a fairly simple
+        automation to get the
+        dehumidifier running only when we need it. Power monitoring on the dehumidifier too because those things can add
+        up
+      </li>
+      <li>
+        If the garage door is open for more than 30 minutes, I get a friendly nudge on my phone. Holding on it gives me
+        the option to close the door
+        remotely.
+      </li>
+    </ul>
+    <h3>Technically</h3>
+    <p>
+      I went for a Somfy IO drive motor, but if I'm being honest it's not ideal, when you control the door with the
+      Somfy remote it doesn't report
+      that status back to Home Assistant so I ended up using door contact sensors on the door and a custom cover
+      configured in Home Assistant - having
+      gone this route you could get any garage door motor with dry contacts and hook up an IOT relay and control the
+      door.
+    </p>
+    <p>
+      For the light control we had LED battons already installed and I couldn't justify changing them just for
+      automations so I added a SONOFF
+      ZBMINIR2 in line with the light switch, so the lights can be controlled through Home Assistant, but there is also
+      a mechanical switch in there
+      just like before.
+    </p>
+    <details>
+      <summary>Config for garage open automation</summary>
+      <p>
+        Interesting point here is that I have a check so if both me and my wife are away from home and the garage is
+        opened we will get a
+        notification for a possible break in.
+      </p>
+      <pre><code class="language-yaml">alias: Garage open
+mode: single
+triggers:
+  - trigger: state
+    entity_id:
+      - cover.garage_door_cover
+    to: open
+actions:
+  - type: turn_on
+    device_id: xxxxxxxxxx
+    domain: switch
+  - alias: Check whether it might be a break in
+    if:
+      - alias: Both Joel and Rachel are away
+        condition: and
+        conditions:
+          - condition: state
+            entity_id: person.joel_vardy
+            state: not_home
+          - condition: state
+            entity_id: person.rachel_vardy
+            state: not_home
+    then:
+      - alias: Notify Joel
+        action: notify.mobile_app_joels_iphone_16_pro
+        data:
+          message: Possible garage break in!
+      - alias: Notify Rachel
+        action: notify.mobile_app_rachels_iphone
+        data:
+          message: Possible garage break in!
+  - type: turn_off
+    alias: Turn off dehumidifier
+    device_id: xxxxxxxxxx
+    domain: switch</code></pre>
+    </details>
+    <p>When the garage is left open for more than 30 minutes I get a notification on my phone</p>
+    <details>
+      <summary>Garage left open notification</summary>
+      <p>
+        I'm using the
+        <a href="https://community.home-assistant.io/t/contact-sensor-door-or-window-left-open-notification/652571?u=joelvardy"
+          target="_blank">contact sensor blueprint</a>
+        from Malte which makes the notification very simple. My automation config is below:
+      </p>
+      <pre><code class="language-yaml">alias: Notify garage is left open
+use_blueprint:
+  path: Raukze/contact-sensor-left-open-notification.yaml
+  input:
+    trigger_entity: binary_sensor.garage_door_contact
+    friendly_name: Garage door
+    duration_issue_state:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      days: 0
+    duration_from_issue_state:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      days: 0
+    notify_services_string: notify.mobile_app_joels_iphone_16_pro
+    notification_click_url: /dashboard-house/outside
+    repeat_notification: false
+    notification_interruption_level: time-sensitive</code></pre>
+    </details>
+
+    <h2 id="office">Office</h2>
+    <p>
+      Using a Sonoff presence detector, the office lights automatically turn on when someone enters between 8 am and 6
+      pm on weekdays. Walk in, lights
+      on. Walk out, lights off.
+    </p>
+    <p>
+      My IKEA sit-stand desk doesn't have a memory function but I've integrated it into Home Assistant via a Bluetooth
+      proxy, so now I have a quick
+      button for my preferred heights for sit and stand
+    </p>
+    <h2 id="lighting">Lighting</h2>
+    <p>Lighting plays a huge role in setting the mood and providing convenience throughout our home:</p>
+    <li>
+      After sunset, if someone is in the kitchen or dining area, the lights automatically illuminate the space At around
+      25% brightness. This one is
+      so simple (it's like automation 101) but really quite pleasant
+    </li>
+    <li>
+      Our outside lights operate on a sunset-to-sunrise schedule. But when we arrive home the outdoor lights are boosted
+      to 100% brightness and it
+      turns on the utility room light for 5 minutes
+    </li>
+    <li>
+      If my wife and I have left the house and Home Assistant detects that lights or the TV are still on, I get a
+      notification. I can then turn
+      everything off remotely.
+    </li>
+    <h3>Technically</h3>
+    <details>
+      <summary>Config for the reminder to turn things off</summary>
+      <pre><code class="language-yaml">alias: Did someone turn off the lights?
+mode: single
+triggers:
+  - trigger: state
+    entity_id:
+      - person.joel_vardy
+      - person.rachel_vardy
+    to: not_home
+conditions:
+  - condition: state
+    entity_id: person.joel_vardy
+    state: not_home
+  - condition: state
+    entity_id: person.rachel_vardy
+    state: not_home
+  - condition: or
+    alias: If anything has been left on
+    conditions:
+      - condition: state
+        entity_id: light.house
+        state: "on"
+      - condition: state
+        state: "on"
+        entity_id: media_player.sony_xr_65a80j
+        alias: If TV is on
+actions:
+  - action: script.turn_on
+    target:
+      entity_id: script.turn_house_off_notification
+    alias: Send the turn off house notification</code></pre>
+    </details>
+    <h2 id="the-kids-bedtime-routine">The Kids' Bedtime Routine</h2>
+    <p>
+      Getting the little ones to bed can be a process, we've always had white noise play in their room, and the past 6
+      months or so we've had a
+      Spotify playlist we'd play at bedtime.
+    </p>
+    <p>
+      One of the problems with this is that depending who started playing the Spotify playlist one of us couldn't use
+      Spotify for a few hours until we
+      faded the music down to off, this was a pain as one of us would often go to the gym after bedtime.
+    </p>
+    <ul>
+      <li>
+        The routine: When we trigger the "bedtime routine” (after they're in pyjamas and having read a book), the lights
+        in their room slowly fade
+        down (over a minute or so), and their sleep playlist begins on the nursery speaker.
+      </li>
+      <li>
+        Accident-Proof Controls: Once the routine is active and Home Assistant detects presence in the room the Home
+        Assistant dashboard "locks out"
+        the controls. To make any changes, you have to confirm your intention in the Home Assistant app. This prevents
+        us accidentally making the
+        lights brighter or the music louder, waking up one or both toddlers!
+      </li>
+    </ul>
+    <h3>Technically</h3>
+    <p>
+      So solve the Spotify issue I tried a lot of things, but eventually settled on running Music Assistant alongside
+      Home Assistant and I downloaded
+      a new set of music for offline playback, we don't currently use Music Assistant for anything other than this
+      bedtime playlist, but it's solved a
+      big pain point
+    </p>
+    <details>
+      <summary>Config for the bedtime routine script</summary>
+      <p>
+        To fade the lights so gradually I'm using the
+        <a href="https://community.home-assistant.io/t/ashley-s-light-fader-2-0-fade-lights-and-or-color-temperature-with-your-choice-of-easing-curves-including-ease-in-ease-out-and-ease-in-out/584077?u=joelvardy"
+          target="_blank">light fader 2.0 blueprint</a>
+        by Ashley Bischoff
+      </p>
+      <pre><code class="language-yaml">alias: Start bedtime
+description: Dims the lights and starts the 'Go to sleep' playlist
+icon: mdi:power-sleep
+sequence:
+  - parallel:
+      - sequence:
+          - action: media_player.volume_set
+            data:
+              volume_level: 0.45
+            target:
+              entity_id: media_player.nursery
+          - action: media_player.shuffle_set
+            data:
+              shuffle: false
+            target:
+              entity_id: media_player.nursery
+          - action: music_assistant.play_media
+            target:
+              entity_id: media_player.nursery
+            data:
+              media_type: playlist
+              media_id: Go to sleep
+              enqueue: replace
+          - action: media_player.repeat_set
+            data:
+              repeat: all
+            target:
+              entity_id: media_player.nursery
+        alias: Start playlist
+      - action: script.turn_on
+        alias: Fade ceiling light
+        target:
+          entity_id: script.light_fader
+        data:
+          variables:
+            light: light.nursery_ceiling
+            lampBrightnessScale: zeroToOneHundred
+            transitionTime:
+              hours: 0
+              minutes: 0
+              seconds: 20
+            endBrightnessPercent: 0
+            minimumStepDelayInMilliseconds: 100
+      - action: script.turn_on
+        alias: Fade cot left light
+        target:
+          entity_id: script.light_fader
+        data:
+          variables:
+            light: light.nursery_cot_left
+            lampBrightnessScale: zeroToOneHundred
+            transitionTime:
+              hours: 0
+              minutes: 1
+              seconds: 0
+            endBrightnessPercent: 10
+            minimumStepDelayInMilliseconds: 100
+      - action: script.turn_on
+        alias: Fade cot right light
+        target:
+          entity_id: script.light_fader
+        data:
+          variables:
+            light: light.nursery_cot_right
+            lampBrightnessScale: zeroToOneHundred
+            transitionTime:
+              hours: 0
+              minutes: 1
+              seconds: 0
+            endBrightnessPercent: 10
+            minimumStepDelayInMilliseconds: 100</code></pre>
+    </details>
+
+    <h2 id="in-home-display">In Home Display</h2>
+    <p>
+      I have a Samsung Galaxy Tab A9+ on a
+      <a href="https://mbmounts.com/" target="_blank">Makes by Mike mount</a>
+      where my downstairs heating thermostat used to be. This has a digital thermostat (although we have a physical
+      Wiser one in the living room now
+      too)
+    </p>
+    <img class="percent-75-desktop" src="/assets/img/home-assistant/in-home-display.jpg" />
+    <p>
+      Wife approval factor on this has been quite high, I've setup live bus times, bin day reminders, music control, and
+      shared calendars on here
+      along with video feed from the front door, weather, and a button you can press when leaving the house which turns
+      everything off
+    </p>
+    <h3>Technically</h3>
+    <p>
+      I'm using
+      <a href="https://www.fully-kiosk.com/" target="_blank">Fully Kiosk</a>
+      pointed at a custom dashboard which has
+      <a href="https://github.com/NemesisRE/kiosk-mode" target="_blank">Kiosk Mode</a>
+      which hides the Home Assistant header and sidebar
+    </p>
+    <details>
+      <summary>Config for the dashboard</summary>
+      <p>
+        For the dashboard design itself I resorted to placing cards on the custom:button-card as described in
+        <a href="https://yoyoknows.com/perfectly-positioned-dashboards-home-assistant-smart-home-automation/"
+          target="_blank">this article and video</a>
+        from yoyotech.
+      </p>
+      <pre><code class="language-yaml">kiosk_mode:
+  kiosk: true
+views:
+  - title: Home
+    type: panel
+    theme: Catppuccin Latte
+    cards:
+      - type: custom:button-card
+        show_state: false
+        tap_action:
+          action: none
+        custom_fields:
+          calendar:
+            card:
+              entities:
+                - entity: calendar.xxxxx
+                - entity: calendar.yyyyy
+                - entity: calendar.birthdays
+                  label: 🎂
+                - entity: calendar.holidays_in_united_kingdom
+                  label: 🏖️
+              days_to_show: 7
+              show_empty_days: true
+              today_indicator: glow
+              show_month: false
+              type: custom:calendar-card-pro
+              height: 437px
+          bus_times:
+            card:
+              type: custom:bus-times-card
+              stop_id: xxxxxxxxxx
+          weather:
+            card:
+              type: custom:clock-weather-card
+              entity: weather.met_office_xx_yyyyyy_xx_yyyyyy
+              temperature_sensor: sensor.outside_temperature_humidity_sensor_temperature
+              humidity_sensor: sensor.outside_temperature_humidity_sensor_humidity
+              time_pattern: HH:mm
+              time_format: 24
+              date_pattern: DDD
+              show_humidity: true
+          thermostat:
+            card:
+              type: thermostat
+              show_current_as_primary: false
+              entity: climate.wiser_downstairs_heating
+              name: Downstairs
+              features:
+                - style: icons
+                  type: climate-preset-modes
+                  preset_modes:
+                    - Cancel Overrides
+                    - Boost 30m
+                    - Boost 1h
+                    - Boost 2h
+          camera:
+            card:
+              type: custom:webrtc-camera
+              url: rtsp://xxxxxxxxxx
+              ui: true
+              muted: true
+              background: true
+              style: '.screenshot, .pictureinpicture { display: none }'
+          media_player:
+            card:
+              type: media-control
+              entity: media_player.dining_room
+          bin_day:
+            card:
+              type: markdown
+              content: |-
+                {% set today = (now() + timedelta(days=1)).date() %} {% set
+                non_recyclable_dates = [
+                  "2025-01-08", "2025-01-22",
+                  "2025-02-05", "2025-02-19",
+                  "2025-03-05", "2025-03-19",
+                  "2025-04-02", "2025-04-16", "2025-04-30",
+                  "2025-05-14", "2025-05-28",
+                  "2025-06-11", "2025-06-25",
+                  "2025-07-09", "2025-07-23",
+                  "2025-08-06", "2025-08-20",
+                  "2025-09-03", "2025-09-17",
+                  "2025-10-01", "2025-10-15", "2025-10-29",
+                  "2025-11-12", "2025-11-26",
+                  "2025-12-10", "2025-12-24"
+                ] %} {% set recyclable_dates = [
+                  "2025-01-01", "2025-01-15", "2025-01-29",
+                  "2025-02-12", "2025-02-26",
+                  "2025-03-12", "2025-03-26",
+                  "2025-04-09", "2025-04-23",
+                  "2025-05-07", "2025-05-21",
+                  "2025-06-04", "2025-06-18",
+                  "2025-07-02", "2025-07-16", "2025-07-30",
+                  "2025-08-13", "2025-08-27",
+                  "2025-09-10", "2025-09-24",
+                  "2025-10-08", "2025-10-22",
+                  "2025-11-05", "2025-11-19",
+                  "2025-12-03", "2025-12-17", "2025-12-31"
+                ] %} {% if today|string in non_recyclable_dates %}
+                  BIN DAY! Non-recyclable waste collection
+                {% elif today|string in recyclable_dates %}
+                  BIN DAY! Recyclable waste collection
+                {% else %}
+                  No waste collection today
+                {% endif %}
+          house_off:
+            card:
+              type: custom:button-card
+              icon: mdi:home-off
+              name: Turn everything off
+              size: 20%
+              tap_action:
+                action: perform-action
+                perform_action: script.turn_everything_off
+        styles:
+          card:
+            - padding: 22px
+            - align-self: start
+            - width: 1280px
+            - height: 799px
+            - opacity: 1
+            - background-color: transparent
+            - border: thick
+            - '--mdc-ripple-color': transparent
+            - '--mdc-ripple-press-opacity': 0
+            - cursor: default
+          custom_fields:
+            calendar:
+              - position: absolute
+              - top: 20px
+              - left: 20px
+              - width: 400px
+              - height: 470px
+              - text-align: left
+            bus_times:
+              - position: absolute
+              - top: 510px
+              - left: 20px
+              - width: 400px
+              - height: 269px
+              - overflow-y: auto
+              - background: var(--card-background-color)
+            weather:
+              - position: absolute
+              - top: 20px
+              - left: 440px
+              - width: 400px
+              - height: 250px
+            thermostat:
+              - position: absolute
+              - top: 290px
+              - left: 440px
+              - width: 400px
+              - height: 489px
+            camera:
+              - position: absolute
+              - top: 20px
+              - left: 860px
+              - width: 400px
+              - height: 300px
+            media_player:
+              - position: absolute
+              - top: 340px
+              - left: 860px
+              - width: 400px
+              - height: 208px
+            bin_day:
+              - position: absolute
+              - top: 568px
+              - left: 860px
+              - width: 400px
+              - height: 60px
+              - justify-self: center
+            house_off:
+              - position: absolute
+              - top: 648px
+              - left: 860px
+              - width: 400px
+              - height: 131px</code></pre>
+    </details>
+    <p>
+      There was a card in the config above for
+      <code>custom:bus-times-card</code> this was my first attempt at a custom Lovelace card which
+      shows bus times for my local bus stop into
+      Edinburgh.
+    </p>
+    <details>
+      <summary>Config for <code>custom:bus-times-card</code></summary>
+      <p>
+        The code below is saved to
+        <code>homeassistant/config/www/bus-times-card.js</code> and then enabled as a custom
+        resource in the Home Assistant UI
+      </p>
+      <pre><code class="language-js">class BusTimesCard extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: &#39;open&#39; });
+    this.interval = null;
+    this.data = null;
+    this.stopId = null;
+    this.apiUrl = null;
+  }
+
+  setConfig(config) {
+    this.config = config;
+    this.stopId = config.stop_id || &#39;6200239328&#39;;
+    this.apiUrl = `https://lothianapi.co.uk/departureBoards/website?stops=${this.stopId}`;
+    this.render();
+    this.fetchData();
+    if (this.interval) clearInterval(this.interval);
+    this.interval = setInterval(() =&gt; this.fetchData(), 60000); // 1 minute
+  }
+
+  async fetchData() {
+    try {
+      const response = await fetch(this.apiUrl);
+      if (!response.ok) throw new Error(&#39;Network response was not ok&#39;);
+      this.data = await response.json();
+      this.render();
+    } catch (e) {
+      this.data = null;
+      this.renderError(e.message);
+    }
+  }
+
+  render() {
+    if (!this.shadowRoot) return;
+    const style = `
+      &lt;style&gt;
+        :host {
+          display: block;
+          font-family: var(--primary-font-family);
+          color: var(--primary-text-color);
+        }
+        ha-card {
+          padding: 16px;
+          background: var(--ha-card-background, white);
+          box-shadow: var(--ha-card-box-shadow, 0 2px 4px rgba(0,0,0,0.16));
+          border-radius: var(--ha-card-border-radius, 12px);
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 8px;
+          text-align: left;
+        }
+        th {
+          color: var(--primary-text-color);
+        }
+        .delta {
+          color: var(--secondary-text-color, #888);
+          font-size: 90%;
+        }
+      &lt;/style&gt;
+    `;
+    let content = &#39;&#39;;
+    const services = (this.data &amp;&amp; this.data.services) ? this.data.services : [];
+    let departures = services.flatMap(service =&gt; (service.departures || []).map(dep =&gt; ({
+      ...dep,
+      service_name: service.service_name
+    })));
+    departures = departures.sort((a, b) =&gt; new Date(a.departure_time_iso) - new Date(b.departure_time_iso));
+    if (!departures.length) {
+      content = &#39;&lt;div&gt;No upcoming buses.&lt;/div&gt;&#39;;
+    } else {
+      content = `
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Service&lt;/th&gt;
+              &lt;th&gt;Destination&lt;/th&gt;
+              &lt;th&gt;Due&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            ${departures.map(bus =&gt; {
+              const depTime = new Date(bus.departure_time_iso);
+              const now = new Date();
+              const diffMs = depTime - now;
+              const diffMin = Math.round(diffMs / 60000);
+              const timeStr = depTime.toLocaleTimeString([], { hour: &#39;2-digit&#39;, minute: &#39;2-digit&#39; });
+              const deltaStr = diffMin &gt; 0 ? `in ${diffMin} min` : diffMin === 0 ? &#39;now&#39; : `${-diffMin} min ago`;
+              // Add asterisk if not real_time
+              const needsAsterisk = !bus.real_time;
+              return `
+                &lt;tr&gt;
+                  &lt;td&gt;${bus.service_name}${needsAsterisk ? &#39; *&#39; : &#39;&#39;}&lt;/td&gt;
+                  &lt;td&gt;${bus.destination}&lt;/td&gt;
+                  &lt;td&gt;${timeStr} &lt;span class=&quot;delta&quot;&gt;(${deltaStr})&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+              `;
+            }).join(&#39;&#39;)}
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      `;
+    }
+    this.shadowRoot.innerHTML = style + `&lt;ha-card&gt;${content}&lt;/ha-card&gt;`;
+  }
+
+  renderError(message) {
+    if (!this.shadowRoot) return;
+    this.shadowRoot.innerHTML = `&lt;div style=&quot;color:red;&quot;&gt;Error: ${message}&lt;/div&gt;`;
+  }
+
+  getCardSize() {
+    return 3;
+  }
+
+  disconnectedCallback() {
+    if (this.interval) clearInterval(this.interval);
+  }
+}
+
+customElements.define(&#39;bus-times-card&#39;, BusTimesCard);
+
+window.customCards = window.customCards || [];
+window.customCards.push({
+  type: &#39;bus-times-card&#39;,
+  name: &#39;Bus Times Card&#39;,
+  description: &#39;Shows a table of upcoming bus times for a given stop.&#39;,
+});</code></pre>
+    </details>
+    <p>
+      For the physical mounting of the tablet I was able to get power from the old heating controls, from there I
+      stepped it down from 240v to 5v for
+      the USB input. Then hooked up the thin USB C cable which came with the mount.
+    </p>
+    <details>
+      <summary>The mounting</summary>
+      <img class="percent-50-desktop" src="/assets/img/home-assistant/in-home-display-mounting.jpg" />
+    </details>
+    <p>
+      The screen turns off after 2 minutes, but is woken up when the tablet detects presence or when motion is detected
+      in the kitchen or dining room
+      via an automation
+    </p>
+    <p>I'm currently using the default Galaxy Tab A9+ power management to keep the battery at around 80% charge to avoid
+      it swelling. If this becomes a problem I'll probably install a relay on the power here and only turn the power on
+      when the charge drops to 30% and then back off when it's at 90%</p>
+
+    <h2 id="dashboards">Dashboards</h2>
+    <p>
+      I've got a lot of dashboards that I use to check in on things, but the Living Room dashboard is the main one we
+      use as a family. It allows us to
+      remotely control our TV, which is useful since we've found the iOS TV control app to randomly stop working from
+      time to time.
+    </p>
+    <p>
+      This dashboard also has some additional controls the kids NFC reader, you can turn the feature off altogether when
+      we don't want them to turn
+      off something we're watching, there is also a toggle which if enabled ensures the last video has finished playing
+      before starting a new one. In
+      addition to this we have buttons for every card so we can override what's playing (bypassing the checks previously
+      mentioned). This is handy
+      when one of our kids isn't taking turns nicely so we can play the video the other child wants. We also have a play
+      count for videos played :D
+    </p>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <img src="/assets/img/home-assistant/dashboards/nursery.png" />
+          <div class="carousel-caption">Nursery dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/living-room.png" />
+          <div class="carousel-caption">Living room dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/general.png" />
+          <div class="carousel-caption">General dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/office.png" />
+          <div class="carousel-caption">Office dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/outside.png" />
+          <div class="carousel-caption">Outside dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/heating.png" />
+          <div class="carousel-caption">Heating dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/climate.png" />
+          <div class="carousel-caption">Climate dashboard</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/img/home-assistant/dashboards/energy.png" />
+          <div class="carousel-caption">Energy dashboard</div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+    </div>
+    <h2 id="things-that-arent-smart-yet">Things that aren't smart (yet)</h2>
+    <p>My house alarm system isn't really smart - I can access it remotely using an app, but it's something I'd consider
+      changing so it was integrated into Home Assistant.</p>
+    <h2 id="other-projects">Other Projects</h2>
+    <p>I had created <a href="https://github.com/joelvardy/home-assistant-metoffice-datahub" target="_blank">a custom
+        weather integration</a> for the UK Met Office using the "DataHub" API since the old API had been deprecated
+      breaking the core Met Office integration. However before I got this published on HACS the core Met Office
+      integration was updated to support the new API so I won't be pursuing this.</p>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-js.min.js"></script>
+  <script src="/assets/js/carousel.js"></script>
+</body>
+
+</html>
