@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://www.joelvardy.com/home-assistant/" />
     <meta property="og:title" content="My Home Assistant Setup - Joel Vardy" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg" />
+    <meta property="og:image" content="https://www.joelvardy.com/assets/img/home-assistant/energy-dashboard-cover.jpg" />
     <meta property="og:site_name" content="Joel Vardy" />
     <link rel="canonical" href="https://www.joelvardy.com/home-assistant/" />
     <link rel="stylesheet" href="/assets/css/design.css" async />
@@ -71,9 +71,10 @@
         dashboard for my wife and me to disable the feature, override what's playing, or toggle whether they need to wait for one video to
         finish before starting another. It's a fun, interactive way for them to choose their content.
       </p>
-      <video controls playsinline>
+      <video controls playsinline muted autoplay poster="/assets/img/home-assistant/nfc-tv.jpg">
         <source src="/assets/vid/home-assistant/nfc-tv.mp4" type="video/mp4" />
         <source src="/assets/vid/home-assistant/nfc-tv.webm" type="video/webm" />
+        Your browser does not support playing the video. <a href="/assets/vid/home-assistant/nfc-tv.mp4">Download the video</a>.
       </video>
       <h3>Technically</h3>
       <p>
@@ -1067,6 +1068,29 @@ window.customCards.push({
         However before I got this published on HACS the core Met Office integration was updated to support the new API so I won't be
         pursuing this.
       </p>
+      <h2 id="bloopers">Bloopers</h2>
+      <p>If you've read this far you might be interested to hear about a few of the times thing didn't quite go to plan</p>
+      <ul>
+        <li>
+          When my wife was in the office the light would constantly turn on and off because I'd only set it up to detect presence at my desk
+          (upgraded to a proper presence sensor which can see both desks)
+        </li>
+        <li>
+          My wife was getting spammed during a doctors appointment because the washing needs to go into the dryer (solved this by only
+          notifying our devices if we're home)
+        </li>
+        <li>
+          The first automation for the lights in the kitchen and dining room weren't setup perfectly. If motion was detected in either room
+          it would set the brightness to 25% for 5mins. However one evening my wife was doing some crafts on the dining room table, so she's
+          turned the lights up to 100% - however every time motion was detected in either the dining room or the kitchen the lights would go
+          back to 25%
+        </li>
+        <li>
+          The multitude of times I was fiddling with things, turning lights on and off or stopping the bedtime music in the kids nursery,
+          fortunately not too many incidents, but when the kids are sleeping with the lights on low and the music quiet - that's not the
+          time to try upgrading the Unifi network, killing the whole network causing everything to stop with no way to start it again
+        </li>
+      </ul>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
