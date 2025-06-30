@@ -5,20 +5,20 @@ Resources:
       DistributionConfig:
         Comment: joelvardy.com to www.joelvardy.com
         Origins:
-        - DomainName: !Join [ "", [ !Ref RedirectS3Bucket, ".s3-website.", "${self:provider.region}", ".amazonaws.com" ] ]
-          Id: RedirectS3Bucket
-          CustomOriginConfig:
-            HTTPPort: 80
-            OriginProtocolPolicy: http-only
+          - DomainName: !Join ['', [!Ref RedirectS3Bucket, '.s3-website.', '${self:provider.region}', '.amazonaws.com']]
+            Id: RedirectS3Bucket
+            CustomOriginConfig:
+              HTTPPort: 80
+              OriginProtocolPolicy: http-only
         Enabled: true
         HttpVersion: http2
         Aliases:
-        - joelvardy.com
+          - joelvardy.com
         DefaultCacheBehavior:
           AllowedMethods:
-          - GET
-          - HEAD
-          - OPTIONS
+            - GET
+            - HEAD
+            - OPTIONS
           Compress: true
           TargetOriginId: RedirectS3Bucket
           ViewerProtocolPolicy: redirect-to-https
@@ -39,21 +39,21 @@ Resources:
       DistributionConfig:
         Comment: ${self:custom.service}
         Origins:
-        - DomainName: !Join [ "", [ !Ref WebsiteS3Bucket, ".s3-website.", "${self:provider.region}", ".amazonaws.com" ] ]
-          Id: S3WebsiteOrigin
-          CustomOriginConfig:
-            HTTPPort: 80
-            OriginProtocolPolicy: http-only
+          - DomainName: !Join ['', [!Ref WebsiteS3Bucket, '.s3-website.', '${self:provider.region}', '.amazonaws.com']]
+            Id: S3WebsiteOrigin
+            CustomOriginConfig:
+              HTTPPort: 80
+              OriginProtocolPolicy: http-only
         Enabled: true
         HttpVersion: http2
         Aliases:
-        - www.joelvardy.com
+          - www.joelvardy.com
         DefaultCacheBehavior:
           TargetOriginId: S3WebsiteOrigin
           AllowedMethods:
-          - GET
-          - HEAD
-          - OPTIONS
+            - GET
+            - HEAD
+            - OPTIONS
           Compress: true
           DefaultTTL: 3600
           MaxTTL: 3600

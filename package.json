@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "author": "Joel Vardy",
   "scripts": {
-    "deploy": "./node_modules/serverless/bin/serverless.js deploy --verbose"
+    "deploy": "./node_modules/serverless/bin/serverless.js deploy --verbose",
+    "format": "prettier --write ."
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
   "dependencies": {
     "serverless": "^2.52.1"
   }

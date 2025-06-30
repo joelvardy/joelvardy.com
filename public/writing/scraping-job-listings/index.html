@@ -1,55 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Scraping Job Listings - Joel Vardy</title>
-        <meta name="description" content="Scraping Job Listings written by Joel Vardy">
-        <meta name="theme-color" content="#cc6d00">
-        <meta name="msapplication-navbutton-color" content="#cc6d00">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta property="og:url" content="https://www.joelvardy.com/writing/scraping-job-listings/">
-        <meta property="og:title" content="Scraping Job Listings - Joel Vardy">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg">
-        <meta property="og:site_name" content="Joel Vardy">
-        <link rel="canonical" href="https://www.joelvardy.com/writing/scraping-job-listings/">
-        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "name": "Joel Vardy",
-                "email": "info@joelvardy.com",
-                "image": "/assets/img/joel-vardy.jpg",
-                "jobTitle": "Lead Engineer",
-                "url": "https://www.joelvardy.com",
-                "description": "Joel Vardy - Software Engineer",
-                "gender": "male",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "GB"
-                },
-                "sameAs": [
-                    "https://www.linkedin.com/in/joelvardy",
-                    "https://twitter.com/joelvardy",
-                    "https://github.com/joelvardy"
-                ]
-            }
-        </script>
-    </head>
-    <body class="writing">
-        <header>
-            <h1>Joel Vardy</h1>
-        </header>
-        <section class="content">
-            <h1>Scraping Job Listings</h1>
-            <h4 class="date">Posted: <date>2 October 2015</date></h4>
-            <p>How I scraped the list of jobs on the the <a href="https://www.manchesterdigital.com/recruitment" title="Manchester Digital vacancies page">Manchester Digital vacancies page</a> so I could filter and sort them as I wanted.</p>
-            <p>I'm currently looking for a contract / freelance web development role in Manchester, I was looking at the vacancies listed on manchesterdigital.com but most of the jobs were permanent, and there was no way to filter / sort the list. So naturally, I decided to write some code which would allow me to do that.</p>
-            <p>The first step was to get the data from their website so I could work with it, I used <a href="http://phantomjs.org/" title="PhantomJS project">PhantomJS</a> to load the pages, and <a href="https://github.com/cheeriojs/cheerio" title="Cheerio project">cheerio</a> to make accessing the DOM easier. The code is shown below:</p>
-            <pre><code class="javascript language-javascript">var fs = require('fs'),
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scraping Job Listings - Joel Vardy</title>
+    <meta name="description" content="Scraping Job Listings written by Joel Vardy" />
+    <meta property="og:url" content="https://www.joelvardy.com/writing/scraping-job-listings/" />
+    <meta property="og:title" content="Scraping Job Listings - Joel Vardy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg" />
+    <meta property="og:site_name" content="Joel Vardy" />
+    <link rel="canonical" href="https://www.joelvardy.com/writing/scraping-job-listings/" />
+    <link rel="stylesheet" href="/assets/css/design.css" media="screen" async />
+  </head>
+
+  <body class="writing">
+    <header>
+      <h1>Joel Vardy</h1>
+    </header>
+    <section class="content">
+      <h1>Scraping Job Listings</h1>
+      <h4 class="date">Posted: <date>2 October 2015</date></h4>
+      <p>
+        How I scraped the list of jobs on the the
+        <a href="https://www.manchesterdigital.com/recruitment" title="Manchester Digital vacancies page"
+          >Manchester Digital vacancies page</a
+        >
+        so I could filter and sort them as I wanted.
+      </p>
+      <p>
+        I'm currently looking for a contract / freelance web development role in Manchester, I was looking at the vacancies listed on
+        manchesterdigital.com but most of the jobs were permanent, and there was no way to filter / sort the list. So naturally, I decided
+        to write some code which would allow me to do that.
+      </p>
+      <p>
+        The first step was to get the data from their website so I could work with it, I used
+        <a href="http://phantomjs.org/" title="PhantomJS project">PhantomJS</a>
+        to load the pages, and
+        <a href="https://github.com/cheeriojs/cheerio" title="Cheerio project">cheerio</a>
+        to make accessing the DOM easier. The code is shown below:
+      </p>
+      <pre><code class="javascript language-javascript">var fs = require('fs'),
 url = require('url'),
 phantom = require('phantom'),
 cheerio = require('cheerio');
@@ -119,11 +110,23 @@ phantom.create(function (ph) {
         loadPage(ph, page, 'https://www.manchesterdigital.com/recruitment'); // Starting page
     });
 });</code></pre>
-            <p>The code above scrapes each page of the job listing section, saving the details of each job in a local JSON file.</p>
-            <p><strong>Note</strong>: There are a lot of jobs (more than 3,000) - to minimise load on the server I am waiting 1.5 seconds between each request, my local machine also <a href="https://gist.github.com/joelvardy/fddf02f3aa232298065b" title="View code on GitHub">blocks all outgoing traffic to Google Analytics</a> so I shouldn't affect their reporting.</p>
-            <h3 id="usingthedata">Using the Data</h3>
-            <p>Now I have more than 3,000 jobs (dating back to 2006) I want to filter by job type and order them by date posted. This was quite simple, since this is just for my personal use and doesn't need to be super efficient (or look pretty) I used <a href="https://www.datatables.net/" title="View the DataTables project">DataTables</a> a jQuery plugin which will allow sorting and filtering.</p>
-            <pre><code class="markup language-markup">&lt;!doctype html&gt;
+      <p>The code above scrapes each page of the job listing section, saving the details of each job in a local JSON file.</p>
+      <p>
+        <strong>Note</strong>: There are a lot of jobs (more than 3,000) - to minimise load on the server I am waiting 1.5 seconds between
+        each request, my local machine also
+        <a href="https://gist.github.com/joelvardy/fddf02f3aa232298065b" title="View code on GitHub"
+          >blocks all outgoing traffic to Google Analytics</a
+        >
+        so I shouldn't affect their reporting.
+      </p>
+      <h3 id="usingthedata">Using the Data</h3>
+      <p>
+        Now I have more than 3,000 jobs (dating back to 2006) I want to filter by job type and order them by date posted. This was quite
+        simple, since this is just for my personal use and doesn't need to be super efficient (or look pretty) I used
+        <a href="https://www.datatables.net/" title="View the DataTables project">DataTables</a>
+        a jQuery plugin which will allow sorting and filtering.
+      </p>
+      <pre><code class="markup language-markup">&lt;!doctype html&gt;
 &lt;html&gt;
     &lt;head&gt;
     &lt;link rel="stylesheet" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.css"&gt;
@@ -164,8 +167,14 @@ phantom.create(function (ph) {
 
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-            <p>Looking in the browser I can now easily filter / sort jobs which were listed on the Manchester Digital website. The only problem.. There are no current suitable jobs:</p>
-            <img src="/assets/img/writing/scraping-job-listings/filter-sort-manchester-digital-vacancies.jpg" alt="Sorting / filtering data from Manchester Digital vacancies">
-        </section>
-    </body>
+      <p>
+        Looking in the browser I can now easily filter / sort jobs which were listed on the Manchester Digital website. The only problem..
+        There are no current suitable jobs:
+      </p>
+      <img
+        src="/assets/img/writing/scraping-job-listings/filter-sort-manchester-digital-vacancies.jpg"
+        alt="Sorting / filtering data from Manchester Digital vacancies"
+      />
+    </section>
+  </body>
 </html>

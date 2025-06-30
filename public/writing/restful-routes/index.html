@@ -1,94 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>RESTful Routes - Joel Vardy</title>
-        <meta name="description" content="RESTful Routes written by Joel Vardy">
-        <meta name="theme-color" content="#cc6d00">
-        <meta name="msapplication-navbutton-color" content="#cc6d00">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta property="og:url" content="https://www.joelvardy.com/writing/restful-routes/">
-        <meta property="og:title" content="RESTful Routes - Joel Vardy">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg">
-        <meta property="og:site_name" content="Joel Vardy">
-        <link rel="canonical" href="https://www.joelvardy.com/writing/restful-routes/">
-        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "name": "Joel Vardy",
-                "email": "info@joelvardy.com",
-                "image": "/assets/img/joel-vardy.jpg",
-                "jobTitle": "Lead Engineer",
-                "url": "https://www.joelvardy.com",
-                "description": "Joel Vardy - Software Engineer",
-                "gender": "male",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "GB"
-                },
-                "sameAs": [
-                    "https://www.linkedin.com/in/joelvardy",
-                    "https://twitter.com/joelvardy",
-                    "https://github.com/joelvardy"
-                ]
-            }
-        </script>
-    </head>
-    <body class="writing">
-        <header>
-            <h1>Joel Vardy</h1>
-        </header>
-        <section class="content">
-            <h1>RESTful Routes</h1>
-            <h4 class="date">Posted: <date>26 June 2013</date></h4>
-            <p>A Composer package which allows you to easily map routes to a block of code. This is an ideal base for small websites and RESTful APIs.</p>
-            <p><strong>Update:</strong> this is not a perfect library, you may want to consider using the <a href="http://www.slimframework.com/" title="a micro framework for PHP">Slim micro framework</a>, which is usually what I now find myself using.</p>
-            <h3 id="requiringthepackage">Requiring the Package</h3>
-            <p>I'm not going to explain how to use composer, if you are not sure then <a href="http://getcomposer.org/doc/00-intro.md" title="Getting started with Composer">read the manual</a>.</p>
-            <p>Open your <code class="language-markup">composer.json</code> file and require the routes package.</p>
-            <pre><code class="markup language-markup">"require": {
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RESTful Routes - Joel Vardy</title>
+    <meta name="description" content="RESTful Routes written by Joel Vardy" />
+    <meta property="og:url" content="https://www.joelvardy.com/writing/restful-routes/" />
+    <meta property="og:title" content="RESTful Routes - Joel Vardy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg" />
+    <meta property="og:site_name" content="Joel Vardy" />
+    <link rel="canonical" href="https://www.joelvardy.com/writing/restful-routes/" />
+    <link rel="stylesheet" href="/assets/css/design.css" media="screen" async />
+  </head>
+
+  <body class="writing">
+    <header>
+      <h1>Joel Vardy</h1>
+    </header>
+    <section class="content">
+      <h1>RESTful Routes</h1>
+      <h4 class="date">Posted: <date>26 June 2013</date></h4>
+      <p>
+        A Composer package which allows you to easily map routes to a block of code. This is an ideal base for small websites and RESTful
+        APIs.
+      </p>
+      <p>
+        <strong>Update:</strong> this is not a perfect library, you may want to consider using the
+        <a href="http://www.slimframework.com/" title="a micro framework for PHP">Slim micro framework</a>, which is usually what I now find
+        myself using.
+      </p>
+      <h3 id="requiringthepackage">Requiring the Package</h3>
+      <p>
+        I'm not going to explain how to use composer, if you are not sure then
+        <a href="http://getcomposer.org/doc/00-intro.md" title="Getting started with Composer">read the manual</a>.
+      </p>
+      <p>Open your <code class="language-markup">composer.json</code> file and require the routes package.</p>
+      <pre><code class="markup language-markup">"require": {
     "joelvardy/routes": "v1.1"
 }</code></pre>
-            <p>Then ensure you run the composer update command.</p>
-            <h3 id="instantiatingthelibrary">Instantiating the Library</h3>
-            <p>Ensure you have the composer autoloading setup, then you just need to instantiate the library by adding <code class="language-php">$routes = new Joelvardy\Routes();</code> - at this point your file should look something like:</p>
-            <pre><code class="php language-php">// Autoload Composer
+      <p>Then ensure you run the composer update command.</p>
+      <h3 id="instantiatingthelibrary">Instantiating the Library</h3>
+      <p>
+        Ensure you have the composer autoloading setup, then you just need to instantiate the library by adding
+        <code class="language-php">$routes = new Joelvardy\Routes();</code> - at this point your file should look something like:
+      </p>
+      <pre><code class="php language-php">// Autoload Composer
 require('vendor/autoload.php');
 
 // Instantiate routes library
 $routes = new Joelvardy\Routes();
 
 echo 'Hello Routes!';</code></pre>
-            <h3 id="addingaroute">Adding a Route</h3>
-            <p>Now we are going to add a route to create a new user account, because we are creating something we will <strong>POST</strong> to our API endpoint.</p>
-            <pre><code class="php language-php">$routes-&gt;post('/user', function () {
+      <h3 id="addingaroute">Adding a Route</h3>
+      <p>
+        Now we are going to add a route to create a new user account, because we are creating something we will <strong>POST</strong> to our
+        API endpoint.
+      </p>
+      <pre><code class="php language-php">$routes-&gt;post('/user', function () {
     // Add the user to the database
     $user-&gt;create($_POST['username'], $_POST['password'], $_POST['email']);
 });</code></pre>
-            <p>As you might imagine you can use a different REST method by substituting <code class="language-php">$routes->post(</code> with any of the accepted methods: <strong>GET</strong>, <strong>POST</strong>, <strong>PUT</strong>, <strong>PATCH</strong>, and <strong>DELETE</strong>.</p>
-            <h3 id="regularexpressions">Regular Expressions</h3>
-            <p>You will generally have dynamic routes for example, the URI in your browser at the moment ends <strong>/writing/restful-routes</strong> usually you will want to grab that <em>slug</em> and read an item from your database which is associated with it.</p>
-            <p>You can do this using regular expressions, for example:</p>
-            <pre><code class="php language-php">$routes-&gt;get('/user/([a-zA-Z0-9-_]+)', function ($username) {
+      <p>
+        As you might imagine you can use a different REST method by substituting
+        <code class="language-php">$routes->post(</code> with any of the accepted methods: <strong>GET</strong>, <strong>POST</strong>,
+        <strong>PUT</strong>, <strong>PATCH</strong>, and <strong>DELETE</strong>.
+      </p>
+      <h3 id="regularexpressions">Regular Expressions</h3>
+      <p>
+        You will generally have dynamic routes for example, the URI in your browser at the moment ends
+        <strong>/writing/restful-routes</strong> usually you will want to grab that <em>slug</em> and read an item from your database which
+        is associated with it.
+      </p>
+      <p>You can do this using regular expressions, for example:</p>
+      <pre><code class="php language-php">$routes-&gt;get('/user/([a-zA-Z0-9-_]+)', function ($username) {
     // Check the username exists
     if ( ! $users-&gt;read_by_username($username)) return false;
     echo 'Read specific user, username: '.$username;
 });</code></pre>
-            <h3 id="custom404error">Custom 404 Error</h3>
-            <p>In the above example you can see we check whether the user exists, and if not we return false. Returning false from the anonymous function will cause a 404 error to be returned.</p>
-            <p>We can add a special route which is run if no routes are matched, or if a matching route returns false.</p>
-            <pre><code class="php language-php">$routes-&gt;notFound(function () {
+      <h3 id="custom404error">Custom 404 Error</h3>
+      <p>
+        In the above example you can see we check whether the user exists, and if not we return false. Returning false from the anonymous
+        function will cause a 404 error to be returned.
+      </p>
+      <p>We can add a special route which is run if no routes are matched, or if a matching route returns false.</p>
+      <pre><code class="php language-php">$routes-&gt;notFound(function () {
     echo 'Error 404 :(';
 });</code></pre>
-            <h3 id="runningtheroutes">Running the Routes</h3>
-            <p>After adding the routes you must run <code class="language-php">$routes->run();</code> this is easily forgotten, but without it none of the routes will run.</p>
-            <h3 id="useit">Use It!</h3>
-            <p>So, there you have it, you can view the Composer package on <a href="https://packagist.org/packages/joelvardy/routes" title=" title=&quot;RESTful routes package&quot; data-analytics=&quot;RESTful routes package&quot;>Packagist</a> - or you can look at the code on [RESTful routes repository](https://github.com/joelvardy/routes &quot;RESTful routes repository on GitHub">GitHub</a> which has a complete usage example.</p>
-        </section>
-    </body>
+      <h3 id="runningtheroutes">Running the Routes</h3>
+      <p>
+        After adding the routes you must run
+        <code class="language-php">$routes->run();</code> this is easily forgotten, but without it none of the routes will run.
+      </p>
+      <h3 id="useit">Use It!</h3>
+      <p>
+        So, there you have it, you can view the Composer package on
+        <a
+          href="https://packagist.org/packages/joelvardy/routes"
+          title=' title="RESTful routes package" data-analytics="RESTful routes package">Packagist</a> - or you can look at the code on [RESTful routes repository](https://github.com/joelvardy/routes "RESTful routes repository on GitHub'
+          >GitHub</a
+        >
+        which has a complete usage example.
+      </p>
+    </section>
+  </body>
 </html>

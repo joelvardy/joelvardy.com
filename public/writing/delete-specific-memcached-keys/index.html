@@ -1,73 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Delete Specific Memcached Keys - Joel Vardy</title>
-        <meta name="description" content="Delete Specific Memcached Keys written by Joel Vardy">
-        <meta name="theme-color" content="#cc6d00">
-        <meta name="msapplication-navbutton-color" content="#cc6d00">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta property="og:url" content="https://www.joelvardy.com/writing/delete-specific-memcached-keys/">
-        <meta property="og:title" content="Delete Specific Memcached Keys - Joel Vardy">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg">
-        <meta property="og:site_name" content="Joel Vardy">
-        <link rel="canonical" href="https://www.joelvardy.com/writing/delete-specific-memcached-keys/">
-        <link rel="stylesheet" href="/assets/css/design.css" media="screen" async>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "name": "Joel Vardy",
-                "email": "info@joelvardy.com",
-                "image": "/assets/img/joel-vardy.jpg",
-                "jobTitle": "Lead Engineer",
-                "url": "https://www.joelvardy.com",
-                "description": "Joel Vardy - Software Engineer",
-                "gender": "male",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "GB"
-                },
-                "sameAs": [
-                    "https://www.linkedin.com/in/joelvardy",
-                    "https://twitter.com/joelvardy",
-                    "https://github.com/joelvardy"
-                ]
-            }
-        </script>
-    </head>
-    <body class="writing">
-        <header>
-            <h1>Joel Vardy</h1>
-        </header>
-        <section class="content">
-            <h1>Delete Specific Memcached Keys</h1>
-            <h4 class="date">Posted: <date>24 April 2015</date></h4>
-            <p>Using in memory storage to cache data is very common, however the ability to delete keys is not easily possible from the command line. I would always end up restarting the memcached service, but this would of course delete all keys, which is not always desirable.</p>
-            <p>I built a simple command line application which can be installed globally on a system using Composer, this post will outline how to use the tool.</p>
-            <h3 id="installation">Installation</h3>
-            <p>To install the tool globally run:</p>
-            <pre><code class="markup language-markup">composer global require joelvardy/memcachedtool</code></pre>
-            <p>You will also need to ensure the Composer binary directory is included in your path, for example:</p>
-            <pre><code class="markup language-markup">echo "PATH=\$PATH:\$HOME/.composer/vendor/bin" &gt;&gt; ~/.bashrc
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delete Specific Memcached Keys - Joel Vardy</title>
+    <meta name="description" content="Delete Specific Memcached Keys written by Joel Vardy" />
+    <meta property="og:url" content="https://www.joelvardy.com/writing/delete-specific-memcached-keys/" />
+    <meta property="og:title" content="Delete Specific Memcached Keys - Joel Vardy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.joelvardy.com/assets/img/joel-vardy.jpg" />
+    <meta property="og:site_name" content="Joel Vardy" />
+    <link rel="canonical" href="https://www.joelvardy.com/writing/delete-specific-memcached-keys/" />
+    <link rel="stylesheet" href="/assets/css/design.css" media="screen" async />
+  </head>
+
+  <body class="writing">
+    <header>
+      <h1>Joel Vardy</h1>
+    </header>
+    <section class="content">
+      <h1>Delete Specific Memcached Keys</h1>
+      <h4 class="date">Posted: <date>24 April 2015</date></h4>
+      <p>
+        Using in memory storage to cache data is very common, however the ability to delete keys is not easily possible from the command
+        line. I would always end up restarting the memcached service, but this would of course delete all keys, which is not always
+        desirable.
+      </p>
+      <p>
+        I built a simple command line application which can be installed globally on a system using Composer, this post will outline how to
+        use the tool.
+      </p>
+      <h3 id="installation">Installation</h3>
+      <p>To install the tool globally run:</p>
+      <pre><code class="markup language-markup">composer global require joelvardy/memcachedtool</code></pre>
+      <p>You will also need to ensure the Composer binary directory is included in your path, for example:</p>
+      <pre><code class="markup language-markup">echo "PATH=\$PATH:\$HOME/.composer/vendor/bin" &gt;&gt; ~/.bashrc
 source ~/.bashrc</code></pre>
-            <h3 id="commands">Commands</h3>
-            <h4 id="stats">Stats</h4>
-            <p>You can view several stats regarding the memcached server by running:</p>                
-            <pre><code class="markup language-markup">memcachedtool stats</code></pre>
-            <h4 id="viewkeys">View Keys</h4>
-            <p>It is possible to show keys which are stored on the memcached server, for example:</p>
-            <pre><code class="markup language-markup"># Show all keys
+      <h3 id="commands">Commands</h3>
+      <h4 id="stats">Stats</h4>
+      <p>You can view several stats regarding the memcached server by running:</p>
+      <pre><code class="markup language-markup">memcachedtool stats</code></pre>
+      <h4 id="viewkeys">View Keys</h4>
+      <p>It is possible to show keys which are stored on the memcached server, for example:</p>
+      <pre><code class="markup language-markup"># Show all keys
 memcachedtool keys
 
 # Show keys matching a regular expression
 memcachetool keys --regex "/^jv_post_(.*)$/"</code></pre>
-            <h4 id="deletekeys">Delete Keys</h4>
-            <p>Deleting keys was why I built this tool, you can delete keys in three different ways:</p>
-            <pre><code class="markup language-markup"># Delete all keys
+      <h4 id="deletekeys">Delete Keys</h4>
+      <p>Deleting keys was why I built this tool, you can delete keys in three different ways:</p>
+      <pre><code class="markup language-markup"># Delete all keys
 memcachedtool delete --all
 
 # Delete specific key
@@ -75,8 +57,11 @@ memcachedtool delete --key jv_posts
 
 # Delete keys matching a regular expression
 memcachetool delete --regex "/^jv_post_(.*)$/"</code></pre>
-            <h3 id="sourcecode">Source Code</h3>
-            <p>For more information, and to see how I built this tool please have a look at the code <a href="https://github.com/joelvardy/memcachedtool" title="Open source repository">available on GitHub</a>.</p>
-        </section>
-    </body>
+      <h3 id="sourcecode">Source Code</h3>
+      <p>
+        For more information, and to see how I built this tool please have a look at the code
+        <a href="https://github.com/joelvardy/memcachedtool" title="Open source repository">available on GitHub</a>.
+      </p>
+    </section>
+  </body>
 </html>

@@ -10,6 +10,6 @@ php -S 0.0.0.0:8080 -t public
 
 ## TODO
 
- * Remove application/ld+json
- * Prettier on everything
- * Improve image quality
+- Remove application/ld+json
+- Prettier on everything
+- Improve image quality
