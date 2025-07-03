@@ -368,7 +368,10 @@ use_blueprint:
       </details>
 
       <h2 id="garage">Garage</h2>
-      <p>One of the home improvements the past few months was to get a new garage door, naturally I wanted to make sure this was smart</p>
+      <p>
+        One of the home improvements the past few months was to get a new garage door, naturally I wanted to be able to control this with
+        Home Assistant, but I also added some sensors and controls to the garage too
+      </p>
       <ul>
         <li>As soon as the garage door opens, the lights turn on</li>
         <li>
@@ -382,10 +385,12 @@ use_blueprint:
       </ul>
       <h3>Technically</h3>
       <p>
-        I went for a Somfy IO drive motor, but if I'm being honest it's not ideal, when you control the door with the Somfy remote it
-        doesn't report that status back to Home Assistant so I ended up using door contact sensors on the door and a custom cover configured
-        in Home Assistant - having gone this route you could get any garage door motor with dry contacts and hook up an IOT relay and
-        control the door.
+        I went for a Somfy IO drive motor with a SeceuroGlide Garage Door. This required me to get a Somfy Connectivity Kit which would
+        allow me to control the door remotely and integrate it with Home Assistant. But if I'm being honest it's not ideal, when you control
+        the door with the Somfy remote it doesn't report that status back to Home Assistant so I ended up using door contact sensors on the
+        door and a custom cover configured in Home Assistant. I've also found the connection to be quite unreliable. If I was going to do
+        this again I would get a drive motor with regular "dry contacts" and control it with ESPHome (probably
+        <a href="https://www.athom.tech/blank-1/garage-door-opener-for-esphome" target="_blank">this garage door opener from Athom Tech</a>)
       </p>
       <p>
         For the light control we had LED battons already installed and I couldn't justify changing them just for automations so I added a
