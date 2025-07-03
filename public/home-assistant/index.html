@@ -56,6 +56,7 @@
           <li><a href="#lighting">Lighting</a></li>
           <li><a href="#the-kids-bedtime-routine">Kids Bedtime Routine</a></li>
           <li><a href="#in-home-display">In Home Display</a></li>
+          <li><a href="#energy-monitoring">Energy monitoring</a></li>
           <li><a href="#dashboards">Dashboards</a></li>
           <li>
             <a href="#things-that-arent-smart-yet">Things that aren't smart</a>
@@ -1009,6 +1010,23 @@ window.customCards.push({
         this becomes a problem I'll probably install a relay on the power here and only turn the power on when the charge drops to 30% and
         then back off when it's at 90%
       </p>
+
+      <h2 id="energy-monitoring">Energy Monitoring</h2>
+      <p>I've tried to understand by energy usage so I have monitoring on a few things:</p>
+      <ul>
+        <li>I have an Octopus Home Mini which allows me to see real time usage of my electricity and half hourly usage of my gas</li>
+        <li>I have a Solis inverter on my solar panels and a data logger which is integrated into Home Assistant to see hourly solar production</li>
+        <li>I also have a Shelly EM clam around my main incoming feed and around the feed from the solar inverter</li>
+        <li>I have energy monitoring plugs on my:</li>
+          <ul>
+            <li>Washing machine</li>
+            <li>Tumble dryer</li>
+            <li>Dehumidifier</li>
+            <li>Network equipment (this includes my NAS and cameras)</li>
+          </ul>
+      </ul>
+      <p>You might realise I have some duplication, I can see energy usage from Octopus and solar generation from my inverter so why do I need an energy monitor on top of that? Well the Octopus API doesn't expose export data, and I want to see how much of my solar usage is being used in the home vs exported back to the grid. And I wanted better resolution than the hourly data from my inverter.</p>
+      <img class="percent-50-desktop" src="/assets/img/home-assistant/energy-monitoring.jpg" />
 
       <h2 id="dashboards">Dashboards</h2>
       <p>
